@@ -6,29 +6,48 @@
         margin-left: 0;
     }
     #ibx-banner {
-        min-height : 70vh;
+        box-sizing: border-box;
+        min-height : 50vh;
         display: flex;
-    }
-    #banner-content{
-        order: 1;
-        float: right;
-        background-color : #112B56;
-        color: white;
-        text-align: justify;
-        padding: 5% 18% 5% 5%;
-    }
-    #banner-title {
-        color:white;
-        font-weight: bold;
     }
     #banner-img{
         order: 0;
-        float: left;
         overflow: hidden;
         background-size: cover;
         background-position: center;
         background-image: url('https://www.hdwallpapers.in/walls/windows_xp_bliss-wide.jpg');
     }
+    #banner-title {
+        color:white;
+        font-weight: bold;
+    }
+    #banner-content{
+        order: 1;
+        background-color : #112B56;
+        color: white;
+        text-align: justify;
+        padding: 8% 18% 8% 6%;
+    }
+    
+    #media-title {
+        color: #1A1A1A;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 8%;
+    }
+    
+    #media-cov {
+        padding: 5% 15%;
+        text-align: center;
+    }
+    
+    .media-logo{
+        display:inline-block;
+        margin: 0 auto;
+        height: 80px;
+        width: 150px;
+    }
+    
     
     @media only screen and (max-width: 768px) {
         /* For mobile phones: */
@@ -41,7 +60,10 @@
         }
         #banner-img{
             order: 1;
-            min-height: 25em;
+            min-height: 20em;
+        }
+        .media-logo:nth-last-child(-n+6) {
+            display: none;
         }
     }
     
@@ -78,7 +100,21 @@
     <div id="banner-img" class="uk-width-2-5"></div>
 </div>
 <div id="ibx-media">
-   <h2>Ibinex media coverage<h2>
+    <h2 id="media-title">Ibinex media coverage</h2>
+    <div id="media-cov">
+        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+    </div>
 </div>
 <div id="ibx-team">
     <div id="ibx-exec"></div>

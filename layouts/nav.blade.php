@@ -144,39 +144,39 @@
       
         <ul class="uk-navbar-nav">
           <li>
-              <a href=""> <div class="uk-label-white">BTC/USD <div class="uk-label-increasing uk-navbar-subtitle"> 12,455.00</div></div> </a>
+              <a href=""> <div class="uk-label-white uk-padding-small">BTC/USD <div class="uk-label-increasing uk-navbar-subtitle"> 12,455.00</div></div> </a>
           </li>
           
           <li>
-              <a href=""> <div class="uk-label-white">BTC/USD <div class="uk-label-increasing uk-navbar-subtitle"> 12,455.00</div></div> </a>
+              <a href=""> <div class="uk-label-white uk-padding-small">BTC/USD <div class="uk-label-increasing uk-navbar-subtitle"> 12,455.00</div></div> </a>
           </li>
           
           <li>
-              <a href=""> <div class="uk-label-white">ETH/USD <div class="uk-label-decreasing uk-navbar-subtitle"> 697.00</div></div> </a>
+              <a href=""> <div class="uk-label-white uk-padding-small">ETH/USD <div class="uk-label-decreasing uk-navbar-subtitle"> 697.00</div></div> </a>
           </li>
           
           <li>
-              <a href=""> <div class="uk-label-white">DASH/USD <div class="uk-label-increasing uk-navbar-subtitle"> 957.34</div></div> </a>
+              <a href=""> <div class="uk-label-white uk-padding-small">DASH/USD <div class="uk-label-increasing uk-navbar-subtitle"> 957.34</div></div> </a>
           </li>
           
           <li>
-              <a href=""> <div class="uk-label-white">XPR/USD <div class="uk-label-decreasing uk-navbar-subtitle"> 1.89</div></div> </a>
+              <a href=""> <div class="uk-label-white uk-padding-small">XPR/USD <div class="uk-label-decreasing uk-navbar-subtitle"> 1.89</div></div> </a>
           </li>
           
           <li>
-              <a href=""> <div class="uk-label-white">LTC/USD <div class="uk-label-decreasing uk-navbar-subtitle"> 209.20</div></div> </a>
+              <a href=""> <div class="uk-label-white uk-padding-small">LTC/USD <div class="uk-label-increasing uk-navbar-subtitle"> 209.20</div></div> </a>
           </li>
           
           <li>
-              <a href=""> <div class="uk-label-white">BTC/USD <div class="uk-label-decreasing uk-navbar-subtitle"> 2,455.00</div></div> </a>
+              <a href=""> <div class="uk-label-white uk-padding-small">BTC/USD <div class="uk-label-increasing uk-navbar-subtitle"> 2,455.00</div></div> </a>
           </li>
           
           <li>
-              <a href=""> <div class="uk-label-white">BH/USD <div class="uk-label-decreasing uk-navbar-subtitle"> 12,455.00</div></div> </a>
+              <a href=""> <div class="uk-label-white uk-padding-small">BH/USD <div class="uk-label-increasing uk-navbar-subtitle"> 12,455.00</div></div> </a>
           </li>
           
           <li>
-              <a href=""> <div class="uk-label-white">BH/USD <div class="uk-label-decreasing uk-navbar-subtitle"> 12,455.00</div></div> </a>
+              <a href=""> <div class="uk-label-white uk-padding-small">BH/USD <div class="uk-label-increasing uk-navbar-subtitle"> 12,455.00</div></div> </a>
           </li>
         </ul>
       

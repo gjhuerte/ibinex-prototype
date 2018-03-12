@@ -20,7 +20,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
   <!-- Font Awesome -->
-	<script src="https://use.fontawesome.com/acc6bc0537.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<!-- For CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
     

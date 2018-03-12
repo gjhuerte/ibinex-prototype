@@ -23,11 +23,15 @@
 	<script src="https://use.fontawesome.com/acc6bc0537.js"></script>
 	<!-- For CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+   <?php styles_include() ?>
 	</head>
-	<body>
-<?php require 'layouts/nav.blade.php'; ?>
-<?php display_content(); ?>
-<?php require 'layouts/footer.blade.php'; ?>
+  <body>
+    <?php require 'layouts/nav.blade.php'; ?>
+    <?php display_content(); ?>
+    <?php require 'layouts/footer.blade.php'; ?>
+    
+    <?php scripts_include() ?>
 
 	</body>
 </html>

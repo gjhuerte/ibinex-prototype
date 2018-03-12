@@ -9,7 +9,7 @@
 <?php } ?>
 
 <?php function display_content(){ ?>
-<div>lasdjalksjdalsjdlasjdlkas</div>
+
 <?php } ?>
 
 <?php function scripts_include(){ ?>

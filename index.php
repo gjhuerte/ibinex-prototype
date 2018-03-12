@@ -5,7 +5,7 @@
   
   <body>
     <?php
-      echo 'Include me';
+      echo 'Include me hahahahaha';
     ?>
     <script>
       alert('hello world')

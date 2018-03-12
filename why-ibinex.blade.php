@@ -15,27 +15,6 @@
     top: -166px;
     right: 10%;
   }
-  
-  .losange, .losange div {
-  margin: 0 auto;
-  transform-origin: 50% 50%;
-  overflow: hidden;
-  width: 250px;
-  height: 250px;
-}
-.losange {
-  transform: rotate(45deg) translateY(10px);
-}
-.losange .los1 {
-  width: 355px;
-  height: 355px;
-  transform: rotate(-45deg) translateY(-74px);
-}
-.losange .los1 img {
-  width: 100%;
-  height: auto;
-}
-
   .bgcolor{
     background-color: #142c5a;
   }

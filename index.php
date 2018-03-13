@@ -49,7 +49,7 @@
 <?php } ?>
 
 <?php function display_title(){ ?>
-  About Us
+  Ibinex
 <?php } ?>
 
 <?php function display_content(){ ?>

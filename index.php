@@ -139,7 +139,7 @@ div * {
     font-weight: bold;
 }
   
-  .uk-grid {
+  .uk-grid1 {
     margin-left: 0;
   }
   
@@ -180,7 +180,7 @@ div * {
         </div>
 
                   
-      <div id="nusku-intro" class="uk-grid">
+      <div id="nusku-intro" class="uk-grid uk-grid1">
             <div id="intro-content" class="uk-width-1-2 intro-padding">
                 <h2 id="intro-title">Ibinex - The Gateway to your Own Customized Cryptocurrency Ecosystem</h2>
                 <p>With an in-depth understanding of evolving blockchain technology and cryptocurrency development. Ibinex invite you to engage with a fully-customizeable, private, institutional white label platform. Trail-blazing turnkey solutions to merge with your own web-based platform. Ibinex will show you definitively how to build a cryptocurrency exchange, your way.</p>

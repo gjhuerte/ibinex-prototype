@@ -71,20 +71,10 @@
 <?php } ?>
 
 <?php function display_title(){ ?>
-<<<<<<< HEAD
-<b><i>Security</i></b>
-<?php } ?>
-
-<?php function display_content(){ ?>
-<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-=======
   About Us | IBINEX
 <?php } ?>
 
 <?php function display_content(){ ?>
-<<<<<<< HEAD
-
-=======
 <div id="ibx-banner" class="uk-grid">
     <div id="banner-content" class="uk-width-3-5">
         <h2 id="banner-title">Transparency</h2>
@@ -130,11 +120,6 @@
     <div id="ibx-exec"></div>
     <div id="ibx-board"></div>
 </div>
-<<<<<<< HEAD
->>>>>>> 358ccc851353e7044a7b719cabe80a389abe7d0a
-=======
->>>>>>> 139c8706c8b80ecdc536cde430b4d4865e3747b8
->>>>>>> 1d331770555a33f4e21576f649fd3bae55f79faa
 <?php } ?>
 
 <?php function scripts_include(){ ?>

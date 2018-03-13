@@ -35,7 +35,7 @@
   }
   .main-text {
     display: grid;
-    align-content: center;
+    align-content: start;
   }
   
   .main-text.text1 {
@@ -60,7 +60,7 @@
   
   .main-text p
   .main-text ul {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   
   .main-text p {
@@ -81,7 +81,7 @@
     }
   }
   
-  @media only screen and (max-width : 480px) {
+  @media only screen and (max-width : 480px) and (orientation : portrait), screen and (max-width : 768px) and (orientation : landscape){
     .main-image{
       display: none;
     }

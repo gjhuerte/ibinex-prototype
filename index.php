@@ -56,6 +56,10 @@
     padding: 8% 18% 8% 6%;
   }
   
+  #feature-header {
+    font-weight: bold;
+  }
+  
   #nusku-media {
     
   }
@@ -114,6 +118,7 @@
   
 .coolors {
     color: #203771;
+    font-weight: bold;
 }
   
   .uk-grid {
@@ -169,15 +174,15 @@
       </div>
       
     <div>
-        <h3 class="uk-text-center padding1">Exchange your Way with Ibinex.</h3>
-        <h3 class="uk-text-center uk-text-center1">Your Turn-Key Solution Includes:</h3>
+        <h3 id="feature-header" class="uk-text-center padding1">Exchange your Way with Ibinex.</h3>
+        <h3 id="feature-header" class="uk-text-center uk-text-center1">Your Turn-Key Solution Includes:</h3>
       
         <div class="uk-section padding padding1 uk-grid-collapse uk-child-width-1-2@s uk-grid-match" uk-grid>
             <div>
                 
                 <div class="uk-padding border1 border2 uk-text-left" >
-                  <i class="fas fa-space-shuttle fa-3x"></i>
-                   <h3 class="coolors">
+                   <img src="assets/images/picture1.png" class="">
+                   <h3 class="coolors uk-margin-remove-top">
                       Tailored Front End content website
                    </h3>
                   <p>
@@ -187,8 +192,8 @@
             </div>
             <div>
                 <div class="uk-padding border2">
-                  <i class="fas fa-desktop fa-3x"></i>
-                   <h3 class="coolors">
+                   <img src="assets/images/picture2.png" class="">
+                   <h3 class="coolors uk-margin-remove-top">
                       Full CRM &amp; Back Office Solution
                    </h3>
                   <p>
@@ -201,16 +206,16 @@
         <div class="uk-section padding uk-grid-collapse uk-child-width-expand@s uk-grid-match" uk-grid>
             <div>
                 <div class="uk-padding border1 border2">
-                  <i class="fas fa-money-bill-alt fa-3x"></i>
-                   <h3 class="coolors">
+                   <img src="assets/images/picture4.png" class="">
+                   <h3 class="coolors uk-margin-remove-top">
                       Aggregated Liquidity Exchange
                    </h3>
                 </div>
             </div>
             <div>
                 <div class="uk-padding border2">
-                  <i class="far fa-credit-card fa-3x"></i>
-                    <h3 class="coolors">
+                    <img src="assets/images/picture3.png" class="">
+                    <h3 class="coolors uk-margin-remove-top">
                       Complete Processing solution
                    </h3>
                 </div>
@@ -220,16 +225,16 @@
         <div class="uk-section padding uk-grid-collapse uk-child-width-expand@s uk-grid-match" uk-grid>
             <div>
                 <div class="uk-padding border1 border2">
-                  <i class="fas fa-book fa-3x"></i>
-                    <h3 class="coolors">
+                    <img src="assets/images/picture5.png" class="">
+                    <h3 class="coolors uk-margin-remove-top">
                       Compliant Banking Custodian service
                    </h3>
                 </div>
             </div>
             <div>
                 <div class="uk-padding border2">
-                  <i class="fas fa-globe fa-3x"></i>
-                    <h3 class="coolors">
+                    <img src="assets/images/picture6.png" class="">
+                    <h3 class="coolors uk-margin-remove-top">
                       Hosted in a secure private cloud environment
                    </h3>
                 </div>

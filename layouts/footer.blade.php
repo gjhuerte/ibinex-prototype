@@ -27,16 +27,28 @@
   .footer-header-color-light {
     color: #364A56;
   }
+  
+  .uk-button-red-1 {
+    color: white;
+    background-color: #C81824;
+  }
+  
+  @media (min-width: 992px) {
+    .padding-medium {
+      padding-left: 15%;
+      padding-right: 10%;
+    }
+  }
 </style>
 
-<div class="uk-container uk-container-expand bg-teal-dark uk-padding" style="font-size: 80%;">
+<div class="uk-container uk-container-expand bg-teal-dark uk-padding" style="font-size: 70%;">
   <!--  upper header  -->
   <h4 class="uk-label-white uk-heading-link uk-text-center">GIVE US A CALL: 1-800-972-3981</h4>
   <!--  upper header  -->
   <!--  upper header additional navigation  -->
   <div class="uk-padding-remove-vertical">
     
-  <div class="uk-child-width-expand@m uk-padding" uk-grid uk-height-match="target: > div">
+  <div class="uk-child-width-expand@m padding-medium" uk-grid uk-height-match="target: > div">
     <!--  why ibinex    -->
     <div class="footer-nav">
       <ul class="uk-list footer-nav">
@@ -110,17 +122,15 @@
 
 <!-- contact details -->
 <div class="uk-container uk-container-expand bg-teal-darker uk-padding">
-  <div class="uk-child-width-expand@m uk-padding-left uk-padding uk-padding-remove-top" uk-grid uk-height-match="target: > div">
+  <div class="uk-child-width-expand@m padding-medium" uk-grid uk-height-match="target: > div">
     <div class="uk-inline-clip">
-      
-        <img class="uk-logo uk-position-center" src="https://www.grouptravelvideos.com/images/client/00954/resources/you%20logo%20here.png" alt="Website Logo" width=60% height=60%>
-      
+        <img class="uk-logo uk-position-center" src="https://www.grouptravelvideos.com/images/client/00954/resources/you%20logo%20here.png" alt="Website Logo" width=60% height=60%> 
     </div>
     <!--  Ibinex Offices    -->
-    <div style="font-size: 70%;">
-      <h3 class="footer-header-color-light">
+    <div style="font-size: 65%;">
+      <h4 class="footer-header-color-light">
         IBINEX OFFICES
-      </h3>
+      </h4>
       <!--   offices     -->
       <div>
         <div uk-grid>
@@ -146,40 +156,40 @@
     <!--  Ibinex Offices    -->
     <!--   contacts     -->
     <div>
-      <ul class="uk-list">
-        <li class="uk-nav-header footer-header-color-light">SIGN UP TO OUR NEWSLETTER</li>
+      <ul class="uk-list uk-visible@m">
+        <li class="uk-nav-header footer-header-color-light" style="font-size: 85%;">SIGN UP TO OUR NEWSLETTER</li>
         <li>
-          <form>
-            <div class="uk-margin">
-              <input class="uk-input uk-form-width-medium uk-form-default" type="email" placeholder="Insert your email">
-              <button class="uk-button uk-button-danger" type="button" tabindex="-1">Submit</button>
+          <form class="uk-container">
+            <div class="uk-flex-inline input-group">
+              <input class="uk-input" type="email" placeholder="Insert your email">
+              <button class="uk-button uk-button-red-1" type="button">Submit</button>
             </div>
           </form>
         </li>
       </ul>
       <ul class="uk-list">
-
-        <li class="uk-nav-header footer-header-color-light">
+        <li class="uk-nav-header footer-header-color-light" style="font-size: 85%;">
           FIND US ONLINE
         </li>
         <li>
           <a href="#">
             <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-facebook-messenger"></i>
+            <i class="fab fa-skype"></i>
+            <i class="fab fa-skype"></i>
+            <i class="fab fa-telegram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-viber"></i>
           </a>
         </li>
       </ul>
     </div>
     <!--   contacts     -->
   </div>
-  <dl class="uk-description-list" style="font-size: 10px;">
-    <dd>
+  <dl class="uk-description-list padding-medium" style="font-size: 10px;">
+    <dd class="uk-text-justify">
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
       sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
       incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea

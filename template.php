@@ -32,7 +32,27 @@
     <?php display_content(); ?>
     <?php require 'layouts/footer.blade.php'; ?>
     
-    <?php scripts_include() ?>
+		<script type="text/javascript">
+			$(document).ready(function(){			
+				
+				$('.uk-navbar-nav > li').on({
+					mouseenter: function () {
+							setTimeout(function(){
+								$(this).addClass('uk-animation-scale-up')
+							}, 1000)
+					},
+					mouseleave: function () {
+							setTimeout(function(){
+								$(this).removeClass('uk-animation-scale-up')
+							}, 1000)
+								 
+					}
+				})
 
+			})
+		</script>
+		
+    <?php scripts_include() ?>
+		
 	</body>
 </html>

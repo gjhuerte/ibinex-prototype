@@ -31,6 +31,32 @@
   .uk-button-red-1 {
     color: white;
     background-color: #C81824;
+    border: none;
+    border-radius: 0% 5% 5% 0%;
+    padding: 5%;
+    font-size: 60%;
+  }
+  
+  .footer-input-submit {   
+    border-radius: 5% 0% 0% 5%;
+    padding: 3%;
+    width: 120%;
+    border: 0;
+    margin: 0;
+  }
+  .footer-input-submit,
+  .footer-input-submit::-webkit-input-placeholder {
+      line-height: 1;
+      padding: 4%;
+      font-size: 80%;
+  }
+
+  .input-group {
+      border: 10%;
+   }
+  
+  .give-us-a-call {
+    letter-spacing: 0.1em;
   }
   
   @media (min-width: 992px) {
@@ -39,11 +65,17 @@
       padding-right: 10%;
     }
   }
+  
+  @media (max-width: 992px) {
+    .give-us-a-call-number {
+      display: block;
+    }
+  }
 </style>
 
 <div class="uk-container uk-container-expand bg-teal-dark uk-padding" style="font-size: 70%;">
   <!--  upper header  -->
-  <h4 class="uk-label-white uk-heading-link uk-text-center">GIVE US A CALL: 1-800-972-3981</h4>
+  <h4 class="uk-label-white uk-heading-link uk-text-center give-us-a-call">GIVE US A CALL: <span class="give-us-a-call-number"> 1-800-972-3981</span></h4>
   <!--  upper header  -->
   <!--  upper header additional navigation  -->
   <div class="uk-padding-remove-vertical">
@@ -134,7 +166,7 @@
       <!--   offices     -->
       <div>
         <div uk-grid>
-          <ul class="uk-list footer-nav" style="padding-left: 0px;">
+          <ul class="uk-list footer-nav">
             <li><a href="#">Ibinex Officials</a></li>
             <li><a href="#">315 W 36th Street</a></li>
             <li><a href="#">New York, NY</a></li>
@@ -161,8 +193,8 @@
         <li>
           <form class="uk-container">
             <div class="uk-flex-inline input-group">
-              <input class="uk-input" type="email" placeholder="Insert your email">
-              <button class="uk-button uk-button-red-1" type="button">Submit</button>
+              <input class="footer-input-submit" type="email" placeholder="Insert your email">
+              <button class="uk-button-red-1" type="button">Submit</button>
             </div>
           </form>
         </li>

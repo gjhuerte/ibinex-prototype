@@ -72,7 +72,7 @@
           <div class="uk-navbar-item">
               <form action="javascript:void(0)">
                   <button class="uk-button uk-button-default uk-button-telegram-blue" style="border-radius: 10px; padding: 0px 2px;">
-                    <i class="fab fa-telegram"></i> join our telegram community
+                    <i class="fab fa-telegram"></i>  join our telegram community
                 </button>
               </form>
           </div>
@@ -130,6 +130,13 @@
               <a href="index.php">
                 <div class="uk-navbar-text-blue">
                   Home
+                </div>
+              </a>
+            </li>
+            <li class="uk-navbar-text-blue">
+              <a href="why-ibinex.blade.php">
+                <div class="uk-navbar-text-blue">
+                  Why Ibinex
                 </div>
               </a>
             </li>

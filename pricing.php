@@ -162,8 +162,6 @@ Pricing
   
 </div>
 
-
-
 <?php } ?>
 
 <?php function scripts_include(){ ?>

@@ -127,14 +127,14 @@
         <img class="uk-logo uk-position-center" src="https://www.grouptravelvideos.com/images/client/00954/resources/you%20logo%20here.png" alt="Website Logo" width=60% height=60%> 
     </div>
     <!--  Ibinex Offices    -->
-    <div style="font-size: 65%;">
+    <div style="font-size: 60%;">
       <h4 class="footer-header-color-light">
         IBINEX OFFICES
       </h4>
       <!--   offices     -->
       <div>
         <div uk-grid>
-          <ul class="uk-list footer-nav">
+          <ul class="uk-list footer-nav" style="padding-left: 0px;">
             <li><a href="#">Ibinex Officials</a></li>
             <li><a href="#">315 W 36th Street</a></li>
             <li><a href="#">New York, NY</a></li>

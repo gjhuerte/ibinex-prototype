@@ -54,20 +54,19 @@
 
       <ul class="uk-navbar-nav">
         <li>
-          <a href="">
+          <a href="#">
             <div class="uk-navbar-text-blue">
               <i class="fas fa-phone" style="margin-right: 10px;"></i> 1-800972-3981
             </div>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <div class="uk-live-chat-green">
               <i class="fas fa-comments" style="margin-right: 10px;"></i> Live Chat
             </div>
           </a>
         </li>
-
       </ul>
 
       <div class="uk-navbar-item">
@@ -197,9 +196,10 @@
 <!-- nav for different pages -->
 
 <!-- nav for different currencies -->
-<nav class="uk-navbar-container" uk-navbar="mode: click" style="background: linear-gradient(to right, #102B58 , #C61924); height: 60px;">
-  <div class="uk-navbar-center">
+<nav class="uk-navbar-container" uk-navbar="mode: click" style="background: linear-gradient(to right, #102B58 , #C61924); height: 60px; width: 100%;">
+  <div class="uk-navbar-center" style="width: 100%;">
 
+      <marquee>
     <ul class="uk-navbar-nav">
       <li>
         <a href="">
@@ -211,7 +211,7 @@
 
       <li>
         <a href="">
-          <div class="uk-label-white uk-padding-small uk-hidden@s">BTC/USD
+          <div class="uk-label-white uk-padding-small uk-visible@s">BTC/USD
             <div class="uk-label-increasing uk-navbar-subtitle"> 12,455.00</div>
           </div>
         </a>
@@ -219,7 +219,7 @@
 
       <li>
         <a href="">
-          <div class="uk-label-white uk-padding-small uk-hidden@s">ETH/USD
+          <div class="uk-label-white uk-padding-small uk-visible@s">ETH/USD
             <div class="uk-label-decreasing uk-navbar-subtitle"> 697.00</div>
           </div>
         </a>
@@ -273,6 +273,7 @@
         </a>
       </li>
     </ul>
+      </marquee>
 
   </div>
 </nav>

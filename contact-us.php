@@ -78,6 +78,43 @@ box-shadow: -1px 3px 8px -2px rgba(0,0,0,0.15);
     background-color:#04293D;
     width:50%;
   }
+  
+  
+ @media only screen and (max-width: 1024px) {
+   .container{
+      padding: 200px 30px 20px 200px;
+   }
+}
+  
+  @media only screen and (max-width: 768px) {
+   .container{
+      padding: 200px 30px 20px 100px;
+      max-width:100%;
+   }
+    
+    .left{
+      text-align:justify;
+      display:inline-block;
+      width:100%;
+      padding:0%;
+    }
+    
+    .right{
+      display:inline-block;
+      position:relative;
+    }
+    
+    .white-form{
+      position:relative;
+      float:right;
+      clear:right;
+      display:inline-block;
+    }
+    
+}
+  
+  
+  
 
   
 

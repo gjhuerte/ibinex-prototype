@@ -169,7 +169,7 @@
               </a>
             </li>
             <li class="uk-navbar-text-blue">
-              <a href=contact-us.php"">
+              <a href="contact-us.php">
                 <div class="uk-navbar-text-blue">
                   Contact Us
                 </div>

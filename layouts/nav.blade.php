@@ -135,7 +135,7 @@
         </a>
       </li>
       <li class="uk-navbar-text-blue">
-        <a href="why-ibinex.blade.php">
+        <a href="why.blade.php">
           <div class="uk-navbar-text-blue">
             Why Ibinex
           </div>

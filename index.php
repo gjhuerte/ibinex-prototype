@@ -61,7 +61,8 @@ div * {
   }
   
   #legal-p {
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: bold;
     text-align: center;
     padding-top: 10%;
   }
@@ -163,6 +164,14 @@ div * {
         .intro-padding{
             padding-bottom: 3%;
         }
+  
+        .border1 {
+          border-right: 0;  
+        }
+
+        .border2 {
+          border-bottom: 0;  
+        }
         
     }
 </style>
@@ -215,7 +224,7 @@ div * {
                       Full CRM &amp; Back Office Solution
                    </h3>
                   <p>
-                    The Ibinex ecosystem assimilates a complete Customer Relationship 
+                    The Ibinex ecosystem assimilates a complete Customer Relationship Management (CRM) as a complement to your web based exchange platform. This includes KYC/AML documentation collection and verification, and account &amp; money management. The result is an effortless back office administration workflow and smooth UI/UX for your customers.
                   </p>
                 </div>
             </div>
@@ -228,6 +237,9 @@ div * {
                    <h3 class="coolors uk-margin-remove-top">
                       Aggregated Liquidity Exchange
                    </h3>
+                  <p>
+                    Connect with Ibinex and receive coveted access to an unprecedented first-tier array of "Top of the Book" API bridges from over 60 leading exchanges for hundreds of cryptocurrencies. By monitoring the Ibinex stream, you can become a leading exchange market for the most in-demand cryptocurrencies and never miss the opportunity to benefit from liquidity as trends shift.
+                  </p>
                 </div>
             </div>
             <div>
@@ -236,6 +248,9 @@ div * {
                     <h3 class="coolors uk-margin-remove-top">
                       Complete Processing solution
                    </h3>
+                  <p>
+                    With our thriving network of exclusive partners, Ibinex is changing the game for cryptocurrency payment processing. We bring you exclusive payment solutions unavailable elsewhere, truly revolutionising the way that crypto is bought and sold and turbocharging the possibilities for your exchange to thrive in maximum liquidity.
+                  </p>
                 </div>
             </div>
         </div>
@@ -247,6 +262,9 @@ div * {
                     <h3 class="coolors uk-margin-remove-top">
                       Compliant Banking Custodian service
                    </h3>
+                  <p>
+                    Ibinex is the first ever cryptocurrency exchange platform the world that has a finance transaction license. We can offer fully-compliant and licensed custodian processing and accounts, or you can choose to operate with your own custodian. Ibinex is licensed to facilitate payments via swipe-and-transmit from FIAT to a base currency. This preferred solution is unavailable to the bigger cryptocurrency exchanges, and is only offered by Ibinex.
+                  </p>
                 </div>
             </div>
             <div>
@@ -255,6 +273,9 @@ div * {
                     <h3 class="coolors uk-margin-remove-top">
                       Hosted in a secure private cloud environment
                    </h3>
+                  <p>
+                    Security is a 360 degree operation, with the Ibinex platform guarded 24/7 in a private cloud and crypto-based funds held in shielded cold wallets. Cyber security experts maintain and defend the platform, while cold wallets containing funds are impregnable, offline, and safely out of unathorised reach.
+                  </p>
                 </div>
             </div>
         </div>

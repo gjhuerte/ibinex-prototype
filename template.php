@@ -18,8 +18,8 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <!-- import uikit js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+  <script src="assets/js/uikit.min.js"></script>
+  <script src="assets/js/uikit-icons.min.js"></script>
   <!-- Font Awesome -->
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<!-- For CSS -->
@@ -32,7 +32,27 @@
     <?php display_content(); ?>
     <?php require 'layouts/footer.blade.php'; ?>
     
-    <?php scripts_include() ?>
+		<script type="text/javascript">
+			$(document).ready(function(){			
+				
+				$('.uk-navbar-nav > li').on({
+					mouseenter: function () {
+							setTimeout(function(){
+								$(this).addClass('uk-animation-scale-up')
+							}, 1000)
+					},
+					mouseleave: function () {
+							setTimeout(function(){
+								$(this).removeClass('uk-animation-scale-up')
+							}, 1000)
+								 
+					}
+				})
 
+			})
+		</script>
+		
+    <?php scripts_include() ?>
+		
 	</body>
 </html>

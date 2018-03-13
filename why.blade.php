@@ -12,7 +12,7 @@
   }
   
   .float-image{
-    top: -166px;
+    top: -170px;
     right: 10%;
     float: right;
   }
@@ -47,7 +47,7 @@
             </div>
         </div>
 
-<!--              <img src="http://farm3.staticflickr.com/2178/3531465579_8bff044e9b_z.jpg?zz=1" alt="" width="255" height="320" class="uk-float-right float-image uk-position-relative"/> -->
+             <img src="assets/images/eidted2.png" alt="" width="500" height="720" class="uk-float-right float-image uk-position-relative"/>
         <div class="uk-section uk-light mainPadding bgcolor padding-top">
             <div class="uk-grid-match">
                 <div>
@@ -65,33 +65,33 @@
     <div class="uk-grid-collapse uk-child-width-1-2@m mainPadding" uk-grid style="border-bottom: 1px solid #e5e5e5;">
       <div>
           <div class=" uk-padding" style="border-right: 1px solid #e5e5e5;">
-             <div>
-               <img src="assets/images/1.png" alt="" width="60" height="60" style="margin-bottom: 15px;"/>
+             <div class="uk-animation-toggle">
+               <img src="assets/images/1.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             Commitment to technological innovation, through out patent-pending proprietary software, Cryptobridge<sup>TM</sup>
         
         </div>
       </div>
       <div>
-          <div class="uk-padding">
-            <div>
-               <img src="assets/images/2.png" alt="" width="60" height="60" style="margin-bottom: 15px;"/>
+          <div class="uk-padding ">
+            <div class="uk-animation-toggle">
+               <img src="assets/images/2.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             Trailblazing of complete and customisable white label platform solutions
         </div>
       </div>
       <div>
           <div class="uk-padding" style="border-right: 1px solid #e5e5e5;">
-             <div>
-               <img src="assets/images/3.png" alt="" width="60" height="60" style="margin-bottom: 15px;"/>
+             <div class="uk-animation-toggle">
+               <img src="assets/images/3.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             Offering unprecedented custodian service with our industry's first finance transaction license
         </div>
       </div>
       <div>
           <div class="uk-padding">
-             <div>
-               <img src="assets/images/4.png" alt="" width="60" height="60" style="margin-bottom: 15px;"/>
+             <div class="uk-animation-toggle">
+               <img src="assets/images/4.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             Providing a full-spectrum payment processing infrastructure to revolutionise liquidity for your exchange
         </div>

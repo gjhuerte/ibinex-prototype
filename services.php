@@ -20,11 +20,19 @@
   }
   .uk-container h3{
     font-weight: 600;
-    font-size: 250%;
+    font-size: 220%;
   }
   .uk-container p, li{
     font-size: 15px;
   }
+  
+  .uk-container li {
+    margin-bottom: 4%;
+  }
+  .imageleft {
+    margin-left: 2%;
+  }
+  
 </style>
 
 <script>
@@ -41,7 +49,7 @@
       <h3><i>Services</i></h3>
         <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
             <div>
-                <p>Ibinex services are all characterised by high-level innovation made practical for your personalised <br> exchange integration.</p>
+                <p>Ibinex services are all characterised by high-level innovation made practical for your personalised<br> exchange integration.</p>
                 <p>Our ecosystem of services compromises of the following units.</p>  
             </div>
         </div>
@@ -52,10 +60,10 @@
     <div class="uk-container">
         <div class="uk-margin-remove uk-grid-match uk-child-width-1-2@m" uk-grid>
             <div>
-                <img src="http://www.pngmart.com/files/4/Macbook-PNG-Pic.png" style="position: relative; top: 25%;"  alt="macbook">
+                <img src="assets/images/macbook.png" style="position: relative; top: 143px; left: 10%; height: 110%;"  alt="macbook">
             </div>
             <div  style="color: #6B7C93;">
-                <h3 style="color: #2C3135;">Platform</h3>
+                <h3 style="color: #2C3135; margin-bottom: 10px;">Platform</h3>
                 <p>Your exchange is your launchpad. Our suite elevates your exchange by equipping you with your own platform consisting of:</p>
                 <ul class="uk-list uk-list-space" id="pl_list" style="list-style: none;">
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg>  Tailor-made private, institutional while label infrastructure</li>
@@ -67,6 +75,7 @@
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Total compatibility with your own branding deck</li>
                 </ul>
             </div>
+          
         </div>
     </div>
 </div>
@@ -108,13 +117,23 @@
 
 <div class="uk-section uk-section-default white2">
     <div class="uk-container">
-        <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-2@m" uk-grid style="margin-top: -4%;">
             <div style="color: #6B7C93;">
-                <h3 style="color: #2C3135;">Credit Card Processing</h3>
-                <p>We offer full spectrum payment processing for cryptocurrencies, and a<br> complete selection that is unavailable elsewhere. Exchanging your way<br> with Ibinex means experiencing a whole new world of payment<br> options including: credit cards, debit cards, wire transfers, alternative<br> payments, hosted wallets and cold wallets.</p>
+                <h3 style="color: #2C3135; padding-top: 33%;">Credit Card Processing</h3>
+                <p style="margin-bottom: 32%;">We offer full spectrum payment processing for cryptocurrencies, and a complete selection that is unavailable elsewhere. Exchanging your way with Ibinex means experiencing a whole new world of payment options including: credit cards, debit cards, wire transfers, alternative payments, hosted wallets and cold wallets.</p>
+                <p style="margin-top: -30%;">
+                  <img src="assets/images/visa.svg" alt="cards" height="70" width="80">
+                  <img class="imageleft" src="assets/images/master-card.svg" alt="cards" height="70" width="80">
+                  <img class="imageleft" src="assets/images/credit-card.svg" alt="cards" height="70" width="80">
+                  <img class="imageleft" src="assets/images/dinners-club.svg" alt="cards" height="70" width="80">
+                  <br>
+                  <img src="assets/images/american-express.svg" alt="cards" height="70" width="80">
+                  <img class="imageleft" src="assets/images/paypal.svg" alt="cards" height="70" width="80">
+                  <img class="imageleft" src="assets/images/maestro.svg" alt="cards" height="70" width="80">
+                </p>
             </div>
             <div>
-               
+              <p><img src="assets/images/iphonex.png" alt="iphonex" style="margin-bottom: -12%;"></p>
             </div>
         </div>
     </div>

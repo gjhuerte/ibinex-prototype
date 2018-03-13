@@ -1,6 +1,7 @@
 <?php require 'template.php'; ?>
 
 <?php function styles_include(){ ?>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.min.css" />
 <style>
     .uk-grid {
         margin-left: 0;
@@ -84,9 +85,9 @@
         border-radius: 10px;
         margin-top: 3%;
     }
-/*     #exec-item {
+    #exec-item {
         height: 80%;
-        min-height: 30vh;
+        max-height: 100em;
     }
     .exec-data {
         overflow: hidden;
@@ -98,7 +99,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         padding-right: 3%;
-    } */
+    }
     
     #ibx-divider {
         border: none;
@@ -118,8 +119,8 @@
         font-weight: bold;
     }
     #board-list {
-        min-height: 50em;
-        padding: 2% 15% 0 15%;;
+        min-height: 50vh;
+        padding: 2% 15% 5% 15%;;
     }
     .board-members{
         width: 180px;
@@ -160,9 +161,15 @@
         .media-logo:nth-last-child(-n+6) {
             display: none;
         }
+        #exec-title-2 {
+            width: 100%;
+        }
         .exec-half {
             width: 100%;
             margin-left: 0;
+        }
+        #ibx-divider {
+            display: none;
         }
     }
     
@@ -226,8 +233,8 @@
                 nisi ut aliquip ex ea commodo consequat.
             </span>
         </div>
-<!--         <div id="exec-list" class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="">
-                <ul id="exec-item" class="uk-slideshow-items" style="height:100%">
+<!--         <div id="exec-list" class="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow="">
+                <ul id="exec-item" class="uk-slideshow" style="height:100% !important">
                     <li>
                         <div class="exec-data exec-half">
                             <h3 class="exec-name exec-header">Matthew Novinski</h3>
@@ -355,4 +362,5 @@
 <?php } ?>
 
 <?php function scripts_include(){ ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow.min.js"></script>
 <?php } ?>

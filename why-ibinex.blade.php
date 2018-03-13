@@ -30,7 +30,7 @@
 <?php } ?>
 
 <?php function display_content(){ ?>
-<main class="imgHeight">
+<div class="imgHeight">
   <div>
     <div class="uk-section mainPadding">
 
@@ -44,9 +44,9 @@
           </div>
 
     </div>
-    <div class="uk-float-right float-image uk-position-relative">
+<!--     <div class="uk-float-right float-image uk-position-relative">
         <img src="http://farm3.staticflickr.com/2178/3531465579_8bff044e9b_z.jpg?zz=1" alt="" width="255" height="320" />
-    </div>
+    </div> -->
     <div class="uk-section uk-light mainPadding bgcolor padding-top">
 
           <div class="uk-grid-match uk-child-width-1-1" uk-grid>
@@ -85,7 +85,7 @@
      </div>
     </div>
   </div>
-</main>
+</div>
 <?php } ?>
 
 <?php function scripts_include(){ ?>

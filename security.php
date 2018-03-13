@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Ibinex-Security</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+<?php require 'template.php'; ?>
 
+<?php function styles_include(){ ?>
+
+<?php } ?>
+
+<?php function display_title(){ ?>
+Ibinex-Security
+<?php } ?>
+
+<?php function display_content(){ ?>
 <div class="jumbotron text-center">
   <h2><b><i>Security</i></b></h2>
   <h5>
@@ -39,6 +38,7 @@
     We are the first cryptocurrency exchange platform to hold this <br>mantle and offer exclusive payment solutions. As such, we must <br>demonstrate a consistent level of regulatory compliance in order to <br>retain this professional distinction, a title of which we are <br>immensely proud.   
 </div>
   </div>
+
     <div class="uk-section uk-section-muted">
     <div class="uk-container">
 
@@ -63,6 +63,8 @@
     </div>
   </div>
 </div>
+<?php } ?>
 
-</body>
-</html>
+<?php function scripts_include(){ ?>
+
+<?php } ?>

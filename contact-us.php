@@ -7,7 +7,7 @@
   .intro-text{
     color: #708090;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   .container{
     padding: 130px 30px 20px 200px;
@@ -115,10 +115,10 @@ box-shadow: -1px 3px 8px -2px rgba(0,0,0,0.15);
                     learn about in more detail on the Pricing page, but essentially consists of 3 steps:
                   </p>
 
-                  <ul class="uk-list uk-list-bullet intro-text">
-                    <li>Local Escrow deposit (reserve only, no payment)</li>
-                    <li>Letter of Intent</li>
-                    <li>Proof of Escrow deposit</li>
+                  <ul class="uk-list intro-text">
+                    <li><span><img src="https://png.icons8.com/color/50/000000/ok.png" width="20px" height="20px"></span>&nbsp &nbsp Local Escrow deposit (reserve only, no payment)</li>
+                    <li><span><img src="https://png.icons8.com/color/50/000000/ok.png" width="20px" height="20px"></span>&nbsp &nbsp Letter of Intent</li>
+                    <li><span><img src="https://png.icons8.com/color/50/000000/ok.png" width="20px" height="20px"></span>&nbsp &nbsp Proof of Escrow deposit</li>
                   </ul>
 
                   <p class="intro-text">

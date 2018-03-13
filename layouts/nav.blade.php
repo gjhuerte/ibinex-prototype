@@ -127,35 +127,35 @@
         <ul class="uk-navbar-nav">
       
             <li class="uk-navbar-text-blue">
-              <a href="">
+              <a href="index.php">
                 <div class="uk-navbar-text-blue">
                   Home
                 </div>
               </a>
             </li>
             <li class="uk-navbar-text-blue">
-              <a href="">
+              <a href="pricing.php">
                 <div class="uk-navbar-text-blue">
                   Pricing
                 </div>
               </a>
             </li>
             <li class="uk-navbar-text-blue">
-              <a href="">
+              <a href="services.php">
                 <div class="uk-navbar-text-blue">
                   Services
                 </div>
               </a>
             </li>
             <li class="uk-navbar-text-blue">
-              <a href="">
+              <a href="about.php">
                 <div class="uk-navbar-text-blue">
                   About Us
                 </div>
               </a>
             </li>
             <li class="uk-navbar-text-blue">
-              <a href="">
+              <a href="security.php">
                 <div class="uk-navbar-text-blue">
                   Security
                 </div>
@@ -169,7 +169,7 @@
               </a>
             </li>
             <li class="uk-navbar-text-blue">
-              <a href="">
+              <a href=contact-us.php"">
                 <div class="uk-navbar-text-blue">
                   Contact Us
                 </div>

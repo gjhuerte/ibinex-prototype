@@ -64,10 +64,31 @@
   }
   
   @media only screen and (max-width : 480px) {
-    .mainPadding{
-    padding-left: 5%;
-    padding-right: 0;
-  }
+      .mainPadding{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+      .title-section2 {
+      display: grid;
+      text-align: left;
+    }
+      .section2-text{
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      display: grid;
+    } 
+    .text-padding{
+      padding-left: 0!important;
+      border-right: 0px solid!important;
+    } 
+    .text-border{
+      padding-left: 0!important;
+      border-right: 0px solid!important;
+    } 
+      .text2{
+      text-align: left;
+    } 
+  
   }
 </style>
 <?php } ?>
@@ -94,25 +115,25 @@
       <p>Our strategy is underpinned by the 4 core strengths of Ibinex:</p>
     </div>
     <div class="section2-text mainPadding" style="border-bottom: 1px solid #e5e5e5;">
-       <div class="text" style="padding-right: 15%; border-right: 1px solid #e5e5e5;">
+       <div class="text text-border" style="padding-right: 15%; border-right: 1px solid #e5e5e5;">
              <div class="uk-animation-toggle">
                <img src="assets/images/1.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             Commitment to technological innovation, through out patent-pending proprietary software, Cryptobridge<sup>TM</sup>
         </div>
-        <div class="text" style="padding-left: 15%;">
+        <div class="text text-padding" style="padding-left: 15%;">
             <div class="uk-animation-toggle">
                <img src="assets/images/2.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             Trailblazing of complete and customisable white label platform solutions
         </div>
-        <div class="text" style="padding-right: 15%; border-right: 1px solid #e5e5e5;  padding-bottom: 5%;">
+        <div class="text text-border" style="padding-right: 15%; border-right: 1px solid #e5e5e5;  padding-bottom: 5%;">
              <div class="uk-animation-toggle">
                <img src="assets/images/3.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             Offering unprecedented custodian service with our industry's first finance transaction license
         </div>
-        <div class="text"  style="padding-left: 15%; padding-bottom: 5%;">
+        <div class="text text-padding"  style="padding-left: 15%; padding-bottom: 5%;">
              <div class="uk-animation-toggle">
                <img src="assets/images/4.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>

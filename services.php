@@ -10,32 +10,35 @@
   .red h3{
     color: #FEFEFD;
     text-align: center;
+    font-weight: 500;
   }
   .red p{
     text-align: center;
   }
-  .uk-section-muted {
-    height: 10%;
+  .grey2 {
+    padding-bottom: -35%;
   }
-  li:before {
-  content: "\f058";
-  font-family: FontAwesome;
-  display: inline-block;
-  margin-left: -1.3em; 
-  width: 1.3em; 
-  color: #12D5B8;
-}
+  .uk-container h3{
+    font-weight: 600;
+    font-size: 250%;
+  }
+  .uk-container p, li{
+    font-size: 15px;
+  }
 </style>
+
+<script>
+</script>
 <?php } ?>
 
 <?php function display_title(){ ?>
-  Services
+  Services - Ibinex
 <?php } ?>
 
 <?php function display_content(){ ?>
 <div class="uk-section uk-section-default red" style="background-color: #C11722;">
     <div class="uk-container">
-        <h3>Services</h3>
+      <h3><i>Services</i></h3>
         <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
             <div>
                 <p>Ibinex services are all characterised by high-level innovation made practical for your personalised <br> exchange integration.</p>
@@ -45,88 +48,87 @@
     </div>
 </div>
 
-<div class="uk-section uk-section-muted" style="background-color: #F7F7F7; max-height: 200em;">
+<div class="uk-section uk-section-muted grey1" style="background-color: #F7F7F7;">
     <div class="uk-container">
-        
-        <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+        <div class="uk-margin-remove uk-grid-match uk-child-width-1-2@m" uk-grid>
             <div>
-                <img src="http://www.pngmart.com/files/4/Macbook-PNG-Pic.png" width="392" height="210" alt="macbook">
+                <img src="http://www.pngmart.com/files/4/Macbook-PNG-Pic.png" style="position: relative; top: 25%;"  alt="macbook">
             </div>
-            <div>
-                <h3 class="">Platform</h3>
-                <p>Your exchange is your launchpad. Our suite elevates your exchange by<br> equipping you with your own platform consisting of:</p>
-                <ul id="pl_list" style="list-style: none;">
-                  <li> Tailor-made private, institutional while label infrastructure</li>
-                  <li> Fully-customisable front-end website</li>
-                  <li> Completely integrated web-based trading platform</li>
-                  <li> Flexible front-end user trading</li>
-                  <li> Performance-driven features</li>
-                  <li> Secure private cloud hosting</li>
-                  <li> Total compatibility with your own branding deck</li>
+            <div  style="color: #6B7C93;">
+                <h3 style="color: #2C3135;">Platform</h3>
+                <p>Your exchange is your launchpad. Our suite elevates your exchange by equipping you with your own platform consisting of:</p>
+                <ul class="uk-list uk-list-space" id="pl_list" style="list-style: none;">
+                  <li><span uk-icon="check" style="color: #11D1B5;"></span> Tailor-made private, institutional while label infrastructure</li>
+                  <li><span uk-icon="check" style="color: #11D1B5;"></span> Fully-customisable front-end website</li>
+                  <li><span uk-icon="check" style="color: #11D1B5;"></span> Completely integrated web-based trading platform</li>
+                  <li><span uk-icon="check" style="color: #11D1B5;"></span> Flexible front-end user trading</li>
+                  <li><span uk-icon="check" style="color: #11D1B5;"></span> Performance-driven features</li>
+                  <li><span uk-icon="check" style="color: #11D1B5;"></span> Secure private cloud hosting</li>
+                  <li><span uk-icon="check" style="color: #11D1B5;"></span> Total compatibility with your own branding deck</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
 
-<div class="uk-section uk-section-default">
+<div class="uk-section uk-section-default white1">
     <div class="uk-container">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
             <div>
-                <h3>CRM/Back Office</h3>
+                <h3 style="color: #2C3135;">CRM/Back Office</h3>
                 <p>The Ibinex solution unites the front-end and platform with a full black<br> office suit including CRM with:</p>
-                <ul id="pl_list" style="list-style: none;">
-                  <li> KYC/AML documentation collection</li>
-                  <li> Documentation verification</li>
-                  <li> Account and money management</li>
-                  <li> Optimised back-office administrative workflow</li>
-                  <li> Enhanced UI/UX</li>
+                <ul class="uk-list uk-list-space" id="pl_list" style="list-style: none;">
+                  <li><span uk-icon="check" style="color: #11D1B5;"></span> KYC/AML documentation collection</li>
+                  <li><span uk-icon="check" style="color: #11D1B5;"></span> Documentation verification</li>
+                  <li><span uk-icon="check" style="color: #11D1B5;"></span> Account and money management</li>
+                  <li><span uk-icon="check" style="color: #11D1B5;"></span> Optimised back-office administrative workflow</li>
+                  <li><span uk-icon="check" style="color: #11D1B5;"></span> Enhanced UI/UX</li>
                 </ul>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>(IMAGE HERE)</p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="uk-section uk-section-primary uk-light" style="background: #142C5C; background: linear-gradient(to right, #142C5C , #134093);">
+<div class="uk-section uk-section-primary uk-light gradient" style="background: #142C5C; background: linear-gradient(to right, #142C5C , #134093);">
     <div class="uk-container">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>(IMAGE HERE)</p>
             </div>
             <div>
                 <h3>CryptoBridge&trade;</h3>
-                <p>Aggregate elite exchanges and indexes as the cryptocurrency market<br> moves, with out patent-pending proprietary software suite, Crypto-<br> Bridge&trade;. Gain access to 60 premier exchanges for maximum liquidity<br> cryptocurrencies, all available only through CryptoBridge&trade; by Ibinex.</p>
+                <p>Aggregate elite exchanges and indexes as the cryptocurrency market moves, with out patent-pending proprietary software suite, CryptoBridge&trade;. Gain access to 60 premier exchanges for maximum liquidity cryptocurrencies, all available only through CryptoBridge&trade; by Ibinex.</p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="uk-section uk-section-default">
+<div class="uk-section uk-section-default white2">
     <div class="uk-container">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
-            <div>
-                <h3>Credit Card Processing</h3>
+            <div style="color: #6B7C93;">
+                <h3 style="color: #2C3135;">Credit Card Processing</h3>
                 <p>We offer full spectrum payment processing for cryptocurrencies, and a<br> complete selection that is unavailable elsewhere. Exchanging your way<br> with Ibinex means experiencing a whole new world of payment<br> options including: credit cards, debit cards, wire transfers, alternative<br> payments, hosted wallets and cold wallets.</p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+               
             </div>
         </div>
     </div>
 </div>
 
-<div class="uk-section uk-section-muted" style="background-color: #F7F7F7; max-height: 200em;">
+<div class="uk-section uk-section-muted grey2" style="background-color: #F7F7F7; max-height: 200em;">
     <div class="uk-container">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
             <div>
-                
+                <p>(IMAGE HERE)</p>
             </div>
-            <div>
-                <h3 class="">Custodian Accoounts</h3>
-                <p>Another first sees Ibinex leading the way as the world's first cryptocurrency<br> exchange with a finance transaction license. We are proud to be the first to offer<br> you:</p>
+            <div style="color: #6B7C93;">
+                <h3 style="color: #2C3135;">Custodian Accounts</h3>
+                <p>Another first sees Ibinex leading the way as the world's first cryptocurrency exchange with a finance transaction license. We are proud to be the first to offer you:</p>
                 <p>Fully-compliant and licensed custodian proceeding and accounts</p>  
                 <p>The choice to instead select a custodian of your choice</p>
                 <p>Payments via swipe-and-transmit from FIAT to base currency</p>
@@ -138,5 +140,5 @@
 <?php } ?>
 
 <?php function scripts_include(){ ?>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 <?php } ?>

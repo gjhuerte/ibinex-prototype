@@ -18,9 +18,8 @@
 
   .header-image {
     background-size: cover;
-    background-position: center center;
-/*     background-image: url(assets/images/suspension-bridge.png); */
-    background-image: url(https://images.pexels.com/photos/417236/pexels-photo-417236.jpeg?w=1920&h=1080&auto=compress&cs=tinysrgb);
+    background-position: left center;
+    background-image: url(assets/images/bridge.png);
     filter: grayscale(100%) brightness(70%);
     grid-column: 1 / -1;
     grid-row: 1 / -1;
@@ -40,7 +39,7 @@
     grid-column: 2 / span 2;
     grid-row: 2 / span 1;
     z-index: 2;
-    padding: 10% 0 10% 15%;
+    padding: 15% 0 10% 15%;
   }
   .header-container.header-text p, 
   .header-container.header-text h1, 
@@ -78,7 +77,7 @@
     grid-row: 2 / span 1;
     z-index: 3;
     display: grid;
-    grid-template-columns 2fr 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: 1fr auto;
     padding: 0 0 2rem 2rem;
   }
@@ -90,27 +89,81 @@
     outline: none;
     color: white;
     padding: 12px 8px 12px 8px;
-    font-size: 0.5rem;
-    font-weight: 600;
+    font-size: 0.55rem;
+    font-weight: 500;
     margin: 0;
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
+    line-height: 10px;
+    border-radius: 0 5px 5px 0;
+   
   }
   .header-input > input {
     background-color: white;
     color: black;
     grid-column: 1 / span 1;
+    border-radius: 5px 0 0 5px;
     
+  }
+ 
+
+
+@media only screen and (min-width: 768px) and (max-width : 1024px) {
+/* For tablet: */
+  #nusku-header {
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+/* For mobile: */
+  #nusku-header {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .header-container.header-text {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    padding: 20px;
+    padding-top: 5rem;
+  }
+  .header-input {
+    grid-column: 1 / -1; 
+    grid-row: 2 / span 1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 0;
+  }
+   
+  .header-input > input,
+  .header-container.red-border {
+    display: none;
   }
   
-  .header-input > input::placeholder {
-    
-   
+  .header-input > button {
+    grid-column: 1 / span 1; 
+    font-size: 0.9rem;
+    padding: 18px 10px 18px 10px;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    border-radius: 5px;
   }
-
-
-@media only screen and (max-width: 768px) {
-/* For mobile phones: */     
+  
+  .header-container.header-text h1 {
+    font-size: 2rem;
+  }
+  
+    .header-container.header-text h2 {
+    font-size: 1.9rem;
+  }
+  
+  .header-container.header-text p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+  }
+  .header-image {
+    background-position: 80% 0%;
 }
   
 </style>
@@ -130,13 +183,13 @@
     <div class="header-container header-text">
       <h2>Introducing</h2>
       <h1>CryptoBridge<span>TM</span></h1>
-      <p>Our patent-pending proprietary software. CryptoBridge, is the nexus that aggregates premier cryptocurrency exchanges and indexes for your customers, in real-time</p>
+      <p>Our patent-pending proprietary software. CryptoBridge, is the nexus that aggregates premier cryptocurrency exchanges and indexes for your customers, in real-time.</p>
       <p>The CryptoBridge algorithm benefits your customers by showing them a unique combination of the best and most select cryptocurrency exchanges and most attractive live prices-only available via the ibinex trading platform.</p>
     </div>
     
     <div class="header-input">
       <input type="text" placeholder="Type your email">
-      <button>REQUEST A DEMO</button>
+      <button class="uk-button uk-button-danger uk-button-small">REQUEST A DEMO</button>
     </div>
     
 

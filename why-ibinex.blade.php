@@ -16,14 +16,56 @@
   }
   
   .section1st{
-    padding-top: 5%;
-    grid-template-rows: auto;
+    display: grid;
+    padding-top: 3%;
+    grid-template-rows: 0.6fr 0.4fr 0.4fr 0.3fr;
+    grid-template-columns: 1fr 1.7fr 1.3fr 0.7fr 0.3fr;
+  }
+  .section1st-text1{
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-row: 1 / 3;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+
+  }
+  .section1st-text1 .header-section{
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  .subgrid-text{
+    grid-row: 2;
+    font-size: 0.8em;
+  }
+
+  .section1st-text2{
+    display: grid;
+    grid-column: 1 / span 5;
+    grid-row: 3 / span 2;
+    grid-template-columns: 1fr 1.7fr 1.3fr 1fr;
+  }
+
+  .section1st-data{
+    grid-column: 2;
+    grid-row: 3 / -1;
+  }
+  .section1st-data p{
+    font-size: 0.8em
+  }
+  
+  .pageImage{
+
+/*     display: inline-block; */
+    grid-row: 2 / span 2;
+    grid-column: 3 / span 2;
+    align-self: center;
+    transform: translate(0, -20px);
   }
   
   .section2{
      padding-top: 5%;
      grid-template-rows: auto;
-    display: grid;
+     display: grid;
      padding-bottom: 5%;
   }
   
@@ -42,6 +84,9 @@
   .section2-text .text {
      padding-top: 10%;
   } 
+  .header-section{
+    font-weight: 800;
+  }
   
   .header-section,
   .section2-text2{
@@ -68,6 +113,42 @@
       padding-left: 5%;
       padding-right: 5%;
     }
+    .section1st {
+      grid-template-rows: 2fr 8rem 2fr;
+      grid-template-columns: 1fr;
+      display: grid;
+    }
+    .section1st-text1 {
+      grid-template-columns: auto;
+      display: grid;
+      grid-row: 1;
+      grid-column: auto;
+      margin: 0 5% 0;
+    }
+    .section1st-text2{
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    grid-template-columns: 1fr;
+    padding: 115px 5% 0;
+  }
+
+  .section1st-data{
+    grid-column: 1;
+    grid-row: 1;
+  }
+    .bgcolor{
+/*     background-color: #142c5a; */
+    background: linear-gradient(to right, #142c5a , #134093);
+  }
+    .pageImage{
+
+/*     display: inline-block; */
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+    transform: translate(0, 52px);
+  }
       .title-section2 {
       display: grid;
       text-align: left;
@@ -100,14 +181,15 @@
 <?php function display_content(){ ?>
 <div class="main-grid">
   <div class="section1st">
-    <div class="display mainPadding">
+    <div class="display section1st-text1">
        <h2 class="header-section">We fuse innovation with accessibility as blockchain technology evolves</h2>
-       <p>We seek to revolutionise the way that exchange owners create their platforms and raise the standard of marketplace excellence by incorporating our cutting-edge technology, delivered with practicality and a host of unique benefits, only enjoyed by merging with the ibinex ecosystem.</p>
+       <p class="subgrid-text">We seek to revolutionise the way that exchange owners create their platforms and raise the standard of marketplace excellence by incorporating our cutting-edge technology, delivered with practicality and a host of unique benefits, only enjoyed by merging with the ibinex ecosystem.</p>
     </div>
-    <div class="display mainPadding bgcolor uk-light" style="padding-bottom: 3%;">
-      <h2 class="header-section">We are an ecosystem with vision</h2>
-      <p>As the gateway to your own customisable cryptocurrency ecosystem, our vision is to equip you with the tools to create and operate your cryptocurrency exvhange, your way.</p>
+    <div class="display bgcolor uk-light section1st-text2">
+      <div class="section1st-data"><h2 class="header-section">We are an ecosystem with vision</h2>
+      <p>As the gateway to your own customisable cryptocurrency ecosystem, our vision is to equip you with the tools to create and operate your cryptocurrency exvhange, your way.</p></div>
     </div>
+    <div  class="pageImage"><img src="assets/images/whyimg.png" alt=""></div>
   </div>
   <div class="section2">
     <div class="title-section2 mainPadding">

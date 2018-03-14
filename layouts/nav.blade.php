@@ -311,9 +311,9 @@
           </div>
         </a>
       </li>
-      <li>
+      <li class="uk-navbar-text-blue">
         <a href="why-ibinex.blade.php">
-          <div>
+          <div class="uk-navbar-text-blue">
             Why Ibinex
           </div>
         </a>

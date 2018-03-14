@@ -6,6 +6,14 @@
     .uk-grid {
         margin-left: 0;
     }
+    #banner-title, #banner-content {
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    #media-title, #exec-title-2, #board-title {
+        color: #1A1A1A;
+        font-family: system-ui;
+    }
+    
     #ibx-banner {
         box-sizing: border-box;
         min-height : 50vh;
@@ -13,6 +21,7 @@
     }
     #banner-img{
         order: 0;
+        width: 45%;
         overflow: hidden;
         background-size: cover;
         background-position: center;
@@ -24,9 +33,13 @@
     }
     #banner-content{
         order: 1;
+        width: 55%;
         background-color : #112B56;
         color: white;
+        font-size: 80%;
+        font-weight: 500;
         text-align: justify;
+        line-height: 150%;
         padding: 8% 18% 8% 6%;
     }
     
@@ -34,7 +47,6 @@
         text-align: center;
     }
     #media-title {
-        color: #1A1A1A;
         font-weight: bold;
         padding-top: 8%;
     }   
@@ -70,7 +82,7 @@
         font-weight: 600;
     }
     #exec-title-2 {
-        width: 50%;
+        width: 55%;
         font-weight: bold;
         padding-bottom: 1%;
     }
@@ -152,10 +164,12 @@
         }
         #banner-content{
             order: 0;
+            width: 100%;
             padding:2% 5%;
         }
         #banner-img{
             order: 1;
+            width: 100%;
             min-height: 20em;
         }
         .media-logo:nth-last-child(-n+6) {
@@ -183,7 +197,7 @@
 <?php function display_content(){ ?>
 <div id="ibx-banner" class="uk-grid">
     <div id="banner-content" class="uk-width-3-5">
-        <h2 id="banner-title">Transparency</h2>
+        <h3 id="banner-title">Transparency</h3>
         <p>
             Ibinex is a collaboration of pioneers. With decades of combined experience within the finance, 
             technology, cyber security and SaaS worlds, today we are proud to work with over 60 of the leading
@@ -278,7 +292,7 @@
                 <a class="uk-position-top-right uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
                 <a class="uk-position-top-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
             </div> -->
-<!--             <div class="uk-slidenav-position" data-uk-slideshow="">
+            <div class="uk-slidenav-position" data-uk-slideshow="">
                 <ul class="uk-slideshow">
                     <li data-uk-slideshow-item="0">
                       <img src="https://download.unsplash.com/photo-1414446483597-8d8f792bfe39">
@@ -310,7 +324,7 @@
                 </ul>
                 <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
                 <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
-            </div> -->
+            </div>
     </div>
     <div id="ibx-board">
         <hr id="ibx-divider"/>

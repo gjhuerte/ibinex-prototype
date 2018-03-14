@@ -3,11 +3,14 @@
 <?php function styles_include(){ ?>
 <style>
  
-  
+  .contact-us-background{
+    background-image: url(https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+    background-size: cover;
+    background-position: 50% 50%
+  }
   .text-holder{
-    max-width: 58%;
-    margin-top:10%;
-    padding-left:10%;
+    max-width: 54%;
+    margin-top:26%;
   }
   
   .right{
@@ -28,10 +31,9 @@
   
   .bottom-text-left{
     padding-bottom:50px;
-    max-width:480px;
+    max-width:565px;
     float:right;
-    border: 1px solid black;
-    padding-top:50px;
+    padding-top:77px;
     font-size: 0.9em;
     font-weight:500;
   }
@@ -59,123 +61,18 @@
   .ext{
     background-color: #b71c1c;
     height:10vh;
-    margin-top: -10%;
+    border: 1px solid black;
   }
   
-  /*
+
   
-  @media only screen and (max-width: 1024px) and (max-height: 1366px){
-    .right{
-      height:40vh;
-      background-color: #b71c1c;
-      position:relative;
-    }
-  }
-  
-  @media only screen and (max-width: 768px) and (max-height: 1024px){
-    .right{
-      height:60vh;
-      background-color: #b71c1c;
-      position:relative;
-    }
-    
-    .white-form{
-      position:absolute;
-      width:50%;
-      background-color: whitesmoke;
-      margin-left:20%;
-      margin-top:-20%;
-      padding:5%;
-    }
-    
+  @media only screen and (max-width: 768px){
     .text-holder{
-    max-width: 100%;
-    margin-top:10%;
-    padding-left:10%;
-    padding-bottom:10%;
+    padding-top:10%;
+    max-width: 80%;
     }
   }
   
-   @media only screen and (max-width: 375px) and (max-height: 812px){
-    .white-form{
-      position:absolute;
-      width:50%;
-      background-color: whitesmoke;
-      margin-left:20%;
-      margin-top:-10%;
-      padding:5%;
-    }
-     
-     .text-holder{
-        max-width: 100%;
-        margin-top:10%;
-        padding-left:10%;
-      }
-     
-     
-     .bottom-text-left{
-        padding-bottom:150px;
-        max-width:480px;
-        float:right;
-        border: 1px solid black;
-        padding-top:50px;
-        font-size: 0.9em;
-        font-weight:500;
-      }
-     
-     .right{
-      height:70vh;
-      background-color: #b71c1c;
-      position:relative;
-    }
-     
-     
-  }
-  
-  @media only screen and (max-width: 414px) and (max-height: 736px){
-    .white-form{
-      position:absolute;
-      width:50%;
-      background-color: whitesmoke;
-      margin-left:20%;
-      margin-top:-30%;
-      padding:5%;
-    }
-     
-     .text-holder{
-        max-width: 100%;
-        margin-top:10%;
-        padding-left:10%;
-      }
-    
-    .bottom-text-left{
-        padding-bottom:150px;
-        max-width:480px;
-        float:right;
-        border: 1px solid black;
-        padding-top:50px;
-        font-size: 0.9em;
-        font-weight:500;
-      }
-  }
-  
-  
-  @media only screen and (max-width: 375px) and (max-height: 667px){
-    .right{
-      height:70vh;
-      background-color: #b71c1c;
-      position:relative;
-    }
-  }
-  
-   @media only screen and (max-width: 412px) and (max-height: 732px){
-    .right{
-      height:70vh;
-      background-color: #b71c1c;
-      position:relative;
-    }
-  }
-  */
   
   
 </style>
@@ -188,7 +85,7 @@
 <?php function display_content(){ ?>
 
 <div class="uk-section-default">
-    <div class="uk-section uk-background-cover" style="background-image: url(https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?w=940&h=650&auto=compress&cs=tinysrgb)">
+    <div class="uk-section uk-background-cover contact-us-background">
         <div class="uk-container">
               
             <div class="uk-grid-match uk-child-width-1@m" uk-grid>
@@ -267,7 +164,9 @@
                     </div>
                   
               </form>
+             
         </div>
+        
       
             
     </div>

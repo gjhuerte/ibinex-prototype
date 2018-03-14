@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Lato', sans-serif;
 }
 
   #nusku-header {
@@ -106,6 +106,48 @@
     
   }
   
+  #nusku-video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+  #nusku-video-title {
+    color: #1A1A1A;
+    font-weight: bold;
+    padding-top: 7%;
+    background: white;
+    transform: translateX(-55px);
+  }
+  
+  #nusku-video-p {
+    line-height: 300px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  #nusku-video-cov {
+    text-align: center;
+    padding: 70px 0;
+    transform: translateX(55px);
+    z-index: 99;
+  }
+  
+  
+  nusku-video-content {
+    grid-column: 2;
+    vertical-align: middle;
+    line-height: 90px;
+  }
+  
+  .video-img {
+    box-shadow: 0 15px 69px -14px black;
+  }
+  
   #nusku-intro {
     box-sizing: border-box;
     min-height: 50vh;
@@ -115,7 +157,8 @@
   }
   
   #intro-title {
-    font-weight: bold;
+    font-weight: 900;
+    font-family: 'Arial';
   }
   
   #intro-img {
@@ -129,11 +172,21 @@
 
   #intro-content {
     order: 1;
-    padding: 8% 18% 8% 6%;
+    padding: 10% 12% 12% 3%;
   }
   
   #feature-header {
-    font-weight: bold;
+    font-weight: 900;
+    font-family: 'Arial';
+  }
+  
+  #feature-header2 {
+    font-weight: 900;
+    font-family: 'Arial';
+  }
+  
+  #feature-p {
+    padding-top: 8%;
   }
   
   #legal-p {
@@ -150,7 +203,22 @@
     
   }
   
+  #legal-btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #1a7182;
+    font-size: 9px;
+    font-weight: bold;
+    background: #12d5b7;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    transform: translatex(10px);
+  }
+  
   #nusku-media {
+    
   }
   
   #nusku-media-title {
@@ -200,11 +268,11 @@
   }
   
 .border1 {
-  border-right: 1px solid #aaa;  
+  border-right: 1px solid #f8f8f8;  
 }
   
 .border2 {
-  border-bottom: 1px solid #aaa;  
+  border-bottom: 1px solid #f8f8f8;  
 }
   
 .uk-text-center1 {
@@ -213,11 +281,16 @@
   
 .coolors {
     color: #203771;
-    font-weight: bold;
+    font-weight: 900;
+    font-size: 22px;
 }
   
   .uk-grid1 {
     margin-left: 0;
+  }
+  
+  .uk-padding1 {
+    padding: 15px;
   }
   
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
@@ -278,6 +351,83 @@
     font-weight: 500;
     text-align: justify;
   }
+  
+  #nusku-video {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+  #nusku-video-title {
+    color: #1A1A1A;
+    font-weight: bold;
+    padding-top: 7%;
+    background: #f7f8fa;
+    transform: translateX(0);
+    padding-bottom: 10%;
+  }
+  
+  #nusku-video-p {
+    line-height: 0;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  #nusku-video-cov {
+    text-align: center;
+    padding: 70px 0;
+    transform: translateX(0);
+    z-index: 99;
+  }
+  
+  
+  nusku-video-content {
+    grid-column: 2;
+    vertical-align: middle;
+    line-height: 90px;
+  }
+  
+  .video-img {
+    box-shadow: 0 0px 0px 0px white;
+  }
+  
+  #legal-p {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15%;
+  }
+  
+  #feature-header {
+    font-weight: bold;
+    padding: 20% 0% 0% 0%;
+    font-weight: 900;
+    font-family: 'Arial';
+  }
+  
+  #feature-header2 {
+    font-weight: bold;
+    padding: 0% 0% 0% 0%;
+    font-weight: 900;
+    font-family: 'Arial';
+  }
+  
+  #feature-p {
+    padding-top: 0%;
+  }
+  
+  #legal-h2 {
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Arial';
+    padding: 0% 5% 10% 5%;
+  }
+  
   .header-image {
     background-position: 80% 0%;
 }
@@ -287,12 +437,19 @@
         }
         #intro-content{
             order: 0;
-            padding:2% 16%;
+            padding: 20% 0% 0% 0%;
         }
         #intro-img{
             order: 1;
             min-height: 20em;
         }
+  
+        #intro-title {
+            font-weight: 900;
+            font-family: 'Arial';
+            padding: 0% 7% 0% 0%;
+        }
+  
         .intro-padding{
             padding-bottom: 3%;
         }
@@ -303,6 +460,10 @@
 
         .border2 {
           border-bottom: 0;  
+        }
+  
+        .uk-padding1 {
+          padding: 15px;
         }
         
     }
@@ -349,12 +510,12 @@
       
     <div>
         <h2 id="feature-header" class="uk-text-center padding1">Exchange your Way with Ibinex.</h2>
-        <h2 id="feature-header" class="uk-text-center uk-text-center1">Your Turn-Key Solution Includes:</h2>
+        <h2 id="feature-header2" class="uk-text-center uk-text-center1">Your Turn-Key Solution Includes:</h2>
       
         <div class="uk-section padding padding1 uk-grid-collapse uk-child-width-1-2@s uk-grid-match" uk-grid>
             <div>
                 
-                <div class="uk-padding border1 border2 uk-text-left" >
+                <div class="uk-padding1 border1 border2 uk-text-left" >
                    <img src="assets/images/picture1.png" class="">
                    <h3 class="coolors uk-margin-remove-top">
                       Tailored Front End content website
@@ -365,12 +526,12 @@
                 </div>
             </div>
             <div>
-                <div class="uk-padding border2">
+                <div class="uk-padding1 border2">
                    <img src="assets/images/picture2.png" class="">
                    <h3 class="coolors uk-margin-remove-top">
                       Full CRM &amp; Back Office Solution
                    </h3>
-                  <p>
+                  <p id="feature-p">
                     The Ibinex ecosystem assimilates a complete Customer Relationship Management (CRM) as a complement to your web based exchange platform. This includes KYC/AML documentation collection and verification, and account &amp; money management. The result is an effortless back office administration workflow and smooth UI/UX for your customers.
                   </p>
                 </div>
@@ -379,7 +540,7 @@
       
         <div class="uk-section padding uk-grid-collapse uk-child-width-expand@s uk-grid-match" uk-grid>
             <div>
-                <div class="uk-padding border1 border2">
+                <div class="uk-padding1 border1 border2">
                    <img src="assets/images/picture4.png" class="">
                    <h3 class="coolors uk-margin-remove-top">
                       Aggregated Liquidity Exchange
@@ -390,7 +551,7 @@
                 </div>
             </div>
             <div>
-                <div class="uk-padding border2">
+                <div class="uk-padding1 border2">
                     <img src="assets/images/picture3.png" class="">
                     <h3 class="coolors uk-margin-remove-top">
                       Complete Processing solution
@@ -404,7 +565,7 @@
       
         <div class="uk-section padding uk-grid-collapse uk-child-width-expand@s uk-grid-match" uk-grid>
             <div>
-                <div class="uk-padding border1">
+                <div class="uk-padding1 border1">
                     <img src="assets/images/picture5.png" class="">
                     <h3 class="coolors uk-margin-remove-top">
                       Compliant Banking Custodian service
@@ -415,7 +576,7 @@
                 </div>
             </div>
             <div>
-                <div class="uk-padding">
+                <div class="uk-padding1">
                     <img src="assets/images/picture6.png" class="">
                     <h3 class="coolors uk-margin-remove-top">
                       Hosted in a secure private cloud environment
@@ -428,38 +589,55 @@
         </div>
     </div>
 
+    <div id="nusku-video" class="uk-background-muted padding">
+        <div id="nusku-video-cov">
+            <img src="assets/images/video.png" class="video-img">
+        </div>
+        <div id="nusku-video-title">
+          <h2 id="nusku-video-p">
+            Our <span>vision.</span>
+          </h2>
+      </div>
+    </div>
+
     <div>
         <p id="legal-p">Learn more about Ibinex</p>
-        <h2 id="legal-h2">Technical Papers &amp; Legal Circular</h2>
+        <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
         <div class="uk-text-center media-padding" uk-grid>
             <div class="uk-width-1-3 uk-padding-remove">
                 <div class="uk-padding-remove">
                     <img src="assets/images/brochure1.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
                 <div class="uk-card uk-card-body uk-padding-remove">
                     <img src="assets/images/brochure2.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
                 <div class="uk-card uk-card-body uk-padding-remove">
                     <img src="assets/images/brochure3.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
                 <div class="uk-card uk-card-body uk-padding-remove">
                     <img src="assets/images/brochure4.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
                 <div class="uk-card uk-card-body uk-padding-remove">
                     <img src="assets/images/brochure5.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
                 <div class="uk-card uk-card-body uk-padding-remove">
                     <img src="assets/images/brochure6.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 
 <?php function styles_include(){ ?>
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 <style>
   .red {
     color: #FEFEFD;
@@ -32,7 +32,6 @@
   .imageleft {
     margin-left: 2%;
   }
-  
 </style>
 
 <script>
@@ -46,9 +45,9 @@
 <?php function display_content(){ ?>
 <div class="uk-section uk-section-default red" style="background-color: #C11722;">
     <div class="uk-container">
-      <h3><i>Services</i></h3>
+      <h3 class="uk-animation-fade"><i>Services</i></h3>
         <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
-            <div>
+            <div class="uk-animation-slide-bottom">
                 <p>Ibinex services are all characterised by high-level innovation made practical for your personalised<br> exchange integration.</p>
                 <p>Our ecosystem of services compromises of the following units.</p>  
             </div>
@@ -59,11 +58,11 @@
 <div class="uk-section uk-section-muted grey1" style="background-color: #F7F7F7;">
     <div class="uk-container">
         <div class="uk-margin-remove uk-grid-match uk-child-width-1-2@m" uk-grid>
-            <div>
-                <img src="assets/images/macbook.png" style="position: relative; top: 143px; left: 10%; height: 110%;"  alt="macbook">
+            <div class="uk-margin">
+                <img class="" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="position: relative; top: 26%; height: 107%; margin-left: 10%;" alt="macbook">
             </div>
-            <div  style="color: #6B7C93;">
-                <h3 style="color: #2C3135; margin-bottom: 10px;">Platform</h3>
+            <div class="uk-margin" style="color: #6B7C93; margin-bottom: -5%; margin-left: -6%;">
+                <h3 class="uk-margin-xlarge-top" style="color: #2C3135; margin-bottom: 10px;">Platform</h3>
                 <p>Your exchange is your launchpad. Our suite elevates your exchange by equipping you with your own platform consisting of:</p>
                 <ul class="uk-list uk-list-space" id="pl_list" style="list-style: none;">
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg>  Tailor-made private, institutional while label infrastructure</li>
@@ -81,10 +80,10 @@
 </div>
 
 <div class="uk-section uk-section-default white1">
-    <div class="uk-container">
-        <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
-            <div>
-                <h3 style="color: #2C3135;">CRM/Back Office</h3>
+    <div class="uk-container uk-margin">
+        <div class="uk-grid-match uk-child-width-1-2@m uk-margin-xlarge-top" uk-grid>
+            <div class="">
+                <h3 class="" style="color: #2C3135;">CRM/Back Office</h3>
                 <p>The Ibinex solution unites the front-end and platform with a full black<br> office suit including CRM with:</p>
                 <ul class="uk-list uk-list-space" id="pl_list" style="list-style: none;">
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> KYC/AML documentation collection</li>
@@ -95,21 +94,21 @@
                 </ul>
             </div>
             <div>
-                <p>(IMAGE HERE)</p>
+                <p><img src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/58b870772ce4f99e05237aa42f18cdbb/crm-back.png" style="position: relative;" alt="windows"></p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="uk-section uk-section-primary uk-light gradient" style="background: #142C5C; background: linear-gradient(to right, #142C5C , #134093);">
+<div class="uk-section uk-section-primary uk-light gradient" style="background: #142C5C; background: linear-gradient(to right, #142C5C , #134093); margin-bottom: -5%;">
     <div class="uk-container">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
-            <div>
-                <p>(IMAGE HERE)</p>
+            <div class="uk-inline">
+                <p><img src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/04c8654a3ae5429e6e914cbda971a9f8/cryptobridge.png" class="uk-align-center" alt="CryptoBridge&trade;" height="420" width="420" style="margin-top: -3%;"></p>
             </div>
-            <div>
-                <h3>CryptoBridge&trade;</h3>
-                <p>Aggregate elite exchanges and indexes as the cryptocurrency market moves, with out patent-pending proprietary software suite, CryptoBridge&trade;. Gain access to 60 premier exchanges for maximum liquidity cryptocurrencies, all available only through CryptoBridge&trade; by Ibinex.</p>
+            <div class="uk-margin">
+                <h3 class="uk-margin-large-top uk-margin-remove-bottom">CryptoBridge&trade;</h3>
+                <p class="uk-margin-xlarge-bottom">Aggregate elite exchanges and indexes as the cryptocurrency market moves, with out patent-pending proprietary software suite, CryptoBridge&trade;. Gain access to 60 premier exchanges for maximum liquidity cryptocurrencies, all available only through CryptoBridge&trade; by Ibinex.</p>
             </div>
         </div>
     </div>
@@ -118,9 +117,9 @@
 <div class="uk-section uk-section-default white2">
     <div class="uk-container">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid style="margin-top: -4%;">
-            <div style="color: #6B7C93;">
-                <h3 style="color: #2C3135; padding-top: 33%;">Credit Card Processing</h3>
-                <p style="margin-bottom: 32%;">We offer full spectrum payment processing for cryptocurrencies, and a complete selection that is unavailable elsewhere. Exchanging your way with Ibinex means experiencing a whole new world of payment options including: credit cards, debit cards, wire transfers, alternative payments, hosted wallets and cold wallets.</p>
+            <div class="uk-margin" style="color: #6B7C93; margin-top: -12%;">
+                <h3 class="uk-margin-large-top" style="color: #2C3135; padding-top: 33%;">Credit Card Processing</h3>
+                <p class="uk-margin-small-top" style="margin-bottom: 32%;">We offer full spectrum payment processing for cryptocurrencies, and a complete selection that is unavailable elsewhere. Exchanging your way with Ibinex means experiencing a whole new world of payment options including: credit cards, debit cards, wire transfers, alternative payments, hosted wallets and cold wallets.</p>
                 <p style="margin-top: -30%;">
                   <img src="assets/images/visa.svg" alt="cards" height="70" width="80">
                   <img class="imageleft" src="assets/images/master-card.svg" alt="cards" height="70" width="80">
@@ -139,19 +138,19 @@
     </div>
 </div>
 
-<div class="uk-section uk-section-muted grey2" style="background-color: #F7F7F7; max-height: 200em;">
+<div class="uk-section uk-section-muted grey2" style="background-color: #FBFBFB; padding-bottom: 0%; padding-top: 0%;">
     <div class="uk-container">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
             <div>
-                <p>(IMAGE HERE)</p>
+                <p><img src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/870456d77b7a7525d39fe55b27cdd354/custodian-accounts.jpg" alt="Man"></p>
             </div>
-            <div style="color: #6B7C93;">
-                <h3 style="color: #2C3135;">Custodian Accounts</h3>
-                <p>Another first sees Ibinex leading the way as the world's first cryptocurrency exchange with a finance transaction license. We are proud to be the first to offer you:</p>
-                <p>Fully-compliant and licensed custodian proceeding and accounts</p>  
-                <p>The choice to instead select a custodian of your choice</p>
-                <p>Payments via swipe-and-transmit from FIAT to base currency</p>
-                <p>A raft of other custodian account options unavailable elsewhere</p>
+            <div class="uk-margin" style="color: #6B7C93;">
+                <h3 class="uk-margin-xlarge-top" style="color: #2C3135;">Custodian Accounts</h3>
+                <p class="">Another first sees Ibinex leading the way as the world's first cryptocurrency exchange with a finance transaction license. We are proud to be the first to offer you:</p>
+                <p class="">Fully-compliant and licensed custodian proceeding and accounts</p>  
+                <p class="">The choice to instead select a custodian of your choice</p>
+                <p class="">Payments via swipe-and-transmit from FIAT to base currency</p>
+                <p class="uk-margin-xlarge-bottom">A raft of other custodian account options unavailable elsewhere</p>
             </div>
         </div>
     </div>
@@ -160,4 +159,5 @@
 
 <?php function scripts_include(){ ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <?php } ?>

@@ -35,7 +35,8 @@
   }
   .subgrid-text{
     grid-row: 2;
-    font-size: 1em;
+    font-size: 0.8em;
+    font-weight: 900;
   }
 
   .section1st-text2{
@@ -50,7 +51,8 @@
     grid-row: 3 / -1;
   }
   .section1st-data p{
-    font-size: 1em;
+    font-size: 0.8em;
+    font-weight: 900;
     
   }
   
@@ -69,12 +71,24 @@
      display: grid;
      padding-bottom: 5%;
   }
+  .title-section2 h2{
+    font-weight: bold;
+    font-size: 35px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  .text2{
+    padding: 0 20%;
+  }
   
   .title-section2,
   .text2  {
     display: grid;
     text-align: center;
   }
+  .title-section2 p{
+    font-weight: 900;
+  }
+  
   
   .section2-text{
     grid-template-rows: auto;
@@ -86,7 +100,9 @@
      padding-top: 10%;
   } 
   .header-section{
-    font-weight: 1000;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
   
   .header-section,
@@ -105,6 +121,15 @@
   .padding-top {
     padding-top: 10%;
   }
+  .text2 p{
+      font-size: 0.8em;
+      font-weight: 900;
+    } 
+  .text p{
+      margin: 0;
+      font-size: 21px;
+      font-weight: 900;
+    }
    @media only screen and (min-width : 768px) and (max-width : 1024px) {
     
   }
@@ -170,13 +195,15 @@
     .text-border{
       padding-left: 0!important;
       border-right: 0px solid!important;
+      padding-right: 0!important;
     } 
       .text2{
       text-align: left;
+       padding: 0 0;
     } 
     .text2 p{
       text-align: left;
-      font-size: 1em;
+      font-size: 14px;
     } 
   
   }
@@ -202,7 +229,7 @@
   </div>
   <div class="section2">
     <div class="title-section2 mainPadding">
-      <h2 class="uk-text-bold">Why you should exchange your way with Ibinex:</h2>
+      <h2 class="">Why you should exchange your way with Ibinex:</h2>
       <p>Our strategy is underpinned by the 4 core strengths of Ibinex:</p>
     </div>
     <div class="section2-text mainPadding" style="border-bottom: 1px solid #e5e5e5;">
@@ -210,25 +237,25 @@
              <div class="uk-animation-toggle">
                <img src="assets/images/1.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
-            Commitment to technological innovation, through out patent-pending proprietary software, Cryptobridge<sup>TM</sup>
+            <p>Commitment to technological innovation, through out patent-pending proprietary software, Cryptobridge<sup>TM</sup></p>
         </div>
         <div class="text text-padding" style="padding-left: 15%;">
             <div class="uk-animation-toggle">
                <img src="assets/images/2.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
-            Trailblazing of complete and customisable white label platform solutions
+           <p>Trailblazing of complete and customisable white label platform solutions</p>
         </div>
         <div class="text text-border" style="padding-right: 15%; border-right: 1px solid #e5e5e5;  padding-bottom: 5%;">
              <div class="uk-animation-toggle">
                <img src="assets/images/3.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
-            Offering unprecedented custodian service with our industry's first finance transaction license
+            <p>Offering unprecedented custodian service with our industry's first finance transaction license</p>
         </div>
         <div class="text text-padding"  style="padding-left: 15%; padding-bottom: 5%;">
              <div class="uk-animation-toggle">
                <img src="assets/images/4.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
-            Providing a full-spectrum payment processing infrastructure to revolutionise liquidity for your exchange
+            <p>Providing a full-spectrum payment processing infrastructure to revolutionise liquidity for your exchange</p>
         </div>
     </div>
     <div class="section2-text2 mainPadding">

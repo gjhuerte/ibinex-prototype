@@ -35,7 +35,7 @@
   }
   .subgrid-text{
     grid-row: 2;
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .section1st-text2{
@@ -50,7 +50,8 @@
     grid-row: 3 / -1;
   }
   .section1st-data p{
-    font-size: 0.8em
+    font-size: 1em;
+    
   }
   
   .pageImage{
@@ -85,7 +86,7 @@
      padding-top: 10%;
   } 
   .header-section{
-    font-weight: 800;
+    font-weight: 1000;
   }
   
   .header-section,
@@ -132,6 +133,10 @@
     grid-template-columns: 1fr;
     padding: 115px 5% 0;
   }
+    .subgrid-text,
+    .section1st-data ptex{
+      text-align: justify;
+    }
 
   .section1st-data{
     grid-column: 1;
@@ -169,6 +174,10 @@
       .text2{
       text-align: left;
     } 
+    .text2 p{
+      text-align: left;
+      font-size: 1em;
+    } 
   
   }
 </style>
@@ -181,7 +190,7 @@
 <?php function display_content(){ ?>
 <div class="main-grid">
   <div class="section1st">
-    <div class="display section1st-text1">
+    <div class="display section1st-text1" uk-scrollspy="cls: uk-animation-slide-left; delay: 500">
        <h2 class="header-section">We fuse innovation with accessibility as blockchain technology evolves</h2>
        <p class="subgrid-text">We seek to revolutionise the way that exchange owners create their platforms and raise the standard of marketplace excellence by incorporating our cutting-edge technology, delivered with practicality and a host of unique benefits, only enjoyed by merging with the ibinex ecosystem.</p>
     </div>
@@ -189,7 +198,7 @@
       <div class="section1st-data"><h2 class="header-section">We are an ecosystem with vision</h2>
       <p>As the gateway to your own customisable cryptocurrency ecosystem, our vision is to equip you with the tools to create and operate your cryptocurrency exvhange, your way.</p></div>
     </div>
-    <div  class="pageImage"><img src="assets/images/whyimg.png" alt=""></div>
+    <div  class="pageImage" ><img src="assets/images/whyimg.png" alt=""></div>
   </div>
   <div class="section2">
     <div class="title-section2 mainPadding">

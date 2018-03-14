@@ -1,8 +1,8 @@
 <?php require 'template.php'; ?>
 
 <?php function styles_include(){ ?>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
 <style>
- 
   .contact-us-background{
     background-image: url(https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
     background-size: cover;
@@ -10,7 +10,7 @@
   }
   .text-holder{
     max-width: 54%;
-    margin-top:26%;
+    margin-top:14%;
   }
   
   .right{
@@ -66,14 +66,20 @@
   
 
   
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 638px){
     .text-holder{
-    padding-top:10%;
-    max-width: 80%;
+      max-width: 100%;
+    }
+    
+    #contact-us-form .white-form{
+    width:60%;
+    background-color: whitesmoke;
+    margin-left:15%;
+    margin-top:-10%;
+    margin-bottom: 15%;
+    padding:5%;
     }
   }
-  
-  
   
 </style>
 <?php } ?>
@@ -89,7 +95,7 @@
         <div class="uk-container">
               
             <div class="uk-grid-match uk-child-width-1@m" uk-grid>
-                <div class="text-holder">
+                <div id="get-started" class="text-holder uk-animation-slide-left">
                   <h1 class="uk-text-bold">Get Started</h1>
                 <p class="uk-text-bold uk-text-justify">
                     We invite you to experience the Ibinex demo here, which will help you conceptualise
@@ -100,9 +106,24 @@
                   </p>
 
                   <ul class="uk-list uk-text-bold uk-text-justify">
-                    <li><span><img src="https://png.icons8.com/color/50/000000/ok.png" width="20px" height="20px"></span>&nbsp &nbsp Local Escrow deposit (reserve only, no payment)</li>
-                    <li><span><img src="https://png.icons8.com/color/50/000000/ok.png" width="20px" height="20px"></span>&nbsp &nbsp Letter of Intent</li>
-                    <li><span><img src="https://png.icons8.com/color/50/000000/ok.png" width="20px" height="20px"></span>&nbsp &nbsp Proof of Escrow deposit</li>
+                    <li><span>
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="20" height="20"
+                            viewBox="0 0 252 252"
+                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#4caf50"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
+                      </span>&nbsp &nbsp Local Escrow deposit (reserve only, no payment)</li>
+                    <li><span>
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="20" height="20"
+                            viewBox="0 0 252 252"
+                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#4caf50"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
+                      </span>&nbsp &nbsp Letter of Intent</li>
+                    <li><span>
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="20" height="20"
+                            viewBox="0 0 252 252"
+                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#4caf50"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
+                      </span>&nbsp &nbsp Proof of Escrow deposit</li>
                   </ul>
 
                   <p class="uk-list uk-text-bold uk-text-justify">
@@ -116,7 +137,7 @@
     </div>
 
 
-<div class="uk-grid-collapse uk-child-width-expand@s" uk-grid>
+<div class="uk-grid-collapse uk-child-width-expand@s " uk-grid uk-grid>
     <div>
         <div class="uk-background-default uk-padding">
             <div class="bottom-text-left">
@@ -160,7 +181,7 @@
                       <textarea class="uk-input uk-form-width-large form-textarea" rows="6" cols="50"></textarea>
                     </div>
                     <div class="uk-margin">
-                      <button class="uk-button uk-button-default uk-button-medium form-button">SEND</button>
+                      <button class="uk-button uk-button-primary uk-button-medium form-button">SEND</button>
                     </div>
                   
               </form>
@@ -174,8 +195,26 @@
 
 
 
+
+
+
+
 <?php } ?>
 
 <?php function scripts_include(){ ?>
-
+<script>
+$(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#get-started').offset().top
+    }, 500);
+  
+  
+    var y = $(this).scrollTop();
+    
+  console.log(y);
+    
+  
+});
+</script>
 <?php } ?>

@@ -65,10 +65,14 @@
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr auto auto auto 1fr;
     grid-template-rows: auto;
     align-items: center;
     grid-gap: 35px;
+  }
+  
+  .navbar-logo-main {
+    grid-column: 2 / span 1;
   }
   
   .navigation-navbar-child-nav {
@@ -164,11 +168,7 @@
     text-decoration: none;
   }
   
-  .media-larger-devices {
-     transition: left 0.5s;
-  }
-  
-  .media-smaller-devices {
+  .media-larger-devices, .media-smaller-devices {
      transition: left 0.5s;
   }
   
@@ -187,11 +187,12 @@
     grid-row: 1 / span 1;
     padding: 15% 10%;
   }
+  
   .navigation-navbar-sm > li:nth-child(2) {
     grid-column: 2 / span 1;
   }
   
-  .navigation-navbar-sm > li > a{
+  .navigation-navbar-sm > li > a {
     text-decoration: none;
   }
   

@@ -14,8 +14,8 @@
         font-family: Verdana, Geneva, sans-serif;
     }
     #media-title, #exec-title-2, #board-title {
-        color: #1A1A1A;
-        font-family: system-ui;
+		font-family: Arial, sans-serif;
+		color: #1A1A1A;
     }
     
     #ibx-banner {
@@ -51,7 +51,9 @@
         text-align: center;
     }
     #media-title {
-        font-weight: bold;
+        font-weight: 800;
+		font-size: 1.6em;
+		margin: 0;
         padding-top: 8%;
     }   
     #media-cov {
@@ -86,13 +88,13 @@
     }
     #exec-title-2 {
         width: 50%;
-        font-size: 2em;
-        font-weight: bold;
+        font-weight: 900;
         padding-bottom: 1%;
     }
     #exec-desc {
         color: #687C91;
         font-size: 95%;
+		line-height: 1em;
         text-align: justify;
         display: block;
     }
@@ -230,22 +232,6 @@
             display: none;
         }
     }
-	
-	
-	/*
-	###########################################################################
-	*/
-	
-	
-	.sample {
-		height: 200px;
-		width: 100%;
-		background-color: red;
-	}
-	
-	
-	
-	
 </style>   
 <?php } ?>
 
@@ -279,7 +265,7 @@
     <div id="banner-img" class="uk-width-2-5"></div>
 </div>
 <div id="ibx-media">
-    <h2 id="media-title">Ibinex media coverage</h2>
+    <h3 id="media-title">Ibinex media coverage</h3>
     <div id="media-cov">
         <img src="./assets/images/media1.png" class="media-logo" />
         <img src="./assets/images/media2.png" class="media-logo" />
@@ -299,7 +285,7 @@
     <div id="ibx-exec">
         <div id="exec-team" class="exec-half">
             <h4 id="exec-title-1" class="exec-header">Executive team</h4>
-            <h2 id="exec-title-2" class="exec-header">The people behind iBinex.</h2>
+            <h3 id="exec-title-2" class="exec-header">The people behind iBinex.</h3>
             <span id="exec-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 

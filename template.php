@@ -11,15 +11,17 @@
     
 	<title><?php display_title(); ?></title>
 	<!-- import UIKIT cdn css-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css" />
+<!-- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" /> -->
 	<!-- import jquery -->
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <!-- import uikit js -->
-  <script src="assets/js/uikit.min.js"></script>
-  <script src="assets/js/uikit-icons.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
+<!--   <script src="assets/js/uikit.min.js"></script> -->
+<!--   <script src="assets/js/uikit-icons.min.js"></script> -->
   <!-- Font Awesome -->
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<!-- For CSS -->

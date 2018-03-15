@@ -6,7 +6,7 @@
   div.main-pricing {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 100px auto 100px;
   }
   
   div.main-pricing.heading1 {
@@ -18,19 +18,21 @@
   }
   
   div.main-pricing.heading {
-    padding-top: 100px;
-    padding-bottom: 100px;
     overflow: hidden;
+  }
+  
+  div.main-text .heading {
+    font-family: 'Verdana',sans-serif;
   }
   
   .main-image {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    background-image: url('assets/images/pricing-image1.png');
+    background-image: url('assets/images/First-option-Pricing.jpg');
     background-repeat: no-repeat;
-    background-position: -100px;
-    background-size: 50%;
-    filter: drop-shadow(60px 50px 50px rgba(0,0,0,0.5));
+    background-position: left center;
+    background-size: cover;
+/*     filter: drop-shadow(60px 50px 50px rgba(0,0,0,0.5)); */
     height: 100%;
   }
   .main-text {
@@ -40,16 +42,18 @@
   
   .main-text.text1 {
     grid-column: span 1 / -2;
-    grid-row: 1 / -1;
+    grid-row: 2 / span 1;
   }
   
   .main-text.text2 {
     grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
     padding-right: 50px;
   }
   
   .main-text.text3 {
     grid-column: span 1 / -2;
+    grid-row: 2 / span 1;
   }
   
   .main-text .heading {
@@ -75,9 +79,11 @@
       div.main-pricing {
         grid-template-columns: 1fr 3fr 3fr 1fr;
     }
-      div.main-pricing.heading {
-        padding-top: 60px;
-        padding-bottom: 60px;
+    .main-image {
+      background-image: url('assets/images/laptop-transparent2.png');
+      background-size: 40%;
+      filter: drop-shadow(35px 35px 30px rgba(0,0,0,0.5));
+  
     }
   }
   
@@ -87,6 +93,8 @@
     }
     div.main-pricing {
       grid-template-columns : 1fr;
+      grid-template-rows: 50px auto auto 50px;
+      grid-gap: 20px;
     }
     div.main-text.text1, 
     div.main-text.text2, 
@@ -95,9 +103,13 @@
       padding-left: 20px;
       padding-right: 20px;
     }
-    div.main-pricing.heading {
-      padding-top: 40px;
-      padding-bottom: 40px;
+    
+    div.main-text.text2 {
+      grid-row: 2 /span 1;
+    }
+    
+    div.main-text.text2 {
+      grid-row: 3 /span 1;
     }
     
   }

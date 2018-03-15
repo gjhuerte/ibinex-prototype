@@ -2,18 +2,17 @@
 
 <?php function styles_include(){?>
 <style>
-  p {
-    color: #7D8BA0;
-    word-spacing: -1px;
-    font-size: 12.5px;
-    font-style: Helvetica;
+ p {
+      color: #6F8197; 
+      word-spacing: -1.5px;
+      font-size: 12px;
+      font-style: Helvetica;
+      font-weight: bold;
   }
-
   h6 {
     font-size: 11.5px;
     word-spacing: 1px;
   }
-
   #title {
     color: #2A3137;
   }
@@ -21,22 +20,29 @@
   #security {
     font-size: 27px;
     font-weight: bold;
-    font-family: Verdana !important;
+    font-family: Courier !important;
   }
 
-  #p2 {
-    color: #6E7D94;
+  #gap {
+    column-gap: 20px !important;
   }
-
-  .center {
-    margin: auto;
-    width: 90%;
-    border: 0px solid #FFFFFF;
-    padding: 0px;
+  
+  .padding{
+    padding-left: 15%;
+    padding-right: 15%;
   }
-
-  #security-content {
-    column-gap: 20px!important;
+  
+  .padding1{
+    padding-top: 40px;
+  }
+  .border1{
+    border-right: 0px solid #aaa;
+  }
+  .border2{
+    border-bottom: 0;
+  }
+  #funds-tech div{
+    margin:-8px;
   }
 </style>
 
@@ -47,60 +53,72 @@
 
 <?php function display_content(){ ?>
 <div class="uk-background-primary uk-light uk-padding-large uk-panel uk-text-center@s uk-card-body" style="background-color:#152C58;">
-  <h2 id="security"><i><b>Security</b></i></h2>
+  <h3 class="uk-text-bold">
+     <i>Security</i>
+  </h3>
   <h6>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br> aliquip ex ea commodo consequat. Duis
     aute irure dolor in reprehendrit in voluptate velit esse cillum <br> dolore eu fugiat nulla pariatur.
   </h6>
 </div>
-
-<div class="center">
-      <div class="uk-column-1-2 uk-padding uk-margin-xlarge-left uk-margin-xlarge-right uk-panel uk-card-body uk-h6 uk-text-primary uk-text-justify" id="security-content";>
-          <h2 id="title" class='uk-text-bold'>Protection of Funds</h2>
-          <br>
-
-          <p>
-            The protection of your crypto-funds is of paramount importance to us. For this reason, we take the ultimate lengths to ensure your    funds   remain safe at all times.
+<div class="uk-section padding padding1 uk-grid-collapse uk-child-width-1-2@s uk-grid-match uk-grid" id='funds-tech'>
+            <div class="uk-first-column">
+                
+                <div class="uk-padding border1 border2 uk-text-left">
+                  <h3 class="uk-margin-remove-top uk-text-bold">
+                      Protection of Funds
+                   </h3>
+          <p class="uk-text-justify"><br><br>
+            The protection of your crypto-funds is of paramount importance to us. For this reason, we take the ultimate lengths to ensure your    funds             remain safe at all times.
           </p>
-          <p>
-            As an indication of the high protective standards we hold, Ibinex has been granted the status of fully-licensed, fully-compliant and as a regulated custodian and account processor.
+          <p class="uk-text-justify">
+            As an indication of the high protective standards we hold, Ibinex has been granted the status of fully-licensed, fully-compliant and as a               regulated custodian and account processor.
           </p> 
-          <p>
-            We are the first cryptocurrency exchange platform to hold this mantle and offer exclusive payment solutions. As such, we must demonstrate a consistent level of regulatory compliance in order to retain this professional distinction, a title of which we are immensely proud.
+          <p class="uk-text-justify">
+            We are the first cryptocurrency exchange platform to hold this mantle and offer exclusive payment solutions. As such, we must demonstrate a             consistent level of regulatory compliance in order to retain this professional distinction, a title of which we are immensely proud.
           </p>
-    
-          <h2 id="title"  class='uk-text-bold'>Encryption and<br>Technologies</h2>
-
-
-        <p>
-          A successful cryptocurrency exchange suite is only as strong as its weakest link. Ibinex has left no encryption technology stone unturned, and has implemented the highest level of SSL security into the platform, complete with the most solid and secure
-          technologies.
+</div>
+  </div>
+          <div>
+          <div class="uk-padding border2">
+          <h3 class="uk-margin-remove-top uk-text-bold">Encryption and<br>Technologies</h3>
+        <p class="uk-text-justify">
+          A successful cryptocurrency exchange suite is only as strong as its weakest link. Ibinex has left no encryption technology stone unturned, and           has implemented the highest level of SSL security into the platform, complete with the most solid and secure technologies.
       </p>
-        <p> 
+        <p class="uk-text-justify">
           We ensure that no weak links exist to threaten the stability and core security of Ibinex for our customers. Threats are neutralised before they present themselves - we take no chances and anticipate potential breaches before they arise, entirely removing
           their potential before they ever eventuate.
       </p>
     </div>
+</div> 
 </div>
-<div class="center">
-  <div class="uk-column-1-2 uk-padding uk-margin-xlarge-left uk-margin-xlarge-right uk-panel uk-card-body uk-h6 uk-text-primary uk-text-justify uk-align-left" id="security-content";>
-    <h2 id="title"><b>Information Security</b>
-    </h2>
-    <p id="p2">Our platform is a 24/7 guarded operation, with all crypto-based funds held in cold-wallets, shielded by our own team of cyber security experts who work around the clock to ensure all funds are safe and untouchable by unauthorized seekers.</p>
-    <h2 id="title"><b>Privacy</b>
-    </h2>
-    <p id="p2">Security and confidentiality are of the utmost importance for our clients, and you can learn more about our completely transparent Regulations and Privacy Policy, to have complete peace of mind and confidence in Ibinex.</p>
-    <br>
-    <br>
-    <br>
+
+<div class=" uk-background-muted uk-section padding padding1 uk-grid-collapse uk-child-width-1-2@s uk-grid-match uk-grid">
+            
+<div class="uk-first-column">
+                <div class="uk-padding border1 border2 uk-text-left">
+                  <br><br><br>
+                  <h3 class="uk-margin-remove-top uk-text-bold">
+                   Information Security
+                   </h3>
+    <p class="uk-text-justify">
+      Our platform is a 24/7 guarded operation, with all crypto-based funds held in cold-wallets, shielded by our own team of cyber security experts who       work around the clock to ensure all funds are safe and untouchable by unauthorized seekers.
+    </p>
+     </div>
+       </div>
+<div>
+<div class="uk-padding border2">
+<br><br><br>
+<h3 class="uk-margin-remove-top uk-text-bold">
+   Privacy
+   </h3>
+    <p class="uk-text-justify">
+      Security and confidentiality are of the utmost importance for our clients, and you can learn more about our completely transparent Regulations           and Privacy Policy, to have complete peace of mind and confidence in Ibinex.
+  </p>
   </div>
   </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 <?php } ?>
 
 <?php function scripts_include(){ ?>

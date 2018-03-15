@@ -2,6 +2,7 @@
 
 <?php function styles_include(){ ?>
 <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <style>
   div.main-pricing {
     display: grid;
@@ -124,9 +125,9 @@ Pricing
 
 <?php function display_content(){ ?>
 <div class="main-pricing heading heading1">
-  <div class="main-image" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 250">
+  <div class="main-image" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 1000">
   </div>
-  <div class="main-text text1" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 250">
+  <div class="main-text text1" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 1000">
     <h1 class="heading">Pricing</h1>
     <p>Integration of the Ibinex turnkey cryptocurrency platform to exchange your way reguires:</p>
     <ul class="fa-ul">
@@ -159,5 +160,11 @@ Pricing
 <?php } ?>
 
 <?php function scripts_include(){ ?>
-
+ 
+  <script>
+    window.sr = ScrollReveal({ reset: true, opacity: 0, distance:'20px', duration: 1000, easing:'ease' });
+      sr.reveal('.text2',{ origin:'left'});
+      sr.reveal('.text3',{ origin:'right'});
+      
+  </script>
 <?php } ?>

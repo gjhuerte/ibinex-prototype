@@ -57,7 +57,7 @@
 			$('html, body').css({
 					overflow: 'hidden',
 					height: '100%',
-					cursor: 'progress'
+					cursor: 'wait'
 			});
 			
 			$("body").prepend('<div class="loader"></div>');

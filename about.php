@@ -60,7 +60,6 @@
         width: 150px;
     }
     
-    
     #ibx-team {
         color: #1A1A1A;
         background-color : #F6F6F8;
@@ -82,7 +81,8 @@
         font-weight: 600;
     }
     #exec-title-2 {
-        width: 55%;
+        width: 50%;
+        font-size: 2em;
         font-weight: bold;
         padding-bottom: 1%;
     }
@@ -93,24 +93,55 @@
         display: block;
     }
     #exec-list {
+        position: relative;
+        min-height: 100%;
         background: rgba(255,0,0,0.5);
         border-radius: 10px;
         margin-top: 3%;
     }
-    #exec-item {
-        height: 80%;
-        max-height: 100em;
+    #exec-slideshow {
+        padding-left: 25%;
+    }
+    a.exec-arrows {
+        position: absolute;
+        font-size: 200%;
+        vertical-align: middle;
+        text-decoration: none;
+        top: 10%;
+    }
+    #exec-prev {
+        right: 2%;
+        margin-right: 3%;
+    }
+    #exec-next {
+        right: 1%;
+        margin-left: 3%;
+    }
+    .exec-item {
+        width: 67%;
+        margin-left: 33%;
+    }
+    .exec-name, .exec-rank {
+        font-weight: bold;
     }
     .exec-data {
-        overflow: hidden;
+        padding: 1% 0;;
         text-overflow: ellipsis;
     }
     .exec-info {
-        display: inline-block;
+        padding: 2% 0;
+        display: block;
+        font-size: 80%;
         text-align: justify;
-        overflow: hidden;
-        text-overflow: ellipsis;
         padding-right: 3%;
+    }
+    #exec-album{
+        height: 200%;
+        width: 50%;
+        background-color: red;
+        position: absolute;
+        top: -100%;
+        left: 0;
     }
     
     #ibx-divider {
@@ -154,6 +185,22 @@
         font-size: 80%;
     }
     
+    @media only screen and (max-width: 992px) {
+        #exec-title-2 {
+            width: 100%;
+        }
+        .exec-half {
+            width: 100%;
+            margin-left: 0;
+        }
+        #exec-slideshow {
+            padding-left: 2%;
+        }
+        .exec-item {
+            width: 100%;
+            margin-left:0;
+        }
+    }
     @media only screen and (max-width: 768px) {
         /* For mobile phones: */
         [class*="uk-width-"] {
@@ -174,19 +221,11 @@
         }
         .media-logo:nth-last-child(-n+6) {
             display: none;
-        }
-        #exec-title-2 {
-            width: 100%;
-        }
-        .exec-half {
-            width: 100%;
-            margin-left: 0;
-        }
+        }        
         #ibx-divider {
             display: none;
         }
     }
-    
 </style>   
 <?php } ?>
 
@@ -247,23 +286,26 @@
                 nisi ut aliquip ex ea commodo consequat.
             </span>
         </div>
-<!--         <div id="exec-list" class="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow="">
-                <ul id="exec-item" class="uk-slideshow" style="height:100% !important">
-                    <li>
-                        <div class="exec-data exec-half">
-                            <h3 class="exec-name exec-header">Matthew Novinski</h3>
-                            <h5 class="exec-rank exec-header">Chief Executive Officer</h5>
+        <div id="exec-list"  data-uk-slideshow="{animation: 'scroll'}">
+            <div id="exec-slideshow" class="uk-slidenav-position">
+                <ul class="uk-slideshow uk-position-relative uk-visible-toggle uk-light">
+                    <li data-slideshow-slide="html">
+                        <div class="exec-data exec-item">
+                            <h4 class="exec-name exec-header">Matthew Novinski</h4>
+                            <h6 class="exec-rank exec-header">Chief Executive Officer</h6>
                             <span class="exec-info">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
                                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                cupidatat non proident, sunt in
                             </span>
+                            <a href="">Linkedin Profile</a>
+                            <a href="">Download CV</a>
                         </div>
                     </li>
-                    <li>
-                        <div class="exec-data exec-half">
+                    <li data-slideshow-slide="html">
+                        <div class="exec-data exec-item">
                             <h3 class="exec-name exec-header">John Whirlpool</h3>
                             <h5 class="exec-rank exec-header">Chief Executive Officer</h5>
                             <span class="exec-info">
@@ -271,12 +313,12 @@
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
                                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                cupidatat non proident, sunt in
                             </span>
                         </div>
                     </li>
-                    <li>
-                        <div class="exec-data exec-half">
+                    <li data-slideshow-slide="html">
+                        <div class="exec-data exec-item">
                             <h3 class="exec-name exec-header">Rion Pronelle</h3>
                             <h5 class="exec-rank exec-header">Chief Executive Officer</h5>
                             <span class="exec-info">
@@ -284,47 +326,18 @@
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
                                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                cupidatat non proident, sunt in
                             </span>
                         </div>
                     </li>
                 </ul>
-                <a class="uk-position-top-right uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-                <a class="uk-position-top-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-            </div> -->
-            <div class="uk-slidenav-position" data-uk-slideshow="">
-                <ul class="uk-slideshow">
-                    <li data-uk-slideshow-item="0">
-                      <img src="https://download.unsplash.com/photo-1414446483597-8d8f792bfe39">
-                      <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
-                        <div class="caption">
-                          <h3>Example 1</h3>
-                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li data-uk-slideshow-item="1">
-                      <img src="https://download.unsplash.com/photo-1417870839255-a23faa90c6b0">
-                      <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
-                        <div class="caption">
-                          <h3>Example 2</h3>
-                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li data-uk-slideshow-item="2">
-                  <img src="https://unsplash.com/photos/34mvN5nt1ls/download">
-                  <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
-                    <div class="caption">
-                      <h3>Example 3</h3>
-                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
-                    </div>
-                  </div>
-                </li>
-                </ul>
-                <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-                <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                <a id="exec-prev" class="exec-arrows" href="#" data-uk-slideshow-item="previous">🠔</a>
+                <a id="exec-next" class="exec-arrows" href="#" data-uk-slideshow-item="next">🠖</a>
+<!--                 <div id="exec-album">
+                    <img src="http://ascii.jp/elem/000/000/200/200375/%E3%83%8B%E3%83%A3%E3%83%B3%E3%82%B3%E5%85%88%E7%94%9F2_240x.jpg"/>
+                </div> -->
             </div>
+        </div>
     </div>
     <div id="ibx-board">
         <hr id="ibx-divider"/>
@@ -377,4 +390,8 @@
 
 <?php function scripts_include(){ ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow.min.js"></script>
+<script>
+(function(){
+}())
+</script>
 <?php } ?>

@@ -18,7 +18,7 @@
   .section1st{
     display: grid;
     padding-top: 3%;
-    grid-template-rows: 0.6fr 0.4fr 0.4fr 0.3fr;
+    grid-template-rows: 0.6fr 0.35fr 0.4fr 0.3fr;
     grid-template-columns: 1fr 1.7fr 1.3fr 0.7fr 0.3fr;
   }
   .section1st-text1{
@@ -26,7 +26,7 @@
     grid-column: 2 / span 2;
     grid-row: 1 / 3;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 0.1fr auto;
 
   }
   .section1st-text1 .header-section{
@@ -35,7 +35,7 @@
   }
   .subgrid-text{
     grid-row: 2;
-    font-size: 0.8em;
+    font-size: 12.5px;
     font-weight: 900;
   }
 
@@ -51,7 +51,7 @@
     grid-row: 3 / -1;
   }
   .section1st-data p{
-    font-size: 0.8em;
+    font-size: 12.5px;
     font-weight: 900;
     
   }
@@ -62,7 +62,7 @@
     grid-row: 2 / span 2;
     grid-column: 3 / span 2;
     align-self: center;
-    transform: translate(0, -20px);
+    transform: translate(0, -25px);
   }
   
   .section2{
@@ -159,8 +159,9 @@
     padding: 115px 5% 0;
   }
     .subgrid-text,
-    .section1st-data ptex{
+    .section1st-data p{
       text-align: justify;
+      font-size: 19px;
     }
 
   .section1st-data{
@@ -177,7 +178,7 @@
     grid-row: 2;
     grid-column: 1;
     align-self: center;
-    transform: translate(0, 52px);
+    transform: translate(0, 49px);
   }
       .title-section2 {
       display: grid;
@@ -223,9 +224,9 @@
     </div>
     <div class="display bgcolor uk-light section1st-text2">
       <div class="section1st-data"><h2 class="header-section">We are an ecosystem with vision</h2>
-      <p>As the gateway to your own customisable cryptocurrency ecosystem, our vision is to equip you with the tools to create and operate your cryptocurrency exvhange, your way.</p></div>
+      <p>As the gateway to your own customisable cryptocurrency ecosystem, our vision is to equip you with the tools to create and operate your cryptocurrency exchange, your way.</p></div>
     </div>
-    <div  class="pageImage" ><img src="assets/images/whyimg.png" alt=""></div>
+    <div  class="pageImage" ><img src="assets/images/homepage_why.png" alt=""></div>
   </div>
   <div class="section2">
     <div class="title-section2 mainPadding">

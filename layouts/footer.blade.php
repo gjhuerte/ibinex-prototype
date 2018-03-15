@@ -10,163 +10,347 @@
   .bg-teal-dark {
     background-color: #04293D;
   }
+  
+  .footer-upper {
+    list-style-type: none;
+    padding-bottom: 1%;
+    margin-bottom: 0;
+  }
+  
+  .give-us-a-call {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .give-us-a-call > * {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    padding: 7% 0%;
+    margin: 0;
+    align-items: center;
+    color: #D0D4D7;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+  
+  .company-information {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .company-information-child {
+    grid-column: 2 / span 1;
+  }
+  
+  .company-information-list {
+    float: left;
+    list-style-type: none;
+    padding-right: 0;
+    font-size: 12px;
+  }
+  
+  .company-information-list > li:not(.footer-header-color) {
+    margin: 6px 0;
+  }
+  
+  .company-information-list > li:not(.footer-header-color) > a{
+    font-size: 9px;
+    font-weight: 900;
+  }
 
   .bg-teal-darker {
     background-color: #041C2C;
   }
 
   .footer-header-color {
-    color: #264557;
+    color: #767F88;
+    margin-bottom: 20px;
+    font-weight: 700;
   }
 
-  .footer-nav>li :not(.footer-header-color) {
+  .footer-nav > li :not(.footer-header-color) {
     color: #F3F6F4;
     text-decoration: none;
   }
 
-  .footer-header-color-light {
-    color: #364A56;
+  .company-information-list > li :not(.footer-header-color) {
+    color: #F3F6F4;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 650;
+    margin-bottom: 1px;
   }
   
-  .uk-button-red-1 {
+  .footer-lower {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .footer-lower-child {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding-top: 3%;
+  }
+  
+  .footer-lower-image-logo {
+    grid-column: 1 / span 1;
+    align-self: center;
+  }
+  
+  .footer-lower-offices-information {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    padding: 7% 7% 0 7%;
+  }
+  
+  .footer-lower-offices > ul > li{
+    margin: 5% 0;
+  }
+  
+  .list-unstyled {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .footer-lower-additional-information{
+    padding: 7%;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+  
+  .footer-lower-disclosure {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+    font-size: 9px;
+    font-weight: 900;
+    margin: 0;
+  }
+  
+  .footer-lower-disclosure > p {
+    margin: 0 0 5% 0;
+    text-align: justify;
+  }
+  
+  .footer-lower-offices > .list-unstyled > li {
+    font-size: 10px;
+  }
+  
+  .footer-lower-offices > .list-unstyled > li:first-child {
+    padding-top: 20px;
+  }
+  
+  .footer-lower-offices > .list-unstyled > li > a {
+    color: #FEFFFD;
+    font-weight: 700;
+    margin: 20px 0;
+  }
+  
+  .footer-header-color-light {
+    font-size: 11px;
+    font-weight: 900;
+    color: #45525B;
+  }
+
+  .button-red-1 {
     color: white;
     background-color: #C81824;
     border: none;
-    border-radius: 0% 5% 5% 0%;
-    padding: 5%;
+    border-radius: 0% 6% 6% 0%;
+    padding: 7%;
     font-size: 60%;
+    grid-column: 2 / span 1;
   }
-  
-  .footer-input-submit {   
-    border-radius: 5% 0% 0% 5%;
-    padding: 3%;
-    width: 120%;
-    border: 0;
-    margin: 0;
-  }
-  .footer-input-submit,
-  .footer-input-submit::-webkit-input-placeholder {
-      line-height: 1;
-      padding: 4%;
-      font-size: 80%;
+
+  .footer-input-submit {
+    background-color: white;
+    color: black;
+    border-radius: 5px 0 0 5px;
+    padding: 7%;
+    border: none;
+    font-size: 10px;
+    grid-column: 1 / span 1;
   }
 
   .input-group {
-      border: 10%;
-   }
-  
-  .give-us-a-call {
-    letter-spacing: 0.1em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 5% 0 2% 0;
   }
   
+  .clear-padding-left {
+    padding-left: 0;
+  }
+
   @media (min-width: 992px) {
     .padding-medium {
       padding-left: 15%;
       padding-right: 10%;
     }
-  }
   
+    .footer-lower-offices {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+  
+    .footer-lower-offices {
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+    }
+  }
+
   @media (max-width: 992px) {
     .give-us-a-call-number {
       display: block;
+      
+    }
+    
+    ul.footer-upper {
+      padding-left: 0;
+    }
+    
+    .company-information {
+      display: flex;
+    }
+    
+    ul.company-information-list {
+      clear: both;
+      grid-column: 1 / span 1;
+    }
+    
+    .company-information-list {
+      padding-left: 20%;
+    }
+    
+    .footer-lower {
+      display: block;
+    }
+    
+    .footer-lower-child {
+      display: block;
+    }
+    
+    .footer-lower-image-logo {
+      padding-top: 20px;
+    }
+    
+    .footer-website-logo {
+      width: 50%;
+      height: 50%;
+      transform: translatex(45%);
+      align-content: center;
+      align-items: center;
+      align-self: center;
+    }
+    
+    .footer-lower-additional-information {
+      padding-bottom: 0;
+    }
+    
+    .footer-lower-disclosure {
+      display: block;
+      padding: 0 20px 20px 20px;
+    }
+    
+    .button-red-1 {
+      padding: 4%;
+    }
+
+    .footer-input-submit {
+      padding: 4%;
     }
   }
 </style>
 
-<div class="uk-container uk-container-expand bg-teal-dark uk-padding" style="font-size: 70%;">
-  <!--  upper header  -->
-  <h4 class="uk-label-white uk-heading-link uk-text-center give-us-a-call">GIVE US A CALL: <span class="give-us-a-call-number"> 1-800-972-3981</span></h4>
-  <!--  upper header  -->
-  <!--  upper header additional navigation  -->
-  <div class="uk-padding-remove-vertical">
-    
-  <div class="uk-child-width-expand@m padding-medium" uk-grid uk-height-match="target: > div">
-    <!--  why ibinex    -->
-    <div class="footer-nav">
-      <ul class="uk-list footer-nav">
-        <li class="uk-nav-header footer-header-color">Why Ibinex?</li>
-        <li><a href="#">Our Vision</a></li>
-      </ul>
-    </div>
-    <!--  why ibinex    -->
-    <!--  pricing    -->
-    <div>
-      <ul class="uk-list footer-nav">
-        <li class="uk-nav-header footer-header-color">Pricing</li>
-        <li><a href="#">Platform Pricing</a></li>
-        <li><a href="#">Liquidity Fee's</a></li>
-      </ul>
-    </div>
-    <!--  pricing    -->
-    <!--  services    -->
-    <div>
-      <ul class="uk-list footer-nav">
-        <li class="uk-nav-header footer-header-color">Services</li>
-        <li><a href="#">Platform</a></li>
-        <li><a href="#">CRM / BackOffice</a></li>
-        <li><a href="#">Cryptobridge</a></li>
-        <li><a href="#">Credit Card Processing</a></li>
-        <li><a href="#">Custodian Accounts</a></li>
-      </ul>
-    </div>
-    <!--  services    -->
-    <!--  security    -->
-    <div>
-      <ul class="uk-list footer-nav">
-        <li class="uk-nav-header footer-header-color">Security</li>
-        <li><a href="#">Protection of Funds</a></li>
-        <li><a href="#">Encryption Technologies</a></li>
-        <li><a href="#">Information Security</a></li>
-        <li><a href="#">Privacy</a></li>
-      </ul>
-    </div>
-    <!--  security    -->
-    <!--   legal   -->
-    <div>
-      <ul class="uk-list footer-nav">
-        <li class="uk-nav-header footer-header-color">Legal</li>
-        <li><a href="#">Regulation</a></li>
-        <li><a href="#">AML &amp KYC</a></li>
-        <li><a href="#">Terms and Conditions</a></li>
-        <li><a href="#">Marketing and Guidelines</a></li>
-        <li><a href="#">Licensing</a></li>
-        <li><a href="#">Entry Requirements</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-    </div>
-    <!--   legal   -->
-    <!--   about ibinex   -->
-    <div>
-      <ul class="uk-list footer-nav footer-header-color">
-        <li class="uk-nav-header">About Ibinex</li>
-        <li><a href="#">Transparency</a></li>
-        <li><a href="#">Press</a></li>
-        <li><a href="#">Executive Team</a></li>
-        <li><a href="#">Advisory Board</a></li>
-        <li><a href="#">Roadmap</a></li>
-      </ul>
-    </div>
-    <!--   about ibinex   -->
-  </div>
-  </div>
-  <!--  upper header additional navigation  -->
-</div>
+<div class="footer">
+  <ul class="footer-upper bg-teal-dark">
+    <li class="give-us-a-call">
+        <!--  upper header  -->
+        <h4>GIVE US A CALL: <span class="give-us-a-call-number"> 1-800-972-3981</span></h4>
+        <!--  upper header  -->
+    </li>
+    <!--  upper header additional navigation  -->
+    <li class="company-information">
+      <div class="company-information-child">
+          <!--  why ibinex    -->
+          <ul class="company-information-list why-ibinex clear-padding-left" style="margin-top: 20px;">
+            <li class="footer-header-color">Why Ibinex?</li>
+            <li><a href="#">Our Vision</a></li>
+          </ul>
+          <!--  why ibinex    -->
+          <!--  pricing    -->
+          <ul class="company-information-list">
+            <li class="footer-header-color">Pricing</li>
+            <li><a href="#">Platform Pricing</a></li>
+            <li><a href="#">Liquidity Fee's</a></li>
+          </ul>
+          <!--  pricing    -->
+          <!--  services    -->
+          <ul class="company-information-list">
+            <li class="footer-header-color">Services</li>
+            <li><a href="#">Platform</a></li>
+            <li><a href="#">CRM / BackOffice</a></li>
+            <li><a href="#">Cryptobridge</a></li>
+            <li><a href="#">Credit Card Processing</a></li>
+            <li><a href="#">Custodian Accounts</a></li>
+          </ul>
+          <!--  services    -->
+          <!--  security    -->
+          <ul class="company-information-list">
+            <li class="footer-header-color">Security</li>
+            <li><a href="#">Protection of Funds</a></li>
+            <li><a href="#">Encryption Technologies</a></li>
+            <li><a href="#">Information Security</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+          <!--  security    -->
+          <!--   legal   -->
+          <ul class="company-information-list">
+            <li class="footer-header-color">Legal</li>
+            <li><a href="#">Regulation</a></li>
+            <li><a href="#">AML &amp KYC</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Marketing and Guidelines</a></li>
+            <li><a href="#">Licensing</a></li>
+            <li><a href="#">Entry Requirements</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          <!--   legal   -->
+          <!--   about ibinex   -->
+          <ul class="company-information-list footer-header-color">
+            <li class="footer-header-color">About Ibinex</li>
+            <li><a href="#">Transparency</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Executive Team</a></li>
+            <li><a href="#">Advisory Board</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+        <!--   about ibinex   -->
+      </div>
+    </li>
+    <!--  upper header additional navigation  -->
+  </ul>
 
-<!-- contact details -->
-<div class="uk-container uk-container-expand bg-teal-darker uk-padding">
-  <div class="uk-child-width-expand@m padding-medium" uk-grid uk-height-match="target: > div">
-    <div class="uk-inline-clip">
-        <img class="uk-logo uk-position-center" src="https://www.grouptravelvideos.com/images/client/00954/resources/you%20logo%20here.png" alt="Website Logo" width=60% height=60%> 
-    </div>
-    <!--  Ibinex Offices    -->
-    <div style="font-size: 60%;">
-      <h4 class="footer-header-color-light">
-        IBINEX OFFICES
-      </h4>
-      <!--   offices     -->
-      <div>
-        <div uk-grid>
-          <ul class="uk-list footer-nav">
+  <!-- contact details -->
+  <div class="footer-lower bg-teal-darker">
+    <div class="footer-lower-child">
+      <div class="footer-lower-image-logo">
+        <img class="footer-website-logo" src="assets/images/ibinex-logo-white.png" alt="Website Logo" >
+      </div>
+      <!--  Ibinex Offices    -->
+      <div class="footer-lower-offices-information">
+        <h4 class="footer-header-color-light" style="margin-bottom: 0px;">
+          IBINEX OFFICES
+        </h4>
+        <!--   offices     -->     
+        <div class="footer-lower-offices">
+          <ul class="list-unstyled">
             <li><a href="#">Ibinex Officials</a></li>
             <li><a href="#">315 W 36th Street</a></li>
             <li><a href="#">New York, NY</a></li>
@@ -174,7 +358,7 @@
             <li><a href="#">contact@ibinex.com</a></li>
           </ul>
 
-          <ul class="uk-list footer-nav">
+          <ul class="list-unstyled" style="margin-top: 0px; margin-bottom: 0px;">
             <li><a href="#">iBinex Technologies</a></li>
             <li><a href="#">Ha-Tidhar Street 15</a></li>
             <li><a href="#">Ra'anana, Israel</a></li>
@@ -182,51 +366,66 @@
             <li><a href="#">md@ibinex.com</a></li>
           </ul>
         </div>
+        <!--   offices     -->
       </div>
-      <!--   offices     -->
+      <!--  Ibinex Offices    -->
+      <!--   contacts     -->
+      <div class="footer-lower-additional-information">
+        <ul class="list-unstyled">
+          <li class="footer-header-color-light">SIGN UP TO OUR NEWSLETTER</li>
+          <li>
+            <form class="">
+              <div class="input-group">
+                <input class="footer-input-submit" type="email" placeholder="Insert your email">
+                <button class="button-red-1" type="button">Submit</button>
+              </div>
+            </form>
+          </li>
+        </ul>
+        <ul class="list-unstyled">
+          <li class="footer-header-color-light">
+            FIND US ONLINE
+          </li>
+          <li>
+            <a href="#" style="background: url('assets/images/logo/facebook.png')">
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-messenger"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-skype"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-viber"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--   contacts     -->
+      <div class="footer-lower-disclosure">
+        <p>
+          Risk Disclosure: ibinex FInancials (ibinex.com) will not accept any liability for loss or damage as a result of reliance on the information contained within this website including data, quotes, charts and buy/sell signals. Please be fully informed regarding
+          the risks and costs associated with trading the cryptocurrency markets, it is one of the riskiest investment forms possible. Trading or investing in cryptocurrencies carries with it potential risks. Prices of cryptocurrencies are extremely volatile
+          and may be affected by external factors such as financial, regulatory or politiical events. Cryptocurrencies are not suitable for all investors. Before deciding to trade foreign exchange or any other carefully consider your investment objectives,
+          level of experience, and risk appetite. Ibinex Financials would like to remind you that the data contained in this website is not necessarily real-time nor accurate. Cryptocurrence prices are not provided by exchanges but rather by market makers,
+          and so prices may not be accurate and may differ from the actual market price, meaning prices are indicative and not appropriate for trading purposes. Therefor Ibinex doesn't bear any responsibility for any trading losses you might incur as a result
+          of using this data.
+        </p>
+      </div>
     </div>
-    <!--  Ibinex Offices    -->
-    <!--   contacts     -->
-    <div>
-      <ul class="uk-list uk-visible@m">
-        <li class="uk-nav-header footer-header-color-light" style="font-size: 85%;">SIGN UP TO OUR NEWSLETTER</li>
-        <li>
-          <form class="uk-container">
-            <div class="uk-flex-inline input-group">
-              <input class="footer-input-submit" type="email" placeholder="Insert your email">
-              <button class="uk-button-red-1" type="button">Submit</button>
-            </div>
-          </form>
-        </li>
-      </ul>
-      <ul class="uk-list">
-        <li class="uk-nav-header footer-header-color-light" style="font-size: 85%;">
-          FIND US ONLINE
-        </li>
-        <li>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-whatsapp"></i>
-            <i class="fab fa-facebook-messenger"></i>
-            <i class="fab fa-skype"></i>
-            <i class="fab fa-skype"></i>
-            <i class="fab fa-telegram"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-viber"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!--   contacts     -->
   </div>
-  <dl class="uk-description-list padding-medium" style="font-size: 10px;">
-    <dd class="uk-text-justify">
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-      sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-      incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-      voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
-    </dd>
-  </dl>
+  <!-- contact details -->
 </div>
-<!-- contact details -->
+

@@ -1,79 +1,321 @@
 <!-- navigation bar -->
 
 <style>
-  .uk-button-telegram-blue:hover {
+  
+  .contact-info-navbar {
+    background: #E3E3E3;
+    display: grid;
+    grid-template-columns: 5fr auto 1fr;
+    grid-template-rows: 50px;
+    
+  }
+  
+  .contact-info-navbar-child {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    align-items: center;
+    grid-gap: 40px;
+  }
+  
+  .contact-info-navbar-nav {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin: 0;
+    grid-gap: 30px;
+  }
+  
+  .contact-info-navbar-nav > li {
+    font-size: 12px;
+    font-weight: 900;
+    float: left;
+  }
+  
+  .contact-info-navbar-nav > li > a {
+    text-decoration: none;
+  }
+  
+  .button-telegram-blue:hover {
     color: white;
-    background-color: #7FCBE5;
-    border: none;
+    background-color: #4EA6D6;
   }
 
-  .uk-button-telegram-blue {
-    border-color: #7FCBE5;
-    color: #7FCBE5;
+  .button-telegram-blue {
+    border-radius: 7px;
+    border: 1px solid #4EA6D6; 
+    padding: 5px;
+    color: #4EA6D6;
+    font-size: 10px;
+    font-weight: 900;
+    transition: all 0.5s ease;
+  }
+  
+  .navigation-navbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 85px;
+  }
+  
+  .navigation-navbar-child {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-columns: 1fr auto auto auto 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    grid-gap: 35px;
+  }
+  
+  .navbar-logo-main {
+    grid-column: 2 / span 1;
+  }
+  
+  .navigation-navbar-child-nav {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  
+  .navigation-navbar-child-nav > li {
+    float: left;
+    font-size: 12px;
+  }
+  
+  .navigation-navbar-child-nav > li > a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #293E64;
+  }
+  
+  .navigation-navbar-child-nav > li > a {
+    transition: 0.6s linear;
+  }
+  
+  .navigation-navbar-child-nav > li > a > div:hover {
+    border-bottom:  1.5px #293E64 solid;
+    border-radius: 1px;
   }
 
-  .uk-button-live-demo-blue {
+  .button-live-demo-blue {
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 13px 40px;
     background-color: #102B58;
-    color: white;
+    color: white;  
+    transition: all 0.5s ease;
   }
 
-  .uk-label-increasing {
+  .button-live-demo-blue:hover {
+    background-color: white;
+    font-size: 15px;
+    color: #102B58;  
+  }
+
+  .label-increasing {
     color: #10C243;
   }
 
-  .uk-label-decreasing {
+  .label-decreasing {
     color: #C41227;
   }
 
-  .uk-label-white {
+  .label-white {
     color: white;
   }
 
-  .uk-navbar-text-blue {
-    color: #284069;
-  }
-
-  .uk-live-chat-green {
+  .live-chat-green {
     color: #168D41;
   }
+  
+  .navbar-currency {
+    background: linear-gradient(to right, #102B58 , #C61924); 
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 45px;
+  }
+  
+  .navbar-currency-child {
+    align-items: center;
+  }
+  
+  .navbar-currency-child-nav {
+    list-style-type: none;
+  }
+  
+  .navbar-currency-child-nav > li {
+    float: left;
+    font-weight: 600;
+    margin-left: 7%;
+    font-size: 8.5px;
+    padding: 8px;
+  }
+  
+  .btn-invisible {
+    border: none;
+    padding: 0;
+    background-color: inherit;
+  }
+  
+  .navbar-currency-child-nav > li > a {
+    text-decoration: none;
+  }
+  
+  .media-larger-devices, .media-smaller-devices {
+     transition: left 0.5s;
+  }
+  
+  .navigation-navbar-sm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation-navbar-sm > li {
+    float: left;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    padding: 15% 10%;
+  }
+  
+  .navigation-navbar-sm > li:nth-child(2) {
+    grid-column: 2 / span 1;
+  }
+  
+  .navigation-navbar-sm > li > a {
+    text-decoration: none;
+  }
+  
+  #hamburger-navbar-sm {
+    font-size: 1.5em;
+    color: #102B58;
+    float:right;
+    border: none;
+    outline: none;
+  }
+  
+  @media (min-width : 900px) {
+    .media-smaller-devices {
+      display: none;
+    }
+    
+    .media-larger-devices, #base-navbar-sm {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .media-larger-devices {
+      display: none;
+    }
+    
+    .navbar-currency-child-nav {
+      padding: 0;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+    }
+    
+    .navbar-currency-child-nav > li {
+      align-items: center;
+      float: right;
+      text-align: center;
+    }
+    
+    .navbar-currency-child-nav > li > a {
+      font-weight: 900;
+      font-size: 10px;
+    }
+    
+    .navigation-navbar-child {
+      display: block
+    }
+    
+    .navbar-currency-child-nav > li:not(.show-on-smaller-devices) {
+      display: none;
+    }
+    
+    .navbar-logo-main {
+      display: none;
+    }
+    
+    .navbar-nav-button-live-demo {
+      display: block;
+      align-self: center;
+    }
+    
+    .navigation-navbar-child-nav {
+      padding-left: 0px;
+      display: block;
+      margin-bottom: 0px;
+    }
+    
+    .navigation-navbar-child-nav > li {
+      display: block;
+      float: none;
+      background-color: #212223;
+      padding: 3%;
+    }
+    
+    .navigation-navbar-child-nav > li  > a, .navigation-navbar-child-nav > li  > a:active, .navigation-navbar-child-nav > li  > a:visited, .navigation-navbar-child-nav > li  > a:focus{
+      color: white;
+      text-decoration: none;
+    }
 
-  html,
-  body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+    .button-live-demo-blue {
+      margin-left: 0;
+      border: 1px solid;
+      border-radius: 0;
+      color: #102B58;
+      background-color: white;  
+      width: 100%;
+    }
+
+    .button-live-demo-blue:hover {
+      background-color: white;
+      font-size: 15px;
+      color: #102B58;  
+    }
   }
 </style>
 
 <!-- topmost navigation -->
-<div class="uk-visible@m">
-  <nav class="uk-navbar-container" uk-navbar="mode: click" style="height: 60px;">
-    <div class="uk-navbar-right">
+<div class="media-larger-devices">
+  <nav class="contact-info-navbar">
+    <div class="contact-info-navbar-child">
 
-      <ul class="uk-navbar-nav">
+      <ul class="contact-info-navbar-nav">
         <li>
           <a href="#">
-            <div class="uk-navbar-text-blue">
-              <i class="fas fa-phone" style="margin-right: 10px;"></i> 1-800972-3981
+            <div style="color: #112C58;">
+              <i class="fas fa-phone" data-fa-transform="flip-h" style="margin-right: 5px;"></i> 1-800-972-3981
             </div>
           </a>
         </li>
         <li>
           <a href="#">
-            <div class="uk-live-chat-green">
-              <i class="fas fa-comments" style="margin-right: 10px;"></i> Live Chat
+            <div class="live-chat-green">
+              <i class="fas fa-comments" style="margin-right: 5px;"></i> Live Chat
             </div>
           </a>
         </li>
       </ul>
 
-      <div class="uk-navbar-item">
-        <form action="javascript:void(0)">
-          <button class="uk-button uk-button-default uk-button-telegram-blue" style="border-radius: 10px; padding: 0px 2px;">
-                    <i class="fab fa-telegram"></i>  join our telegram community
-                </button>
+      <div>
+        <form>
+          <button class="button-telegram-blue">
+            <i class="far fa-paper-plane"></i>  <span style="padding-left: 9px;padding-right: 9px;">join our telegram community</span>
+          </button>
         </form>
       </div>
 
@@ -82,53 +324,41 @@
 </div>
 <!-- topmost navigation -->
 
-<!-- nav for different pages -->
-<nav class="uk-navbar-container" uk-navbar="mode: click" style="background-color: white; height: 100px;">
-
   <!--  navigation bar icon on smaller devices  -->
-  <div class="uk-navbar-left uk-hidden@s">
+  <div class="media-smaller-devices">
     <!--   navigation bar icon at smaller devices   -->
-    <a class="uk-padding" href="">
-          <img src="https://www.grouptravelvideos.com/images/client/00954/resources/you%20logo%20here.png" alt="" width=95px height=95px>
+    <ul class="navigation-navbar-sm">
+      <li>
+        <a class="" href="">
+          <img src="assets/images/ibinex-logo.png">
         </a>
+      </li>
+
+      <li>
+        <button class="btn-invisible" id="hamburger-navbar-sm">
+          <i class="fas fa-bars"></i>
+        </button>
+      </li>
+      
+    </ul>
     <!--   navigation bar icon at smaller devices   -->
   </div>
   <!--  navigation bar icon on smaller devices  -->
 
-  <!--   navigation bar hamburger menu   -->
-  <div class="uk-navbar-right uk-hidden@s">
-    <a href="#"></a>
-
-    <div class="uk-offcanvas-content">
-
-      <a class="uk-navbar-toggle" uk-navbar-toggle-icon type="button" uk-toggle="target: #offcanvas-overlay"></a>
-
-      <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar">
-
-          <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-
-          <h3>Title</h3>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!--   navigation bar hamburger menu   -->
+<!-- nav for different pages -->
+<nav class="media-larger-devices navigation-navbar" id="base-navbar-sm">
 
   <!--  navigation bar on medium to large devices  -->
-  <div class="uk-navbar-center uk-visible@s">
-    <img src="https://www.grouptravelvideos.com/images/client/00954/resources/you%20logo%20here.png" alt="" width="15%" height="15%">
+  <div class="navigation-navbar-child">
+    <div class="navbar-logo-main">
+      <img src="assets/images/ibinex-logo.png" alt="Ibinex Logo" width="90%" height="90%">
+    </div>
 
-    <ul class="uk-navbar-nav">
+    <ul class="navigation-navbar-child-nav">
 
-      <li class="uk-navbar-text-blue">
+      <li>
         <a href="index.php">
-          <div class="uk-navbar-text-blue">
+          <div>
             Home
           </div>
         </a>
@@ -140,55 +370,55 @@
           </div>
         </a>
       </li>
-      <li class="uk-navbar-text-blue">
+      <li>
         <a href="pricing.php">
-          <div class="uk-navbar-text-blue">
+          <div>
             Pricing
           </div>
         </a>
       </li>
-      <li class="uk-navbar-text-blue">
+      <li>
         <a href="services.php">
           <div class="uk-navbar-text-blue">
             Services
           </div>
         </a>
       </li>
-      <li class="uk-navbar-text-blue">
+      <li>
         <a href="about.php">
-          <div class="uk-navbar-text-blue">
+          <div>
             About Us
           </div>
         </a>
       </li>
-      <li class="uk-navbar-text-blue">
+      <li>
         <a href="security.php">
-          <div class="uk-navbar-text-blue">
+          <div>
             Security
           </div>
         </a>
       </li>
-      <li class="uk-navbar-text-blue">
-        <a href="">
-          <div class="uk-navbar-text-blue">
+      <li>
+        <a href="#">
+          <div>
             Legal
           </div>
         </a>
       </li>
-      <li class="uk-navbar-text-blue">
+      <li>
         <a href="contact-us.php">
-          <div class="uk-navbar-text-blue">
+          <div>
             Contact Us
           </div>
         </a>
       </li>
-
-      <li class="uk-navbar-item">
-        <form action="javascript:void(0)">
-          <button class="uk-button uk-button-primary uk-button-live-demo-blue" style="border-radius: 5px;">Live Demo</button>
-        </form>
-      </li>
     </ul>
+    
+    <div class="navbar-nav-button-live-demo">
+      <form>
+        <button class="button-live-demo-blue">Live Demo</button>
+      </form>
+    </div>
 
   </div>
   <!--  navigation bar on medium to large devices  -->
@@ -196,87 +426,89 @@
 <!-- nav for different pages -->
 
 <!-- nav for different currencies -->
-<nav class="uk-navbar-container" uk-navbar="mode: click" style="background: linear-gradient(to right, #102B58 , #C61924); height: 60px; width: 100%;">
-  <div class="uk-navbar-center" style="width: 100%;">
+<nav class="navbar-currency">
+  <div class="navbar-currency-child">
 
-      <marquee>
-    <ul class="uk-navbar-nav">
+    <ul class="navbar-currency-child-nav">
       <li>
         <a href="">
-          <div class="uk-label-white uk-padding-small uk-visible@s">BTC/USD
-            <div class="uk-label-increasing uk-navbar-subtitle"> 12,455.00</div>
+          <div class="label-white">BTC/USD
+            <div class="label-increasing"> 12,455.00</div>
+          </div>
+        </a>
+      </li>
+
+      <li class="show-on-smaller-devices">
+        <a href="">
+          <div class="label-white">BTC/USD
+            <div class="label-increasing"> 12,455.00</div>
+          </div>
+        </a>
+      </li>
+
+      <li class="show-on-smaller-devices">
+        <a href="">
+          <div class="label-white">ETH/USD
+            <div class="label-decreasing"> 697.00</div>
           </div>
         </a>
       </li>
 
       <li>
         <a href="">
-          <div class="uk-label-white uk-padding-small uk-visible@s">BTC/USD
-            <div class="uk-label-increasing uk-navbar-subtitle"> 12,455.00</div>
+          <div class="label-white">DASH/USD
+            <div class="label-increasing"> 957.34</div>
           </div>
         </a>
       </li>
 
       <li>
         <a href="">
-          <div class="uk-label-white uk-padding-small uk-visible@s">ETH/USD
-            <div class="uk-label-decreasing uk-navbar-subtitle"> 697.00</div>
+          <div class="label-white">XPR/USD
+            <div class="label-decreasing"> 1.89</div>
           </div>
         </a>
       </li>
 
       <li>
         <a href="">
-          <div class="uk-label-white uk-padding-small uk-visible@s">DASH/USD
-            <div class="uk-label-increasing uk-navbar-subtitle"> 957.34</div>
+          <div class="label-white">LTC/USD
+            <div class="label-increasing"> 209.20</div>
           </div>
         </a>
       </li>
 
       <li>
         <a href="">
-          <div class="uk-label-white uk-padding-small uk-visible@s">XPR/USD
-            <div class="uk-label-decreasing uk-navbar-subtitle"> 1.89</div>
+          <div class="label-white">BTC/USD
+            <div class="label-increasing"> 2,455.00</div>
           </div>
         </a>
       </li>
 
       <li>
         <a href="">
-          <div class="uk-label-white uk-padding-small uk-visible@s">LTC/USD
-            <div class="uk-label-increasing uk-navbar-subtitle"> 209.20</div>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a href="">
-          <div class="uk-label-white uk-padding-small uk-visible@s">BTC/USD
-            <div class="uk-label-increasing uk-navbar-subtitle"> 2,455.00</div>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a href="">
-          <div class="uk-label-white uk-padding-small uk-visible@s">BH/USD
-            <div class="uk-label-increasing uk-navbar-subtitle"> 12,455.00</div>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a href="">
-          <div class="uk-label-white uk-padding-small uk-visible@s">BH/USD
-            <div class="uk-label-increasing uk-navbar-subtitle"> 12,455.00</div>
+          <div class="label-white">BH/USD
+            <div class="label-increasing"> 12,455.00</div>
           </div>
         </a>
       </li>
     </ul>
-      </marquee>
 
   </div>
 </nav>
 <!-- nav for different currencies -->
 
-<!-- navigation bar -->
+<script type="text/javascript">
+  navbar_button = document.getElementById('hamburger-navbar-sm')
+  navbar_button.addEventListener('click', function(){
+    display_type = document.getElementById('base-navbar-sm');
+    if(display_type.style.display == 'block')
+    {
+      display_type.style.display = "none";
+    }else
+    {
+      display_type.style.display = "block";
+    }
+  })
+</script>

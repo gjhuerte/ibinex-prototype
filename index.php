@@ -1,6 +1,7 @@
 <?php require 'template.php'; ?>
 
 <?php function styles_include(){ ?>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <style>
 * {
     margin: 0;
@@ -484,22 +485,6 @@
     color: black;
 }
   
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    border: 0;
-    background: black;
-    background-color: black;
-    color: black;
-}
-  
 .carousel-control-next-icon, .carousel-control-prev-icon {
     display: inline-block;
     width: 20px;
@@ -510,13 +495,18 @@
     transform: translateY(50px);
 }
   
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  
   #legal-btn {
     webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
     font-family: Arial;
     color: #1a7182;
-    font-size: 9px;
+    font-size: 13px;
     font-weight: bold;
     background: #12d5b7;
     padding: 10px 20px 10px 20px;
@@ -775,44 +765,45 @@
         </div>
     </div>
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <p id="legal-p">Learn more about Ibinex</p>
-        <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="assets/images/brochure1.png" alt="First slide">
-             <button id="legal-btn">DOWNLOAD</button>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+          <p id="legal-p">Learn more about Ibinex</p>
+          <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/images/brochure1.png" alt="Los Angeles" width="auto" height="auto">
+              <button id="legal-btn">DOWNLOAD</button>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/brochure2.png" alt="Chicago" width="auto" height="auto">
+              <button id="legal-btn">DOWNLOAD</button>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/brochure3.png" alt="New York" width="auto" height="auto">
+              <button id="legal-btn">DOWNLOAD</button>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/brochure4.png" alt="New York" width="auto" height="auto">
+              <button id="legal-btn">DOWNLOAD</button>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/brochure5.png" alt="New York" width="auto" height="auto">
+              <button id="legal-btn">DOWNLOAD</button>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/brochure6.png" alt="New York" width="auto" height="auto">
+              <button id="legal-btn">DOWNLOAD</button>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/images/brochure2.png" alt="Second slide">
-            <button id="legal-btn">DOWNLOAD</button>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/images/brochure3.png" alt="Third slide">
-            <button id="legal-btn">DOWNLOAD</button>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/images/brochure4.png" alt="Third slide">
-            <button id="legal-btn">DOWNLOAD</button>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/images/brochure5.png" alt="Third slide">
-            <button id="legal-btn">DOWNLOAD</button>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/images/brochure6.png" alt="Third slide">
-            <button id="legal-btn">DOWNLOAD</button>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-     </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+      </div>
 
 
     <div id="nusku-media" class="uk-background-muted">
@@ -826,11 +817,14 @@
             <img src="assets/images/media6.png" class="nusku-media-logo">
         </div>
     </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <?php } ?>
 
 <?php function scripts_include(){ ?>
+
 $('.carousel').carousel({
   interval: 2000
 })

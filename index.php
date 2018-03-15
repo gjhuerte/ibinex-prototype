@@ -1,7 +1,11 @@
 <?php require 'template.php'; ?>
 
 <?php function styles_include(){ ?>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
 <style>
 * {
     margin: 0;
@@ -304,6 +308,10 @@
     display: none;
   }
   
+  .mobile-carousel {
+    display: none;
+  }
+  
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
 /* For tablet: */
   #nusku-header {
@@ -312,6 +320,9 @@
 }
   
 @media only screen and (max-width: 768px) {
+  .mobile-carousel {
+    display: block;
+  }
         /* For mobile phones: */
         [class*="uk-width-"] {
             width: 100%;
@@ -485,6 +496,30 @@
     color: black;
 }
   
+  .arrow-left {
+    position: relative;
+    top: 200px;
+    left: 10px;
+    z-index: 99;
+    color: black;
+  }
+   .arrow-right {
+    float: right;
+    position: relative;
+    top: 200px;
+    right: 10px;
+    z-index: 99;
+    color: black;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    color: black;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
 .carousel-control-next-icon, .carousel-control-prev-icon {
     display: inline-block;
     width: 20px;
@@ -612,7 +647,7 @@
     
     <div class="header-input">
       <input type="text" placeholder="Type your email">
-      <button>REQUEST A DEMO</button>
+      <button class="uk-button uk-button-danger">REQUEST A DEMO</button>
     </div>
     
 
@@ -765,45 +800,52 @@
         </div>
     </div>
 
-    <div id="demo" class="carousel slide" data-ride="carousel">
+    <div id="demo" class="carousel-slide mobile-carousel">
           <p id="legal-p">Learn more about Ibinex</p>
           <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
           <!-- The slideshow -->
+          <button class="arrow-left"><i class="fas fa-angle-left fa-2x"></i></button>
+          <button class="arrow-right"><i class="fas fa-angle-right fa-2x"></i></button>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/images/brochure1.png" alt="Los Angeles" width="auto" height="auto">
-              <button id="legal-btn">DOWNLOAD</button>
+            <div class="">
+                <div class="">
+                    <img src="assets/images/brochure1.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="assets/images/brochure2.png" alt="Chicago" width="auto" height="auto">
-              <button id="legal-btn">DOWNLOAD</button>
+            <div class="">
+                <div class="">
+                    <img src="assets/images/brochure2.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="assets/images/brochure3.png" alt="New York" width="auto" height="auto">
-              <button id="legal-btn">DOWNLOAD</button>
+            <div class="">
+                <div class="">
+                    <img src="assets/images/brochure3.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="assets/images/brochure4.png" alt="New York" width="auto" height="auto">
-              <button id="legal-btn">DOWNLOAD</button>
+            <div class="">
+                <div class="">
+                    <img src="assets/images/brochure4.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="assets/images/brochure5.png" alt="New York" width="auto" height="auto">
-              <button id="legal-btn">DOWNLOAD</button>
+            <div class="">
+                <div class="">
+                    <img src="assets/images/brochure5.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="assets/images/brochure6.png" alt="New York" width="auto" height="auto">
-              <button id="legal-btn">DOWNLOAD</button>
+            <div class="">
+                <div class="">
+                    <img src="assets/images/brochure6.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
+                </div>
             </div>
-          </div>
-
-          <!-- Left and right controls -->
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
       </div>
+       
+</div>
 
 
     <div id="nusku-media" class="uk-background-muted">
@@ -817,15 +859,22 @@
             <img src="assets/images/media6.png" class="nusku-media-logo">
         </div>
     </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 
 <?php } ?>
 
 <?php function scripts_include(){ ?>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 
-$('.carousel').carousel({
-  interval: 2000
-})
+<script>
+  $(document).ready(function(){
+  $('.carousel-inner').slick({
+  infinite: true,
+  speed: 500,
+  cssEase: 'linear',
+  prevArrow :'.arrow-left',
+  nextArrow :'.arrow-right',
+});
+});
+</script>
 <?php } ?>

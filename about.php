@@ -1,11 +1,15 @@
 <?php require 'template.php'; ?>
 
 <?php function styles_include(){ ?>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 <style>
     .uk-grid {
         margin-left: 0;
     }
+	.slick-slide {
+		outline: none
+	}
     #banner-title, #banner-content {
         font-family: Verdana, Geneva, sans-serif;
     }
@@ -25,7 +29,7 @@
         overflow: hidden;
         background-size: cover;
         background-position: center;
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Oakland_Bay_Bridge_Western_Part.jpg/1024px-Oakland_Bay_Bridge_Western_Part.jpg');
+        background-image: url('./assets/images/about-banner.jpg');
     }
     #banner-title {
         color:white;
@@ -95,7 +99,7 @@
     #exec-list {
         position: relative;
         min-height: 100%;
-        background: rgba(255,0,0,0.5);
+        background: white;
         border-radius: 10px;
         margin-top: 3%;
     }
@@ -226,6 +230,22 @@
             display: none;
         }
     }
+	
+	
+	/*
+	###########################################################################
+	*/
+	
+	
+	.sample {
+		height: 200px;
+		width: 100%;
+		background-color: red;
+	}
+	
+	
+	
+	
 </style>   
 <?php } ?>
 
@@ -261,18 +281,18 @@
 <div id="ibx-media">
     <h2 id="media-title">Ibinex media coverage</h2>
     <div id="media-cov">
-        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
-        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
-        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
-        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
-        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
-        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
-        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
-        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
-        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
-        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
-        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
-        <img src="http://teachersjobworld.com/employer/upload_logo/sample_logo.png" class="media-logo" />
+        <img src="./assets/images/media1.png" class="media-logo" />
+        <img src="./assets/images/media2.png" class="media-logo" />
+        <img src="./assets/images/media3.png" class="media-logo" />
+        <img src="./assets/images/media4.png" class="media-logo" />
+        <img src="./assets/images/media5.png" class="media-logo" />
+        <img src="./assets/images/media6.png" class="media-logo" />
+        <img src="./assets/images/media7.png" class="media-logo" />
+        <img src="./assets/images/media8.png" class="media-logo" />
+        <img src="./assets/images/media9.png" class="media-logo" />
+        <img src="./assets/images/media10.png" class="media-logo" />
+        <img src="./assets/images/media11.png" class="media-logo" />
+        <img src="./assets/images/media12.png" class="media-logo" />
     </div>
 </div>
 <div id="ibx-team">
@@ -286,100 +306,104 @@
                 nisi ut aliquip ex ea commodo consequat.
             </span>
         </div>
-        <div id="exec-list"  data-uk-slideshow="{animation: 'scroll'}">
-            <div id="exec-slideshow" class="uk-slidenav-position">
-                <ul class="uk-slideshow uk-position-relative uk-visible-toggle uk-light">
-                    <li data-slideshow-slide="html">
-                        <div class="exec-data exec-item">
-                            <h4 class="exec-name exec-header">Matthew Novinski</h4>
-                            <h6 class="exec-rank exec-header">Chief Executive Officer</h6>
-                            <span class="exec-info">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                cupidatat non proident, sunt in
-                            </span>
-                            <a href="">Linkedin Profile</a>
-                            <a href="">Download CV</a>
-                        </div>
-                    </li>
-                    <li data-slideshow-slide="html">
-                        <div class="exec-data exec-item">
-                            <h3 class="exec-name exec-header">John Whirlpool</h3>
-                            <h5 class="exec-rank exec-header">Chief Executive Officer</h5>
-                            <span class="exec-info">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                cupidatat non proident, sunt in
-                            </span>
-                        </div>
-                    </li>
-                    <li data-slideshow-slide="html">
-                        <div class="exec-data exec-item">
-                            <h3 class="exec-name exec-header">Rion Pronelle</h3>
-                            <h5 class="exec-rank exec-header">Chief Executive Officer</h5>
-                            <span class="exec-info">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                cupidatat non proident, sunt in
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-                <a id="exec-prev" class="exec-arrows" href="#" data-uk-slideshow-item="previous">🠔</a>
+		<div id="exec-list">
+            <div id="exec-slideshow">
+				<div class="exec-slick">
+					<div>
+						<div class="exec-data exec-item">
+							<h4 class="exec-name exec-header">Matthew Novinski</h4>
+							<h6 class="exec-rank exec-header">Chief Executive Officer</h6>
+							<span class="exec-info">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+								ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+								cupidatat non proident, sunt in
+							</span>
+							<a href="">Linkedin Profile</a>
+							<a href="">Download CV</a>
+						</div>
+					</div>
+					<div>
+						<div class="exec-data exec-item">
+							<h3 class="exec-name exec-header">John Whirlpool</h3>
+							<h5 class="exec-rank exec-header">Chief Executive Officer</h5>
+							<span class="exec-info">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+								ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+								cupidatat non proident, sunt in
+							</span>
+							<a href="">Linkedin Profile</a>
+							<a href="">Download CV</a>
+						</div>
+					</div>
+					<div>
+						<div class="exec-data exec-item">
+							<h3 class="exec-name exec-header">Rion Pronelle</h3>
+							<h5 class="exec-rank exec-header">Chief Executive Officer</h5>
+							<span class="exec-info">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+								ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+								cupidatat non proident, sunt in
+							</span>
+							<a href="">Linkedin Profile</a>
+							<a href="">Download CV</a>
+						</div>
+					</div>
+				</div>
+				<a id="exec-prev" class="exec-arrows" href="#" data-uk-slideshow-item="previous">🠔</a>
                 <a id="exec-next" class="exec-arrows" href="#" data-uk-slideshow-item="next">🠖</a>
-<!--                 <div id="exec-album">
-                    <img src="http://ascii.jp/elem/000/000/200/200375/%E3%83%8B%E3%83%A3%E3%83%B3%E3%82%B3%E5%85%88%E7%94%9F2_240x.jpg"/>
-                </div> -->
-            </div>
-        </div>
+			</div>
+<!-- 			<div id="exec-album">
+				<img src="http://ascii.jp/elem/000/000/200/200375/%E3%83%8B%E3%83%A3%E3%83%B3%E3%82%B3%E5%85%88%E7%94%9F2_240x.jpg"/>
+			</div> -->
+		</div>
     </div>
     <div id="ibx-board">
         <hr id="ibx-divider"/>
         <h2 id="board-title">Advisory <i>Board</i></h2>
         <div id="board-list">
             <div class="board-members">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Official_Portrait_of_President_Donald_Trump.jpg" class="board-img" />
+                <img src="./assets/images/board1.png" class="board-img" />
                 <h5 class="board-name exec-header">Jeremy Corbein</h5>
                 <span class="board-rank">Chief of Operational Officer, Deiteriy</span>
             </div>
             <div class="board-members">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Official_Portrait_of_President_Donald_Trump.jpg" class="board-img" />
+                <img src="./assets/images/board2.png" class="board-img" />
                 <h5 class="board-name exec-header">Jimmy Fallon</h5>
                 <span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
             </div>
             <div class="board-members">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Official_Portrait_of_President_Donald_Trump.jpg" class="board-img" />
+                <img src="./assets/images/board3.png" class="board-img" />
                 <h5 class="board-name exec-header">Stephen Colbert</h5>
                 <span class="board-rank">Head of Products and Services Development Department XB Software</span>
             </div>
             <div class="board-members">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Official_Portrait_of_President_Donald_Trump.jpg" class="board-img" />
+                <img src="./assets/images/board4.png" class="board-img" />
                 <h5 class="board-name exec-header">Artem Kushik</h5>
                 <span class="board-rank">Business Analyst, Credit Agricole CIB</span>
             </div>
             <div class="board-members">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Official_Portrait_of_President_Donald_Trump.jpg" class="board-img" />
+                <img src="./assets/images/board1.png" class="board-img" />
                 <h5 class="board-name exec-header">Jeremy Corbein</h5>
                 <span class="board-rank">Chief of Operational Officer, Deiteriy</span>
             </div>
             <div class="board-members">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Official_Portrait_of_President_Donald_Trump.jpg" class="board-img" />
+                <img src="./assets/images/board2.png" class="board-img" />
                 <h5 class="board-name exec-header">Jimmy Fallon</h5>
                 <span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
             </div>
             <div class="board-members">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Official_Portrait_of_President_Donald_Trump.jpg" class="board-img" />
+                <img src="./assets/images/board3.png" class="board-img" />
                 <h5 class="board-name exec-header">Stephen Colbert</h5>
                 <span class="board-rank">Head of Products and Services Development Department XB Software</span>
             </div>
             <div class="board-members">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Official_Portrait_of_President_Donald_Trump.jpg" class="board-img" />
+                <img src="./assets/images/board4.png" class="board-img" />
                 <h5 class="board-name exec-header">Artem Kushik</h5>
                 <span class="board-rank">Business Analyst, Credit Agricole CIB</span>
             </div>
@@ -389,9 +413,13 @@
 <?php } ?>
 
 <?php function scripts_include(){ ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
 (function(){
+	$('.exec-slick').slick({
+		prevArrow: $('#exec-prev'),
+		nextArrow: $('#exec-next')
+	});
 }())
 </script>
 <?php } ?>

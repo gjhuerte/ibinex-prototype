@@ -1,8 +1,7 @@
 <?php require 'template.php'; ?>
 
 <?php function styles_include(){ ?>
-<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <style>
   .red {
@@ -11,8 +10,6 @@
   .red h3{
     color: #FEFEFD;
     text-align: center;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
   }
   .red p{
     text-align: center;
@@ -21,7 +18,8 @@
     padding-bottom: -35%;
   }
   .uk-container h3{
-    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
     font-size: 220%;
   }
   .uk-container p, li{
@@ -40,7 +38,7 @@
   .grey1 .platform-content {
     color: #6B7C93;
     margin-bottom: -5%;
-    margin-left: -6%;
+    margin-left: -3%;
   }
   .grey1 .platform-content h3 {
     color: #2C3135;
@@ -742,11 +740,11 @@
     </div>
 </div>
 
-<div class="uk-section uk-section-muted grey1" style="background-color: #F7F7F7;">
+<div class="uk-section uk-section-muted grey1" style="background-color: #F7F7F7; padding-top: 0;">
     <div class="uk-container">
-        <div class="uk-margin-remove uk-grid-match uk-child-width-1-2@m" uk-grid>
+        <div class="uk-margin-remove-top uk-grid-match uk-child-width-1-2@m" uk-grid>
             <div class="imgtop">
-                <img class="laptopimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="position: relative; top: 21%; height: 107%; margin-left: 15%;" alt="macbook">
+                <img class="laptopimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="position: relative; top: 21%; height: 107%; margin-left: -4%; max-width: 200%; width: 162%;" alt="macbook">
             </div>
             <div class="uk-margin platform-content">
                 <h3 class="uk-margin-xlarge-top animated fadeInRight">Platform</h3>
@@ -762,7 +760,7 @@
                 </ul>
             </div>
             <div class="imgbttm">
-                <img class="laptopimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="" alt="macbook">
+                <img class="laptopimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="max-width: 200%; width: 187%; top: -4%; left: -14%;" alt="macbook">
             </div>
         </div>
     </div>
@@ -774,8 +772,8 @@
             <div class="crm-one">
                 <h3 class="">CRM/Back Office</h3>
                 <p>The Ibinex solution unites the front-end and platform with a full black office suit including CRM with:</p>
-                <ul class="uk-list uk-list-space" id="pl_list">
-                  <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> KYC/AML documentation collection</li>
+                <ul class="uk-margin uk-list uk-list-space" id="pl_list">
+                  <li class="uk-margin-small-top"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> KYC/AML documentation collection</li>
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Documentation verification</li>
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Account and money management</li>
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Optimised back-office administrative workflow</li>
@@ -820,8 +818,8 @@
                   <img class="imageleft maestro" src="assets/images/maestro.svg" alt="cards" data-tilt>
                 </p>
             </div>
-            <div class="phone">
-              <p><img class="phoneimg" src="assets/images/iphonex.png" alt="iphonex" style="margin-bottom: -12%;"></p>
+            <div class="uk-margin phone">
+              <p><img class="phoneimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/23e46f532ad13d99fa6810dbef622156/First-Option-Services_Desktop_(1)-min.png" alt="iphonex" style="margin-bottom: -16%; width: 79%; margin-left: 6%; padding-top: 8%;"></p>
             </div>
         </div>
     </div>
@@ -852,9 +850,6 @@
 $('.cblogo').tilt({
     glare: true,
     maxGlare: .5
-})
-$('.crmimage').tilt({
-    scale: 1.2
 })
 </script>
 <?php } ?>

@@ -100,6 +100,7 @@
     #exec-item {
         height: 80%;
         max-height: 100em;
+        list-style:none;
     }
     .exec-data {
         overflow: hidden;
@@ -186,7 +187,49 @@
             display: none;
         }
     }
-    
+.stack--image .stack__item--prev {
+	-webkit-animation: rotateImages 0.5s forwards;
+	animation: rotateImages 0.5s forwards;
+}
+
+@-webkit-keyframes rotateImages {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 200px, 0);
+		transform: translate3d(0, 200px, 0);
+	}
+}
+
+@keyframes rotateImages {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 200px, 0);
+		transform: translate3d(0, 200px, 0);
+	}
+}
+
+.stack--image .stack__item--next {
+	-webkit-transform-origin: 50% 300%;
+	transform-origin: 50% 300%;
+	-webkit-animation: rotateImages 0.5s forwards;
+	animation: rotateImages 0.5s forwards;
+}
+
+@-webkit-keyframes rotateImages {
+	to {
+		opacity: 0;
+		-webkit-transform: rotate3d(0, 0, 1, 20deg);
+		transform: rotate3d(0, 0, 1, 20deg);
+	}
+}
+
+@keyframes rotateImages {
+	to {
+		opacity: 0;
+		-webkit-transform: rotate3d(0, 0, 1, 20deg);
+		transform: rotate3d(0, 0, 1, 20deg);
+	}
+}
 </style>   
 <?php } ?>
 
@@ -247,8 +290,17 @@
                 nisi ut aliquip ex ea commodo consequat.
             </span>
         </div>
-<!--         <div id="exec-list" class="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow="">
-                <ul id="exec-item" class="uk-slideshow" style="height:100% !important">
+        <div id="exec-list" class="uk-light">
+          <div style="overflow:hidden; float:left; ">
+            <img class="" src="assets/images/About/IMG.png" style="width: 250px; height: 250px;">
+            <img class="" src="assets/images/About/IMG2.png" hidden>
+            <img class="" src="assets/images/About/Img3.png" hidden>
+          </div>
+          <div align="right">
+            <a href=""><</a>
+            <a href="">></a>
+          </div>
+                <ul id="exec-item" style="height:100% !important">
                     <li>
                         <div class="exec-data exec-half">
                             <h3 class="exec-name exec-header">Matthew Novinski</h3>
@@ -262,7 +314,7 @@
                             </span>
                         </div>
                     </li>
-                    <li>
+                    <li hidden>
                         <div class="exec-data exec-half">
                             <h3 class="exec-name exec-header">John Whirlpool</h3>
                             <h5 class="exec-rank exec-header">Chief Executive Officer</h5>
@@ -275,7 +327,7 @@
                             </span>
                         </div>
                     </li>
-                    <li>
+                    <li hidden>
                         <div class="exec-data exec-half">
                             <h3 class="exec-name exec-header">Rion Pronelle</h3>
                             <h5 class="exec-rank exec-header">Chief Executive Officer</h5>
@@ -291,7 +343,7 @@
                 </ul>
                 <a class="uk-position-top-right uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
                 <a class="uk-position-top-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-            </div> -->
+            </div> 
             <div class="uk-slidenav-position" data-uk-slideshow="">
                 <ul class="uk-slideshow">
                     <li data-uk-slideshow-item="0">

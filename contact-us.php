@@ -1,8 +1,10 @@
 <?php require 'template.php'; ?>
 
 <?php function styles_include(){ ?>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+<link rel="stylesheet" type="text/css" href="<?= "assets/css/animate.css"?>">
 <style>
+  
+  
   .contact-us-background{
     background-image: url(https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
     background-size: cover;
@@ -61,8 +63,6 @@
   }
   
 
-  
-
   .label{
     font-size:0.7em;
   }
@@ -93,6 +93,10 @@ box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
     background-color: #b71c1c;
     height:10vh;
     border: 1px solid black;
+  }
+  
+  .hidden{
+    visibility:hidden;
   }
   
 
@@ -167,7 +171,7 @@ box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
         <div class="uk-container">
               
             <div class="uk-grid-match uk-child-width-1@m" uk-grid>
-                <div id="get-started" class="text-holder uk-animation-slide-left">
+                <div id="get-started" class="text-holder uk-animation-slide-left-medium">
                   <h1 class="uk-text-bold header-text">Get Started</h1>
                 <p class="uk-text-bold uk-text-justify intro-text">
                     We invite you to experience the Ibinex demo here, which will help you to conceptualise
@@ -209,7 +213,7 @@ box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
     </div>
 
 
-<div class="uk-grid-collapse uk-child-width-expand@s " uk-grid uk-grid>
+<div class="uk-grid-collapse uk-child-width-expand@s bottom-section" uk-grid uk-grid>
     <div>
         <div class="uk-background-default uk-padding">
             <div class="bottom-text-left">
@@ -270,19 +274,32 @@ box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
 <?php } ?>
 
 <?php function scripts_include(){ ?>
+
 <script>
-$(document).ready(function () {
-    // Handler for .ready() called.
-    $('html, body').animate({
-        scrollTop: $('#get-started').offset().top
-    }, 500);
+
+  var contact = {
+    
+      animateElement : function(element,effect,delay){
+          
+          
+            setTimeout(function(){
+            $(element).removeClass('hidden');
+            $(element).addClass(effect);
+            }, delay);
+          
+      }
+  
+  }
+  
+$(document).on('load',function(){
   
   
-    var y = $(this).scrollTop();
-    
-  console.log(y);
-    
+  //contact.animateElement(".bottom-section .contact-us-form .white-form","animated zoomInRight",500);
+  
   
 });
+
+   
+  
 </script>
 <?php } ?>

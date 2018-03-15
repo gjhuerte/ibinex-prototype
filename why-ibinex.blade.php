@@ -78,7 +78,7 @@
   }
   .title-section2 h2{
     font-weight: bold;
-    font-size: 35px;
+    font-size: 31px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
   .text2{
@@ -228,12 +228,12 @@
 <?php function display_content(){ ?>
 <div class="main-grid">
   <div class="section1st">
-    <div class="display section1st-text1" uk-scrollspy="cls: uk-animation-slide-left; delay: 500">
+    <div class="display section1st-text1 header1">
        <h2 class="header-section">We fuse innovation with accessibility as blockchain technology evolves</h2>
        <p class="subgrid-text">We seek to revolutionise the way that exchange owners create their platforms and raise the standard of marketplace excellence by incorporating our cutting-edge technology, delivered with practicality and a host of unique benefits, only enjoyed by merging with the ibinex ecosystem.</p>
     </div>
     <div class="display bgcolor uk-light section1st-text2">
-      <div class="section1st-data"><h2 class="header-section">We are an ecosystem with vision</h2>
+      <div class="section1st-data header2"><h2 class="header-section">We are an ecosystem with vision</h2>
       <p>As the gateway to your own customisable cryptocurrency ecosystem, our vision is to equip you with the tools to create and operate your cryptocurrency exchange, your way.</p></div>
     </div>
     <div  class="pageImage" ><img src="assets/images/homepage_why.png" alt=""></div>
@@ -244,25 +244,25 @@
       <p>Our strategy is underpinned by the 4 core strengths of Ibinex:</p>
     </div>
     <div class="section2-text mainPadding" style="border-bottom: 1px solid #e5e5e5;">
-       <div class="text text-border" style="padding-right: 15%; border-right: 1px solid #e5e5e5;">
+       <div class="text text-border text-left" style="padding-right: 15%; border-right: 1px solid #e5e5e5;">
              <div class="uk-animation-toggle">
                <img src="assets/images/1.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             <p>Commitment to technological innovation, through out patent-pending proprietary software, Cryptobridge<sup>TM</sup></p>
         </div>
-        <div class="text text-padding" style="padding-left: 15%;">
+        <div class="text text-padding text-right" style="padding-left: 15%;">
             <div class="uk-animation-toggle">
                <img src="assets/images/2.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
            <p>Trailblazing of complete and customisable white label platform solutions</p>
         </div>
-        <div class="text text-border" style="padding-right: 15%; border-right: 1px solid #e5e5e5;  padding-bottom: 5%;">
+        <div class="text text-border text-left" style="padding-right: 15%; border-right: 1px solid #e5e5e5;  padding-bottom: 5%;">
              <div class="uk-animation-toggle">
                <img src="assets/images/3.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             <p>Offering unprecedented custodian service with our industry's first finance transaction license</p>
         </div>
-        <div class="text text-padding"  style="padding-left: 15%; padding-bottom: 5%;">
+        <div class="text text-padding text-right"  style="padding-left: 15%; padding-bottom: 5%;">
              <div class="uk-animation-toggle">
                <img src="assets/images/4.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
@@ -279,5 +279,13 @@
 <?php } ?>
 
 <?php function scripts_include(){ ?>
-
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.text-left', {origin: 'left', distance: '200px', opacity: 0, duration: 2000,reset: true});
+    sr.reveal('.text-right', {origin: 'right', distance: '200px', opacity: 0, duration: 2000,reset: true});
+    sr.reveal('.header1', {origin: 'left', distance: '200px', opacity: 0, duration: 2000, delay:500});
+    sr.reveal('.header2', {origin: 'left', distance: '200px', opacity: 0, duration: 2000, delay:500});
+    sr.reveal('.text2', {opacity: 0, duration: 2000, delay:500});
+  </script>
 <?php } ?>

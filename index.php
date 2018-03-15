@@ -826,6 +826,6 @@
 <?php function scripts_include(){ ?>
 
 $('.carousel').carousel({
-  interval: 2000
+  interval: 1000
 })
 <?php } ?>

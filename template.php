@@ -35,23 +35,6 @@
     <?php require 'layouts/footer.blade.php'; ?>
     
 		<script type="text/javascript">
-			$(document).ready(function(){			
-				
-				$('.uk-navbar-nav > li').on({
-					mouseenter: function () {
-							setTimeout(function(){
-								$(this).addClass('uk-animation-scale-up')
-							}, 1000)
-					},
-					mouseleave: function () {
-							setTimeout(function(){
-								$(this).removeClass('uk-animation-scale-up')
-							}, 1000)
-								 
-					}
-				})
-
-			})
 			
 			// ----------page loader-----------//
 			$('html, body').css({

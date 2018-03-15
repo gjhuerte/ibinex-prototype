@@ -37,6 +37,7 @@
     grid-row: 2;
     font-size: 12.5px;
     font-weight: 900;
+    color: #728298;
   }
 
   .section1st-text2{
@@ -50,6 +51,10 @@
     grid-column: 2;
     grid-row: 3 / -1;
   }
+  .section1st-data h2,
+    .section1st-data p{
+      color: white;
+    }
   .section1st-data p{
     font-size: 12.5px;
     font-weight: 900;
@@ -87,6 +92,7 @@
   }
   .title-section2 p{
     font-weight: 900;
+    color: #728298;
   }
   
   
@@ -103,6 +109,7 @@
     font-weight: bold;
     font-size: 35px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: #2c3339;
   }
   
   .header-section,
@@ -122,13 +129,15 @@
     padding-top: 10%;
   }
   .text2 p{
-      font-size: 0.8em;
-      font-weight: 900;
+    font-size: 0.8em;
+    font-weight: 900;
+    color: #728298;
     } 
   .text p{
       margin: 0;
-      font-size: 21px;
+      font-size: 16px;
       font-weight: 900;
+      color: #728298;
     }
    @media only screen and (min-width : 768px) and (max-width : 1024px) {
     
@@ -162,6 +171,7 @@
     .section1st-data p{
       text-align: justify;
       font-size: 19px;
+      
     }
 
   .section1st-data{

@@ -225,7 +225,7 @@
     }
     
     .company-information-list {
-      padding-left: 10px;
+      padding-left: 20%;
     }
     
     .footer-lower {

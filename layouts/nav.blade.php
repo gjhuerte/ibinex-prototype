@@ -200,11 +200,16 @@
     color: #102B58;
     float:right;
     border: none;
+    outline: none;
   }
   
   @media (min-width : 900px) {
     .media-smaller-devices {
       display: none;
+    }
+    
+    #base-navbar-sm {
+      display: block;
     }
   }
   
@@ -231,8 +236,72 @@
       font-size: 10px;
     }
     
+    .navigation-navbar-child {
+      display: block
+    }
+    
     .navbar-currency-child-nav > li:not(.show-on-smaller-devices) {
       display: none;
+    }
+    
+    .navbar-logo-main {
+      display: none;
+    }
+    
+    .navbar-nav-button-live-demo {
+      display: block;
+      align-self: center;
+    }
+    
+    .navigation-navbar-child-nav {
+      padding-left: 0px;
+      display: block;
+      margin-bottom: 0px;
+    }
+    
+    .navigation-navbar {
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+      transition: max-height 0.5s, overflow 0s;
+    }
+    
+    .navigation-navbar-child-nav > li {
+      display: block;
+      float: none;
+      background-color: #02142d;
+      padding: 3%;
+      border: none;
+      margin: 0;
+    }
+    
+    @-webkit-keyframes fadeIn {
+        from { opacity: 0; }
+          to { opacity: 1; }
+    }  
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+          to { opacity: 1; }
+    }
+    
+    .navigation-navbar-child-nav > li > a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .button-live-demo-blue {
+      margin-left: 0;
+      border: 1px solid;
+      border-radius: 0;
+      color: #102B58;
+      background-color: white;  
+      width: 100%;
+    }
+
+    .button-live-demo-blue:hover {
+      background-color: white;
+      font-size: 15px;
+      color: #102B58;  
     }
   }
 </style>
@@ -294,7 +363,7 @@
   <!--  navigation bar icon on smaller devices  -->
 
 <!-- nav for different pages -->
-<nav class="media-larger-devices navigation-navbar">
+<nav class="media-larger-devices navigation-navbar" id="base-navbar-sm">
 
   <!--  navigation bar on medium to large devices  -->
   <div class="navigation-navbar-child">
@@ -447,4 +516,16 @@
 </nav>
 <!-- nav for different currencies -->
 
-<!-- navigation bar -->
+<script type="text/javascript">
+  navbar_button = document.getElementById('hamburger-navbar-sm')
+  navbar_button.addEventListener('click', function(){
+    display_type = document.getElementById('base-navbar-sm');
+    if(display_type.style.display == 'block')
+    {
+      display_type.style.display = "none";
+    }else
+    {
+      display_type.style.display = "block";
+    }
+  })
+</script>

@@ -15,6 +15,7 @@
     list-style-type: none;
     padding-bottom: 1%;
     margin-bottom: 0;
+    border: none;
   }
   
   .give-us-a-call {
@@ -85,6 +86,7 @@
   }
   
   .footer-lower {
+    border: none;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: auto;
@@ -185,6 +187,15 @@
   
   .clear-padding-left {
     padding-left: 0;
+  }
+  
+  .footer-contact-logo {
+    margin-top: 10px;
+  }
+  
+  .footer-contact-logo > img {
+    width: 10%;
+    height: 10%;
   }
 
   @media (min-width: 992px) {
@@ -386,30 +397,15 @@
           <li class="footer-header-color-light">
             FIND US ONLINE
           </li>
-          <li>
-            <a href="#" style="background: url('assets/images/logo/facebook.png')">
-            </a>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-facebook-messenger"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-skype"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-telegram"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-viber"></i>
-            </a>
+          <li class="footer-contact-logo">
+            <img src="assets/images/logo/facebook-logo.png">
+            <img src="assets/images/logo/twitter-logo.png">
+            <img src="assets/images/logo/whatsapp-logo.png">
+            <img src="assets/images/logo/messenger-logo.png">
+            <img src="assets/images/logo/skype-logo.png">
+            <img src="assets/images/logo/telegram-logo.png">
+            <img src="assets/images/logo/youtube-logo.png">
+            <img src="assets/images/logo/viber-logo.png">
           </li>
         </ul>
       </div>

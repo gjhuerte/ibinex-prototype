@@ -95,12 +95,13 @@
   }
   
   .navigation-navbar-child-nav > li > a {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
   }
   
-  .navigation-navbar-child-nav > li > a > div:hover {
-    border-bottom:  1.5px #293E64 solid;
-    border-radius: 1px;
+  .navigation-navbar-child-nav > li > a:hover {
+    border-bottom: 2px solid #2e1733;
   }
 
   .button-live-demo-blue {

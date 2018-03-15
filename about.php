@@ -60,7 +60,6 @@
         width: 150px;
     }
     
-    
     #ibx-team {
         color: #1A1A1A;
         background-color : #F6F6F8;
@@ -82,7 +81,8 @@
         font-weight: 600;
     }
     #exec-title-2 {
-        width: 55%;
+        width: 50%;
+        font-size: 2em;
         font-weight: bold;
         padding-bottom: 1%;
     }
@@ -93,43 +93,39 @@
         display: block;
     }
     #exec-list {
+        position: relative;
         min-height: 100%;
         background: rgba(255,0,0,0.5);
         border-radius: 10px;
         margin-top: 3%;
     }
-<<<<<<< HEAD
-    #exec-item {
-        height: 80%;
-        max-height: 100em;
-        list-style:none;
-=======
+    #exec-slideshow {
+        padding-left: 25%;
+    }
     a.exec-arrows {
         position: absolute;
         font-size: 200%;
         vertical-align: middle;
         text-decoration: none;
-        top: 2%;
-        right: 0;
+        top: 10%;
     }
     #exec-prev {
-        right: 1%;
-        margin-right: 5%;
+        right: 2%;
+        margin-right: 3%;
     }
     #exec-next {
         right: 1%;
-        margin-left: 1%;
+        margin-left: 3%;
     }
-    #exec-items {
-        padding: 0;
+    .exec-item {
+        width: 67%;
+        margin-left: 33%;
     }
-    #exec-items li{ /*///////////////////////////////////////////////////////////////*/
-        display: none;
->>>>>>> 07ae4c7db7ee011104664bd251d50c3c0240de50
+    .exec-name, .exec-rank {
+        font-weight: bold;
     }
     .exec-data {
         padding: 1% 0;;
-        overflow: hidden;
         text-overflow: ellipsis;
     }
     .exec-info {
@@ -137,8 +133,15 @@
         display: block;
         font-size: 80%;
         text-align: justify;
-        overflow: hidden;
         padding-right: 3%;
+    }
+    #exec-album{
+        height: 200%;
+        width: 50%;
+        background-color: red;
+        position: absolute;
+        top: -100%;
+        left: 0;
     }
     
     #ibx-divider {
@@ -190,6 +193,13 @@
             width: 100%;
             margin-left: 0;
         }
+        #exec-slideshow {
+            padding-left: 2%;
+        }
+        .exec-item {
+            width: 100%;
+            margin-left:0;
+        }
     }
     @media only screen and (max-width: 768px) {
         /* For mobile phones: */
@@ -216,82 +226,6 @@
             display: none;
         }
     }
-<<<<<<< HEAD
-.stack--image .stack__item--prev {
-	-webkit-animation: rotateImages 0.5s forwards;
-	animation: rotateImages 0.5s forwards;
-}
-
-@-webkit-keyframes rotateImages {
-	to {
-		opacity: 0;
-		-webkit-transform: translate3d(0, 200px, 0);
-		transform: translate3d(0, 200px, 0);
-	}
-}
-
-@keyframes rotateImages {
-	to {
-		opacity: 0;
-		-webkit-transform: translate3d(0, 200px, 0);
-		transform: translate3d(0, 200px, 0);
-	}
-}
-
-.stack--image .stack__item--next {
-	-webkit-transform-origin: 50% 300%;
-	transform-origin: 50% 300%;
-	-webkit-animation: rotateImages 0.5s forwards;
-	animation: rotateImages 0.5s forwards;
-}
-
-@-webkit-keyframes rotateImages {
-	to {
-		opacity: 0;
-		-webkit-transform: rotate3d(0, 0, 1, 20deg);
-		transform: rotate3d(0, 0, 1, 20deg);
-	}
-}
-
-@keyframes rotateImages {
-	to {
-		opacity: 0;
-		-webkit-transform: rotate3d(0, 0, 1, 20deg);
-		transform: rotate3d(0, 0, 1, 20deg);
-	}
-}
-=======
-    
-    .slide-in {
-        animation: slide-in 0.5s forwards;
-        -webkit-animation: slide-in 0.5s forwards;
-    }
-
-    @keyframes slide-in {
-        0% { transform: translateX(100%); }
-        100% { transform: translateX(0%); background-color: red;}
-    }
-
-    @-webkit-keyframes slide-in {
-        0% { -webkit-transform: translateX(100%); }
-        100% { -webkit-transform: translateX(0%); background-color: red; }
-    }
-    
-    .slide-out {
-        animation: slide-out 0.5s forwards;
-        -webkit-animation: slide-out 0.5s forwards;
-    }
-
-    @keyframes slide-out {
-        0% { transform: translateX(0%); }
-        100% { transform: translateX(-100%); background-color: blue; opacity:0;}
-    }
-
-    @-webkit-keyframes slide-out {
-        0% { -webkit-transform: translateX(0%); }
-        100% { -webkit-transform: translateX(-100%); background-color: blue; opacity:0;}
-    }
->>>>>>> 07ae4c7db7ee011104664bd251d50c3c0240de50
 </style>   
 <?php } ?>
 
@@ -352,24 +286,11 @@
                 nisi ut aliquip ex ea commodo consequat.
             </span>
         </div>
-<<<<<<< HEAD
-        <div id="exec-list" class="uk-light">
-          <div style="overflow:hidden; float:left; ">
-            <img class="" src="assets/images/About/IMG.png" style="width: 250px; height: 250px;">
-            <img class="" src="assets/images/About/IMG2.png" hidden>
-            <img class="" src="assets/images/About/Img3.png" hidden>
-          </div>
-          <div align="right">
-            <a href=""><</a>
-            <a href="">></a>
-          </div>
-                <ul id="exec-item" style="height:100% !important">
-=======
-            <div id="exec-list" class="uk-position-relative uk-visible-toggle uk-light">
-                <ul id="exec-items" class="" style="list-style-type:none">
->>>>>>> 07ae4c7db7ee011104664bd251d50c3c0240de50
-                    <li>
-                        <div class="exec-data exec-half">
+        <div id="exec-list"  data-uk-slideshow="{animation: 'scroll'}">
+            <div id="exec-slideshow" class="uk-slidenav-position">
+                <ul class="uk-slideshow uk-position-relative uk-visible-toggle uk-light">
+                    <li data-slideshow-slide="html">
+                        <div class="exec-data exec-item">
                             <h4 class="exec-name exec-header">Matthew Novinski</h4>
                             <h6 class="exec-rank exec-header">Chief Executive Officer</h6>
                             <span class="exec-info">
@@ -379,12 +300,12 @@
                                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
                                 cupidatat non proident, sunt in
                             </span>
-                            <a href=""><i uk-icon="icon: linkedin"></i>Linkedin Profile</a>
-                            <a href=""><i uk-icon="icon: file-pdf-o"></i>Download CV</a>
+                            <a href="">Linkedin Profile</a>
+                            <a href="">Download CV</a>
                         </div>
                     </li>
-                    <li hidden>
-                        <div class="exec-data exec-half">
+                    <li data-slideshow-slide="html">
+                        <div class="exec-data exec-item">
                             <h3 class="exec-name exec-header">John Whirlpool</h3>
                             <h5 class="exec-rank exec-header">Chief Executive Officer</h5>
                             <span class="exec-info">
@@ -396,8 +317,8 @@
                             </span>
                         </div>
                     </li>
-                    <li hidden>
-                        <div class="exec-data exec-half">
+                    <li data-slideshow-slide="html">
+                        <div class="exec-data exec-item">
                             <h3 class="exec-name exec-header">Rion Pronelle</h3>
                             <h5 class="exec-rank exec-header">Chief Executive Officer</h5>
                             <span class="exec-info">
@@ -410,49 +331,13 @@
                         </div>
                     </li>
                 </ul>
-<<<<<<< HEAD
-                <a class="uk-position-top-right uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-                <a class="uk-position-top-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-            </div> 
-            <div class="uk-slidenav-position" data-uk-slideshow="">
-                <ul class="uk-slideshow">
-                    <li data-uk-slideshow-item="0">
-                      <img src="https://download.unsplash.com/photo-1414446483597-8d8f792bfe39">
-                      <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
-                        <div class="caption">
-                          <h3>Example 1</h3>
-                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li data-uk-slideshow-item="1">
-                      <img src="https://download.unsplash.com/photo-1417870839255-a23faa90c6b0">
-                      <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
-                        <div class="caption">
-                          <h3>Example 2</h3>
-                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li data-uk-slideshow-item="2">
-                  <img src="https://unsplash.com/photos/34mvN5nt1ls/download">
-                  <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
-                    <div class="caption">
-                      <h3>Example 3</h3>
-                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
-                    </div>
-                  </div>
-                </li>
-                </ul>
-                <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-                <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
-=======
-                <div>
-                    <a id="exec-prev" class="exec-arrows" href="#">🠔</a>
-                    <a id="exec-next" class="exec-arrows" href="#">🠖</a>
-                </div>
->>>>>>> 07ae4c7db7ee011104664bd251d50c3c0240de50
+                <a id="exec-prev" class="exec-arrows" href="#" data-uk-slideshow-item="previous">🠔</a>
+                <a id="exec-next" class="exec-arrows" href="#" data-uk-slideshow-item="next">🠖</a>
+<!--                 <div id="exec-album">
+                    <img src="http://ascii.jp/elem/000/000/200/200375/%E3%83%8B%E3%83%A3%E3%83%B3%E3%82%B3%E5%85%88%E7%94%9F2_240x.jpg"/>
+                </div> -->
             </div>
+        </div>
     </div>
     <div id="ibx-board">
         <hr id="ibx-divider"/>
@@ -504,46 +389,9 @@
 <?php } ?>
 
 <?php function scripts_include(){ ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow.min.js"></script>
 <script>
 (function(){
-    var exec_index = 0,
-        exec_list = $('#exec-items li');
-    
-    exec_list.eq(exec_index).show();
-    
-    $('#exec-prev').click(function(){
-        slideOut(exec_index);
-        slideIn( exec_index - 1 );
-    });
-    $('#exec-next').click(function(){
-        slideIn(exec_index);
-        slideOut( exec_index + 1 );
-    });
-    
-    function slideOut(index){
-        index = catchBoundary(index);
-        console.log("slide out" + index);
-        exec_list.eq(index).css('display','block');
-        exec_list.eq(index).addClass('slide-out');
-        setTimeout(function () {
-            exec_list.eq(index).hide();
-            exec_list.eq(index).removeClass('slide-in');
-            exec_list.eq(index).removeClass('slide-out');
-        }, 500);
-    }
-    function slideIn(index){
-        index = catchBoundary(index);
-        console.log("slide in" + index);
-        exec_list.eq(index).show();
-        exec_list.eq(index).addClass('slide-in');
-    }
-    function catchBoundary(index){
-        if(index < 0) index = exec_list.length - 1;
-        else if(index >= exec_list.length) index = 0;
-        
-        exec_index = index;
-        return exec_index;
-    }
 }())
 </script>
 <?php } ?>

@@ -95,7 +95,7 @@
   }
   
   .navigation-navbar-child-nav > li > a {
-    transition: 0.6s linear;
+    transition: all 1s ease;
   }
   
   .navigation-navbar-child-nav > li > a > div:hover {
@@ -116,6 +116,7 @@
   .button-live-demo-blue:hover {
     background-color: white;
     font-size: 15px;
+    font-weight: 900;
     color: #102B58;  
   }
 
@@ -204,13 +205,13 @@
     outline: none;
   }
   
-  @media (min-width : 900px) {
+  @media (min-width : 850px) {
     .media-smaller-devices {
       display: none;
     }
     
-    .media-larger-devices, #base-navbar-sm {
-      display: block;
+    #base-navbar-sm {
+      display: block !important;
     }
   }
   
@@ -255,16 +256,17 @@
     }
     
     .navigation-navbar-child-nav {
-      padding-left: 0px;
       display: block;
-      margin-bottom: 0px;
+      margin: 0;
+      padding: 0;
     }
     
     .navigation-navbar-child-nav > li {
       display: block;
       float: none;
-      background-color: #212223;
+      background-color: #232323;
       padding: 3%;
+      border: 0.5px ridge #4f4f4f;
     }
     
     .navigation-navbar-child-nav > li  > a, .navigation-navbar-child-nav > li  > a:active, .navigation-navbar-child-nav > li  > a:visited, .navigation-navbar-child-nav > li  > a:focus{
@@ -505,10 +507,10 @@
     display_type = document.getElementById('base-navbar-sm');
     if(display_type.style.display == 'block')
     {
-      display_type.style.display = "none";
+      $('#base-navbar-sm').slideUp(400)
     }else
     {
-      display_type.style.display = "block";
+      $('#base-navbar-sm').slideDown(400)
     }
   })
 </script>

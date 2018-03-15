@@ -50,6 +50,25 @@
 				})
 
 			})
+			
+			// ----------page loader-----------//
+			$('html, body').css({
+					overflow: 'hidden',
+					height: '100%',
+					cursor: 'progress'
+			});
+			
+			$("body").prepend('<div class="loader"></div>');
+			$(window).on("load",function() {
+					$(".loader").fadeOut(500);
+					$('html, body').css({
+							overflow: 'auto',
+							height: 'auto',
+							cursor: 'auto'
+					});
+			});
+			// ----------page loader-----------//
+
 		</script>
 		
     <?php scripts_include() ?>

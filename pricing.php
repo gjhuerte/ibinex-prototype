@@ -159,4 +159,5 @@ Pricing
 <?php } ?>
 
 <?php function scripts_include(){ ?>
+
 <?php } ?>

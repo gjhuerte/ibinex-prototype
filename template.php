@@ -18,6 +18,7 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+		
   <!-- import uikit js -->
 <!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script> -->
   <script src="assets/js/uikit.min.js"></script>
@@ -35,23 +36,6 @@
     <?php require 'layouts/footer.blade.php'; ?>
     
 		<script type="text/javascript">
-			$(document).ready(function(){			
-				
-				$('.uk-navbar-nav > li').on({
-					mouseenter: function () {
-							setTimeout(function(){
-								$(this).addClass('uk-animation-scale-up')
-							}, 1000)
-					},
-					mouseleave: function () {
-							setTimeout(function(){
-								$(this).removeClass('uk-animation-scale-up')
-							}, 1000)
-								 
-					}
-				})
-
-			})
 			
 			// ----------page loader-----------//
 			$('html, body').css({

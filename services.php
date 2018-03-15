@@ -1,8 +1,9 @@
 <?php require 'template.php'; ?>
 
 <?php function styles_include(){ ?>
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <style>
   .red {
     color: #FEFEFD;
@@ -10,7 +11,8 @@
   .red h3{
     color: #FEFEFD;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
   }
   .red p{
     text-align: center;
@@ -19,7 +21,7 @@
     padding-bottom: -35%;
   }
   .uk-container h3{
-    font-weight: 600;
+    font-weight: 800;
     font-size: 220%;
   }
   .uk-container p, li{
@@ -32,6 +34,691 @@
   .imageleft {
     margin-left: 2%;
   }
+  .red p {
+    font-weight: 500;
+  }
+  .grey1 .platform-content {
+    color: #6B7C93;
+    margin-bottom: -5%;
+    margin-left: -6%;
+  }
+  .grey1 .platform-content h3 {
+    color: #2C3135;
+    margin-bottom: 10px;
+  }
+  .grey1 .platform-content p {
+    font-weight: 500;
+  }
+  .grey1 .platform-content li {
+    font-weight: 500;
+  }
+  #pl_list {
+    list-style: none;
+  }
+  .white1 .crmsection .crm-one h3 {
+    color: #2C3135;
+  }
+  .white1 .crmsection .crm-one p {
+    font-weight: 500;
+  }
+  .white1 .crmsection .crm-one li {
+    font-weight: 500;
+  }
+  .gradient {
+    background: #142C5C;
+    background: linear-gradient(to right, #142C5C , #134093);
+    margin-bottom: -4.5%;
+  }
+  .gradient .gradient-img img {
+    margin-top: -2%;
+    margin-bottom: -16%;
+    width: 68%;
+  }
+  .gradient .gradient-content p {
+    font-weight: 500;
+    color: #fff;
+  }
+  .white2 .creditcardsection .cc-content {
+    color: #6B7C93;
+    margin-top: -12%;
+  }
+  .white2 .creditcardsection .cc-content h3 {
+    color: #2C3135;
+    padding-top: 33%;
+  }
+  .white2 .creditcardsection .cc-content .cc-first-p {
+    margin-bottom: 32%;
+    font-weight: 500;
+  }
+  .white2 .creditcardsection .cc-content img {
+    width: 18%;
+  }
+  .custodian-two p {
+    font-weight: 500;
+  }
+  
+  
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1224px) {
+    .imgbttm {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  /* Large screens ----------- */
+  @media only screen and (min-width: 1824px) {
+    .imgbttm {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  
+  /* ----------- Nokia Lumia 520 ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 533px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- LG Optimus L70 ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 384px) 
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- iPhone 4 and 4S ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+
+  /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2) { 
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-width: 736px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- iPhone X ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 2) { 
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .laptopimg {
+       display: block;
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;
+      position: relative;
+      top: 24%;
+      height: 130%;
+      margin-left: 2%;
+    }
+  }
+  
+  /* ----------- Galaxy S3 ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (device-width: 320px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 2) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (device-width: 320px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- Galaxy S6 ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 4) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- Google Pixel ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- Google Pixel XL ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 4) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- HTC One ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- Windows Phone ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (device-width: 480px) 
+    and (device-height: 800px) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- iPad Pro 10.5" ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 834px) 
+    and (max-device-width: 1112px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- Galaxy Tab 2 ----------- */
+
+  /* Portrait and Landscape */
+  @media 
+    (min-device-width: 800px) 
+    and (max-device-width: 1280px) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- Galaxy Tab S ----------- */
+
+  /* Portrait and Landscape */
+  @media 
+    (min-device-width: 800px) 
+    and (max-device-width: 1280px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- Nexus 7 ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (device-width: 601px) 
+    and (device-height: 906px) 
+    and (-webkit-min-device-pixel-ratio: 1.331) 
+    and (-webkit-max-device-pixel-ratio: 1.332) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- Nexus 9 ----------- */
+
+  /* Portrait and Landscape */
+  @media screen 
+    and (device-width: 1536px) 
+    and (device-height: 2048px) 
+    and (-webkit-min-device-pixel-ratio: 1.331) 
+    and (-webkit-max-device-pixel-ratio: 1.332) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- Kindle Fire HD 7" ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 800px) 
+    and (max-device-width: 1280px) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+  
+  /* ----------- Kindle Fire HD 8.9" ----------- */
+
+  /* Portrait and Landscape */
+  @media only screen 
+    and (min-device-width: 1200px) 
+    and (max-device-width: 1600px) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+    .crmsection .crm .crmimage  {
+       display: none;
+    }
+    .creditcardsection .phone .phoneimg {
+       display: none;    
+    }
+    .custodiansection .custodian .custodianimg {
+       display: none;    
+    }
+    .imgtop img {
+      display: none;
+      visibility: hidden;   
+    }
+    .imgbttm img {
+      display: block;
+      visibility: visible;    
+    }
+  }
+
 </style>
 
 <script>
@@ -45,11 +732,11 @@
 <?php function display_content(){ ?>
 <div class="uk-section uk-section-default red" style="background-color: #C11722;">
     <div class="uk-container">
-      <h3 class="uk-animation-fade"><i>Services</i></h3>
+      <h3 class="animated fadeInDown"><i>Services</i></h3>
         <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
-            <div class="uk-animation-slide-bottom">
-                <p>Ibinex services are all characterised by high-level innovation made practical for your personalised<br> exchange integration.</p>
-                <p>Our ecosystem of services compromises of the following units.</p>  
+            <div class="">
+                <p class="animated fadeInLeft">Ibinex services are all characterised by high-level innovation made practical for your personalised<br> exchange integration.</p>
+                <p class="animated fadeInRight">Our ecosystem of services compromises of the following units.</p>  
             </div>
         </div>
     </div>
@@ -58,13 +745,13 @@
 <div class="uk-section uk-section-muted grey1" style="background-color: #F7F7F7;">
     <div class="uk-container">
         <div class="uk-margin-remove uk-grid-match uk-child-width-1-2@m" uk-grid>
-            <div class="uk-margin">
-                <img class="" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="position: relative; top: 26%; height: 107%; margin-left: 10%;" alt="macbook">
+            <div class="imgtop">
+                <img class="laptopimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="position: relative; top: 21%; height: 107%; margin-left: 15%;" alt="macbook">
             </div>
-            <div class="uk-margin" style="color: #6B7C93; margin-bottom: -5%; margin-left: -6%;">
-                <h3 class="uk-margin-xlarge-top" style="color: #2C3135; margin-bottom: 10px;">Platform</h3>
+            <div class="uk-margin platform-content">
+                <h3 class="uk-margin-xlarge-top animated fadeInRight">Platform</h3>
                 <p>Your exchange is your launchpad. Our suite elevates your exchange by equipping you with your own platform consisting of:</p>
-                <ul class="uk-list uk-list-space" id="pl_list" style="list-style: none;">
+                <ul class="uk-list uk-list-space" id="pl_list">
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg>  Tailor-made private, institutional while label infrastructure</li>
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Fully-customisable front-end website</li>
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Completely integrated web-based trading platform</li>
@@ -74,18 +761,20 @@
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Total compatibility with your own branding deck</li>
                 </ul>
             </div>
-          
+            <div class="imgbttm">
+                <img class="laptopimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="" alt="macbook">
+            </div>
         </div>
     </div>
 </div>
 
 <div class="uk-section uk-section-default white1">
-    <div class="uk-container uk-margin">
+    <div class="uk-container uk-margin crmsection">
         <div class="uk-grid-match uk-child-width-1-2@m uk-margin-xlarge-top" uk-grid>
-            <div class="">
-                <h3 class="" style="color: #2C3135;">CRM/Back Office</h3>
-                <p>The Ibinex solution unites the front-end and platform with a full black<br> office suit including CRM with:</p>
-                <ul class="uk-list uk-list-space" id="pl_list" style="list-style: none;">
+            <div class="crm-one">
+                <h3 class="">CRM/Back Office</h3>
+                <p>The Ibinex solution unites the front-end and platform with a full black office suit including CRM with:</p>
+                <ul class="uk-list uk-list-space" id="pl_list">
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> KYC/AML documentation collection</li>
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Documentation verification</li>
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Account and money management</li>
@@ -93,20 +782,20 @@
                   <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Enhanced UI/UX</li>
                 </ul>
             </div>
-            <div>
-                <p><img src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/58b870772ce4f99e05237aa42f18cdbb/crm-back.png" style="position: relative;" alt="windows"></p>
+            <div class="crm">
+                <p><img class="crmimage" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/58b870772ce4f99e05237aa42f18cdbb/crm-back.png" style="position: relative;" alt="windows"></p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="uk-section uk-section-primary uk-light gradient" style="background: #142C5C; background: linear-gradient(to right, #142C5C , #134093); margin-bottom: -5%;">
+<div class="uk-section uk-section-primary uk-light gradient" style="">
     <div class="uk-container">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
-            <div class="uk-inline">
-                <p><img src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/04c8654a3ae5429e6e914cbda971a9f8/cryptobridge.png" class="uk-align-center" alt="CryptoBridge&trade;" height="420" width="420" style="margin-top: -3%;"></p>
+            <div class="uk-inline gradient-img">
+                <p><img src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/04c8654a3ae5429e6e914cbda971a9f8/cryptobridge.png" class="uk-align-center cblogo" alt="CryptoBridge&trade;"></p>
             </div>
-            <div class="uk-margin">
+            <div class="uk-margin gradient-content">
                 <h3 class="uk-margin-large-top uk-margin-remove-bottom">CryptoBridge&trade;</h3>
                 <p class="uk-margin-xlarge-bottom">Aggregate elite exchanges and indexes as the cryptocurrency market moves, with out patent-pending proprietary software suite, CryptoBridge&trade;. Gain access to 60 premier exchanges for maximum liquidity cryptocurrencies, all available only through CryptoBridge&trade; by Ibinex.</p>
             </div>
@@ -115,36 +804,36 @@
 </div>
 
 <div class="uk-section uk-section-default white2">
-    <div class="uk-container">
+    <div class="uk-container creditcardsection">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid style="margin-top: -4%;">
-            <div class="uk-margin" style="color: #6B7C93; margin-top: -12%;">
-                <h3 class="uk-margin-large-top" style="color: #2C3135; padding-top: 33%;">Credit Card Processing</h3>
-                <p class="uk-margin-small-top" style="margin-bottom: 32%;">We offer full spectrum payment processing for cryptocurrencies, and a complete selection that is unavailable elsewhere. Exchanging your way with Ibinex means experiencing a whole new world of payment options including: credit cards, debit cards, wire transfers, alternative payments, hosted wallets and cold wallets.</p>
-                <p style="margin-top: -30%;">
-                  <img src="assets/images/visa.svg" alt="cards" height="70" width="80">
-                  <img class="imageleft" src="assets/images/master-card.svg" alt="cards" height="70" width="80">
-                  <img class="imageleft" src="assets/images/credit-card.svg" alt="cards" height="70" width="80">
-                  <img class="imageleft" src="assets/images/dinners-club.svg" alt="cards" height="70" width="80">
+            <div class="uk-margin cccontent cc-content">
+                <h3 class="uk-margin-large-top">Credit Card Processing</h3>
+                <p class="uk-margin-small-top cc-first-p">We offer full spectrum payment processing for cryptocurrencies, and a complete selection that is unavailable elsewhere. Exchanging your way with Ibinex means experiencing a whole new world of payment options including: credit cards, debit cards, wire transfers, alternative payments, hosted wallets and cold wallets.</p>
+                <p class style="margin-top: -30%;">
+                  <img class="visa" src="assets/images/visa.svg" alt="cards" data-tilt>
+                  <img class="imageleft mastercard" src="assets/images/master-card.svg" alt="cards" data-tilt>
+                  <img class="imageleft discover" src="assets/images/credit-card.svg" alt="cards" data-tilt>
+                  <img class="imageleft dinnersclub" src="assets/images/dinners-club.svg" alt="cards" data-tilt>
                   <br>
-                  <img src="assets/images/american-express.svg" alt="cards" height="70" width="80">
-                  <img class="imageleft" src="assets/images/paypal.svg" alt="cards" height="70" width="80">
-                  <img class="imageleft" src="assets/images/maestro.svg" alt="cards" height="70" width="80">
+                  <img class="amexpress" src="assets/images/american-express.svg" alt="cards" data-tilt>
+                  <img class="imageleft paypal" src="assets/images/paypal.svg" alt="cards" data-tilt>
+                  <img class="imageleft maestro" src="assets/images/maestro.svg" alt="cards" data-tilt>
                 </p>
             </div>
-            <div>
-              <p><img src="assets/images/iphonex.png" alt="iphonex" style="margin-bottom: -12%;"></p>
+            <div class="phone">
+              <p><img class="phoneimg" src="assets/images/iphonex.png" alt="iphonex" style="margin-bottom: -12%;"></p>
             </div>
         </div>
     </div>
 </div>
 
 <div class="uk-section uk-section-muted grey2" style="background-color: #FBFBFB; padding-bottom: 0%; padding-top: 0%;">
-    <div class="uk-container">
+    <div class="uk-container custodiansection">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
-            <div>
-                <p><img src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/870456d77b7a7525d39fe55b27cdd354/custodian-accounts.jpg" alt="Man"></p>
+            <div class="custodian">
+                <p><img class="custodianimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/870456d77b7a7525d39fe55b27cdd354/custodian-accounts.jpg" alt="Man"></p>
             </div>
-            <div class="uk-margin" style="color: #6B7C93;">
+            <div class="uk-margin custodian-two" style="color: #6B7C93;">
                 <h3 class="uk-margin-xlarge-top" style="color: #2C3135;">Custodian Accounts</h3>
                 <p class="">Another first sees Ibinex leading the way as the world's first cryptocurrency exchange with a finance transaction license. We are proud to be the first to offer you:</p>
                 <p class="">Fully-compliant and licensed custodian proceeding and accounts</p>  
@@ -159,5 +848,13 @@
 
 <?php function scripts_include(){ ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+$('.cblogo').tilt({
+    glare: true,
+    maxGlare: .5
+})
+$('.crmimage').tilt({
+    scale: 1.2
+})
+</script>
 <?php } ?>

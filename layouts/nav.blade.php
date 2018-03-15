@@ -264,23 +264,25 @@
     .navigation-navbar-child-nav > li {
       display: block;
       float: none;
-      background-color: #232323;
-      padding: 3%;
-      border: 0.5px ridge #4f4f4f;
+      background-color: #1c181e;
+      padding: 4%;
+      border: 0.1px solid #272528;
     }
     
-    .navigation-navbar-child-nav > li  > a, .navigation-navbar-child-nav > li  > a:active, .navigation-navbar-child-nav > li  > a:visited, .navigation-navbar-child-nav > li  > a:focus{
-      color: white;
+    .navigation-navbar-child-nav > li  > a{
+      color: #cac7cc;
       text-decoration: none;
+      padding: 0 0 0.2em 0;
     }
 
     .button-live-demo-blue {
       margin-left: 0;
-      border: 1px solid;
+      border: none;
       border-radius: 0;
       color: #102B58;
       background-color: white;  
       width: 100%;
+      font-weight: 900;
     }
 
     .button-live-demo-blue:hover {
@@ -360,58 +362,42 @@
 
       <li>
         <a href="index.php">
-          <div>
             Home
-          </div>
         </a>
       </li>
-      <li class="uk-navbar-text-blue">
+      <li>
         <a href="why-ibinex.blade.php">
-          <div class="uk-navbar-text-blue">
             Why Ibinex
-          </div>
         </a>
       </li>
       <li>
         <a href="pricing.php">
-          <div>
             Pricing
-          </div>
         </a>
       </li>
       <li>
         <a href="services.php">
-          <div class="uk-navbar-text-blue">
             Services
-          </div>
         </a>
       </li>
       <li>
         <a href="about.php">
-          <div>
             About Us
-          </div>
         </a>
       </li>
       <li>
         <a href="security.php">
-          <div>
             Security
-          </div>
         </a>
       </li>
       <li>
         <a href="#">
-          <div>
             Legal
-          </div>
         </a>
       </li>
       <li>
         <a href="contact-us.php">
-          <div>
             Contact Us
-          </div>
         </a>
       </li>
     </ul>
@@ -503,6 +489,7 @@
 
 <script type="text/javascript">
   navbar_button = document.getElementById('hamburger-navbar-sm')
+  $('#base-navbar-sm').slideDown(400)
   navbar_button.addEventListener('click', function(){
     display_type = document.getElementById('base-navbar-sm');
     if(display_type.style.display == 'block')

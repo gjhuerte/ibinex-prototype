@@ -209,7 +209,7 @@
       display: none;
     }
     
-    #base-navbar-sm {
+    .media-larger-devices, #base-navbar-sm {
       display: block;
     }
   }
@@ -260,32 +260,14 @@
       margin-bottom: 0px;
     }
     
-    .navigation-navbar {
-      -webkit-animation: fadeIn 1s;
-      animation: fadeIn 1s;
-      transition: max-height 0.5s, overflow 0s;
-    }
-    
     .navigation-navbar-child-nav > li {
       display: block;
       float: none;
-      background-color: #02142d;
+      background-color: #212223;
       padding: 3%;
-      border: none;
-      margin: 0;
     }
     
-    @-webkit-keyframes fadeIn {
-        from { opacity: 0; }
-          to { opacity: 1; }
-    }  
-    
-    @keyframes fadeIn {
-        from { opacity: 0; }
-          to { opacity: 1; }
-    }
-    
-    .navigation-navbar-child-nav > li > a {
+    .navigation-navbar-child-nav > li  > a, .navigation-navbar-child-nav > li  > a:active, .navigation-navbar-child-nav > li  > a:visited, .navigation-navbar-child-nav > li  > a:focus{
       color: white;
       text-decoration: none;
     }

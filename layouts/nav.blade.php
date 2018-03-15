@@ -265,9 +265,9 @@
     .navigation-navbar-child-nav > li {
       display: block;
       float: none;
-      background-color: #1c181e;
+      background-color: #111011;
       padding: 4%;
-      border: 0.1px solid #272528;
+      border: 0.1px solid #232123;
     }
     
     .navigation-navbar-child-nav > li  > a{
@@ -490,7 +490,6 @@
 
 <script type="text/javascript">
   navbar_button = document.getElementById('hamburger-navbar-sm')
-  $('#base-navbar-sm').slideDown(400)
   navbar_button.addEventListener('click', function(){
     display_type = document.getElementById('base-navbar-sm');
     if(display_type.style.display == 'block')

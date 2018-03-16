@@ -1,4 +1,4 @@
-<?php require '../template-bootstrap.blade.php'; ?>
+<?php require __DIR__.'template-bootstrap.blade.php'; ?>
 
 <?php function display_title(){ ?> Example Title  <?php } ?>
 

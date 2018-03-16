@@ -194,9 +194,10 @@
 	
 		.prev, .next {
             position: absolute;
-            top: 25%;
+            top: 35%;
             font-size: 28px;
             font-weight: bold;
+						color: white;
     }
     
      .prev {
@@ -242,6 +243,7 @@
             margin-left:0;
         }
     }
+	
     @media only screen and (max-width: 768px) {
         /* For mobile phones: */
         [class*="uk-width-"] {
@@ -267,7 +269,8 @@
             display: none;
         }
     }
-	 @media only screen and (max-width: 480px) {
+	
+	  @media only screen and (max-width: 480px) {
 		 #board-list {
 			 width: 100%;
 			 padding: 0;
@@ -279,6 +282,7 @@
 		 
 		 .board-img {
 			 width: 100%;
+			 height: 320px;
 		 }
 	 }
 </style>   
@@ -457,6 +461,7 @@
 		prevArrow: $('#exec-prev'),
 		nextArrow: $('#exec-next')
 	});
+	
 	function myFunction(x) {
             var slides = document.getElementsByClassName('board-members');
             if (x.matches) { 
@@ -485,9 +490,6 @@
                 }
                 $('.prev, .next').show();
                 slides[slideIndex-1].classList.remove('hide');
-                //$('.board-members').style.width('100%');
-                document.getElementById('#board-list').style.width = '100%';
-                $('#board-list').style.padding('0 0 0 0');
             } 
             else {
                 for (i = 0; i < slides.length; i++) {

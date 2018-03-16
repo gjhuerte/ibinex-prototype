@@ -30,4 +30,15 @@ div * {
   --landing-heading-button-13px: 0.8125rem;
 }
 
+@media only screen and (max-width : 480px){
+   :root {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width : 1780px) and (max-width : 1925px){
+   :root {
+    font-size: 16px;
+  }
+}
+
 

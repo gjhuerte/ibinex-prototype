@@ -90,7 +90,6 @@
     }
     #exec-desc {
         color: #687C91;
-/*         font-size: 95%; */
 		line-height: 1em;
         text-align: justify;
         display: block;
@@ -131,6 +130,7 @@
     }
     .exec-info {
         padding: 2% 0;
+		font-size: 1rem;
         display: block;
         text-align: justify;
         padding-right: 3%;
@@ -212,7 +212,6 @@
         margin: 0 1% 2% 0;
         vertical-align: top;
         display: inline-block;
-/*         line-height: 80%; */
     }
     .board-img {
         margin: 0 auto;
@@ -223,9 +222,7 @@
     .board-name {
         font-weight: bold;
     }
-    .board-rank {
-/*         font-size: 80%; */
-    }
+
 	#board-arrow-box {
 	}
 	a.board-arrows{
@@ -256,7 +253,7 @@
 			padding: 0 5%;
 		}
 		#exec-list {
-			margin-bottom: 30em;
+			margin-bottom: 25em;
 		}
 		#exec-slideshow {
 			position: absolute;
@@ -264,7 +261,12 @@
 			width: 90%;
 			margin: 0 5%;
 		}
-		
+		.exec-img {
+			height: 20em;
+		}
+		.exec-info {
+			font-size: 80%;
+		}
 		#board-list {
 			padding: 0 0 10% 0;
 		}

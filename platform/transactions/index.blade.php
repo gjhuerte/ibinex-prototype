@@ -188,6 +188,7 @@
             <th scope="col">Amount</th>
             <th scope="col">NET Amount</th>
             <th scope="col">Status</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody class="custom-tbody">
@@ -228,6 +229,7 @@
         html+="<td>	&#36;1,002.85</td>";
         html+="<td> &#36;7,067.51</td>";
         html+=status[Math.floor(Math.random()*status.length)];
+        html+="<td> &nbsp;&nbsp;&nbsp;</td>";
         html+="</tr>";
         
       }

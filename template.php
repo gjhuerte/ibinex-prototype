@@ -46,7 +46,7 @@
 			
 			$("body").prepend('<div class="loader"></div>');
 			$(window).on("load",function() {
-					$(".loader").fadeOut(500);
+					$(".loader").fadeOut(10);
 					$('html, body').css({
 							overflow: 'auto',
 							height: 'auto',

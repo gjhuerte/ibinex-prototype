@@ -21,13 +21,13 @@
     <?php styles_include() ?>
   </head>
   <body>
-    <?php require 'layouts/users/nav.blade.php'; ?>
+    <?php require 'layouts/platform/nav.blade.php'; ?>
     <div class="container-fluid" id="main-body">
       <div class="row">
         
         <?php if( isset($display_sidebar) ): ?>
         <div class="col-sm">
-          <?php require 'layouts/users/sidebar.blade.php'; ?>
+          <?php require 'layouts/platform/sidebar.blade.php'; ?>
         </div>
         
         <?php endif; ?>
@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-    <?php require 'layouts/users/footer.blade.php'; ?>
+    <?php require 'layouts/platform/footer.blade.php'; ?>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

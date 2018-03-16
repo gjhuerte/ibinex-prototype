@@ -194,6 +194,12 @@
       margin-left: -6%;
       height: 120%;
     }
+    .custodian-title{
+      margin-top: 40px!important;
+    }
+    .white2 {
+      padding-bottom: 0;
+      }
   }
   
   /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */

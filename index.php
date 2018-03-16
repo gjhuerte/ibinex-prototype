@@ -5,13 +5,15 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+/*     font-family: 'Lato', sans-serif; */
 }
 
   #nusku-header {
@@ -50,31 +52,30 @@
   .header-container.header-text h1, 
   .header-container.header-text h2 {
     color: whitesmoke;
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: var(--paragraph-17px);
+    font-weight: 500;
   }
 
   .header-container.header-text h2 {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 3.5625rem;
     font-style: italic;
     margin-bottom: 0;
   }
 
   .header-container.header-text h1 {
     margin-top: 0;
-    font-family: 'Verdana', sans-serif;
-    font-weight: 900;
-    font-size: 4rem;
+    font-weight: 700;
+    font-size: 6.25rem;
     font-style: italic;
 
   }
 
   .header-container.header-text > h1 > span {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     vertical-align: super;
-    font-weight: 600;
+    font-weight: 700;
   }
   
   .header-input {
@@ -94,7 +95,7 @@
     outline: none;
     color: white;
     padding: 12px 8px 12px 8px;
-    font-size: 0.55rem;
+    font-size: 0.8125rem;
     font-weight: 500;
     margin: 0;
     grid-column: 2 / span 1;
@@ -109,6 +110,16 @@
     grid-column: 1 / span 1;
     border-radius: 5px 0 0 5px;
     
+  }
+  
+  .uk-h2, h2 {
+    font-size: var(--heading-40px);
+    line-height: 1.3;
+    font-family: 'Montserrat', sans-serif;
+}
+  p {
+    font-size: var(--paragraph-17px);
+    font-family: 'Montserrat', sans-serif;
   }
   
   #nusku-video {
@@ -131,8 +142,15 @@
     line-height: 300px;
     vertical-align: middle;
     text-align: center;
-    font-weight: bold;
-    font-family: 'Verdana', sans-serif;
+    font-weight: 900;
+    font-size: var(--landing-heading-70px);
+  }
+  
+  #nusku-video-p span {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 130%;
+    font-weight: 600;
   }
   
   #nusku-video-cov {
@@ -162,14 +180,13 @@
   }
   
   #intro-title {
-    font-weight: 900;
-    font-family: 'Arial';
+    font-weight: 800;
   }
   
   #intro-img {
     order: 0;
     overflow: hidden;
-    background-size: contain;
+    background-size: 75%;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(assets/images/laptop3.png);
@@ -177,25 +194,19 @@
 
   #intro-content {
     order: 1;
-    padding: 10% 12% 12% 3%;
+    padding: 10% 12% 10% 0;
   }
   
-  #feature-header {
-    font-weight: 900;
-    font-family: 'Arial';
+  #feature-header,
+  #feature-header2{
+    font-weight: 800;
+    font-size: var(--heading-30px);
+    margin: 10px;
   }
   
-  #feature-header2 {
-    font-weight: 900;
-    font-family: 'Arial';
-  }
-  
-  #feature-p {
-    padding-top: 8%;
-  }
   
   #legal-p {
-    font-size: 13px;
+/*     font-size: 13px; */
     font-weight: bold;
     text-align: center;
     padding-top: 5%;
@@ -205,6 +216,7 @@
     font-weight: bold;
     text-align: center;
     padding-bottom: 6%;
+    font-weight: 800;
     
   }
   
@@ -212,7 +224,7 @@
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
-    font-family: Arial;
+/*     font-family: Arial; */
     color: #1a7182;
     font-size: 9px;
     font-weight: bold;
@@ -233,18 +245,20 @@
     text-align: center;
     padding: 5% 10%;
     padding-bottom: 0;
+    font-size: var(--heading-30px);
+    font-weight: 700;
   }
   
   #nusku-media-cov {
-    padding: 7% 10%;
+    padding: 5% 5%;
     text-align: center;
   }
   
   .nusku-media-logo {
     display: inline-block;
     margin: 0px 9px;
-    height: 125px;
-    width: 150px;
+    height: 60px;
+/*     width: 150px; */
   }
   
 .imgHeight {
@@ -260,8 +274,8 @@
 }
   
 .padding {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
   
 .padding1 {
@@ -288,8 +302,8 @@
   
 .coolors {
     color: #203771;
-    font-weight: 900;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: var(--paragraph-title-22px);
 }
   
   .uk-grid1 {
@@ -378,8 +392,8 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;
   }
   
   #nusku-video-title {
@@ -397,7 +411,6 @@
     text-align: center;
     font-size: 45px;
     font-weight: bold;
-    font-family: 'Verdana', sans-serif;
   }
   
   #nusku-video-cov {
@@ -436,110 +449,12 @@
     display: none;
   }
   
-  .carousel {
-    position: relative;
-    width: 25%;
-    display: table-cell;
-  }
-  
-  .carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .carousel-item {
-    position: relative;
-    display: none;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%;
-    transition: -webkit-transform .6s ease;
-    transition: transform .6s ease;
-    transition: transform .6s ease,-webkit-transform .6s ease;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-  }
-  
-  .carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 15%;
-    color: #060606;
-    text-align: center;
-    opacity: .5;
-}
-  
-  .carousel-control-prev {
-    left: 0;
-  }
-  
-  .carousel-control-next {
-    right: 0;
-}
-  
-  .carousel-control-prev-icon {
-    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E);
-    color: black;
-}
-  
-  .arrow-left {
-    position: relative;
-    top: 200px;
-    left: 10px;
-    z-index: 99;
-    color: black;
-  }
-   .arrow-right {
-    float: right;
-    position: relative;
-    top: 200px;
-    right: 10px;
-    z-index: 99;
-    color: black;
-  }
-  
-  .arrow-left,
-  .arrow-right {
-    color: black;
-    background-color: transparent;
-    border: none;
-    outline: none;
-  }
-  
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: #000 no-repeat center center;
-    background-size: 100% 100%;
-    color: black;
-    transform: translateY(50px);
-}
-  
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
-  
+ 
   #legal-btn {
     webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
-    font-family: Arial;
+/*     font-family: Arial; */
     color: #1a7182;
     font-size: 13px;
     font-weight: bold;
@@ -574,9 +489,6 @@
     font-family: 'Arial';
   }
   
-  #feature-p {
-    padding-top: 0%;
-  }
   
   #legal-h2 {
     font-weight: bold;
@@ -688,7 +600,7 @@
                    <h3 class="coolors uk-margin-remove-top">
                       Full CRM &amp; Back Office Solution
                    </h3>
-                  <p id="feature-p">
+                  <p>
                     The Ibinex ecosystem assimilates a complete Customer Relationship Management (CRM) as a complement to your web based exchange platform. This includes KYC/AML documentation collection and verification, and account &amp; money management. The result is an effortless back office administration workflow and smooth UI/UX for your customers.
                   </p>
                 </div>
@@ -752,7 +664,7 @@
         </div>
         <div id="nusku-video-title">
           <h2 id="nusku-video-p">
-            Our <span>vision.</span>
+            Our<span>vision.</span>
           </h2>
       </div>
     </div>
@@ -760,7 +672,7 @@
     <div class="legal-container">
         <p id="legal-p">Learn more about Ibinex</p>
         <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
-        <div class="uk-text-center media-padding" uk-grid uk-slideshow="animation: fade">
+        <div class="uk-text-center media-padding" uk-grid>
             <div class="uk-width-1-3 uk-padding-remove">
                 <div class="uk-padding-remove">
                     <img src="assets/images/brochure1.png" class="">

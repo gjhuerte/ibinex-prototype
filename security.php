@@ -15,7 +15,6 @@ function styles_include(){
         color: #6F8197; 
         word-spacing: 1px;
         font-size: var( --paragraph-17px);
-        font-style: Helvetica;
         font-weight: bold;
     }
    h6 {
@@ -23,13 +22,11 @@ function styles_include(){
       word-spacing: 1px;
    }
   #title{
-    font-family: 'verdana';
     font-weight: 800;
     font-size: var(--heading-40px);
   }
   #title1{
       font-weight: 700;
-      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
       font-size: var(--heading-40px);
   }
   #banner-width h6{
@@ -56,6 +53,9 @@ function styles_include(){
          text-align: center;
          margin: 0;
         }
+      #title1{
+        font-style: normal!important;
+      }
        .header-h6{
         padding: 0;
        }

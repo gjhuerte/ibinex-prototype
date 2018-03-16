@@ -1,4 +1,4 @@
-div * {
+* {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -16,7 +16,7 @@ div * {
 }
 /* -----page loader------ */
 :root {
-  font-size: 10.5px;
+  font-size: 12px;
 }
 
 :root {

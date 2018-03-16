@@ -68,6 +68,7 @@
   .main-text ul {
 /*     font-size: 0.8rem; */
     font-size: var(--paragraph-17px);
+    font-weight: 700;
   }
   
   .main-text p {
@@ -108,10 +109,12 @@
     }
     
     div.main-text.text2 {
+      grid-column: 1 / -1;
       grid-row: 2 /span 1;
     }
     
-    div.main-text.text2 {
+    div.main-text.text3 {
+      grid-column: 1 / -1;
       grid-row: 3 /span 1;
     }
     
@@ -143,6 +146,7 @@ Pricing
 </div>
 
 <div class="main-pricing heading heading2">
+  
   <div class="main-text text2 uk-animation-fade">
     <h1 class="heading">Setup</h1>
     <p>In order to proceed with setup, we require:</p>
@@ -156,6 +160,7 @@ Pricing
     <p>We are doing our utmost to reduce time to market while retaining our trademark standard of exellence, and appreciate your interest in our innovations.</p>
     
   </div>
+  
   
 </div>
 

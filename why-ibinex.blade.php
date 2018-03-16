@@ -243,6 +243,7 @@
       grid-template-rows: auto;
       grid-template-columns: 1fr;
       display: grid;
+      border-bottom: none!important;
     } 
     .text-padding{
       padding-left: 0!important;
@@ -260,6 +261,7 @@
     .text2 p{
       text-align: left;
     } 
+    
   
   }
 </style>

@@ -57,6 +57,56 @@
       background-image: -moz-radial-gradient(50% 0%, circle, #0A0827 50%, transparent 55%);
       background-image: radial-gradient(circle at 50% 0%, #0A0827 50%, transparent 55%);
     }
+    
+    
+    
+    /* Transactions Table CSS */
+    
+    .table-bg{
+    background-color: #0C0A29;
+    color: whitesmoke;
+    margin-top:5%;
+  }
+  
+  .table-bg td, .table-bg th, .table-bg thead th{
+    border: 0;
+    padding-left: 2.5em;
+    text-align:center;
+  }
+  
+  .table-bg td{
+    font-weight:500;
+    font-size: 0.9em;
+  }
+  
+  
+  .custom-container{
+    background-color:#0C0A29;
+    padding:0 0 2% 0;
+    border-radius: 7px;
+    margin-left: 3%;
+  }
+  
+    .custom-col-7{
+      flex: 1 0 58.333333%;
+      max-width: 100%;
+    }
+  
+  .custom-h6{
+    color:whitesmoke; 
+    padding: 1em 0 0 1.5em;
+    font-size: 1.2em;
+  }
+  
+  .table-custom-stripe>tbody>tr:nth-child(even)>td, 
+  .table-custom-stripe>tbody>tr:nth-child(even)>th {
+     background-color: rgb(33,35,76);
+   }
+  .custom-thead{
+    color: rgb(36,124,125);
+    font-size: 1em;
+  }
+    
 }
   </style>
 <?php } ?>
@@ -123,6 +173,30 @@
           <button type="button" class="btn btn-withdraw">Withdraw Cryptos</button>
         </div>
       </div>
+      
+      
+      <div class="custom-col-7 col-7 col-mid  custom-container">
+        <h6 class="custom-h6">
+          RECENT WITHDRAWALS
+        </h6>
+      <table class="table table-custom-stripe table-bg">
+        <thead class="custom-thead">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Date & Time</th>
+            <th scope="col">Description</th>
+            <th scope="col">Amount</th>
+            <th scope="col">NET Amount</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody class="custom-tbody">
+
+        </tbody>
+      </table>
+      </div>
+      
+      
     </div>
   </div>
 
@@ -131,6 +205,46 @@
 <?php function scripts_include(){ ?>
 <script>
 (function(){
+  
+  //Populate data
+  var data = {
+    
+    populate: function(size){
+      var html = '';
+      var x = 0;
+      var status = [
+        "<td class='text-success'>COMPLETE</td>",
+        "<td class='text-warning'>PENDING</td>",
+        "<td class='text-danger'>FAILED</td>",
+      ];
+      
+      //var randomStatus = status[Math.floor(Math.random()*status.length)];
+      
+      for(x=0;x<size;x++){
+        html+="<tr>";
+        html+="<th scope='row'>Buy</th>";
+        html+="<td>Feb 5, 2018, 8:47pm</td>";
+        html+="<td>Withdrawal &#579;123</td>";
+        html+="<td>	&#36;1,002.85</td>";
+        html+="<td> &#36;7,067.51</td>";
+        html+=status[Math.floor(Math.random()*status.length)];
+        html+="</tr>";
+        
+      }
+      
+      $('tbody.custom-tbody').append(html);
+    }
+  }
+  
+  
+  data.populate(7);
+  
+  //End
+  
+  
+  
+  
+  
   $(".btn-group-withdraw .btn").on('click', function(){
     $(this).siblings().removeClass('active')
     $(this).addClass('active');
@@ -138,6 +252,10 @@
   
   var x = document.getElementById('#amt')
   x.addEventListener("onfocus",function(){alert('hi')});
+  
+  
+  
+  
 })()
 </script>
 <?php } ?>

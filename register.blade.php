@@ -206,7 +206,7 @@
         </div>
         <div class="column-1">
           <div class="form-group">
-            <input type="text" class="form-control" id="email" name="email" />
+            <input type="email" class="form-control" id="email" name="email" />
             <label for="email">EMAIL ADDRESS</label>
           </div>
         </div>

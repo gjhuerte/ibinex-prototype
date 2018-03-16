@@ -206,7 +206,7 @@
     outline: none;
   }
   
-  @media (min-width : 850px) {
+  @media (min-width : 900px) {
     .media-smaller-devices {
       display: none;
     }

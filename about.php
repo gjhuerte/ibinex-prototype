@@ -273,7 +273,7 @@
 	  @media only screen and (max-width: 480px) {
 		 #board-list {
 			 width: 100%;
-			 padding: 0;
+			 padding: 0 0 5% 0;
 		 }
 		 
 		 .board-members {

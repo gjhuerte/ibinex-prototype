@@ -35,6 +35,7 @@
   <body>
     <?php require 'layouts/platform/nav.blade.php'; ?>
     <div id="main-body">
+			
       <?php if( isset($display_sidebar) ): ?>
       <div class="sidebar-container">
         <?php require 'layouts/platform/sidebar.blade.php'; ?>

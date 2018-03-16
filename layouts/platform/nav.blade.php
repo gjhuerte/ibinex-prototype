@@ -87,7 +87,7 @@
 
 <nav class="platform-nav-parent">
   <div class="platform-nav-logo" href="#">
-    <img src="../assets/images/ibinex-logo-white.png" alt="Website Logo" height="55%" width="55%">
+    <img src="<?php __DIR__ ?>/assets/images/ibinex-logo-white.png" alt="Website Logo" height="55%" width="55%">
   </div>
 
   <div class="platform-nav-right-items">

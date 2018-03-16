@@ -186,7 +186,13 @@
     }
     .imgbttm img {
       display: block;
-      visibility: visible;    
+      visibility: visible;
+      max-width: 200%;
+      width: 187%;
+      top: -4%;
+      left: -17%;
+      margin-left: -6%;
+      height: 120%;
     }
   }
   
@@ -294,10 +300,11 @@
     .imgbttm img {
       display: block;
       visibility: visible;
-      position: relative;
-      top: 24%;
-      height: 130%;
-      margin-left: 2%;
+      max-width: 200%;
+      width: 187%;
+      top: -4%;
+      margin-left: 11%;
+      height: 120%;
     }
   }
   
@@ -760,7 +767,7 @@
                 </ul>
             </div>
             <div class="imgbttm">
-                <img class="laptopimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="max-width: 200%; width: 187%; top: -4%; left: -14%;" alt="macbook">
+                <img class="laptopimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="max-width: 200%; width: 187%; top: -4%; margin-left: -7%; height: 120%;" alt="macbook">
             </div>
         </div>
     </div>

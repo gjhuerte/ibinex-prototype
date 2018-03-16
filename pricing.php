@@ -58,14 +58,16 @@
   }
   
   .main-text .heading {
-    font-size: 1.9rem;
+/*     font-size: 1.9rem; */
+    font-size: var(--heading-40px);
     font-weight: 700;
     margin-bottom: 20px;
   }
   
-  .main-text p
+  .main-text p,
   .main-text ul {
-    font-size: 0.8rem;
+/*     font-size: 0.8rem; */
+    font-size: var(--paragraph-17px);
   }
   
   .main-text p {

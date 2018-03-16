@@ -65,10 +65,14 @@
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr auto auto auto 1fr;
     grid-template-rows: auto;
     align-items: center;
     grid-gap: 35px;
+  }
+  
+  .navbar-logo-main {
+    grid-column: 2 / span 1;
   }
   
   .navigation-navbar-child-nav {
@@ -91,12 +95,13 @@
   }
   
   .navigation-navbar-child-nav > li > a {
-    transition: 0.6s linear;
+    transition: all 0.5s ease;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
   }
   
-  .navigation-navbar-child-nav > li > a > div:hover {
-    border-bottom:  1.5px #293E64 solid;
-    border-radius: 1px;
+  .navigation-navbar-child-nav > li > a:hover {
+    border-bottom: 2px solid #2e1733;
   }
 
   .button-live-demo-blue {
@@ -112,6 +117,7 @@
   .button-live-demo-blue:hover {
     background-color: white;
     font-size: 15px;
+    font-weight: 900;
     color: #102B58;  
   }
 
@@ -164,11 +170,7 @@
     text-decoration: none;
   }
   
-  .media-larger-devices {
-     transition: left 0.5s;
-  }
-  
-  .media-smaller-devices {
+  .media-larger-devices, .media-smaller-devices {
      transition: left 0.5s;
   }
   
@@ -187,11 +189,12 @@
     grid-row: 1 / span 1;
     padding: 15% 10%;
   }
+  
   .navigation-navbar-sm > li:nth-child(2) {
     grid-column: 2 / span 1;
   }
   
-  .navigation-navbar-sm > li > a{
+  .navigation-navbar-sm > li > a {
     text-decoration: none;
   }
   
@@ -200,11 +203,16 @@
     color: #102B58;
     float:right;
     border: none;
+    outline: none;
   }
   
-  @media (min-width : 900px) {
+  @media (min-width : 850px) {
     .media-smaller-devices {
       display: none;
+    }
+    
+    #base-navbar-sm {
+      display: block !important;
     }
   }
   
@@ -231,8 +239,57 @@
       font-size: 10px;
     }
     
+    .navigation-navbar-child {
+      display: block
+    }
+    
     .navbar-currency-child-nav > li:not(.show-on-smaller-devices) {
       display: none;
+    }
+    
+    .navbar-logo-main {
+      display: none;
+    }
+    
+    .navbar-nav-button-live-demo {
+      display: block;
+      align-self: center;
+    }
+    
+    .navigation-navbar-child-nav {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navigation-navbar-child-nav > li {
+      display: block;
+      float: none;
+      background-color: #111011;
+      padding: 4%;
+      border: 0.1px solid #232123;
+    }
+    
+    .navigation-navbar-child-nav > li  > a{
+      color: #cac7cc;
+      text-decoration: none;
+      padding: 0 0 0.2em 0;
+    }
+
+    .button-live-demo-blue {
+      margin-left: 0;
+      border: none;
+      border-radius: 0;
+      color: #102B58;
+      background-color: white;  
+      width: 100%;
+      font-weight: 900;
+    }
+
+    .button-live-demo-blue:hover {
+      background-color: white;
+      font-size: 15px;
+      color: #102B58;  
     }
   }
 </style>
@@ -294,7 +351,7 @@
   <!--  navigation bar icon on smaller devices  -->
 
 <!-- nav for different pages -->
-<nav class="media-larger-devices navigation-navbar">
+<nav class="media-larger-devices navigation-navbar" id="base-navbar-sm">
 
   <!--  navigation bar on medium to large devices  -->
   <div class="navigation-navbar-child">
@@ -306,58 +363,42 @@
 
       <li>
         <a href="index.php">
-          <div>
             Home
-          </div>
         </a>
       </li>
-      <li class="uk-navbar-text-blue">
+      <li>
         <a href="why-ibinex.blade.php">
-          <div class="uk-navbar-text-blue">
             Why Ibinex
-          </div>
         </a>
       </li>
       <li>
         <a href="pricing.php">
-          <div>
             Pricing
-          </div>
         </a>
       </li>
       <li>
         <a href="services.php">
-          <div class="uk-navbar-text-blue">
             Services
-          </div>
         </a>
       </li>
       <li>
         <a href="about.php">
-          <div>
             About Us
-          </div>
         </a>
       </li>
       <li>
         <a href="security.php">
-          <div>
             Security
-          </div>
         </a>
       </li>
       <li>
         <a href="#">
-          <div>
             Legal
-          </div>
         </a>
       </li>
       <li>
         <a href="contact-us.php">
-          <div>
             Contact Us
-          </div>
         </a>
       </li>
     </ul>
@@ -447,4 +488,16 @@
 </nav>
 <!-- nav for different currencies -->
 
-<!-- navigation bar -->
+<script type="text/javascript">
+  navbar_button = document.getElementById('hamburger-navbar-sm')
+  navbar_button.addEventListener('click', function(){
+    display_type = document.getElementById('base-navbar-sm');
+    if(display_type.style.display == 'block')
+    {
+      $('#base-navbar-sm').slideUp(400)
+    }else
+    {
+      $('#base-navbar-sm').slideDown(400)
+    }
+  })
+</script>

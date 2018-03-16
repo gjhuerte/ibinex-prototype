@@ -11,13 +11,16 @@
     
 	<title><?php display_title(); ?></title>
 	<!-- import UIKIT cdn css-->
+<!-- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css" /> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
 	<!-- import jquery -->
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+		
   <!-- import uikit js -->
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script> -->
   <script src="assets/js/uikit.min.js"></script>
   <script src="assets/js/uikit-icons.min.js"></script>
   <!-- Font Awesome -->
@@ -33,23 +36,25 @@
     <?php require 'layouts/footer.blade.php'; ?>
     
 		<script type="text/javascript">
-			$(document).ready(function(){			
-				
-				$('.uk-navbar-nav > li').on({
-					mouseenter: function () {
-							setTimeout(function(){
-								$(this).addClass('uk-animation-scale-up')
-							}, 1000)
-					},
-					mouseleave: function () {
-							setTimeout(function(){
-								$(this).removeClass('uk-animation-scale-up')
-							}, 1000)
-								 
-					}
-				})
+			
+			// ----------page loader-----------//
+			$('html, body').css({
+					overflow: 'hidden',
+					height: '100%',
+					cursor: 'wait'
+			});
+			
+			$("body").prepend('<div class="loader"></div>');
+			$(window).on("load",function() {
+					$(".loader").fadeOut(500);
+					$('html, body').css({
+							overflow: 'auto',
+							height: 'auto',
+							cursor: 'auto'
+					});
+			});
+			// ----------page loader-----------//
 
-			})
 		</script>
 		
     <?php scripts_include() ?>

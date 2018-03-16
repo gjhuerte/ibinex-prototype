@@ -18,7 +18,7 @@
   .section1st{
     display: grid;
     padding-top: 3%;
-    grid-template-rows: 0.6fr 0.4fr 0.4fr 0.3fr;
+    grid-template-rows: 0.6fr 0.35fr 0.4fr 0.3fr;
     grid-template-columns: 1fr 1.7fr 1.3fr 0.7fr 0.3fr;
   }
   .section1st-text1{
@@ -26,7 +26,7 @@
     grid-column: 2 / span 2;
     grid-row: 1 / 3;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 0.1fr auto;
 
   }
   .section1st-text1 .header-section{
@@ -35,8 +35,9 @@
   }
   .subgrid-text{
     grid-row: 2;
-    font-size: 0.8em;
+    font-size: 12.5px;
     font-weight: 900;
+    color: #728298;
   }
 
   .section1st-text2{
@@ -50,8 +51,12 @@
     grid-column: 2;
     grid-row: 3 / -1;
   }
+  .section1st-data h2,
+    .section1st-data p{
+      color: white;
+    }
   .section1st-data p{
-    font-size: 0.8em;
+    font-size: 12.5px;
     font-weight: 900;
     
   }
@@ -62,7 +67,7 @@
     grid-row: 2 / span 2;
     grid-column: 3 / span 2;
     align-self: center;
-    transform: translate(0, -20px);
+    transform: translate(0, -25px);
   }
   
   .section2{
@@ -73,7 +78,7 @@
   }
   .title-section2 h2{
     font-weight: bold;
-    font-size: 35px;
+    font-size: 31px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
   .text2{
@@ -87,6 +92,7 @@
   }
   .title-section2 p{
     font-weight: 900;
+    color: #728298;
   }
   
   
@@ -103,6 +109,7 @@
     font-weight: bold;
     font-size: 35px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: #2c3339;
   }
   
   .header-section,
@@ -122,13 +129,15 @@
     padding-top: 10%;
   }
   .text2 p{
-      font-size: 0.8em;
-      font-weight: 900;
+    font-size: 0.8em;
+    font-weight: 900;
+    color: #728298;
     } 
   .text p{
       margin: 0;
-      font-size: 21px;
+      font-size: 16px;
       font-weight: 900;
+      color: #728298;
     }
    @media only screen and (min-width : 768px) and (max-width : 1024px) {
     
@@ -159,8 +168,10 @@
     padding: 115px 5% 0;
   }
     .subgrid-text,
-    .section1st-data ptex{
+    .section1st-data p{
       text-align: justify;
+      font-size: 19px;
+      
     }
 
   .section1st-data{
@@ -177,7 +188,7 @@
     grid-row: 2;
     grid-column: 1;
     align-self: center;
-    transform: translate(0, 52px);
+    transform: translate(0, 49px);
   }
       .title-section2 {
       display: grid;
@@ -217,15 +228,15 @@
 <?php function display_content(){ ?>
 <div class="main-grid">
   <div class="section1st">
-    <div class="display section1st-text1" uk-scrollspy="cls: uk-animation-slide-left; delay: 500">
+    <div class="display section1st-text1 header1">
        <h2 class="header-section">We fuse innovation with accessibility as blockchain technology evolves</h2>
        <p class="subgrid-text">We seek to revolutionise the way that exchange owners create their platforms and raise the standard of marketplace excellence by incorporating our cutting-edge technology, delivered with practicality and a host of unique benefits, only enjoyed by merging with the ibinex ecosystem.</p>
     </div>
     <div class="display bgcolor uk-light section1st-text2">
-      <div class="section1st-data"><h2 class="header-section">We are an ecosystem with vision</h2>
-      <p>As the gateway to your own customisable cryptocurrency ecosystem, our vision is to equip you with the tools to create and operate your cryptocurrency exvhange, your way.</p></div>
+      <div class="section1st-data header2"><h2 class="header-section">We are an ecosystem with vision</h2>
+      <p>As the gateway to your own customisable cryptocurrency ecosystem, our vision is to equip you with the tools to create and operate your cryptocurrency exchange, your way.</p></div>
     </div>
-    <div  class="pageImage" ><img src="assets/images/whyimg.png" alt=""></div>
+    <div  class="pageImage" ><img src="assets/images/homepage_why.png" alt=""></div>
   </div>
   <div class="section2">
     <div class="title-section2 mainPadding">
@@ -234,28 +245,36 @@
     </div>
     <div class="section2-text mainPadding" style="border-bottom: 1px solid #e5e5e5;">
        <div class="text text-border" style="padding-right: 15%; border-right: 1px solid #e5e5e5;">
+           <div class="text-content-left">
              <div class="uk-animation-toggle">
                <img src="assets/images/1.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             <p>Commitment to technological innovation, through out patent-pending proprietary software, Cryptobridge<sup>TM</sup></p>
+           </div>
         </div>
         <div class="text text-padding" style="padding-left: 15%;">
-            <div class="uk-animation-toggle">
-               <img src="assets/images/2.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
+             <div class="text-content-right">
+              <div class="uk-animation-toggle">
+                 <img src="assets/images/2.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
+              </div>
+              <p>Trailblazing of complete and customisable white label platform solutions</p>
             </div>
-           <p>Trailblazing of complete and customisable white label platform solutions</p>
         </div>
         <div class="text text-border" style="padding-right: 15%; border-right: 1px solid #e5e5e5;  padding-bottom: 5%;">
+           <div class="text-content-left">
              <div class="uk-animation-toggle">
                <img src="assets/images/3.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             <p>Offering unprecedented custodian service with our industry's first finance transaction license</p>
+          </div>
         </div>
         <div class="text text-padding"  style="padding-left: 15%; padding-bottom: 5%;">
+           <div class="text-content-right">
              <div class="uk-animation-toggle">
                <img src="assets/images/4.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             <p>Providing a full-spectrum payment processing infrastructure to revolutionise liquidity for your exchange</p>
+          </div>
         </div>
     </div>
     <div class="section2-text2 mainPadding">
@@ -268,5 +287,13 @@
 <?php } ?>
 
 <?php function scripts_include(){ ?>
-
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.text-content-left', {origin: 'left', distance: '200px', opacity: 0, duration: 2000});
+    sr.reveal('.text-content-right', {origin: 'right', distance: '200px', opacity: 0, duration: 2000});
+    sr.reveal('.header1', {origin: 'left', distance: '200px', opacity: 0, duration: 1500, delay:500});
+    sr.reveal('.header2', {origin: 'left', distance: '200px', opacity: 0, duration: 1500, delay:500});
+    sr.reveal('.text2', {opacity: 0, duration: 1500, delay:500});
+  </script>
 <?php } ?>

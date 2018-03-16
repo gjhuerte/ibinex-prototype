@@ -13,8 +13,9 @@
   
   .footer-upper {
     list-style-type: none;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
     margin-bottom: 0;
+    border: none;
   }
   
   .give-us-a-call {
@@ -30,8 +31,8 @@
     margin: 0;
     align-items: center;
     color: #D0D4D7;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 900;
+    font-size: 16px;
     letter-spacing: 5px;
   }
   
@@ -52,8 +53,13 @@
     font-size: 12px;
   }
   
-  .company-information-list > ul {
-    list-style-type: none;
+  .company-information-list > li:not(.footer-header-color) {
+    margin: 6px 0;
+  }
+  
+  .company-information-list > li:not(.footer-header-color) > a{
+    font-size: 9px;
+    font-weight: 900;
   }
 
   .bg-teal-darker {
@@ -80,6 +86,7 @@
   }
   
   .footer-lower {
+    border: none;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: auto;
@@ -90,25 +97,18 @@
     grid-row: 1 / span 1;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 1fr 1fr;
     padding-top: 3%;
   }
   
   .footer-lower-image-logo {
     grid-column: 1 / span 1;
     align-self: center;
-    padding: 5%;
   }
   
   .footer-lower-offices-information {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    padding: 5%;
-  }
-  
-  .footer-lower-offices {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
+    padding: 7% 7% 0 7%;
   }
   
   .footer-lower-offices > ul > li{
@@ -121,29 +121,22 @@
   }
   
   .footer-lower-additional-information{
+    padding: 7%;
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
   }
   
   .footer-lower-disclosure {
-    padding-top: 3%;
     grid-column: 1 / span 3;
     grid-row: 2 / span 1;
-    font-size: 7.5px;
+    font-size: 9px;
     font-weight: 900;
     margin: 0;
   }
   
   .footer-lower-disclosure > p {
-    padding-bottom: 3%;
-    margin: 0;
+    margin: 0 0 5% 0;
     text-align: justify;
-  }
-  
-  .footer-lower-offices {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
   }
   
   .footer-lower-offices > .list-unstyled > li {
@@ -157,13 +150,13 @@
   .footer-lower-offices > .list-unstyled > li > a {
     color: #FEFFFD;
     font-weight: 700;
+    margin: 20px 0;
   }
   
   .footer-header-color-light {
-    font-size: 10px;
-    letter-spacing: 2px;
-    font-weight: 850;
-    color: #364A56;
+    font-size: 11px;
+    font-weight: 900;
+    color: #45525B;
   }
 
   .button-red-1 {
@@ -171,7 +164,7 @@
     background-color: #C81824;
     border: none;
     border-radius: 0% 6% 6% 0%;
-    padding: 3%;
+    padding: 7%;
     font-size: 60%;
     grid-column: 2 / span 1;
   }
@@ -180,7 +173,7 @@
     background-color: white;
     color: black;
     border-radius: 5px 0 0 5px;
-    padding: 3%;
+    padding: 7%;
     border: none;
     font-size: 10px;
     grid-column: 1 / span 1;
@@ -189,7 +182,20 @@
   .input-group {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 3% 0;
+    padding: 5% 0 2% 0;
+  }
+  
+  .clear-padding-left {
+    padding-left: 0;
+  }
+  
+  .footer-contact-logo {
+    margin-top: 10px;
+  }
+  
+  .footer-contact-logo > img {
+    width: 10%;
+    height: 10%;
   }
 
   @media (min-width: 992px) {
@@ -197,11 +203,78 @@
       padding-left: 15%;
       padding-right: 10%;
     }
+  
+    .footer-lower-offices {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+  
+    .footer-lower-offices {
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+    }
   }
 
   @media (max-width: 992px) {
     .give-us-a-call-number {
       display: block;
+      
+    }
+    
+    ul.footer-upper {
+      padding-left: 0;
+    }
+    
+    .company-information {
+      display: flex;
+    }
+    
+    ul.company-information-list {
+      clear: both;
+      grid-column: 1 / span 1;
+    }
+    
+    .company-information-list {
+      padding-left: 20%;
+    }
+    
+    .footer-lower {
+      display: block;
+    }
+    
+    .footer-lower-child {
+      display: block;
+    }
+    
+    .footer-lower-image-logo {
+      padding-top: 20px;
+    }
+    
+    .footer-website-logo {
+      width: 50%;
+      height: 50%;
+      transform: translatex(45%);
+      align-content: center;
+      align-items: center;
+      align-self: center;
+    }
+    
+    .footer-lower-additional-information {
+      padding-bottom: 0;
+    }
+    
+    .footer-lower-disclosure {
+      display: block;
+      padding: 0 20px 20px 20px;
+    }
+    
+    .button-red-1 {
+      padding: 4%;
+    }
+
+    .footer-input-submit {
+      padding: 4%;
     }
   }
 </style>
@@ -217,7 +290,7 @@
     <li class="company-information">
       <div class="company-information-child">
           <!--  why ibinex    -->
-          <ul class="company-information-list" style="margin-top: 20px;padding-left: 0;">
+          <ul class="company-information-list why-ibinex clear-padding-left" style="margin-top: 20px;">
             <li class="footer-header-color">Why Ibinex?</li>
             <li><a href="#">Our Vision</a></li>
           </ul>
@@ -279,7 +352,7 @@
   <div class="footer-lower bg-teal-darker">
     <div class="footer-lower-child">
       <div class="footer-lower-image-logo">
-        <img class="" src="assets/images/ibinex-logo-white.png" alt="Website Logo" >
+        <img class="footer-website-logo" src="assets/images/ibinex-logo-white.png" alt="Website Logo" >
       </div>
       <!--  Ibinex Offices    -->
       <div class="footer-lower-offices-information">
@@ -324,30 +397,15 @@
           <li class="footer-header-color-light">
             FIND US ONLINE
           </li>
-          <li>
-            <a href="#" style="background: url('assets/images/logo/facebook.png')">
-            </a>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-facebook-messenger"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-skype"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-telegram"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-viber"></i>
-            </a>
+          <li class="footer-contact-logo">
+            <img src="assets/images/logo/facebook-logo.png">
+            <img src="assets/images/logo/twitter-logo.png">
+            <img src="assets/images/logo/whatsapp-logo.png">
+            <img src="assets/images/logo/messenger-logo.png">
+            <img src="assets/images/logo/skype-logo.png">
+            <img src="assets/images/logo/telegram-logo.png">
+            <img src="assets/images/logo/youtube-logo.png">
+            <img src="assets/images/logo/viber-logo.png">
           </li>
         </ul>
       </div>

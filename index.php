@@ -1,6 +1,11 @@
 <?php require 'template.php'; ?>
 
 <?php function styles_include(){ ?>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
 <style>
 * {
     margin: 0;
@@ -193,7 +198,7 @@
     font-size: 13px;
     font-weight: bold;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
   }
   
   #legal-h2 {
@@ -215,6 +220,7 @@
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     transform: translatex(10px);
+    border: none;
   }
   
   #nusku-media {
@@ -225,11 +231,12 @@
     color: #1A1A1A;
     font-weight: bold;
     text-align: center;
-    padding-top: 7%;
+    padding: 5% 10%;
+    padding-bottom: 0;
   }
   
   #nusku-media-cov {
-    padding: 7% 8%;
+    padding: 7% 10%;
     text-align: center;
   }
   
@@ -293,6 +300,18 @@
     padding: 15px;
   }
   
+  .container-div {
+    display: none;
+  }
+  
+  .carousel {
+    display: none;
+  }
+  
+  .mobile-carousel {
+    display: none;
+  }
+  
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
 /* For tablet: */
   #nusku-header {
@@ -301,6 +320,9 @@
 }
   
 @media only screen and (max-width: 768px) {
+  .mobile-carousel {
+    display: block;
+  }
         /* For mobile phones: */
         [class*="uk-width-"] {
             width: 100%;
@@ -394,6 +416,141 @@
   
   .video-img {
     box-shadow: 0 0px 0px 0px white;
+  }
+  
+  #nusku-media-title {
+    color: #1A1A1A;
+    font-weight: bold;
+    text-align: center;
+    padding: 10% 10%;
+    padding-bottom: 0;
+  }
+  
+  .media-padding {
+    padding-left: 19%;
+    padding-right: 17%;
+    padding-bottom: 10%;
+}
+  
+  .legal-container {
+    display: none;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 25%;
+    display: table-cell;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    position: relative;
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+  }
+  
+  .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #060606;
+    text-align: center;
+    opacity: .5;
+}
+  
+  .carousel-control-prev {
+    left: 0;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+}
+  
+  .carousel-control-prev-icon {
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E);
+    color: black;
+}
+  
+  .arrow-left {
+    position: relative;
+    top: 200px;
+    left: 10px;
+    z-index: 99;
+    color: black;
+  }
+   .arrow-right {
+    float: right;
+    position: relative;
+    top: 200px;
+    right: 10px;
+    z-index: 99;
+    color: black;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    color: black;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #000 no-repeat center center;
+    background-size: 100% 100%;
+    color: black;
+    transform: translateY(50px);
+}
+  
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  
+  #legal-btn {
+    webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #1a7182;
+    font-size: 13px;
+    font-weight: bold;
+    background: #12d5b7;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    transform: translatex(10px);
+    border: none;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20%;
   }
   
   #legal-p {
@@ -490,7 +647,7 @@
     
     <div class="header-input">
       <input type="text" placeholder="Type your email">
-      <button>REQUEST A DEMO</button>
+      <button class="uk-button uk-button-danger">REQUEST A DEMO</button>
     </div>
     
 
@@ -600,10 +757,10 @@
       </div>
     </div>
 
-    <div>
+    <div class="legal-container">
         <p id="legal-p">Learn more about Ibinex</p>
         <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
-        <div class="uk-text-center media-padding" uk-grid>
+        <div class="uk-text-center media-padding" uk-grid uk-slideshow="animation: fade">
             <div class="uk-width-1-3 uk-padding-remove">
                 <div class="uk-padding-remove">
                     <img src="assets/images/brochure1.png" class="">
@@ -643,6 +800,54 @@
         </div>
     </div>
 
+    <div id="demo" class="carousel-slide mobile-carousel">
+          <p id="legal-p">Learn more about Ibinex</p>
+          <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
+          <!-- The slideshow -->
+          <button class="arrow-left"><i class="fas fa-angle-left fa-2x"></i></button>
+          <button class="arrow-right"><i class="fas fa-angle-right fa-2x"></i></button>
+          <div class="carousel-inner">
+            <div class="">
+                <div class="">
+                    <img src="assets/images/brochure1.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <img src="assets/images/brochure2.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <img src="assets/images/brochure3.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <img src="assets/images/brochure4.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <img src="assets/images/brochure5.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <img src="assets/images/brochure6.png" class="">
+                    <button id="legal-btn">DOWNLOAD</button>
+                </div>
+            </div>
+      </div>
+       
+</div>
+
+
     <div id="nusku-media" class="uk-background-muted">
         <h2 id="nusku-media-title">Ibinex media coverage</h2>      
         <div id="nusku-media-cov">
@@ -659,5 +864,17 @@
 <?php } ?>
 
 <?php function scripts_include(){ ?>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 
+<script>
+  $(document).ready(function(){
+  $('.carousel-inner').slick({
+  infinite: true,
+  speed: 500,
+  cssEase: 'linear',
+  prevArrow :'.arrow-left',
+  nextArrow :'.arrow-right',
+});
+});
+</script>
 <?php } ?>

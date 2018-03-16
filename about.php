@@ -526,7 +526,7 @@
 				<div class="exec-div-slick slick-track">
 					<div>
 						<div class="exec-data exec-item">
-							<h4 class="exec-name exec-header">Matthew Novinski</h4>
+							<h3 class="exec-name exec-header">Matthew Novinski</h3>
 							<h6 class="exec-rank exec-header">Chief Executive Officer</h6>
 							<span class="exec-info">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
@@ -544,7 +544,7 @@
 					<div>
 						<div class="exec-data exec-item">
 							<h3 class="exec-name exec-header">John Whirlpool</h3>
-							<h5 class="exec-rank exec-header">Chief Executive Officer</h5>
+							<h6 class="exec-rank exec-header">Chief Executive Officer</h6>
 							<span class="exec-info">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
 								ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
@@ -561,7 +561,7 @@
 					<div>
 						<div class="exec-data exec-item">
 							<h3 class="exec-name exec-header">Rion Pronelle</h3>
-							<h5 class="exec-rank exec-header">Chief Executive Officer</h5>
+							<h6 class="exec-rank exec-header">Chief Executive Officer</h6>
 							<span class="exec-info">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
 								ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 

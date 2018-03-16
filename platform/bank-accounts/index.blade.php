@@ -32,11 +32,20 @@
   .label2 {
     color: white;
     font-size: .5rem;
+    transform: translateX(10px);
   }
   
   .label3 {
     color: #2f4b8a;
     font-size: .5rem;
+  }
+  
+  .form-padding1 {
+    padding-top: 1%;
+  }
+  
+  .form-padding2 {
+    padding-bottom: 1%;
   }
   
   .form-control1 {
@@ -81,19 +90,22 @@
 <?php } ?>
 
 <?php function display_content(){ ?>
-<form class="form-row col-md-4 col-sm-4 form-color">
+<form class="form-row col-md-5 col-sm-5 col-lg-5 form-color form-padding1">
     <div class="form-row col-md-12 col-lg-12">
       <div class="form-group col-md-12 col-lg-12">
         <label class="label1" for="inputEmail4">ADD A BANK ACCOUNT</label>
       </div>
-      <div class="form-group col-md-7 col-lg-7">
+      <div class="form-group col-sm-1 col-md-7 col-lg-7">
         <label class="label2" for="inputState">BANK NAME</label>
         <select id="inputState" class="form-control form-control1 label1 bank-color">
           <option selected>SELECT BANK</option>
           <option>...</option>
         </select>
       </div>
-      <div class="form-group col-md-5 col-lg-5">
+      <div class="form-group col-sm-1 col-md-1 col-lg-1">
+        
+      </div>
+      <div class="form-group col-sm-1 col-md-4 col-lg-4">
         <label class="label2" for="inputEmail4">CURRENCY</label>
         <select id="inputState" class="form-control form-control1 label1 bank-color">
           <option selected>USD</option>
@@ -114,7 +126,7 @@
     <div class="form-group col-md-12">
       <input type="text" class="form-control input-color" id="inputAddress2" placeholder="DESCRIPTION">
     </div>
-    <div class="form-group col-md-12">
+    <div class="form-group col-md-12 form-padding2">
       <button type="submit" class="btn btn-color">ADD ACCOUNT</button>
     </div>
     

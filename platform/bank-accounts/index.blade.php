@@ -73,6 +73,10 @@
     
 }
   
+  .input-color:focus {
+    color: white;
+  }
+  
 </style>
 <?php } ?>
 

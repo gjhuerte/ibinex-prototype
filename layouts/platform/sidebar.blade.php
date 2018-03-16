@@ -33,25 +33,28 @@
         <a href="#"> <i class="fas fa-briefcase"></i> My Account</a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Settings</a>
+        <a href="#"> <i class="fas fa-cogs"></i> Open Orders</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="#"> <i class="fas fa-cogs"></i> Transactions</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="#"> <i class="fas fa-cogs"></i> Security</a>
       </li>
       <li class="sidebar-nav-item">
         <a href="#"> <i class="fas fa-cogs"></i> Settings</a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Settings</a>
+        <a href="#"> <i class="fas fa-cogs"></i> Bank Accounts</a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Settings</a>
+        <a href="#"> <i class="fas fa-cogs"></i> Cryptoaddresses</a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Settings</a>
+        <a href="#"> <i class="fas fa-cogs"></i> History</a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Settings</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Settings</a>
+        <a href="#"> <i class="fas fa-cogs"></i> Logout</a>
       </li>
     </ul>
   </div>

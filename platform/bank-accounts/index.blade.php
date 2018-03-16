@@ -28,7 +28,7 @@ input[type="text"]:focus {
     color: white;  
   }
   
-  .input-color {
+  .form-control:focus {
     background-color: #0a0928;
   }
   
@@ -46,23 +46,27 @@ input[type="text"]:focus {
     
   }
   
+  input::placeholder {
+    font-size: .7rem;
+}
+  
 </style>
 <?php } ?>
 
 <?php function display_content(){ ?>
 <form class="form-row col-md-4 form-color">
-    <div class="form-row col-md-12">
-      <div class="form-group col-md-12">
+    <div class="form-row col-md-12 col-lg-12">
+      <div class="form-group col-md-12 col-lg-12">
         <label class="label1" for="inputEmail4">ADD A BANK ACCOUNT</label>
       </div>
-      <div class="form-group col-md-7">
+      <div class="form-group col-md-7 col-lg-7">
         <label class="label1" for="inputState">BANK NAME</label>
         <select id="inputState" class="form-control label1 bank-color">
           <option selected>SELECT BANK</option>
           <option>...</option>
         </select>
       </div>
-      <div class="form-group col-md-5">
+      <div class="form-group col-md-5 col-lg-5">
         <label class="label1" for="inputEmail4">CURRENCY</label>
         <select id="inputState" class="form-control label1 bank-color">
           <option selected>USD</option>

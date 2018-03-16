@@ -12,8 +12,8 @@
       body {
         background-color: #100D31;
         display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        padding-top: 7%;
+        grid-template-columns: 1fr 1.3fr 1fr;
+        padding-top: 5%;
       }
       
       #register-form {
@@ -21,14 +21,12 @@
       }
       
       .center {
-        display: flex;
-        align-self: center;
-        align-content: center;
-        align-items: center;
+        transform: translatex(150%)
       }
       
-      .flex-1 {
-        flex: auto;
+      .company-logo {
+        padding: 5%;
+        align-content: center;
       }
       
       .tab > ul {
@@ -99,9 +97,10 @@
       
       .form-control {
         border: none;
-        border-bottom: 1px solid #15153E;
+        border-bottom: 2px solid #15153E;
         background-color: transparent;
         padding-bottom: 2%;
+        width: 100%;
       }
       
       .form-control:focus {
@@ -112,6 +111,7 @@
       .column-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 10%;
       }
       
       .column-1 {
@@ -126,10 +126,12 @@
       .select-form {
         background-color: #21224A;
         border: none;
-        border-radius: 5px;
-        padding: 5%;
+        border-radius: 10px;
+        padding: 4%;
         color: #9C9DC0;
-        width: 90%;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 700;
       }
       
       .select-form:focus {
@@ -176,8 +178,8 @@
     
     <div id="register-form">
       
-      <div class="flex-1">
-        <img class="center" src="<?php __DIR__ ?>/assets/images/ibinex-logo-white.png" height=40% width=40% />
+      <div class="flex-1 company-logo">
+        <img class="center" src="<?php __DIR__ ?>/assets/images/ibinex-logo-white.png" height=25% width=25% />
       </div>
       
       <div class="tab">

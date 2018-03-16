@@ -1,7 +1,6 @@
 <?php require 'template.php'; ?>
 
 <?php function styles_include(){ ?>
-<link rel="stylesheet" type="text/css" href="<?= "assets/css/animate.css"?>">
 <style>
   
   
@@ -25,7 +24,12 @@
     padding-right:5%;
   }
   
-  .intro-text{
+  .intro-text-top{
+    color: #173d54;
+    font-size: 0.8em;
+  }
+  
+  .intro-text-bottom{
     color: #173d54;
     font-size: 0.8em;
   }
@@ -66,12 +70,17 @@
   .label{
     font-size:0.7em;
   }
+
   
-  .form-input .form-textarea .form-button{
-    border-radius:7px;
+  #contact-us-form .white-form .form-input, #contact-us-form .white-form .form-textarea{
+    border-radius: 5px;
+-webkit-box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
   }
   
   .form-button{
+    border-radius: 5px;
     background-color: #12398e;
     color:whitesmoke;
   }
@@ -82,11 +91,7 @@
     
   }
   
-  .form-input .form-textarea{
-    -webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
-  }
+
   
   
   .ext{
@@ -171,9 +176,9 @@ box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
         <div class="uk-container">
               
             <div class="uk-grid-match uk-child-width-1@m" uk-grid>
-                <div id="get-started" class="text-holder uk-animation-slide-left-medium">
+                <div id="get-started" class="text-holder">
                   <h1 class="uk-text-bold header-text">Get Started</h1>
-                <p class="uk-text-bold uk-text-justify intro-text">
+                <p class="uk-text-bold uk-text-justify intro-text-top">
                     We invite you to experience the Ibinex demo here, which will help you to conceptualise
                     the possibilities of personalisation for your own exchange.
                     <br><br>
@@ -181,7 +186,7 @@ box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
                     learn about in more detail on the Pricing page, but essentially consists of 3 steps:
                   </p>
 
-                  <ul class="uk-list uk-text-bold uk-text-justify intro-text">
+                  <ul class="uk-list uk-text-bold uk-text-justify intro-text-top">
                     <li><span>
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="20" height="20"
@@ -202,7 +207,7 @@ box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
                       </span>&nbsp &nbsp Proof of Escrow deposit</li>
                   </ul>
 
-                  <p class="uk-list uk-text-bold uk-text-justify intro-text">
+                  <p class="uk-list uk-text-bold uk-text-justify intro-text-top">
                     Please note that due to high demand, the current on-boarding timeframe is 4 months.
                   </p>
                 </div>
@@ -218,16 +223,18 @@ box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
         <div class="uk-background-default uk-padding">
             <div class="bottom-text-left">
                 <h1 class="uk-text-bold uk-text-justify header-text support-header">Support</h1>
-                <p class="uk-text-bold uk-text-justify intro-text support-text">
+                <p class="uk-text-bold uk-text-justify intro-text-bottom support-text">
                 Contact and feedback are integral to the Ibinex way,
                 enabling us to cater to your needs and requirements
                 effectively and efficiently.
-                <br><br>
+                </p>
+                <p class="uk-text-bold uk-text-justify intro-text-bottom support-text">
                 For support regarding any aspect of the Ibinex
                 platform, your use of this website or your own
                 exchange integration, please contact us with your
                 enquiry for personalised customer service.
-                <br><br>
+                </p>
+                <p class="uk-text-bold uk-text-justify intro-text-bottom support-text">
                 We will endeavour to respond to you as promptly as
                 possible.
                 </p>
@@ -239,24 +246,24 @@ box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
                 <form>
                     <div class="uk-margin">
                         <label class="uk-text-left uk-text-bold label">Full Name</label>
-                        <input class="uk-input uk-form-width-large form-input" spellcheck="false" type="text">
+                        <input class="uk-input uk-form-width-large form-input form" spellcheck="false" type="text">
                     </div>
                     <div class="uk-margin">
                         <label class="uk-text-left uk-text-bold label">Email Address</label>
-                        <input class="uk-input uk-form-width-large form-input" spellcheck="false" type="email">
+                        <input class="uk-input uk-form-width-large form-input form" spellcheck="false" type="email">
                     </div>
                   
                     <div class="uk-margin">
                         <label class="uk-text-left uk-text-bold label">Subject</label>
-                        <input class="uk-input uk-form-width-large  form-input" type="text">
+                        <input class="uk-input uk-form-width-large  form-input form" type="text">
                     </div>
                     
                     <div class="uk-margin">
                       <label class="uk-text-left uk-text-bold label">Message</label>
-                      <textarea class="uk-input uk-form-width-large form-textarea" rows="6" cols="50"></textarea>
+                      <textarea class="uk-input uk-form-width-large form-textarea form" rows="6" cols="50"></textarea>
                     </div>
                     <div class="uk-margin">
-                      <button class="uk-button uk-button-primary uk-button-medium form-button">SEND</button>
+                      <button class="uk-button uk-button-primary uk-button-medium form-button form">SEND</button>
                     </div>
                   
               </form>
@@ -274,32 +281,54 @@ box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
 <?php } ?>
 
 <?php function scripts_include(){ ?>
-
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script>
 
-  var contact = {
-    
-      animateElement : function(element,effect,delay){
-          
-          
-            setTimeout(function(){
-            $(element).removeClass('hidden');
-            $(element).addClass(effect);
-            }, delay);
-          
-      }
-  
-  }
-  
-$(document).on('load',function(){
-  
-  
-  //contact.animateElement(".bottom-section .contact-us-form .white-form","animated zoomInRight",500);
-  
-  
-});
+window.sr = ScrollReveal({ mobile: true });
 
-   
+  sr.reveal('.header-text', { /* Animates the top introduction header */
   
+  origin: 'left',
+  distance: '200px',
+  opacity: 0
+  });
+  
+  sr.reveal('.intro-text-top', { /* Animates the introduction paragraph at the top */
+  
+  origin: 'left',
+  opacity: 0,
+  duration: 500,
+  distance: '200px',
+  delay: 250
+  },100);
+  
+  sr.reveal('.intro-text-bottom', { /* Animates the introduction paragraph at the bottom */
+  origin: 'bottom',
+  opacity: 0,
+  duration: 500,
+  distance: '200px',
+  delay: 250
+  },100);
+  
+  sr.reveal('.white-form', { /* Animates the form */
+  origin: 'right',
+  opacity: 0,
+  duration: 500,
+  distance: '500px',
+  delay: 400
+  });
+  
+  sr.reveal('.form', { /* Animates the form */
+  origin: 'bottom',
+  opacity: 0,
+  duration: 500,
+  distance: '100px',
+  delay: 450
+  },50);
+  
+  
+  
+
+
 </script>
 <?php } ?>

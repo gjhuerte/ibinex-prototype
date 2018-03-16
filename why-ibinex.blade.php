@@ -18,24 +18,24 @@
   .section1st{
     display: grid;
     padding-top: 3%;
-    grid-template-rows: 0.6fr 0.35fr 0.4fr 0.3fr;
+    grid-template-rows: 0.42fr 0.35fr 0.4fr 0.2fr;
     grid-template-columns: 1fr 1.7fr 1.3fr 0.7fr 0.3fr;
   }
   .section1st-text1{
     display: grid;
     grid-column: 2 / span 2;
     grid-row: 1 / 3;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2.2fr 1fr 1.2fr;
     grid-template-rows: 0.1fr auto;
 
   }
   .section1st-text1 .header-section{
-    grid-column: 1 / -1;
+    grid-column: 1 / -2;
     grid-row: 1;
   }
   .subgrid-text{
     grid-row: 2;
-    font-size: 12.5px;
+    font-size: var(--paragraph-17px);
     font-weight: 900;
     color: #728298;
   }
@@ -56,7 +56,7 @@
       color: white;
     }
   .section1st-data p{
-    font-size: 12.5px;
+    font-size: var(--paragraph-17px);
     font-weight: 900;
     
   }
@@ -78,7 +78,7 @@
   }
   .title-section2 h2{
     font-weight: bold;
-    font-size: 31px;
+    font-size: var(--heading-40px);
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
   .text2{
@@ -93,6 +93,7 @@
   .title-section2 p{
     font-weight: 900;
     color: #728298;
+    font-size: var(--paragraph-17px)
   }
   
   
@@ -107,7 +108,7 @@
   } 
   .header-section{
     font-weight: bold;
-    font-size: 35px;
+    font-size: var(--heading-40px);
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     color: #2c3339;
   }
@@ -129,18 +130,62 @@
     padding-top: 10%;
   }
   .text2 p{
-    font-size: 0.8em;
+    font-size: var(--paragraph-17px);
     font-weight: 900;
     color: #728298;
     } 
   .text p{
       margin: 0;
-      font-size: 16px;
+      font-size: var(--landing-article-title-20px);
       font-weight: 900;
       color: #728298;
     }
-   @media only screen and (min-width : 768px) and (max-width : 1024px) {
-    
+  @media only screen and (min-width : 1780px) and (max-width : 1925px){
+      .pageImage{
+        transform: translate(0, -35px);
+      }
+  }
+   @media only screen and (min-width : 1421px) and (max-width : 1779px){
+      .section1st{
+        grid-template-rows: 0.3fr 0.35fr 0.4fr 0.2fr;
+      }
+      .pageImage{
+        transform: translate(0, -35px);
+      }
+  }
+  
+  @media only screen and (min-width : 482px) and (max-width : 872px){
+      .section1st{
+        grid-template-rows: 1fr 0.35fr 0.4fr 0.5fr;
+      }
+      .pageImage{
+      transform: translate(0, -16px);
+    }
+  }
+  @media only screen and (min-width : 873px) and (max-width : 944px){
+      .section1st{
+        grid-template-rows: 1fr 0.35fr 0.4fr 0.5fr;
+      }
+      .pageImage{
+      transform: translate(0, -17px);
+    }
+  }
+  
+  @media only screen and (min-width : 945px) and (max-width : 1042px){
+      .section1st{
+        grid-template-rows: 1fr 0.35fr 0.4fr 0.5fr;
+      }
+      .pageImage{
+      transform: translate(0, -18px);
+    }
+  }
+  @media only screen and (min-width : 1043px) and (max-width : 1365px){
+      .section1st{
+        grid-template-rows: 0.6fr 0.35fr 0.4fr 0.5fr;
+      }
+      .pageImage{
+      transform: translate(0, -24px);
+    }
   }
   
   @media only screen and (max-width : 480px) {
@@ -149,7 +194,7 @@
       padding-right: 5%;
     }
     .section1st {
-      grid-template-rows: 2fr 8rem 2fr;
+      grid-template-rows: auto 9rem auto;
       grid-template-columns: 1fr;
       display: grid;
     }
@@ -165,7 +210,7 @@
     grid-column: 1;
     grid-row: 3;
     grid-template-columns: 1fr;
-    padding: 115px 5% 0;
+    padding: 115px 5% 50px;
   }
     .subgrid-text,
     .section1st-data p{
@@ -188,7 +233,7 @@
     grid-row: 2;
     grid-column: 1;
     align-self: center;
-    transform: translate(0, 49px);
+    transform: translate(0, 58px);
   }
       .title-section2 {
       display: grid;
@@ -198,6 +243,7 @@
       grid-template-rows: auto;
       grid-template-columns: 1fr;
       display: grid;
+      border-bottom: none!important;
     } 
     .text-padding{
       padding-left: 0!important;
@@ -214,8 +260,8 @@
     } 
     .text2 p{
       text-align: left;
-      font-size: 14px;
     } 
+    
   
   }
 </style>

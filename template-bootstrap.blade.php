@@ -11,14 +11,14 @@
     
     <style>
       body {
-        background-color: #0d1033;
+        background-color: #100D31;
       }
       
       #main-body {
         padding: 3%;
         display: grid;
         grid-template-columns: 1fr 5fr;
-				grid-gap: 5%;
+				grid-gap: 25px;
       }
       
       .sidebar-container {

@@ -22,6 +22,14 @@ button {
   background-color: #00D1C0;
 }
 
+.transaction {
+  background-color: #146CF2;
+}
+
+.history th {
+  background color: #377C85;
+}
+
 .status-complete {
   color: #4BA98A;
 }
@@ -41,4 +49,5 @@ button {
 .dashboard-menu {
   color: #314384;
 }
+
 

@@ -116,12 +116,10 @@
         top: 10%;
     }
     #exec-prev {
-        right: 2%;
-        margin-right: 3%;
+        right: 5%;
     }
     #exec-next {
         right: 1%;
-        margin-left: 3%;
     }
     .exec-item {
         width: 67%;
@@ -141,14 +139,51 @@
         text-align: justify;
         padding-right: 3%;
     }
+	.exec-icons svg{
+		padding-bottom: 20%;
+		color: #4861E2;
+	}
+	.exec-links{
+		font-size: 80%;
+		font-style: italic;
+		text-decoration: underline;
+		color: #4861E2;
+	}
     #exec-album{
         height: 200%;
         width: 50%;
-        background-color: red;
         position: absolute;
         top: -100%;
         left: 0;
     }
+	#exec-images {
+		position: relative;
+		height: 100%;
+	}
+	.exec-img {
+		position: absolute;
+		margin: auto;
+		height: 18em;
+		width: 20em;
+		z-index: -999;
+	}
+	.exec-img:nth-child(1){
+		z-index: 3;
+		bottom: 15%;
+		right: 28%;
+	}
+	.exec-img:nth-child(2){
+		z-index: 2;
+		bottom: 5%;
+		right: 20%;
+		opacity: 0.7;
+	}
+	.exec-img:nth-child(3){
+		z-index: 1;
+		bottom: 25%;
+		right: 10%;
+		opacity: 0.7;
+	}
     
     #ibx-divider {
         border: none;
@@ -168,7 +203,6 @@
         font-weight: bold;
     }
     #board-list {
-				position:relative;
         min-height: 50vh;
         padding: 2% 15% 5% 15%;;
     }
@@ -191,45 +225,11 @@
     .board-rank {
         font-size: 80%;
     }
-	
-		.prev, .next {
-            position: absolute;
-            top: 25%;
-            font-size: 28px;
-            font-weight: bold;
-    }
     
-     .prev {
-            left: 0;
-    }
-    
-     .next {
-            right: 0;
-    }
-	
-		 .hide {
-            display: none;
-    }
-    
-		.fade {
-        -webkit-animation: fade 1.5s;
-        animation: fade 1.5s;
-  	}
-
-        @-webkit-keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-    }
-
-        @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-    }
-	
     @media only screen and (max-width: 992px) {
         #exec-title-2 {
             width: 100%;
-    }
+        }
         .exec-half {
             width: 100%;
             margin-left: 0;
@@ -241,6 +241,24 @@
             width: 100%;
             margin-left:0;
         }
+		a.exec-arrows {
+			position: relative;
+		}
+		#arrow-box {
+			width: 100%;
+			text-align: center;
+		}
+		#exec-album {
+			position: relative;
+			width: 100%;
+		}
+		.exec-img {
+			position: relative;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
     }
     @media only screen and (max-width: 768px) {
         /* For mobile phones: */
@@ -267,6 +285,124 @@
             display: none;
         }
     }
+	
+	.exec-animate-1-2 {
+    	animation: exec-image-1-2 0.3s forwards;
+    	-webkit-animation: exec-image-1-2 0.3s forwards;
+	}
+	.exec-animate-2-1 {
+		animation: exec-image-1-2 0.3s reverse forwards;
+		-webkit-animation: exec-image-1-2 0.3s reverse forwards;
+	}
+	.exec-animate-2-3 {
+    	animation: exec-image-2-3 0.3s forwards;
+    	-webkit-animation: exec-image-2-3 0.3s forwards;
+	}
+	.exec-animate-3-2 {
+		animation: exec-image-2-3 0.3s reverse forwards;
+		-webkit-animation: exec-image-2-3 0.3s reverse forwards;
+	}
+	.exec-animate-1-3 {
+    	animation: exec-image-1-last 0.3s forwards;
+    	-webkit-animation: exec-image-1-last 0.3s forwards;
+	}
+	.exec-animate-3-1 {
+		animation: exec-image-1-last 0.3s reverse forwards;
+		-webkit-animation: exec-image-1-last 0.3s reverse forwards;
+	}
+		
+	@keyframes exec-image-1-2 {
+		0% { 
+			z-index: 3;
+			bottom: 15%;
+			right: 28%;
+			opacity: 1;
+		}
+		100% {
+			z-index: 2;
+			bottom: 5%;
+			right: 20%;
+			opacity: 0.7;
+		}
+	}
+	@-webkit-keyframes exec-image-1-2 {
+		0% { 
+			z-index: 3;
+			bottom: 15%;
+			right: 28%;
+			opacity: 1;
+		}
+		100% {
+			z-index: 2;
+			bottom: 5%;
+			right: 20%;
+			opacity: 0.7;
+		}
+	}
+	@keyframes exec-image-2-3 {
+		0% { 
+			z-index: 2;
+			bottom: 5%;
+			right: 20%;
+			opacity: 0.7;
+		}
+		100% {
+			z-index: 1;
+			bottom: 25%;
+			right: 10%;
+			opacity: 0.7;
+		}
+	}
+	@-webkit-keyframes exec-image-2-3 {
+		0% { 
+			z-index: 2;
+			bottom: 5%;
+			right: 20%;
+			opacity: 0.7;
+		}
+		100% {
+			z-index: 1;
+			bottom: 25%;
+			right: 10%;
+			opacity: 0.7;
+		}
+	}
+	@keyframes exec-image-1-last {
+		0% { 
+			z-index: 3;
+			bottom: 15%;
+			right: 28%;
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.3;
+			z-index: 0;
+		}
+		100% {
+			z-index: 1;
+			bottom: 25%;
+			right: 10%;
+			opacity: 0.7;
+		}
+	}
+	@-webkit-keyframes exec-image-1-last {
+		0% { 
+			z-index: 3;
+			bottom: 15%;
+			right: 28%;
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.3;
+			z-index: 0;
+		}
+		100% {
+			z-index: 1;
+			bottom: 25%;
+			right: 10%;
+			opacity: 0.7;
+		}
+	}
 </style>   
 <?php } ?>
 
@@ -277,25 +413,27 @@
 <?php function display_content(){ ?>
 <div id="ibx-banner" class="uk-grid">
     <div id="banner-content" class="uk-width-3-5">
-        <h3 id="banner-title">Transparency</h3>
-        <p>
-            Ibinex is a collaboration of pioneers. With decades of combined experience within the finance, 
-            technology, cyber security and SaaS worlds, today we are proud to work with over 60 of the leading
-            exchanges for hundreds of cryptocurrencies.
-        </p>
-        <p>
-            We channel our extensive industry knowledge and vision into the live and developing cryptocurrency 
-            arena, to provide you with premium solutions for you to create tailored exchange platforms with our 
-            seasoned experience as your competitive edge.
-        </p>
-        <p>
-            We are trusted by thousands of customers world-wide daily as their white-label exchange platform, and 
-            pride ourselves on exhibiting the very highest standards of transparency and professionalism.
-        </p>
-        <p>
-            Ibinex is defined by our dedication to unifying trading standards in the cryptocurrency world, increasing 
-            accountability, integrity and excellence in service.
-        </p>
+		<div class="uk-scrollspy-inview uk-animation-slide-right-medium">
+        	<h3 id="banner-title">Transparency</h3>
+			<p>
+				Ibinex is a collaboration of pioneers. With decades of combined experience within the finance, 
+				technology, cyber security and SaaS worlds, today we are proud to work with over 60 of the leading
+				exchanges for hundreds of cryptocurrencies.
+			</p>
+			<p>
+				We channel our extensive industry knowledge and vision into the live and developing cryptocurrency 
+				arena, to provide you with premium solutions for you to create tailored exchange platforms with our 
+				seasoned experience as your competitive edge.
+			</p>
+			<p>
+				We are trusted by thousands of customers world-wide daily as their white-label exchange platform, and 
+				pride ourselves on exhibiting the very highest standards of transparency and professionalism.
+			</p>
+			<p>
+				Ibinex is defined by our dedication to unifying trading standards in the cryptocurrency world, increasing 
+				accountability, integrity and excellence in service.
+			</p>
+		</div>
     </div>
     <div id="banner-img" class="uk-width-2-5"></div>
 </div>
@@ -328,8 +466,15 @@
             </span>
         </div>
 		<div id="exec-list">
+			<div id="exec-album">
+				<div id="exec-images">
+					<img class="exec-img exec-cards" src="./assets/images/exec1.png"/>
+					<img class="exec-img exec-cards" src="./assets/images/exec2.png"/>
+					<img class="exec-img exec-cards" src="./assets/images/exec3.png"/>
+				</div>
+			</div>
             <div id="exec-slideshow">
-				<div class="exec-slick">
+				<div class="exec-div-slick slick-track">
 					<div>
 						<div class="exec-data exec-item">
 							<h4 class="exec-name exec-header">Matthew Novinski</h4>
@@ -341,8 +486,10 @@
 								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
 								cupidatat non proident, sunt in
 							</span>
-							<a href="">Linkedin Profile</a>
-							<a href="">Download CV</a>
+							<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
+							<a class="exec-links" href="">Linkedin Profile</a>
+							<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
+							<a class="exec-links" href="">Download CV</a>
 						</div>
 					</div>
 					<div>
@@ -356,8 +503,10 @@
 								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
 								cupidatat non proident, sunt in
 							</span>
-							<a href="">Linkedin Profile</a>
-							<a href="">Download CV</a>
+							<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
+							<a class="exec-links" href="">Linkedin Profile</a>
+							<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
+							<a class="exec-links" href="">Download CV</a>
 						</div>
 					</div>
 					<div>
@@ -371,17 +520,18 @@
 								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
 								cupidatat non proident, sunt in
 							</span>
-							<a href="">Linkedin Profile</a>
-							<a href="">Download CV</a>
+							<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
+							<a class="exec-links" href="">Linkedin Profile</a>
+							<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
+							<a class="exec-links" href="">Download CV</a>
 						</div>
 					</div>
 				</div>
-				<a id="exec-prev" class="exec-arrows" href="#" data-uk-slideshow-item="previous">🠔</a>
-                <a id="exec-next" class="exec-arrows" href="#" data-uk-slideshow-item="next">🠖</a>
+				<div id="arrow-box">
+					<a id="exec-prev" class="exec-arrows" href="#" data-uk-slideshow-item="previous">🠔</a>
+					<a id="exec-next" class="exec-arrows" href="#" data-uk-slideshow-item="next">🠖</a>
+				</div>
 			</div>
-<!-- 			<div id="exec-album">
-				<img src="http://ascii.jp/elem/000/000/200/200375/%E3%83%8B%E3%83%A3%E3%83%B3%E3%82%B3%E5%85%88%E7%94%9F2_240x.jpg"/>
-			</div> -->
 		</div>
     </div>
     <div id="ibx-board">
@@ -389,47 +539,45 @@
         <h2 id="board-title">Advisory <i>Board</i></h2>
         <div id="board-list">
             <div class="board-members">
-                <img src="./assets/images/board1.png" class="board-img fade" />
+                <img src="./assets/images/board1.png" class="board-img" />
                 <h5 class="board-name exec-header">Jeremy Corbein</h5>
                 <span class="board-rank">Chief of Operational Officer, Deiteriy</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board2.png" class="board-img fade" />
+                <img src="./assets/images/board2.png" class="board-img" />
                 <h5 class="board-name exec-header">Jimmy Fallon</h5>
                 <span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board3.png" class="board-img fade" />
+                <img src="./assets/images/board3.png" class="board-img" />
                 <h5 class="board-name exec-header">Stephen Colbert</h5>
                 <span class="board-rank">Head of Products and Services Development Department XB Software</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board4.png" class="board-img fade" />
+                <img src="./assets/images/board4.png" class="board-img" />
                 <h5 class="board-name exec-header">Artem Kushik</h5>
                 <span class="board-rank">Business Analyst, Credit Agricole CIB</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board1.png" class="board-img fade" />
+                <img src="./assets/images/board1.png" class="board-img" />
                 <h5 class="board-name exec-header">Jeremy Corbein</h5>
                 <span class="board-rank">Chief of Operational Officer, Deiteriy</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board2.png" class="board-img fade" />
+                <img src="./assets/images/board2.png" class="board-img" />
                 <h5 class="board-name exec-header">Jimmy Fallon</h5>
                 <span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board3.png" class="board-img fade" />
+                <img src="./assets/images/board3.png" class="board-img" />
                 <h5 class="board-name exec-header">Stephen Colbert</h5>
                 <span class="board-rank">Head of Products and Services Development Department XB Software</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board4.png" class="board-img fade" />
+                <img src="./assets/images/board4.png" class="board-img" />
                 <h5 class="board-name exec-header">Artem Kushik</h5>
                 <span class="board-rank">Business Analyst, Credit Agricole CIB</span>
             </div>
-						<a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>
         </div>
     </div>
 </div>
@@ -439,53 +587,88 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
 (function(){
-	$('.exec-slick').slick({
+	var exec_index 	= 0,
+		exec_cards	= $('.exec-cards'),
+		exec_len	= exec_cards.length,
+		last_arrow 	= "";
+	
+	function getCardSiblings(index){
+		return {
+			curr : index,
+			next : (exec_index+1) % (exec_len),
+			last : (exec_index+2) % (exec_len),
+		};
+	}
+	
+	function removeAnimateClass(){
+		exec_cards.removeClass (function (index, className) {
+			return (className.match (/(^|\s)exec-animate-\S+/g) || []).join(' ');
+		});
+	}
+	
+	function nextAnimate(){
+		let cards = getCardSiblings(exec_index);
+		
+		removeAnimateClass();
+		
+		exec_cards.eq(cards.curr).addClass('exec-animate-1-3');
+		exec_cards.eq(cards.next).addClass('exec-animate-2-1');
+		exec_cards.eq(cards.last).addClass('exec-animate-3-2');
+		
+		exec_index = (exec_index+1) % (exec_len);
+	}
+	
+	function prevAnimate(){
+		let cards = getCardSiblings(exec_index);
+		
+		removeAnimateClass();
+
+		exec_cards.eq(cards.curr).addClass('exec-animate-1-2');
+		exec_cards.eq(cards.next).addClass('exec-animate-2-3');
+		exec_cards.eq(cards.last).addClass('exec-animate-3-1');
+		
+		exec_index = exec_index==0 ? exec_len-1 : exec_index-1;	
+	}
+	
+	function windowHandler(){
+		var window_flag = false;
+		
+		if ($(window).width()<992) {
+			if(window_flag) return;
+			window_flag = true;
+			
+			try{
+				$('#exec-images').slick({
+					height: 20,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+					fade: true,
+					asNavFor: '.exec-div-slick'
+				});
+			}catch(err){}
+		}else {
+			window_flag = false;
+			try{
+				$('#exec-images').slick('unslick');
+			}catch(err){}
+		}
+	}
+	
+	$('#exec-next').click(nextAnimate);
+	$('#exec-prev').click(prevAnimate);
+	
+	$('.exec-div-slick').slick({
 		prevArrow: $('#exec-prev'),
-		nextArrow: $('#exec-next')
+		nextArrow: $('#exec-next'),
+		draggable: false
 	});
-	function myFunction(x) {
-            var slides = document.getElementsByClassName('board-members');
-            if (x.matches) { 
-                $('.prev').click(function(){
-            plusSlides(-1);
-                });
-                $('.next').click(function(){
-                    plusSlides(1);
-                });
-                var slideIndex = 1;
-                showSlides(slideIndex);
-
-                // Next/previous controls
-                function plusSlides(n) {
-                    showSlides(slideIndex += n);
-                }
-
-                function showSlides(n) {
-                    var i;
-                    if (n > slides.length) {slideIndex = 1;} 
-                    if (n < 1) {slideIndex = slides.length}
-                    for (i = 0; i < slides.length; i++) {
-                            slides[i].classList.add('hide'); 
-                    }
-                    slides[slideIndex-1].classList.remove('hide');
-                }
-                $('.prev, .next').show();
-                slides[slideIndex-1].classList.remove('hide');
-                //$('.board-members').style.width('100%');
-                document.getElementById('#board-list').style.width = '100%';
-                $('#board-list').style.padding('0 0 0 0');
-            } 
-            else {
-                for (i = 0; i < slides.length; i++) {
-                            slides[i].classList.remove('hide'); 
-                }
-                $('.prev, .next').hide();
-            }
-        }
-
-        var x = window.matchMedia("(max-width: 700px)") //Media query
-        myFunction(x)
-        x.addListener(myFunction) 
+	
+	$(window).resize(function(){
+		windowHandler();
+  	});
+	
+	windowHandler();
 }())
 </script>
 <?php } ?>

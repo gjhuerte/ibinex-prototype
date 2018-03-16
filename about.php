@@ -267,6 +267,20 @@
             display: none;
         }
     }
+	 @media only screen and (max-width: 480px) {
+		 #board-list {
+			 width: 100%;
+			 padding: 0;
+		 }
+		 
+		 .board-members {
+			 width: 100%;
+		 }
+		 
+		 .board-img {
+			 width: 100%;
+		 }
+	 }
 </style>   
 <?php } ?>
 
@@ -483,7 +497,7 @@
             }
         }
 
-        var x = window.matchMedia("(max-width: 700px)") //Media query
+        var x = window.matchMedia("(max-width: 480px)") //Media query
         myFunction(x)
         x.addListener(myFunction) 
 }())

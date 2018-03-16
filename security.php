@@ -5,11 +5,6 @@ require 'template.php';
 function display_title(){
   echo "Security";
 }
-
-function scripts_include(){
-  
-}
-
 function styles_include(){
 ?>
 <style>
@@ -19,7 +14,7 @@ function styles_include(){
    p {
         color: #6F8197; 
         word-spacing: 1px;
-        font-size: 11px;
+        font-size: var( --paragraph-17px);
         font-style: Helvetica;
         font-weight: bold;
     }
@@ -28,12 +23,20 @@ function styles_include(){
       word-spacing: 1px;
    }
   #title{
-    font-family: 'Arial Black'
-    font-weight: 900;
+    font-family: 'verdana';
+    font-weight: 800;
+    font-size: var(--heading-40px);
   }
   #title1{
-      font-weight: 850;
-      font-family: 'Comic Sans MS';
+      font-weight: 700;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      font-size: var(--heading-40px);
+  }
+  #banner-width h6{
+    font-size: var(--paragraph-17px);
+  }
+  .firstColumn-second h3{
+        margin-bottom: 14%;
   }
    .border1{
       border-right: 0px solid #aaa;
@@ -45,16 +48,33 @@ function styles_include(){
       padding: 80px 20% 15px;
     }
     #banner-width{
-      padding: 50px 30px 90px 80px;
+      padding: 50px 20% 90px 20%;
     }
-    #funds-tech div{
-    @media (max-width: 767px) {  
-      #funds-tech {  padding: 80px 5% 15px; }
-    }
-
-    @media (max-width: 959px) {  
-      #funds-tech {  padding: 80px 10% 15px; }  
-    }
+    @media only screen and (max-width : 480px) {  
+       #banner-width{
+         padding: 50px 5% 90px 5%;
+         text-align: center;
+         margin: 0;
+        }
+       .header-h6{
+        padding: 0;
+       }
+       #funds-tech{
+        padding: 30px 5% 90px 5%;
+        margin: 0;
+        padding-bottom: 10px;
+      }
+      .firstColumn-second{
+        padding: 0;
+      }
+      .secondColumn-second{
+        padding: 0;
+      }
+      .firstColumn-third,
+      .secondColumn-third{
+        padding: 0;
+      }
+    } 
   </style>
 <?php
 }
@@ -62,8 +82,8 @@ function display_content(){
 ?>
 <!-- =================================================FIRST SECTION========================================= -->
 <div class="uk-section uk-light uk-padding-large uk-panel uk-text-center@s uk-card-body uk-grid-small" id='banner-width' style="background-color:#152C58;">
-    <h3 id="title1" style="font-style:italic;">Security</h3>
-    <h6>
+    <h3 id="title1" class="header-banner" style="font-style:italic;">Security</h3>
+    <h6 class="header-h6">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br>           dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br> aliquip           ex ea commodo consequat. Duis aute irure dolor in reprehendrit in voluptate velit esse cillum <br> dolore eu           fugiat nulla pariatur.
     </h6>
 </div>
@@ -72,28 +92,28 @@ function display_content(){
 <!-- ===============================================SECOND SECTION========================================== -->
 <div class="uk-section uk-grid-small uk-child-width-1-2@s uk-grid-match uk-grid" id='funds-tech' data-uk-grid-margin>
     <!--  FIRST COLUMN  -->
-    <div class="uk-first-column" >
+    <div class="uk-first-column firstColumn-second" >
         <div class="border1 border2 uk-text-left">
-            <h3 id="title">Protection of Funds</h3>
-            <p class="uk-text-justify"><br><br>
+            <h3 id="title" class="header-SecondSection">Protection of Funds</h3>
+            <p class="uk-text-justify secondSection-p-left">
                 The protection of your crypto-funds is of paramount importance to us. For this reason, we take the                     ultimate lengths to ensure your funds remain safe at all times.
             </p>
-            <p class="uk-text-justify">
+            <p class="uk-text-justify secondSection-p-left">
                 As an indication of the high protective standards we hold, Ibinex has been granted the status of                       fully-licensed, fully-compliant and as a regulated custodian and account processor.
             </p> 
-            <p class="uk-text-justify">
+            <p class="uk-text-justify secondSection-p-left">
                 We are the first cryptocurrency exchange platform to hold this mantle and offer exclusive payment                     solutions. As such, we must demonstrate a consistent level of regulatory compliance in order to retain                 this professional distinction, a title of which we are immensely proud.
             </p>
         </div>
     </div>
     <!--  2ND COLUMN  -->
-    <div>
+    <div class="secondColumn-second">
         <div class="border2">
-            <h3 id="title">Encryption and Technologies</h3>
-            <p class="uk-text-justify uk-text-top">
+            <h3 id="title" class="header-SecondSection">Encryption and Technologies</h3>
+            <p class="uk-text-justify uk-text-top secondSection-p-right">
             A successful cryptocurrency exchange suite is only as strong as its weakest link. Ibinex has left no                   encryption technology stone unturned, and has implemented the highest level of SSL security into the                   platform, complete with the most solid and secure technologies.
             </p>
-            <p class="uk-text-justify">
+            <p class="uk-text-justify secondSection-p-right">
             We ensure that no weak links exist to threaten the stability and core security of Ibinex for our                       customers. Threats are neutralised before they present themselves - we take no chances and anticipate                 potential breaches before they arise, entirely removingtheir potential before they ever eventuate.
             </p>
         </div>
@@ -104,10 +124,10 @@ function display_content(){
 
 
 <!-- =================================================THIRD SECTION======================================== -->
-<div class="uk-background-muted uk-section uk-grid-small uk-child-width-1-2@s uk-grid-match uk-grid" id='funds-tech' data-uk-grid-margin>
+<div class="uk-background-muted uk-section uk-grid-small uk-child-width-1-2@s uk-grid-match uk-grid thirdSection" id='funds-tech' data-uk-grid-margin>
   
       <!--     FIRST COLUMN   -->          
-      <div class="uk-first-column">
+      <div class="uk-first-column firstColumn-third">
           <div class="border1 border2 uk-text-left">
               <h3 id="title">Information Security</h3>
               <p class="uk-text-justify">
@@ -117,7 +137,7 @@ function display_content(){
       </div>
 
       <!--     SECOND COLUMN   -->
-      <div>
+      <div class="secondColumn-third">
           <div class="border2">
               <h3 id="title">Privacy </h3>
               <p class="uk-text-justify">
@@ -130,3 +150,16 @@ function display_content(){
 <?php
 }
 ?>
+
+<?php function scripts_include(){ ?>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.header-banner', {origin: 'right', distance: '2000px', opacity: 0, duration: 2000});
+    sr.reveal('.header-h6', {origin: 'left', distance: '2000px', opacity: 0, duration: 2000});
+    sr.reveal('.header-SecondSection', { opacity: 0, duration: 2000});
+    sr.reveal('.thirdSection', { opacity: 0, duration: 2000});
+    sr.reveal('.secondSection-p-left', {origin: 'left', opacity: 0, duration: 1500,distance: '2000px'});
+    sr.reveal('.secondSection-p-right', {origin: 'right', opacity: 0, duration: 1500,distance: '2000px'});
+  </script>
+<?php } ?>

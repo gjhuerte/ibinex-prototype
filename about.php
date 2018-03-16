@@ -168,6 +168,7 @@
         font-weight: bold;
     }
     #board-list {
+				position:relative;
         min-height: 50vh;
         padding: 2% 15% 5% 15%;;
     }
@@ -190,11 +191,45 @@
     .board-rank {
         font-size: 80%;
     }
+	
+		.prev, .next {
+            position: absolute;
+            top: 25%;
+            font-size: 28px;
+            font-weight: bold;
+    }
     
+     .prev {
+            left: 0;
+    }
+    
+     .next {
+            right: 0;
+    }
+	
+		 .hide {
+            display: none;
+    }
+    
+		.fade {
+        -webkit-animation: fade 1.5s;
+        animation: fade 1.5s;
+  	}
+
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+    }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+    }
+	
     @media only screen and (max-width: 992px) {
         #exec-title-2 {
             width: 100%;
-        }
+    }
         .exec-half {
             width: 100%;
             margin-left: 0;
@@ -354,45 +389,47 @@
         <h2 id="board-title">Advisory <i>Board</i></h2>
         <div id="board-list">
             <div class="board-members">
-                <img src="./assets/images/board1.png" class="board-img" />
+                <img src="./assets/images/board1.png" class="board-img fade" />
                 <h5 class="board-name exec-header">Jeremy Corbein</h5>
                 <span class="board-rank">Chief of Operational Officer, Deiteriy</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board2.png" class="board-img" />
+                <img src="./assets/images/board2.png" class="board-img fade" />
                 <h5 class="board-name exec-header">Jimmy Fallon</h5>
                 <span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board3.png" class="board-img" />
+                <img src="./assets/images/board3.png" class="board-img fade" />
                 <h5 class="board-name exec-header">Stephen Colbert</h5>
                 <span class="board-rank">Head of Products and Services Development Department XB Software</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board4.png" class="board-img" />
+                <img src="./assets/images/board4.png" class="board-img fade" />
                 <h5 class="board-name exec-header">Artem Kushik</h5>
                 <span class="board-rank">Business Analyst, Credit Agricole CIB</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board1.png" class="board-img" />
+                <img src="./assets/images/board1.png" class="board-img fade" />
                 <h5 class="board-name exec-header">Jeremy Corbein</h5>
                 <span class="board-rank">Chief of Operational Officer, Deiteriy</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board2.png" class="board-img" />
+                <img src="./assets/images/board2.png" class="board-img fade" />
                 <h5 class="board-name exec-header">Jimmy Fallon</h5>
                 <span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board3.png" class="board-img" />
+                <img src="./assets/images/board3.png" class="board-img fade" />
                 <h5 class="board-name exec-header">Stephen Colbert</h5>
                 <span class="board-rank">Head of Products and Services Development Department XB Software</span>
             </div>
             <div class="board-members">
-                <img src="./assets/images/board4.png" class="board-img" />
+                <img src="./assets/images/board4.png" class="board-img fade" />
                 <h5 class="board-name exec-header">Artem Kushik</h5>
                 <span class="board-rank">Business Analyst, Credit Agricole CIB</span>
             </div>
+						<a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
         </div>
     </div>
 </div>
@@ -406,6 +443,49 @@
 		prevArrow: $('#exec-prev'),
 		nextArrow: $('#exec-next')
 	});
+	function myFunction(x) {
+            var slides = document.getElementsByClassName('board-members');
+            if (x.matches) { 
+                $('.prev').click(function(){
+            plusSlides(-1);
+                });
+                $('.next').click(function(){
+                    plusSlides(1);
+                });
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    if (n > slides.length) {slideIndex = 1;} 
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                            slides[i].classList.add('hide'); 
+                    }
+                    slides[slideIndex-1].classList.remove('hide');
+                }
+                $('.prev, .next').show();
+                slides[slideIndex-1].classList.remove('hide');
+                //$('.board-members').style.width('100%');
+                document.getElementById('#board-list').style.width = '100%';
+                $('#board-list').style.padding('0 0 0 0');
+            } 
+            else {
+                for (i = 0; i < slides.length; i++) {
+                            slides[i].classList.remove('hide'); 
+                }
+                $('.prev, .next').hide();
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 700px)") //Media query
+        myFunction(x)
+        x.addListener(myFunction) 
 }())
 </script>
 <?php } ?>

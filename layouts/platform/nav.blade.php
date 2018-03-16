@@ -67,7 +67,9 @@
   #account-profile-information {
     background-color: #21224A;
     border: none;
-    padding: 3% 5%;
+    padding: 2% 25%;
+    color: white;
+    font-size: 10px;
   }
   
   .withdraw-submit {

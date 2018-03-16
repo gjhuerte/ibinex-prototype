@@ -5,7 +5,7 @@
   
   .sidebar-nav {
     list-style-type: none;
-    padding-top: 15%;
+    padding-top: 10%;
     padding-left: 6%;
     padding-bottom: 40%;
   }
@@ -18,7 +18,11 @@
     text-decoration: none;
     color: #303F7D;
     font-weight: 800;
-    font-size: 11px;
+    font-size: 12px;
+  }
+  
+  .sidebar-nav > li > a > span {
+    padding-left: 5%;
   }
   
   .sidebar-nav > li > .active {
@@ -30,31 +34,31 @@
   <div class="sidebar-body">
     <ul class="sidebar-nav">
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-briefcase"></i> My Account</a>
+        <a href="#"> <i class="fas fa-briefcase"></i> <span class="sidebar-text"> My Account</span></a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Open Orders</a>
+        <a href="#"> <i class="fas fa-chart-line"></i> <span class="sidebar-text"> Open Orders </span></a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Transactions</a>
+        <a href="#"> <i class="fas fa-cogs"></i> <span class="sidebar-text"> Transactions </span></a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Security</a>
+        <a href="#"> <i class="fas fa-cogs"></i> <span class="sidebar-text"> Security </span></a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Settings</a>
+        <a href="#"> <i class="fas fa-cogs"></i> <span class="sidebar-text"> Settings </span></a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Bank Accounts</a>
+        <a href="#"> <i class="fas fa-cogs"></i> <span class="sidebar-text"> Bank Accounts </span></a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Cryptoaddresses</a>
+        <a href="#"> <i class="fab fa-stack-exchange"></i> <span class="sidebar-text"> Cryptoaddresses </span></a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> History</a>
+        <a href="#"> <i class="fas fa-history"></i> <span class="sidebar-text"> History </span></a>
       </li>
       <li class="sidebar-nav-item">
-        <a href="#"> <i class="fas fa-cogs"></i> Logout</a>
+        <a href="#"> <i class="fas fa-sign-out-alt"></i> <span class="sidebar-text"> Logout </span></a>
       </li>
     </ul>
   </div>

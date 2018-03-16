@@ -135,7 +135,7 @@
     font-weight: bold;
     padding-top: 7%;
     background: white;
-    transform: translateX(-55px);
+    transform: translateX(-50px);
   }
   
   #nusku-video-p {
@@ -147,16 +147,15 @@
   }
   
   #nusku-video-p span {
-    font-family: 'EB Garamond', serif;
+   font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 130%;
     font-weight: 600;
   }
   
   #nusku-video-cov {
     text-align: center;
     padding: 70px 0;
-    transform: translateX(55px);
+    transform: translateX(50px);
     z-index: 99;
   }
   
@@ -177,6 +176,7 @@
     display: flex;
     background-color: #f8f8f8;
     padding-left: 5%;
+    padding-right: 5%;
   }
   
   #intro-title {
@@ -231,7 +231,7 @@
     background: #12d5b7;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-    transform: translatex(10px);
+/*     transform: translatex(10px); */
     border: none;
   }
   
@@ -276,6 +276,11 @@
 .padding {
     padding-left: 20%;
     padding-right: 20%;
+}
+  
+ .padding-video {
+    padding-left: 15%;
+    padding-right: 15%;
 }
   
 .padding1 {
@@ -326,10 +331,48 @@
     display: none;
   }
   
+  .brochure img {
+    width: 70%;
+  }
+  
+  .brochure {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-items: center;
+    grid-gap: 5px;
+  }
+  
+  .brochure button {
+    grid-column: 2 / span 1;
+  }
+  
+  .brochure span,
+  .brochure img{
+    grid-column: 1 / -1;
+  }
+  
+  .brochure span:nth-child(2) {
+    font-weight: 700;
+  }
+  
+  .brochure span:nth-child(3) {
+    font-size: 0.9rem;
+  }
+  
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
 /* For tablet: */
   #nusku-header {
     grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  }
+  .arrow-left,
+  .arrow-right {
+    position: relative;
+    top: 400px;
+  }
+   .padding,
+  .padding-video {
+      padding-left: 0%;
+      padding-right: 0%;
   }
 }
   
@@ -375,7 +418,11 @@
   }
   
   .header-container.header-text h1 {
-    font-size: 2rem;
+    font-size: 2.6rem;
+  }
+  
+  .header-container.header-text > h1 > span {
+    font-size: 1rem;
   }
   
     .header-container.header-text h2 {
@@ -386,6 +433,25 @@
     font-size: 1rem;
     font-weight: 500;
     text-align: justify;
+  }
+  
+   #intro-img { 
+    margin-top: 20px;
+    background-size: contain;
+  }
+  
+  .coolors {
+    font-size: 150%;
+  }
+  
+  #nusku-video-p {
+    font-weight: 800;
+  }
+  
+   #nusku-video-p span {
+   font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
   }
   
   #nusku-video {
@@ -410,7 +476,7 @@
     vertical-align: middle;
     text-align: center;
     font-size: 45px;
-    font-weight: bold;
+    
   }
   
   #nusku-video-cov {
@@ -461,7 +527,7 @@
     background: #12d5b7;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-    transform: translatex(10px);
+/*     transform: translatex(10px); */
     border: none;
     display: flex;
     margin: 0 auto;
@@ -469,10 +535,11 @@
   }
   
   #legal-p {
-    font-size: 13px;
-    font-weight: bold;
+/*     font-size: 13px; */
+    font-weight: 600;
     text-align: center;
     padding-top: 15%;
+    font-size: 140%;
   }
   
   #feature-header {
@@ -491,19 +558,30 @@
   
   
   #legal-h2 {
-    font-weight: bold;
+/*     font-weight: bold; */
+    font-size: 180%;
     text-align: center;
-    font-family: 'Arial';
+/*     font-family: 'Arial'; */
     padding: 0% 5% 10% 5%;
   }
   
   .header-image {
     background-position: 80% 0%;
-}
-        .padding {
+  }
+  p {
+    text-align: justify;
+  }
+  
+  .nusku-media-logo {
+    margin-bottom: 15px;
+    height: auto;
+  }
+        .padding,
+        .padding-video {
             padding-left: 0%;
             padding-right: 0%;
         }
+      
         #intro-content{
             order: 0;
             padding: 20% 0% 0% 0%;
@@ -515,7 +593,8 @@
   
         #intro-title {
             font-weight: 900;
-            font-family: 'Arial';
+/*             font-family: 'Arial'; */
+          font-size: 2.1rem;
             padding: 0% 7% 0% 0%;
         }
   
@@ -534,6 +613,21 @@
         .uk-padding1 {
           padding: 15px;
         }
+        .arrow-left,
+        .arrow-right {
+          position: relative;
+          top: 200px;
+          left: 10px;
+          border: 0;
+          background-color: transparent;
+          z-index: 10;
+        }
+  
+        .arrow-right {
+          float: right;
+          left: -10px;
+        }
+        
         
     }
 </style>
@@ -658,13 +752,13 @@
         </div>
     </div>
 
-    <div id="nusku-video" class="uk-background-muted padding">
+    <div id="nusku-video" class="uk-background-muted padding-video">
         <div id="nusku-video-cov">
             <img src="assets/images/video.png" class="video-img">
         </div>
         <div id="nusku-video-title">
           <h2 id="nusku-video-p">
-            Our<span>vision.</span>
+            Our<span> vision.</span>
           </h2>
       </div>
     </div>
@@ -674,38 +768,50 @@
         <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
         <div class="uk-text-center media-padding" uk-grid>
             <div class="uk-width-1-3 uk-padding-remove">
-                <div class="uk-padding-remove">
+                <div class="uk-padding-remove brochure">
                     <img src="assets/images/brochure1.png" class="">
+                    <span style="color:midnightblue">Business Model</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
-                <div class="uk-card uk-card-body uk-padding-remove">
+                <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure2.png" class="">
+                    <span style="color:sienna">One Page Brochure</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
-                <div class="uk-card uk-card-body uk-padding-remove">
+                <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure3.png" class="">
+                    <span style="color:brown">Custodian Guidlines</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
-                <div class="uk-card uk-card-body uk-padding-remove">
+                <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure4.png" class="">
+                    <span style="color:darkolivegreen">Pricing Model</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
-                <div class="uk-card uk-card-body uk-padding-remove">
+                <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure5.png" class="">
+                    <span style="color:darkslateblue">Terms &amp; Conditions</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
-                <div class="uk-card uk-card-body uk-padding-remove">
+                <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure6.png" class="">
+                    <span style="color:darkslategray">KYC &amp; AML Requirements</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
@@ -716,42 +822,54 @@
           <p id="legal-p">Learn more about Ibinex</p>
           <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
           <!-- The slideshow -->
-          <button class="arrow-left"><i class="fas fa-angle-left fa-2x"></i></button>
-          <button class="arrow-right"><i class="fas fa-angle-right fa-2x"></i></button>
+          <button class="arrow-left"><i class="fas fa-angle-left fa-3x"></i></button>
+          <button class="arrow-right"><i class="fas fa-angle-right fa-3x"></i></button>
           <div class="carousel-inner">
             <div class="">
-                <div class="">
+                <div class="brochure">
                     <img src="assets/images/brochure1.png" class="">
+                    <span style="color:midnightblue">Business Model</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="">
-                <div class="">
+                <div class="brochure">
                     <img src="assets/images/brochure2.png" class="">
+                    <span style="color:sienna">One Page Brochure</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="">
-                <div class="">
+                <div class="brochure">
                     <img src="assets/images/brochure3.png" class="">
+                    <span style="color:brown">Custodian Guidlines</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="">
-                <div class="">
+                <div class="brochure">
                     <img src="assets/images/brochure4.png" class="">
+                    <span style="color:darkolivegreen">Pricing Model</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="">
-                <div class="">
+                <div class="brochure">
                     <img src="assets/images/brochure5.png" class="">
+                    <span style="color:darkslateblue">Terms &amp; Conditions</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="">
-                <div class="">
+                <div class="brochure">
                     <img src="assets/images/brochure6.png" class="">
+                    <span style="color:darkslategray">KYC &amp; AML Requirements</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
@@ -761,7 +879,7 @@
 
 
     <div id="nusku-media" class="uk-background-muted">
-        <h2 id="nusku-media-title">Ibinex media coverage</h2>      
+        <h2 id="nusku-media-title">Ibinex Media Coverage</h2>      
         <div id="nusku-media-cov">
             <img src="assets/images/media1.png" class="nusku-media-logo">
             <img src="assets/images/media2.png" class="nusku-media-logo">

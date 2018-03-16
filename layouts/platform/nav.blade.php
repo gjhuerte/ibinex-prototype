@@ -60,20 +60,25 @@
   
   .platform-nav-list-item > form > button {
     border-radius: 5px;
-    padding: 0.3em 1.600em;
+    font-weight: 500;
+    padding: 0.3em 1.400em;
+  }
+  
+  #account-profile-information {
+    background-color: #21224A;
+    border: none;
+    padding: 3% 5%;
   }
   
   .withdraw-submit {
     border: 2px solid #2E2C4C;
     color: #242F58;
-    font-weight: 700;
     background-color: transparent;
   }
   
   .deposit-submit {
     border: 1px solid #2E2C4C;
     color: #017668;
-    font-weight: 700;
     background-color: #00D6BC;
   }
 </style>
@@ -83,7 +88,7 @@
     <img src="../assets/images/ibinex-logo-white.png" alt="Website Logo" height="55%" width="55%">
   </div>
 
-  <div class="platform-nav-right-items" id="">
+  <div class="platform-nav-right-items">
     <ul class="list-unstyled">
       <li class="platform-nav-list-item">
         <a class="" href="#"> <span id="estimated-account-balance-in">Estimated Account Balance in USD</span> <span id="usd-amount-balance">$ 20, 456.95</span> </a>
@@ -100,7 +105,7 @@
         </form>
       </li>
       <li class="platform-nav-list-item">
-        <a class="" href="#"> <span>Estimated Account in</span></a>
+        <button id="account-profile-information" href="#"> <span>Estimated Account in</span> <i class="fas fa-caret-down"></i></button>
       </li>
     </ul>
   </div>

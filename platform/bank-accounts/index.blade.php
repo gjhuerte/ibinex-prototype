@@ -110,13 +110,16 @@
     table tr td:nth-child(2), table tr td:nth-child(4) {
         width: 20%;
     }
-    table tr th:nth-child(1) {
+    table tr th:nth-child(1),
+    table tr td:nth-child(1){
         width: 15%;
     }
-    table tr th:nth-child(3), table tr th:nth-child(5), table tr th:nth-child(6) {
+    table tr th:nth-child(3), table tr th:nth-child(5), table tr th:nth-child(6),
+    table tr td:nth-child(3), table tr td:nth-child(5), table tr td:nth-child(6){
         width: 10%;
     }
-    table tr th:nth-child(7){
+    table tr th:nth-child(7),
+    table tr td:nth-child(7){
         width: 20%;
     }
     

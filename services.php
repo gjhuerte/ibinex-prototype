@@ -180,6 +180,11 @@
     .custodiansection .custodian .custodianimg {
        display: none;    
     }
+      .imgbttm {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-bottom: 15%;
+      }
     .imgtop img {
       display: none;
       visibility: hidden;   

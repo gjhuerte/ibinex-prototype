@@ -768,11 +768,11 @@
 <?php function display_content(){ ?>
 <div class="uk-section uk-section-default red" style="background-color: #C11722;">
     <div class="uk-container">
-      <h3 class="animated fadeInDown"><i>Services</i></h3>
+      <h3 class="animated " id="animated1"><i>Services</i></h3>
         <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
             <div class="">
-                <p class="animated fadeInLeft">Ibinex services are all characterised by high-level innovation made practical for your personalised<br> exchange integration.</p>
-                <p class="animated fadeInRight">Our ecosystem of services compromises of the following units.</p>  
+                <p class="animated " id="animated2">Ibinex services are all characterised by high-level innovation made practical for your personalised<br> exchange integration.</p>
+                <p class="animated " id="animated3">Our ecosystem of services compromises of the following units.</p>  
             </div>
         </div>
     </div>
@@ -892,29 +892,32 @@ $('.cblogo').tilt({
 </script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script>
-  $(document).ready(function(){
-$(window).on("load", function() {
-  window.sr = ScrollReveal({ mobile: true });
-  sr.reveal('.pratform-content-p', { duration: 2000 });
-  sr.reveal('.platform-li', { duration: 3000}, {container: '.platform-content' }, 300);
+$(document).ready(function(){
+  $(window).on("load", function() {
+    $( "#animated1" ).addClass( "fadeInDown" );
+    $( "#animated2" ).addClass( "fadeInLeft" );
+    $( "#animated3" ).addClass( "fadeInRight" );
+    window.sr = ScrollReveal({ mobile: true });
+    sr.reveal('.pratform-content-p', { duration: 2000 });
+    sr.reveal('.platform-li', { duration: 3000}, {container: '.platform-content' }, 300);
 
-  sr.reveal('.crm-title', { origin: 'left' }, { duration: 3000}, 600);
-  sr.reveal('.crm-content-p', { origin: 'left'}, {duration: 3000 }, 600);
-  sr.reveal('.crm-li', { origin: 'left' }, { duration: 3000}, {container: '.crm-one' }, 600);
+    sr.reveal('.crm-title', { origin: 'left' }, { duration: 3000}, 600);
+    sr.reveal('.crm-content-p', { origin: 'left'}, {duration: 3000 }, 600);
+    sr.reveal('.crm-li', { origin: 'left' }, { duration: 3000}, {container: '.crm-one' }, 600);
 
-  sr.reveal('.cc-title', { origin: 'left' }, { duration: 4000});
-  sr.reveal('.cc-first-p', { origin: 'left'}, {duration: 4000 }, 600);
-  sr.reveal('.visa', { origin: 'bottom' }, { duration: 9000}, 3000);
-  sr.reveal('.mastercard', { origin: 'top' }, { duration: 9000}, 3000);
-  sr.reveal('.discover', { origin: 'bottom' }, { duration: 9000}, 3000);
-  sr.reveal('.dinnersclub', { origin: 'top' }, { duration: 9000}, 3000);
-  sr.reveal('.amexpress', { origin: 'bottom' }, { duration: 9000}, 3000);
-  sr.reveal('.paypal', { origin: 'top' }, { duration: 9000}, 3000);
-  sr.reveal('.maestro', { origin: 'bottom' }, { duration: 9000}, 3000);
+    sr.reveal('.cc-title', { origin: 'left' }, { duration: 4000});
+    sr.reveal('.cc-first-p', { origin: 'left'}, {duration: 4000 }, 600);
+    sr.reveal('.visa', { origin: 'bottom' }, { duration: 9000}, 3000);
+    sr.reveal('.mastercard', { origin: 'top' }, { duration: 9000}, 3000);
+    sr.reveal('.discover', { origin: 'bottom' }, { duration: 9000}, 3000);
+    sr.reveal('.dinnersclub', { origin: 'top' }, { duration: 9000}, 3000);
+    sr.reveal('.amexpress', { origin: 'bottom' }, { duration: 9000}, 3000);
+    sr.reveal('.paypal', { origin: 'top' }, { duration: 9000}, 3000);
+    sr.reveal('.maestro', { origin: 'bottom' }, { duration: 9000}, 3000);
 
-  sr.reveal('.custodian-title', { origin: 'right' }, { duration: 4000});
-  sr.reveal('.custodian-p', { duration: 3000}, {container: '.custodian-two' }, 300);
+    sr.reveal('.custodian-title', { origin: 'right' }, { duration: 4000});
+    sr.reveal('.custodian-p', { duration: 3000}, {container: '.custodian-two' }, 300);
+  });
 });
-    });
 </script>
 <?php } ?>

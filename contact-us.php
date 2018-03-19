@@ -14,6 +14,8 @@
   
   .header-text {
     font-size:1.8em;  
+    font-size: var(--heading-40px);
+    font-weight: 900;
   }
   
   .support-header{
@@ -25,13 +27,20 @@
   }
   
   .intro-text-top{
-    color: #173d54;
-    font-size: 0.8em;
+    color: #728298;
+    font-size: var( --paragraph-17px);
+    font-weight: 600;
+  }
+  .intro-text-top li span svg{
+    margin-right: 10px;
   }
   
   .intro-text-bottom{
     color: #173d54;
     font-size: 0.8em;
+    color: #728298;
+    font-size: var( --paragraph-17px);
+    font-weight: 600;
   }
   
   .text-holder{
@@ -81,8 +90,9 @@ box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
   
   .form-button{
     border-radius: 5px;
-    background-color: #12398e;
+    background-color: #142c5a;
     color:whitesmoke;
+    font-weight: 900;
   }
   
   .form-textarea{
@@ -159,6 +169,25 @@ box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
     div#contact-us-form{
       background-color: #FFFFFF !important;
     }
+    .intro-text-top li span svg{
+    margin-right: 10px;
+  }
+    .intro-text-top{
+    font-weight: 500;
+  }
+    .intro-text-bottom{
+    font-weight: 500;
+  }
+    .white-form {
+    width: 90%!important;
+    margin-left: 0;
+}
+    .form-textarea {
+    height: 100%;
+  }
+    .form-button{
+      padding: 6px 75px;
+    }
     
   }
   
@@ -191,20 +220,20 @@ box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="20" height="20"
                             viewBox="0 0 252 252"
-                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#4caf50"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
-                      </span>&nbsp &nbsp Local Escrow deposit (reserve only, no payment)</li>
+                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#12d4b7"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
+                      </span> Local Escrow deposit(reserve only, no payment)</li>
                     <li><span>
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="20" height="20"
                             viewBox="0 0 252 252"
-                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#4caf50"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
-                      </span>&nbsp &nbsp Letter of Intent</li>
+                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#12d4b7"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
+                      </span> Letter of Intent</li>
                     <li><span>
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="20" height="20"
                             viewBox="0 0 252 252"
-                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#4caf50"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
-                      </span>&nbsp &nbsp Proof of Escrow deposit</li>
+                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#12d4b7"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
+                      </span> Proof of Escrow deposit</li>
                   </ul>
 
                   <p class="uk-list uk-text-bold uk-text-justify intro-text-top">
@@ -283,49 +312,49 @@ box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
 <?php function scripts_include(){ ?>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script>
+$(window).on("load", function(){
+  window.sr = ScrollReveal({ mobile: true });
 
-window.sr = ScrollReveal({ mobile: true });
+    sr.reveal('.header-text', { /* Animates the top introduction header */
 
-  sr.reveal('.header-text', { /* Animates the top introduction header */
-  
-  origin: 'left',
-  distance: '200px',
-  opacity: 0
-  });
-  
-  sr.reveal('.intro-text-top', { /* Animates the introduction paragraph at the top */
-  
-  origin: 'left',
-  opacity: 0,
-  duration: 500,
-  distance: '200px',
-  delay: 250
-  },100);
-  
-  sr.reveal('.intro-text-bottom', { /* Animates the introduction paragraph at the bottom */
-  origin: 'bottom',
-  opacity: 0,
-  duration: 500,
-  distance: '200px',
-  delay: 250
-  },100);
-  
-  sr.reveal('.white-form', { /* Animates the form */
-  origin: 'right',
-  opacity: 0,
-  duration: 500,
-  distance: '500px',
-  delay: 400
-  });
-  
-  sr.reveal('.form', { /* Animates the form */
-  origin: 'bottom',
-  opacity: 0,
-  duration: 500,
-  distance: '100px',
-  delay: 450
-  },50);
-  
+    origin: 'left',
+    distance: '200px',
+    opacity: 0
+    });
+
+    sr.reveal('.intro-text-top', { /* Animates the introduction paragraph at the top */
+
+    origin: 'left',
+    opacity: 0,
+    duration: 500,
+    distance: '200px',
+    delay: 250
+    },100);
+
+    sr.reveal('.intro-text-bottom', { /* Animates the introduction paragraph at the bottom */
+    origin: 'bottom',
+    opacity: 0,
+    duration: 500,
+    distance: '200px',
+    delay: 250
+    },100);
+
+    sr.reveal('.white-form', { /* Animates the form */
+    origin: 'right',
+    opacity: 0,
+    duration: 500,
+    distance: '500px',
+    delay: 400
+    });
+
+    sr.reveal('.form', { /* Animates the form */
+    origin: 'bottom',
+    opacity: 0,
+    duration: 500,
+    distance: '100px',
+    delay: 450
+    },50);
+});  
   
   
 

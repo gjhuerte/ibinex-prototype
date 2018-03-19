@@ -32,20 +32,24 @@
     .text-light-blue{
       color:#537986;
     }
-    #table-bid, #table-trades{
+    #table-bid, 
+    #table-trades,
+    #table-open-orders{
       min-width:100%;
       font-size: 9px;
       padding:4px;
     }
-    #table-bid th, #table-bid td, #table-trades th, #table-trades td{
+    #table-bid th, #table-bid td, 
+    #table-trades th, #table-trades td, 
+    #table-open-orders th,#table-open-orders td{
       padding:5px;
       border:0 !important;
     }
-     #table-bid tr.table-light{
-      background-color:#20244A !important;
-    }
     
-    #table-bid .even, #table-trades .even{
+    
+    #table-bid .even, #table-trades .even,
+    #table-open-orders .even, #table-open-orders .even
+    {
       background-color:#20244A;
     }
     
@@ -105,31 +109,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="odd">
-            <td>$ 415.70</td>
-            <td>0.00000000</td>
-            <td>$ 32.41</td>
-          </tr>
-          <tr class="even">
-            <td>$ 415.70</td>
-            <td>0.00000000</td>
-            <td>$ 32.41com</td>
-          </tr>
-          <tr class="odd">
-            <td>$ 415.70</td>
-            <td>0.00000000</td>
-            <td>$ 32.41</td>
-          </tr>
-          <tr class="even">
-            <td>$ 415.70</td>
-            <td>0.00000000</td>
-            <td>$ 32.41com</td>
-          </tr>
-          <tr class="odd">
-            <td>$ 415.70</td>
-            <td>0.00000000</td>
-            <td>$ 32.41</td>
-          </tr>
+          <?php
+            for($i=1;$i<=5;$i++){
+              ?>
+               <tr class="<?php echo ($i%2 == 0) ? "even" : "odd";?>">
+                <td>$ 415.70</td>
+                <td>0.00000000</td>
+                <td>$ 32.41</td>
+              </tr>
+              <?php
+            }
+          ?>
         </tbody>
       </table>
       
@@ -148,31 +138,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>$ 415.70</td>
-            <td>0.00000000</td>
-            <td>$ 32.41</td>
-          </tr>
-          <tr  class="even">
-            <td>$ 415.70</td>
-            <td>0.00000000</td>
-            <td>$ 32.41com</td>
-          </tr>
-          <tr>
-            <td>$ 415.70</td>
-            <td>0.00000000</td>
-            <td>$ 32.41</td>
-          </tr>
-          <tr  class="even">
-            <td>$ 415.70</td>
-            <td>0.00000000</td>
-            <td>$ 32.41com</td>
-          </tr>
-          <tr>
-            <td>$ 415.70</td>
-            <td>0.00000000</td>
-            <td>$ 32.41</td>
-          </tr>
+           <?php
+            for($i=1;$i<=5;$i++){
+              ?>
+               <tr class="<?php echo ($i%2 == 0) ? "even" : "odd";?>">
+                <td>$ 415.70</td>
+                <td>0.00000000</td>
+                <td>$ 32.41</td>
+              </tr>
+              <?php
+            }
+          ?>
         </tbody>
       </table>
     </div>
@@ -206,6 +182,16 @@
                   <td>0.00000000</td>
                   <td>1427.34</td>
                 </tr>
+                <tr class='text-red'>
+                  <td>1166.76</td>
+                  <td>0.00000000</td>
+                  <td>1427.34</td>
+                </tr>
+                <tr class='text-mint-green'>
+                  <td>1166.76</td>
+                  <td>0.00000000</td>
+                  <td>1427.34</td>
+                </tr>
                 <tr class='text-mint-green'>
                   <td>1166.76</td>
                   <td>0.00000000</td>
@@ -226,11 +212,6 @@
                   <td>0.00000000</td>
                   <td>1427.34</td>
                 </tr>
-                <tr class='text-mint-green'>
-                  <td>1166.76</td>
-                  <td>0.00000000</td>
-                  <td>1427.34</td>
-                </tr>
                 <tr class='text-red'>
                   <td>1166.76</td>
                   <td>0.00000000</td>
@@ -246,11 +227,6 @@
                   <td>0.00000000</td>
                   <td>1427.34</td>
                 </tr>
-                <tr class='text-mint-green'>
-                  <td>1166.76</td>
-                  <td>0.00000000</td>
-                  <td>1427.34</td>
-                </tr>
                 <tr class='text-red'>
                   <td>1166.76</td>
                   <td>0.00000000</td>
@@ -261,7 +237,7 @@
                   <td>0.00000000</td>
                   <td>1427.34</td>
                 </tr>
-                <tr class='text-red'>
+                <tr class='text-mint-green'>
                   <td>1166.76</td>
                   <td>0.00000000</td>
                   <td>1427.34</td>
@@ -289,7 +265,38 @@
       
         <!-- Tab panes -->
         <div class="tab-content">
-          <div class="tab-pane active container" id="open-orders">Open Orders</div>
+          <div class="tab-pane active" id="open-orders">
+               <table class="table text-center" id='table-open-orders'>
+                  <thead class="text-light-blue">
+                    <tr>
+                      <th>Type</th>
+                      <th>Date & Time</th>
+                      <th>Amount</th>
+                      <th>Value</th>
+                      <th>Price</th>
+                      <th>Fee</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php
+                      for($i=1;$i<=11;$i++){
+                        ?>
+                         <tr class="<?php echo ($i%2 == 0) ? "even" : "odd";?>">
+                           <td>Buy</td>
+                           <td>Feb 20, 2011 8:42 pm</td>
+                           <td>0.233300000</td>
+                           <td>$1,683.85</td>
+                           <td>$3,067.85</td>
+                           <td>$3.72</td>
+                        </tr>
+                        <?php
+                      }
+                    ?>
+
+
+                  </tbody>
+                </table>
+          </div>
           <div class="tab-pane container" id="transactions">Transactions</div>
         </div>
     </div>

@@ -40,7 +40,6 @@
         width: 55%;
         background-color : #112B56;
         color: white;
-        font-size: 80%;
         font-weight: 500;
         text-align: justify;
         line-height: 150%;
@@ -52,7 +51,6 @@
     }
     #media-title {
         font-weight: 800;
-		font-size: 1.6em;
 		margin: 0;
         padding-top: 8%;
     }   
@@ -83,7 +81,6 @@
         padding: 8% 15%;
     }   
     #exec-title-1 {
-        font-size: 120%;
         font-weight: 600;
     }
     #exec-title-2 {
@@ -93,7 +90,6 @@
     }
     #exec-desc {
         color: #687C91;
-        font-size: 95%;
 		line-height: 1em;
         text-align: justify;
         display: block;
@@ -101,12 +97,12 @@
     #exec-list {
         position: relative;
         min-height: 100%;
-        background: white;
-        border-radius: 10px;
         margin-top: 3%;
     }
     #exec-slideshow {
         padding-left: 25%;
+		background: white;
+        border-radius: 10px;
     }
     a.exec-arrows {
         position: absolute;
@@ -134,8 +130,8 @@
     }
     .exec-info {
         padding: 2% 0;
+		font-size: 1rem;
         display: block;
-        font-size: 80%;
         text-align: justify;
         padding-right: 3%;
     }
@@ -144,7 +140,6 @@
 		color: #4861E2;
 	}
 	.exec-links{
-		font-size: 80%;
 		font-style: italic;
 		text-decoration: underline;
 		color: #4861E2;
@@ -163,8 +158,8 @@
 	.exec-img {
 		position: absolute;
 		margin: auto;
-		height: 18em;
-		width: 20em;
+		height: 22em;
+		width: 25em;
 		z-index: -999;
 	}
 	.exec-img:nth-child(1){
@@ -200,18 +195,23 @@
         min-height: 40vh;
     }
     #board-title {
-        font-weight: bold;
+        font-weight: 800;
     }
+	#board-title i {
+		font-family: "Playfair Display", sans-serif;
+	}
     #board-list {
         min-height: 50vh;
         padding: 2% 15% 5% 15%;;
     }
+	#board-box {
+		position: relative;
+	}
     .board-members{
         width: 180px;
         margin: 0 1% 2% 0;
         vertical-align: top;
         display: inline-block;
-        line-height: 80%;
     }
     .board-img {
         margin: 0 auto;
@@ -222,44 +222,66 @@
     .board-name {
         font-weight: bold;
     }
-    .board-rank {
-        font-size: 80%;
-    }
+
+	#board-arrow-box {
+	}
+	a.board-arrows{
+		position: absolute;
+		color: white;
+		background-color: rgba(0,0,0,0.5);
+		top: 35%;
+	}
+	#board-next {
+		right: 0;
+	}
+	#board-prev {
+		left: 0;
+	}
     
-    @media only screen and (max-width: 992px) {
-        #exec-title-2 {
-            width: 100%;
-        }
-        .exec-half {
-            width: 100%;
-            margin-left: 0;
-        }
-        #exec-slideshow {
-            padding-left: 2%;
-        }
-        .exec-item {
-            width: 100%;
-            margin-left:0;
-        }
-		a.exec-arrows {
-			position: relative;
-		}
-		#arrow-box {
+	@media only screen and (max-width: 992px) {
+		#exec-title-2 {
 			width: 100%;
-			text-align: center;
 		}
-		#exec-album {
-			position: relative;
-			width: 100%;
+	}
+	@media only screen and (max-device-width : 430px) {
+		#ibx-exec {
+			box-sizing: border-box;
+			padding: 0;
+		}
+		#exec-team {
+			width: 90%;
+			padding: 0 5%;
+		}
+		#exec-list {
+			margin-bottom: 25em;
+		}
+		#exec-slideshow {
+			position: absolute;
+			top: 90%;
+			width: 90%;
+			margin: 0 5%;
 		}
 		.exec-img {
-			position: relative;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
+			height: 20em;
 		}
-    }
+		.exec-info {
+			font-size: 70%;
+		}
+		.exec-links {
+			font-size: 80%;
+		}
+		#board-list {
+			padding: 0 0 10% 0;
+		}
+		.board-members {
+			margin: 0;
+		}
+		.board-img {
+			margin: 0;
+			width: 100%;
+			height: 70vh;
+		}
+	}
     @media only screen and (max-width: 768px) {
         /* For mobile phones: */
         [class*="uk-width-"] {
@@ -284,6 +306,38 @@
         #ibx-divider {
             display: none;
         }
+		.exec-item {
+            width: 100%;
+            margin-left:0;
+        }
+		a.exec-arrows {
+			position: relative;
+		}
+		#arrow-box {
+			width: 100%;
+			text-align: center;
+		}
+		#exec-slideshow {
+			padding-left: 2%;
+        }
+		#exec-album {
+			position: relative;
+			width: 100%;
+		}
+		.exec-img {
+			position: relative;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		.exec-half {
+            width: 100%;
+            margin-left: 0;
+        }
+		.board-members {
+			margin: 0;
+		}
     }
 	
 	.exec-animate-1-2 {
@@ -414,7 +468,7 @@
 <div id="ibx-banner" class="uk-grid">
     <div id="banner-content" class="uk-width-3-5">
 		<div class="uk-scrollspy-inview uk-animation-slide-right-medium">
-        	<h3 id="banner-title">Transparency</h3>
+        	<h2 id="banner-title">Transparency</h2>
 			<p>
 				Ibinex is a collaboration of pioneers. With decades of combined experience within the finance, 
 				technology, cyber security and SaaS worlds, today we are proud to work with over 60 of the leading
@@ -438,7 +492,7 @@
     <div id="banner-img" class="uk-width-2-5"></div>
 </div>
 <div id="ibx-media">
-    <h3 id="media-title">Ibinex media coverage</h3>
+    <h2 id="media-title">Ibinex media coverage</h2>
     <div id="media-cov">
         <img src="./assets/images/media1.png" class="media-logo" />
         <img src="./assets/images/media2.png" class="media-logo" />
@@ -458,7 +512,7 @@
     <div id="ibx-exec">
         <div id="exec-team" class="exec-half">
             <h4 id="exec-title-1" class="exec-header">Executive team</h4>
-            <h3 id="exec-title-2" class="exec-header">The people behind iBinex.</h3>
+            <h2 id="exec-title-2" class="exec-header">The people behind iBinex.</h2>
             <span id="exec-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -477,7 +531,7 @@
 				<div class="exec-div-slick slick-track">
 					<div>
 						<div class="exec-data exec-item">
-							<h4 class="exec-name exec-header">Matthew Novinski</h4>
+							<h3 class="exec-name exec-header">Matthew Novinski</h3>
 							<h6 class="exec-rank exec-header">Chief Executive Officer</h6>
 							<span class="exec-info">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
@@ -495,7 +549,7 @@
 					<div>
 						<div class="exec-data exec-item">
 							<h3 class="exec-name exec-header">John Whirlpool</h3>
-							<h5 class="exec-rank exec-header">Chief Executive Officer</h5>
+							<h6 class="exec-rank exec-header">Chief Executive Officer</h6>
 							<span class="exec-info">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
 								ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
@@ -512,7 +566,7 @@
 					<div>
 						<div class="exec-data exec-item">
 							<h3 class="exec-name exec-header">Rion Pronelle</h3>
-							<h5 class="exec-rank exec-header">Chief Executive Officer</h5>
+							<h6 class="exec-rank exec-header">Chief Executive Officer</h6>
 							<span class="exec-info">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
 								ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
@@ -537,48 +591,54 @@
     <div id="ibx-board">
         <hr id="ibx-divider"/>
         <h2 id="board-title">Advisory <i>Board</i></h2>
-        <div id="board-list">
-            <div class="board-members">
-                <img src="./assets/images/board1.png" class="board-img" />
-                <h5 class="board-name exec-header">Jeremy Corbein</h5>
-                <span class="board-rank">Chief of Operational Officer, Deiteriy</span>
-            </div>
-            <div class="board-members">
-                <img src="./assets/images/board2.png" class="board-img" />
-                <h5 class="board-name exec-header">Jimmy Fallon</h5>
-                <span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
-            </div>
-            <div class="board-members">
-                <img src="./assets/images/board3.png" class="board-img" />
-                <h5 class="board-name exec-header">Stephen Colbert</h5>
-                <span class="board-rank">Head of Products and Services Development Department XB Software</span>
-            </div>
-            <div class="board-members">
-                <img src="./assets/images/board4.png" class="board-img" />
-                <h5 class="board-name exec-header">Artem Kushik</h5>
-                <span class="board-rank">Business Analyst, Credit Agricole CIB</span>
-            </div>
-            <div class="board-members">
-                <img src="./assets/images/board1.png" class="board-img" />
-                <h5 class="board-name exec-header">Jeremy Corbein</h5>
-                <span class="board-rank">Chief of Operational Officer, Deiteriy</span>
-            </div>
-            <div class="board-members">
-                <img src="./assets/images/board2.png" class="board-img" />
-                <h5 class="board-name exec-header">Jimmy Fallon</h5>
-                <span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
-            </div>
-            <div class="board-members">
-                <img src="./assets/images/board3.png" class="board-img" />
-                <h5 class="board-name exec-header">Stephen Colbert</h5>
-                <span class="board-rank">Head of Products and Services Development Department XB Software</span>
-            </div>
-            <div class="board-members">
-                <img src="./assets/images/board4.png" class="board-img" />
-                <h5 class="board-name exec-header">Artem Kushik</h5>
-                <span class="board-rank">Business Analyst, Credit Agricole CIB</span>
-            </div>
-        </div>
+		<div id="board-box">
+			<div id="board-list">
+				<div class="board-members">
+					<img src="./assets/images/board1.png" class="board-img" />
+					<h5 class="board-name exec-header">Jeremy Corbein</h5>
+					<span class="board-rank">Chief of Operational Officer, Deiteriy</span>
+				</div>
+				<div class="board-members">
+					<img src="./assets/images/board2.png" class="board-img" />
+					<h5 class="board-name exec-header">Jimmy Fallon</h5>
+					<span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
+				</div>
+				<div class="board-members">
+					<img src="./assets/images/board3.png" class="board-img" />
+					<h5 class="board-name exec-header">Stephen Colbert</h5>
+					<span class="board-rank">Head of Products and Services Development Department XB Software</span>
+				</div>
+				<div class="board-members">
+					<img src="./assets/images/board4.png" class="board-img" />
+					<h5 class="board-name exec-header">Artem Kushik</h5>
+					<span class="board-rank">Business Analyst, Credit Agricole CIB</span>
+				</div>
+				<div class="board-members">
+					<img src="./assets/images/board1.png" class="board-img" />
+					<h5 class="board-name exec-header">Jeremy Corbein</h5>
+					<span class="board-rank">Chief of Operational Officer, Deiteriy</span>
+				</div>
+				<div class="board-members">
+					<img src="./assets/images/board2.png" class="board-img" />
+					<h5 class="board-name exec-header">Jimmy Fallon</h5>
+					<span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
+				</div>
+				<div class="board-members">
+					<img src="./assets/images/board3.png" class="board-img" />
+					<h5 class="board-name exec-header">Stephen Colbert</h5>
+					<span class="board-rank">Head of Products and Services Development Department XB Software</span>
+				</div>
+				<div class="board-members">
+					<img src="./assets/images/board4.png" class="board-img" />
+					<h5 class="board-name exec-header">Artem Kushik</h5>
+					<span class="board-rank">Business Analyst, Credit Agricole CIB</span>
+				</div>
+			</div>
+			<div id="board-arrow-box">
+				<a id="board-prev" class="board-arrows" href="#" uk-icon="icon: chevron-left; ratio: 2"></a>
+				<a id="board-next" class="board-arrows" href="#" uk-icon="icon: chevron-right; ratio: 2"></a>
+			</div>
+		</div>
     </div>
 </div>
 <?php } ?>
@@ -633,24 +693,34 @@
 	function windowHandler(){
 		var window_flag = false;
 		
-		if ($(window).width()<992) {
+		if ($(window).width()<768) {
 			if(window_flag) return;
 			window_flag = true;
-			
 			try{
+				$('#board-arrow-box').show();
 				$('#exec-images').slick({
-					height: 20,
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					arrows: false,
 					fade: true,
+					draggable: false,
+					swipe: false,
 					asNavFor: '.exec-div-slick'
+				});
+				
+				$('#board-list').slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					prevArrow: $('#board-prev'),
+					nextArrow: $('#board-next'),
 				});
 			}catch(err){}
 		}else {
 			window_flag = false;
 			try{
+				$('#board-arrow-box').hide();
 				$('#exec-images').slick('unslick');
+				$('#board-list').slick('unslick');
 			}catch(err){}
 		}
 	}
@@ -661,7 +731,8 @@
 	$('.exec-div-slick').slick({
 		prevArrow: $('#exec-prev'),
 		nextArrow: $('#exec-next'),
-		draggable: false
+		draggable: false,
+		swipe: false
 	});
 	
 	$(window).resize(function(){

@@ -1,4 +1,6 @@
-<?php require '../../template-bootstrap.blade.php'; ?>
+<?php require '../../template-bootstrap.blade.php';
+      $current = 'myAccount';
+ ?>
 
 <?php function display_title(){ ?> Example Title  <?php } ?>
 

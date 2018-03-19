@@ -5,13 +5,15 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+/*     font-family: 'Lato', sans-serif; */
 }
 
   #nusku-header {
@@ -50,31 +52,30 @@
   .header-container.header-text h1, 
   .header-container.header-text h2 {
     color: whitesmoke;
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: var(--paragraph-17px);
+    font-weight: 500;
   }
 
   .header-container.header-text h2 {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 3.5625rem;
     font-style: italic;
     margin-bottom: 0;
   }
 
   .header-container.header-text h1 {
     margin-top: 0;
-    font-family: 'Verdana', sans-serif;
-    font-weight: 900;
-    font-size: 4rem;
+    font-weight: 700;
+    font-size: 6.25rem;
     font-style: italic;
 
   }
 
   .header-container.header-text > h1 > span {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     vertical-align: super;
-    font-weight: 600;
+    font-weight: 700;
   }
   
   .header-input {
@@ -94,7 +95,7 @@
     outline: none;
     color: white;
     padding: 12px 8px 12px 8px;
-    font-size: 0.55rem;
+    font-size: 0.8125rem;
     font-weight: 500;
     margin: 0;
     grid-column: 2 / span 1;
@@ -111,6 +112,16 @@
     
   }
   
+  .uk-h2, h2 {
+    font-size: var(--heading-40px);
+    line-height: 1.3;
+    font-family: 'Montserrat', sans-serif;
+}
+  p {
+    font-size: var(--paragraph-17px);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
   #nusku-video {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -124,21 +135,27 @@
     font-weight: bold;
     padding-top: 7%;
     background: white;
-    transform: translateX(-55px);
+    transform: translateX(-50px);
   }
   
   #nusku-video-p {
     line-height: 300px;
     vertical-align: middle;
     text-align: center;
-    font-weight: bold;
-    font-family: 'Verdana', sans-serif;
+    font-weight: 900;
+    font-size: var(--landing-heading-70px);
+  }
+  
+  #nusku-video-p span {
+   font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
   }
   
   #nusku-video-cov {
     text-align: center;
     padding: 70px 0;
-    transform: translateX(55px);
+    transform: translateX(50px);
     z-index: 99;
   }
   
@@ -159,17 +176,17 @@
     display: flex;
     background-color: #f8f8f8;
     padding-left: 5%;
+    padding-right: 5%;
   }
   
   #intro-title {
-    font-weight: 900;
-    font-family: 'Arial';
+    font-weight: 800;
   }
   
   #intro-img {
     order: 0;
     overflow: hidden;
-    background-size: contain;
+    background-size: 75%;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(assets/images/laptop3.png);
@@ -177,25 +194,19 @@
 
   #intro-content {
     order: 1;
-    padding: 10% 12% 12% 3%;
+    padding: 10% 12% 10% 0;
   }
   
-  #feature-header {
-    font-weight: 900;
-    font-family: 'Arial';
+  #feature-header,
+  #feature-header2{
+    font-weight: 800;
+    font-size: var(--heading-30px);
+    margin: 10px;
   }
   
-  #feature-header2 {
-    font-weight: 900;
-    font-family: 'Arial';
-  }
-  
-  #feature-p {
-    padding-top: 8%;
-  }
   
   #legal-p {
-    font-size: 13px;
+/*     font-size: 13px; */
     font-weight: bold;
     text-align: center;
     padding-top: 5%;
@@ -205,6 +216,7 @@
     font-weight: bold;
     text-align: center;
     padding-bottom: 6%;
+    font-weight: 800;
     
   }
   
@@ -212,14 +224,14 @@
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
-    font-family: Arial;
+/*     font-family: Arial; */
     color: #1a7182;
     font-size: 9px;
     font-weight: bold;
     background: #12d5b7;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-    transform: translatex(10px);
+/*     transform: translatex(10px); */
     border: none;
   }
   
@@ -233,18 +245,20 @@
     text-align: center;
     padding: 5% 10%;
     padding-bottom: 0;
+    font-size: var(--heading-30px);
+    font-weight: 700;
   }
   
   #nusku-media-cov {
-    padding: 7% 10%;
+    padding: 5% 5%;
     text-align: center;
   }
   
   .nusku-media-logo {
     display: inline-block;
     margin: 0px 9px;
-    height: 125px;
-    width: 150px;
+    height: 60px;
+/*     width: 150px; */
   }
   
 .imgHeight {
@@ -260,6 +274,11 @@
 }
   
 .padding {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+  
+ .padding-video {
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -288,8 +307,8 @@
   
 .coolors {
     color: #203771;
-    font-weight: 900;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: var(--paragraph-title-22px);
 }
   
   .uk-grid1 {
@@ -312,10 +331,48 @@
     display: none;
   }
   
+  .brochure img {
+    width: 70%;
+  }
+  
+  .brochure {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-items: center;
+    grid-gap: 5px;
+  }
+  
+  .brochure button {
+    grid-column: 2 / span 1;
+  }
+  
+  .brochure span,
+  .brochure img{
+    grid-column: 1 / -1;
+  }
+  
+  .brochure span:nth-child(2) {
+    font-weight: 700;
+  }
+  
+  .brochure span:nth-child(3) {
+    font-size: 0.9rem;
+  }
+  
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
 /* For tablet: */
   #nusku-header {
     grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  }
+  .arrow-left,
+  .arrow-right {
+    position: relative;
+    top: 400px;
+  }
+   .padding,
+  .padding-video {
+      padding-left: 0%;
+      padding-right: 0%;
   }
 }
   
@@ -361,7 +418,11 @@
   }
   
   .header-container.header-text h1 {
-    font-size: 2rem;
+    font-size: 2.6rem;
+  }
+  
+  .header-container.header-text > h1 > span {
+    font-size: 1rem;
   }
   
     .header-container.header-text h2 {
@@ -374,12 +435,31 @@
     text-align: justify;
   }
   
+   #intro-img { 
+    margin-top: 20px;
+    background-size: contain;
+  }
+  
+  .coolors {
+    font-size: 150%;
+  }
+  
+  #nusku-video-p {
+    font-weight: 800;
+  }
+  
+   #nusku-video-p span {
+   font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+  }
+  
   #nusku-video {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;
   }
   
   #nusku-video-title {
@@ -396,8 +476,7 @@
     vertical-align: middle;
     text-align: center;
     font-size: 45px;
-    font-weight: bold;
-    font-family: 'Verdana', sans-serif;
+    
   }
   
   #nusku-video-cov {
@@ -436,117 +515,19 @@
     display: none;
   }
   
-  .carousel {
-    position: relative;
-    width: 25%;
-    display: table-cell;
-  }
-  
-  .carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .carousel-item {
-    position: relative;
-    display: none;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%;
-    transition: -webkit-transform .6s ease;
-    transition: transform .6s ease;
-    transition: transform .6s ease,-webkit-transform .6s ease;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-  }
-  
-  .carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 15%;
-    color: #060606;
-    text-align: center;
-    opacity: .5;
-}
-  
-  .carousel-control-prev {
-    left: 0;
-  }
-  
-  .carousel-control-next {
-    right: 0;
-}
-  
-  .carousel-control-prev-icon {
-    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E);
-    color: black;
-}
-  
-  .arrow-left {
-    position: relative;
-    top: 200px;
-    left: 10px;
-    z-index: 99;
-    color: black;
-  }
-   .arrow-right {
-    float: right;
-    position: relative;
-    top: 200px;
-    right: 10px;
-    z-index: 99;
-    color: black;
-  }
-  
-  .arrow-left,
-  .arrow-right {
-    color: black;
-    background-color: transparent;
-    border: none;
-    outline: none;
-  }
-  
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: #000 no-repeat center center;
-    background-size: 100% 100%;
-    color: black;
-    transform: translateY(50px);
-}
-  
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
-  
+ 
   #legal-btn {
     webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
-    font-family: Arial;
+/*     font-family: Arial; */
     color: #1a7182;
     font-size: 13px;
     font-weight: bold;
     background: #12d5b7;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-    transform: translatex(10px);
+/*     transform: translatex(10px); */
     border: none;
     display: flex;
     margin: 0 auto;
@@ -554,10 +535,11 @@
   }
   
   #legal-p {
-    font-size: 13px;
-    font-weight: bold;
+/*     font-size: 13px; */
+    font-weight: 600;
     text-align: center;
     padding-top: 15%;
+    font-size: 140%;
   }
   
   #feature-header {
@@ -574,24 +556,32 @@
     font-family: 'Arial';
   }
   
-  #feature-p {
-    padding-top: 0%;
-  }
   
   #legal-h2 {
-    font-weight: bold;
+/*     font-weight: bold; */
+    font-size: 180%;
     text-align: center;
-    font-family: 'Arial';
+/*     font-family: 'Arial'; */
     padding: 0% 5% 10% 5%;
   }
   
   .header-image {
     background-position: 80% 0%;
-}
-        .padding {
+  }
+  p {
+    text-align: justify;
+  }
+  
+  .nusku-media-logo {
+    margin-bottom: 15px;
+    height: auto;
+  }
+        .padding,
+        .padding-video {
             padding-left: 0%;
             padding-right: 0%;
         }
+      
         #intro-content{
             order: 0;
             padding: 20% 0% 0% 0%;
@@ -603,7 +593,8 @@
   
         #intro-title {
             font-weight: 900;
-            font-family: 'Arial';
+/*             font-family: 'Arial'; */
+          font-size: 2.1rem;
             padding: 0% 7% 0% 0%;
         }
   
@@ -622,6 +613,21 @@
         .uk-padding1 {
           padding: 15px;
         }
+        .arrow-left,
+        .arrow-right {
+          position: relative;
+          top: 200px;
+          left: 10px;
+          border: 0;
+          background-color: transparent;
+          z-index: 10;
+        }
+  
+        .arrow-right {
+          float: right;
+          left: -10px;
+        }
+        
         
     }
 </style>
@@ -688,7 +694,7 @@
                    <h3 class="coolors uk-margin-remove-top">
                       Full CRM &amp; Back Office Solution
                    </h3>
-                  <p id="feature-p">
+                  <p>
                     The Ibinex ecosystem assimilates a complete Customer Relationship Management (CRM) as a complement to your web based exchange platform. This includes KYC/AML documentation collection and verification, and account &amp; money management. The result is an effortless back office administration workflow and smooth UI/UX for your customers.
                   </p>
                 </div>
@@ -746,13 +752,13 @@
         </div>
     </div>
 
-    <div id="nusku-video" class="uk-background-muted padding">
+    <div id="nusku-video" class="uk-background-muted padding-video">
         <div id="nusku-video-cov">
             <img src="assets/images/video.png" class="video-img">
         </div>
         <div id="nusku-video-title">
           <h2 id="nusku-video-p">
-            Our <span>vision.</span>
+            Our<span> vision.</span>
           </h2>
       </div>
     </div>
@@ -760,40 +766,52 @@
     <div class="legal-container">
         <p id="legal-p">Learn more about Ibinex</p>
         <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
-        <div class="uk-text-center media-padding" uk-grid uk-slideshow="animation: fade">
+        <div class="uk-text-center media-padding" uk-grid>
             <div class="uk-width-1-3 uk-padding-remove">
-                <div class="uk-padding-remove">
+                <div class="uk-padding-remove brochure">
                     <img src="assets/images/brochure1.png" class="">
+                    <span style="color:midnightblue">Business Model</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
-                <div class="uk-card uk-card-body uk-padding-remove">
+                <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure2.png" class="">
+                    <span style="color:sienna">One Page Brochure</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
-                <div class="uk-card uk-card-body uk-padding-remove">
+                <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure3.png" class="">
+                    <span style="color:brown">Custodian Guidlines</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
-                <div class="uk-card uk-card-body uk-padding-remove">
+                <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure4.png" class="">
+                    <span style="color:darkolivegreen">Pricing Model</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
-                <div class="uk-card uk-card-body uk-padding-remove">
+                <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure5.png" class="">
+                    <span style="color:darkslateblue">Terms &amp; Conditions</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="uk-width-1-3 uk-padding-remove">
-                <div class="uk-card uk-card-body uk-padding-remove">
+                <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure6.png" class="">
+                    <span style="color:darkslategray">KYC &amp; AML Requirements</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
@@ -804,42 +822,54 @@
           <p id="legal-p">Learn more about Ibinex</p>
           <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
           <!-- The slideshow -->
-          <button class="arrow-left"><i class="fas fa-angle-left fa-2x"></i></button>
-          <button class="arrow-right"><i class="fas fa-angle-right fa-2x"></i></button>
+          <button class="arrow-left"><i class="fas fa-angle-left fa-3x"></i></button>
+          <button class="arrow-right"><i class="fas fa-angle-right fa-3x"></i></button>
           <div class="carousel-inner">
             <div class="">
-                <div class="">
+                <div class="brochure">
                     <img src="assets/images/brochure1.png" class="">
+                    <span style="color:midnightblue">Business Model</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="">
-                <div class="">
+                <div class="brochure">
                     <img src="assets/images/brochure2.png" class="">
+                    <span style="color:sienna">One Page Brochure</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="">
-                <div class="">
+                <div class="brochure">
                     <img src="assets/images/brochure3.png" class="">
+                    <span style="color:brown">Custodian Guidlines</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="">
-                <div class="">
+                <div class="brochure">
                     <img src="assets/images/brochure4.png" class="">
+                    <span style="color:darkolivegreen">Pricing Model</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="">
-                <div class="">
+                <div class="brochure">
                     <img src="assets/images/brochure5.png" class="">
+                    <span style="color:darkslateblue">Terms &amp; Conditions</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
             <div class="">
-                <div class="">
+                <div class="brochure">
                     <img src="assets/images/brochure6.png" class="">
+                    <span style="color:darkslategray">KYC &amp; AML Requirements</span>
+                    <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
@@ -849,7 +879,7 @@
 
 
     <div id="nusku-media" class="uk-background-muted">
-        <h2 id="nusku-media-title">Ibinex media coverage</h2>      
+        <h2 id="nusku-media-title">Ibinex Media Coverage</h2>      
         <div id="nusku-media-cov">
             <img src="assets/images/media1.png" class="nusku-media-logo">
             <img src="assets/images/media2.png" class="nusku-media-logo">

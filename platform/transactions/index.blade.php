@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 <?php 
 $display_sidebar = true;
 $current = 'transactions';
+=======
+<?php $display_sidebar = true; 
+      $current = 'transactions';
+>>>>>>> 28639c5539f3a7c00efd16a7756245206fd38638
 ?>
 <?php require '../../template-bootstrap.blade.php'; ?>
 
@@ -23,11 +28,11 @@ $current = 'transactions';
       padding: 10px;  
     }
     
-    .btn-group-withdraw{
+    .btn-group-withdraw {
       padding: 10px 0;
     }
     
-    .btn{
+    .btn {
       color: #FFF;
       background-color: #212247;
       border-radius: 10px;

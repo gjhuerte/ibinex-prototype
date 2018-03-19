@@ -43,7 +43,7 @@
         font-weight: 500;
         text-align: justify;
         line-height: 150%;
-        padding: 8% 18% 8% 6%;
+        padding: 8em 18% 8em 6%;
     }
     
     #ibx-media {

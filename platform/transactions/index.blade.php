@@ -26,7 +26,7 @@
       padding: 10px 0;
     }
     
-    .btn {
+    .my-btn {
       color: #FFF;
       background-color: #212247;
       border-radius: 10px;
@@ -124,8 +124,8 @@
       <div class="col-4 col-mid" >
         <div class="bordered">
           <div class="text-center btn-group-withdraw">
-            <button type="button" class="btn active" >Withdraw Cryptos</button>
-            <button type="button" class="btn">Withdraw FIAT Currency</button>
+            <button type="button" class="btn my-btn active" >Withdraw Cryptos</button>
+            <button type="button" class="btn my-btn">Withdraw FIAT Currency</button>
           </div>
         <div>
           <p>Available BTC <span style="float:right;">3.00700000 BTC</span></p>
@@ -136,9 +136,12 @@
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <!---<span class="input-group-text">$</span>--->
-                <img src="https://image.freepik.com/free-vector/modern-yellow-bitcoin-design_1017-9631.jpg" style="height: calc(2.25rem + 2px); width: 40px;">
+                <img src="https://i0.wp.com/savageio.com/wp-content/uploads/2016/12/bitcoin-logo-gold.png" style="height: calc(2.25rem + 2px); width: 40px;">
+                <img src="https://www.ethereum.org/images/logos/ETHEREUM-ICON_Black_small.png" style="height: calc(2.25rem + 2px); width: 40px;" hidden>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Official_Litecoin_Logo.png" style="height: calc(2.25rem + 2px); width: 40px;" hidden>
+                <img src="http://s3.amazonaws.com/lbn-s3/2017/05/29051444/Ripple-anonymous.png" style="height: calc(2.25rem + 2px); width: 40px;" hidden>
               </div>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <select id="currency" class="form-control" id="exampleFormControlSelect1">
                 <option>BTC</option>
                 <option>ETH</option>
                 <option>LTC</option>
@@ -155,7 +158,7 @@
             <div class="input-group mb-3">
               <input type="text" id="amt" class="form-control" aria-label="Amount (to the nearest dollar)">
               <div class="input-group-append">
-                <span class="input-group-text" style="background-color: #FFF; border:none;">BTC</span>
+                <span class="input-group-text" id="amt-currency" style="background-color: #FFF; border:none;">BTC</span>
               </div>
             </div>
           </div>
@@ -169,7 +172,7 @@
             </div>
             <div class="inline">
               <h5>BTC TO RECEIVE</h3>
-              <h5>0.0000</h3>
+              <h5 id="amt-receive">0.0000</h3>
             </div>
           </div>
           <button type="button" class="btn btn-withdraw">Withdraw Cryptos</button>
@@ -198,7 +201,6 @@
         </tbody>
       </table>
       </div>
-      
       
     </div>
   </div>
@@ -252,14 +254,21 @@
   $(".btn-group-withdraw .btn").on('click', function(){
     $(this).siblings().removeClass('active')
     $(this).addClass('active');
-  })
+  });
   
-  var x = document.getElementById('#amt')
-  x.addEventListener("onfocus",function(){alert('hi')});
+  var y = document.getElementById('currency');
+  var span = document.getElementById('amt-currency');
   
+  $(y).on('change', function(){
+    span.textContent = y.value;
+  });
   
+  var x = document.getElementById('amt');
+  x.addEventListener("input",function() {
+    document.getElementById('amt-receive').textContent = x.value;
+  });
   
-  
+   
 })()
 </script>
 <?php } ?>

@@ -32,7 +32,7 @@
   
   .contact-info-navbar-nav > li {
     font-size: 12px;
-    font-weight: 900;
+    font-weight: 600;
     float: left;
   }
   
@@ -51,7 +51,7 @@
     padding: 5px;
     color: #4EA6D6;
     font-size: 10px;
-    font-weight: 900;
+    font-weight: 600;
     transition: all 0.5s ease;
   }
   
@@ -90,7 +90,7 @@
   
   .navigation-navbar-child-nav > li > a {
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 600;
     color: #293E64;
   }
   
@@ -112,12 +112,13 @@
     background-color: #102B58;
     color: white;  
     transition: all 0.5s ease;
+    text-transform: uppercase;
   }
 
   .button-live-demo-blue:hover {
     background-color: white;
-    font-size: 15px;
-    font-weight: 900;
+/*     font-size: 15px; */
+/*     font-weight: 900; */
     color: #102B58;  
   }
 
@@ -206,7 +207,7 @@
     outline: none;
   }
   
-  @media (min-width : 850px) {
+  @media (min-width : 900px) {
     .media-smaller-devices {
       display: none;
     }
@@ -235,7 +236,7 @@
     }
     
     .navbar-currency-child-nav > li > a {
-      font-weight: 900;
+      font-weight: 600;
       font-size: 10px;
     }
     
@@ -283,12 +284,13 @@
       color: #102B58;
       background-color: white;  
       width: 100%;
-      font-weight: 900;
+      font-weight: 600;
+      text-transform: uppercase;
     }
 
     .button-live-demo-blue:hover {
       background-color: white;
-      font-size: 15px;
+/*       font-size: 15px; */
       color: #102B58;  
     }
   }

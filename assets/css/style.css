@@ -1,5 +1,5 @@
-div * {
-  font-family: 'Montserrat', sans-serif;
+* {
+  font-family: 'Montserrat', sans-serif!important;
 }
 
 /* -----page loader------ */
@@ -16,7 +16,7 @@ div * {
 }
 /* -----page loader------ */
 :root {
-  font-size: 10.5px;
+  font-size: 12px;
 }
 
 :root {
@@ -28,6 +28,17 @@ div * {
   --landing-heading-70px: 4.375rem;
   --landing-article-title-20px: 1.25rem;
   --landing-heading-button-13px: 0.8125rem;
+}
+
+@media only screen and (max-width : 480px){
+   :root {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width : 1780px) and (max-width : 1925px){
+   :root {
+    font-size: 16px;
+  }
 }
 
 

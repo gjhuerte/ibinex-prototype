@@ -8,42 +8,18 @@ function display_title(){
 function styles_include(){
 ?>
 <style>
-   p {
+   .border1 p, .border2 p {
         color: #6F8197; 
         word-spacing: 1px;
-<<<<<<< HEAD
-        font-size: 12px;
-        font-family: 'Helvetica';
-=======
         font-size: var( --paragraph-17px);
-        font-weight: bold;
->>>>>>> ed114dcab6e233fa9e6845ea6fae3e02686e37aa
+        font-weight: 600;
     }
-  #banner-p{
-       color: #FFFFFF;
-  }
    h6 {
       font-size: 11.5px;
       word-spacing: 1px;
    }
-  .uk-container {
-    box-sizing: content-box;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
   #title{
-<<<<<<< HEAD
-    font-family: 'Verdana';
-    word-spacing: -3px;
-    font-weight: 650;
-  }
-  #title1{
-      font-weight: 750;
-      font-family: 'Arial';
-=======
     font-weight: 800;
     font-size: var(--heading-40px);
   }
@@ -53,10 +29,10 @@ function styles_include(){
   }
   #banner-width h6{
     font-size: var(--paragraph-17px);
+    font-weight: 600;
   }
   .firstColumn-second h3{
-        margin-bottom: 14%;
->>>>>>> ed114dcab6e233fa9e6845ea6fae3e02686e37aa
+        margin-bottom: 16%;
   }
    .border1{
       border-right: 0px solid #aaa;
@@ -68,27 +44,6 @@ function styles_include(){
       padding: 80px 20% 15px;
     }
     #banner-width{
-<<<<<<< HEAD
-      padding: 50px 5px 90px 5px;
-    }
-    #funds-tech div{
-    @media (max-width: 767px) {  
-      #funds-tech {  padding: 80px 5% 15px; }
-    }
-
-    @media (max-width: 959px) {  
-      #funds-tech {  padding: 80px 10% 15px; }  
-    } 
-  }      
-    #banner-width div{
-    @media (max-width: 767px){
-      #banner-wdith {  padding: 50px 5% 15px; }
-    }        
-    @media (max-width: 959px) {  
-      #banner-width {  padding: 80px 10% 15px; }  
-    }
-  }
-=======
       padding: 50px 20% 90px 20%;
     }
     @media only screen and (max-width : 480px) {  
@@ -97,6 +52,12 @@ function styles_include(){
          text-align: center;
          margin: 0;
         }
+      #banner-width h6 {
+        font-weight: 500;
+      }
+      .border1 p, .border2 p {
+        font-weight: 500;
+      }
       #title1{
         font-style: normal!important;
       }
@@ -119,28 +80,17 @@ function styles_include(){
         padding: 0;
       }
     } 
->>>>>>> ed114dcab6e233fa9e6845ea6fae3e02686e37aa
   </style>
 <?php
 }
 function display_content(){
 ?>
 <!-- =================================================FIRST SECTION========================================= -->
-<<<<<<< HEAD
-<div class="uk-section uk-light uk-panel uk-text-center@s" id='banner-width' style="background-color:#152C58;">
-  <div class="uk-container">
-    <h3 id="title1" style="font-style:italic;">Security</h3>
-    <p id="banner-p">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br> aliquip           ex ea commodo consequat. Duis aute irure dolor in reprehendrit in voluptate velit esse cillum <br> dolore eu           fugiat nulla pariatur.
-    </p>
-</div>
-=======
 <div class="uk-section uk-light uk-padding-large uk-panel uk-text-center@s uk-card-body uk-grid-small" id='banner-width' style="background-color:#152C58;">
     <h3 id="title1" class="header-banner" style="font-style:italic;">Security</h3>
     <h6 class="header-h6">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br>           dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br> aliquip           ex ea commodo consequat. Duis aute irure dolor in reprehendrit in voluptate velit esse cillum <br> dolore eu           fugiat nulla pariatur.
     </h6>
->>>>>>> ed114dcab6e233fa9e6845ea6fae3e02686e37aa
 </div>
 
 
@@ -210,8 +160,8 @@ function display_content(){
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script>
     window.sr = ScrollReveal();
-    sr.reveal('.header-banner', {origin: 'right', distance: '2000px', opacity: 0, duration: 2000});
-    sr.reveal('.header-h6', {origin: 'left', distance: '2000px', opacity: 0, duration: 2000});
+    sr.reveal('.header-banner', { opacity: 0, duration: 2000});
+    sr.reveal('.header-h6', { opacity: 0, duration: 2000});
     sr.reveal('.header-SecondSection', { opacity: 0, duration: 2000});
     sr.reveal('.thirdSection', { opacity: 0, duration: 2000});
     sr.reveal('.secondSection-p-left', {origin: 'left', opacity: 0, duration: 1500,distance: '2000px'});

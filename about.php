@@ -3,6 +3,7 @@
 <?php function styles_include(){ ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <style>
     .uk-grid {
         margin-left: 0;
@@ -60,7 +61,7 @@
     .media-logo{
         display:inline-block;
         margin: 0 auto;
-        height: 80px;
+        height: auto;
         width: 150px;
     }
     
@@ -467,7 +468,7 @@
 <?php function display_content(){ ?>
 <div id="ibx-banner" class="uk-grid">
     <div id="banner-content" class="uk-width-3-5">
-		<div class="uk-scrollspy-inview uk-animation-slide-right-medium">
+		<div class="uk-scrollspy-inview">
         	<h2 id="banner-title">Transparency</h2>
 			<p>
 				Ibinex is a collaboration of pioneers. With decades of combined experience within the finance, 
@@ -492,25 +493,25 @@
     <div id="banner-img" class="uk-width-2-5"></div>
 </div>
 <div id="ibx-media">
-    <h2 id="media-title">Ibinex media coverage</h2>
+    <h2 id="media-title" class="reveal-up">Ibinex media coverage</h2>
     <div id="media-cov">
-        <img src="./assets/images/media1.png" class="media-logo" />
-        <img src="./assets/images/media2.png" class="media-logo" />
-        <img src="./assets/images/media3.png" class="media-logo" />
-        <img src="./assets/images/media4.png" class="media-logo" />
-        <img src="./assets/images/media5.png" class="media-logo" />
-        <img src="./assets/images/media6.png" class="media-logo" />
-        <img src="./assets/images/media7.png" class="media-logo" />
-        <img src="./assets/images/media8.png" class="media-logo" />
-        <img src="./assets/images/media9.png" class="media-logo" />
-        <img src="./assets/images/media10.png" class="media-logo" />
-        <img src="./assets/images/media11.png" class="media-logo" />
-        <img src="./assets/images/media12.png" class="media-logo" />
+        <img src="./assets/images/media1.png" class="media-logo reveal-up" />
+        <img src="./assets/images/media2.png" class="media-logo reveal-up" />
+        <img src="./assets/images/media3.png" class="media-logo reveal-up" />
+        <img src="./assets/images/media4.png" class="media-logo reveal-up" />
+        <img src="./assets/images/media5.png" class="media-logo reveal-up" />
+        <img src="./assets/images/media6.png" class="media-logo reveal-up" />
+        <img src="./assets/images/media7.png" class="media-logo reveal-up" />
+        <img src="./assets/images/media8.png" class="media-logo reveal-up" />
+        <img src="./assets/images/media9.png" class="media-logo reveal-up" />
+        <img src="./assets/images/media10.png" class="media-logo reveal-up" />
+        <img src="./assets/images/media11.png" class="media-logo reveal-up" />
+        <img src="./assets/images/media12.png" class="media-logo reveal-up" />
     </div>
 </div>
 <div id="ibx-team">
     <div id="ibx-exec">
-        <div id="exec-team" class="exec-half">
+        <div id="exec-team" class="exec-half reveal-right">
             <h4 id="exec-title-1" class="exec-header">Executive team</h4>
             <h2 id="exec-title-2" class="exec-header">The people behind iBinex.</h2>
             <span id="exec-desc">
@@ -527,7 +528,7 @@
 					<img class="exec-img exec-cards" src="./assets/images/exec3.png"/>
 				</div>
 			</div>
-            <div id="exec-slideshow">
+            <div id="exec-slideshow" class="reveal-right">
 				<div class="exec-div-slick slick-track">
 					<div>
 						<div class="exec-data exec-item">
@@ -590,45 +591,45 @@
     </div>
     <div id="ibx-board">
         <hr id="ibx-divider"/>
-        <h2 id="board-title">Advisory <i>Board</i></h2>
+        <h2 id="board-title" class="reveal-up">Advisory <i>Board</i></h2>
 		<div id="board-box">
 			<div id="board-list">
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board1.png" class="board-img" />
 					<h5 class="board-name exec-header">Jeremy Corbein</h5>
 					<span class="board-rank">Chief of Operational Officer, Deiteriy</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board2.png" class="board-img" />
 					<h5 class="board-name exec-header">Jimmy Fallon</h5>
 					<span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board3.png" class="board-img" />
 					<h5 class="board-name exec-header">Stephen Colbert</h5>
 					<span class="board-rank">Head of Products and Services Development Department XB Software</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board4.png" class="board-img" />
 					<h5 class="board-name exec-header">Artem Kushik</h5>
 					<span class="board-rank">Business Analyst, Credit Agricole CIB</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board1.png" class="board-img" />
 					<h5 class="board-name exec-header">Jeremy Corbein</h5>
 					<span class="board-rank">Chief of Operational Officer, Deiteriy</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board2.png" class="board-img" />
 					<h5 class="board-name exec-header">Jimmy Fallon</h5>
 					<span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board3.png" class="board-img" />
 					<h5 class="board-name exec-header">Stephen Colbert</h5>
 					<span class="board-rank">Head of Products and Services Development Department XB Software</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board4.png" class="board-img" />
 					<h5 class="board-name exec-header">Artem Kushik</h5>
 					<span class="board-rank">Business Analyst, Credit Agricole CIB</span>
@@ -750,6 +751,15 @@
   	});
 	
 	windowHandler();
+	
+	$(window).on("load", function(){
+		$('#banner-content > div').addClass('uk-animation-slide-right-medium')
+		window.sr = ScrollReveal({opacity: 0, duration: 800, delay:300});
+         sr.reveal('.reveal-up');
+         sr.reveal('.reveal-left',{origin: 'left', distance:'200px'});
+         sr.reveal('.reveal-right',{origin: 'right', distance:'200px'});
+         sr.reveal('.fade',{distance:'0'});
+	})
 }())
 </script>
 <?php } ?>

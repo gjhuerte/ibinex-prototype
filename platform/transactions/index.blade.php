@@ -23,11 +23,11 @@
       padding: 10px;  
     }
     
-    .btn-group-withdraw {
+    .btn-group-withdraw{
       padding: 10px 0;
     }
     
-    .btn {
+    .btn{
       color: #FFF;
       background-color: #212247;
       border-radius: 10px;
@@ -124,11 +124,16 @@
       color: #fff;
     }
     
+    input.custom-input[type=number]::-webkit-inner-spin-button,
+    input.custom-input[type=number]::-webkit-outer-spin-button{
+      opacity: 0;
+    }
+    
     .currency-icon{
-      border-radius: 0 10px 10px 0;
+      border-radius: 0 10px 10px 1px;
       border: 1px solid rgb(8,9,39);
       background-color: rgb(32,35,76);
-      color: #fff;
+      color: rgb(77,79,104);
     }
     
   
@@ -173,12 +178,12 @@
           </div>
           <div class="form-group">
             <label>SEND TO ADDRESS</label>
-            <input type="email" class="form-control custom-input">
+            <input type="email" class="form-control custom-input" spellcheck="false">
           </div>
           <div class="form-group">
             <label>AMOUNT</label>
             <div class="input-group mb-3">
-              <input type="text" id="amt" class="form-control custom-input" aria-label="Amount (to the nearest dollar)">
+              <input type="number" id="amt" class="form-control custom-input"  aria-label="Amount (to the nearest dollar)" spellcheck="false">
               <div class="input-group-append">
                 <span class="input-group-text currency-icon">BTC</span>
               </div>
@@ -271,18 +276,39 @@
   
   //End
   
+   //Input scripts
+  var element_controller = {
+    
+      data: function(element,event,target){
+            
+            if($(target).length){
+              
+              $(element).on(event, function(){
+                  $(target).text($(element).val());
+              });
+              
+            }
+        
+      }
+    
+  }
+  
+  element_controller.data("select.custom-select","change","span.currency-icon");
+  
+  
+  
   //Kevin
   $(".btn-group-withdraw .btn").on('click', function(){
     $(this).siblings().removeClass('active')
     $(this).addClass('active');
-  })
+  });
   
-  var x = document.getElementById('#amt')
+  var x = document.getElementById('#amt');
   x.addEventListener("onfocus",function(){alert('hi')});
   
   //End
   
-  //Input styles
+ 
   
   
 })()

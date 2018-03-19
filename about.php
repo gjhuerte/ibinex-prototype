@@ -151,6 +151,7 @@
         position: absolute;
         top: -100%;
         left: 0;
+		z-index: 999;
     }
 	#exec-images {
 		position: relative;
@@ -324,6 +325,7 @@
 		#exec-album {
 			position: relative;
 			width: 100%;
+			z-index: 0;
 		}
 		.exec-img {
 			position: relative;
@@ -521,7 +523,7 @@
             </span>
         </div>
 		<div id="exec-list">
-			<div id="exec-album">
+			<div id="exec-album" class="reveal-left">
 				<div id="exec-images">
 					<img class="exec-img exec-cards" src="./assets/images/exec1.png"/>
 					<img class="exec-img exec-cards" src="./assets/images/exec2.png"/>

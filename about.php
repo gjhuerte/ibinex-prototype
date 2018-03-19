@@ -238,12 +238,12 @@
 		left: 0;
 	}
     
-    @media only screen and (max-width: 992px) {
-        #exec-title-2 {
-            width: 100%;
-        }
-    }
-	@media only screen and (max-device-width : 768px) {
+	@media only screen and (max-width: 992px) {
+		#exec-title-2 {
+			width: 100%;
+		}
+	}
+	@media only screen and (max-device-width : 430px) {
 		#ibx-exec {
 			box-sizing: border-box;
 			padding: 0;
@@ -265,6 +265,9 @@
 			height: 20em;
 		}
 		.exec-info {
+			font-size: 70%;
+		}
+		.exec-links {
 			font-size: 80%;
 		}
 		#board-list {

@@ -1,12 +1,8 @@
-<?php 
-$display_sidebar = true;
-$current = 'transactions';
-=======
 <?php $display_sidebar = true; 
       $current = 'transactions';
->>>>>>> 28639c5539f3a7c00efd16a7756245206fd38638
 ?>
 <?php require '../../template-bootstrap.blade.php'; ?>
+
 
 <?php function styles_include(){ ?>
   <style>

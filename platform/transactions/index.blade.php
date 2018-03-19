@@ -1,5 +1,10 @@
+<?php 
+$display_sidebar = true;
+$current = 'transactions';
+=======
 <?php $display_sidebar = true; 
       $current = 'transactions';
+>>>>>>> 28639c5539f3a7c00efd16a7756245206fd38638
 ?>
 <?php require '../../template-bootstrap.blade.php'; ?>
 
@@ -26,7 +31,7 @@
       padding: 10px 0;
     }
     
-    .my-btn {
+    .btn {
       color: #FFF;
       background-color: #212247;
       border-radius: 10px;
@@ -109,6 +114,29 @@
     font-size: 1em;
   }
     
+  /* Custom select style*/
+    
+    .custom-select, .custom-select option, .custom-input {
+      background-color: rgb(32,35,76);
+      color:#fff;
+      border: 1px solid rgb(8,9,39);
+      border-radius: 10px;
+    }
+    
+    .custom-select:hover, .custom-select:focus, .custom-input:focus, .custom-input:hover{
+      box-shadow: 0 0 10px 100px rgb(32,35,76) inset;
+      color: #fff;
+    }
+    
+    .currency-icon{
+      border-radius: 0 10px 10px 0;
+      border: 1px solid rgb(8,9,39);
+      background-color: rgb(32,35,76);
+      color: #fff;
+    }
+    
+  
+    
 }
   </style>
 <?php } ?>
@@ -121,27 +149,25 @@
 
   <div class="container-fluid">
     <div class="row">
+      <!---Transaction form -->
       <div class="col-4 col-mid" >
         <div class="bordered">
           <div class="text-center btn-group-withdraw">
-            <button type="button" class="btn my-btn active" >Withdraw Cryptos</button>
-            <button type="button" class="btn my-btn">Withdraw FIAT Currency</button>
+            <button type="button" class="btn active" >Withdraw Cryptos</button>
+            <button type="button" class="btn">Withdraw FIAT Currency</button>
           </div>
         <div>
           <p>Available BTC <span style="float:right;">3.00700000 BTC</span></p>
         </div>
         <form>
           <div class="form-group">
-            <label for="exampleFormControlSelect1">WITHDRAW CURRENCY</label>
+            <label>WITHDRAW CURRENCY</label>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <!---<span class="input-group-text">$</span>--->
-                <img src="https://i0.wp.com/savageio.com/wp-content/uploads/2016/12/bitcoin-logo-gold.png" style="height: calc(2.25rem + 2px); width: 40px;">
-                <img src="https://www.ethereum.org/images/logos/ETHEREUM-ICON_Black_small.png" style="height: calc(2.25rem + 2px); width: 40px;" hidden>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Official_Litecoin_Logo.png" style="height: calc(2.25rem + 2px); width: 40px;" hidden>
-                <img src="http://s3.amazonaws.com/lbn-s3/2017/05/29051444/Ripple-anonymous.png" style="height: calc(2.25rem + 2px); width: 40px;" hidden>
+                <img src="https://image.freepik.com/free-vector/modern-yellow-bitcoin-design_1017-9631.jpg" style="height: calc(2.25rem + 2px); width: 40px;">
               </div>
-              <select id="currency" class="form-control" id="exampleFormControlSelect1">
+              <select class="form-control custom-select">
                 <option>BTC</option>
                 <option>ETH</option>
                 <option>LTC</option>
@@ -150,15 +176,15 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="exampleFormControlInput1">SEND TO ADDRESS</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1">
+            <label>SEND TO ADDRESS</label>
+            <input type="email" class="form-control custom-input">
           </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">AMOUNT</label>
+            <label>AMOUNT</label>
             <div class="input-group mb-3">
-              <input type="text" id="amt" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <input type="text" id="amt" class="form-control custom-input" aria-label="Amount (to the nearest dollar)">
               <div class="input-group-append">
-                <span class="input-group-text" id="amt-currency" style="background-color: #FFF; border:none;">BTC</span>
+                <span class="input-group-text currency-icon">BTC</span>
               </div>
             </div>
           </div>
@@ -172,14 +198,16 @@
             </div>
             <div class="inline">
               <h5>BTC TO RECEIVE</h3>
-              <h5 id="amt-receive">0.0000</h3>
+              <h5>0.0000</h3>
             </div>
           </div>
           <button type="button" class="btn btn-withdraw">Withdraw Cryptos</button>
         </div>
       </div>
+      <!---End Transaction form -->
       
       
+      <!-- Transactions table -->
       <div class="custom-col-7 col-7 col-mid  custom-container">
         <h6 class="custom-h6">
           RECENT WITHDRAWALS
@@ -202,6 +230,9 @@
       </table>
       </div>
       
+      <!-- End Transactions table -->
+      
+      
     </div>
   </div>
 
@@ -211,7 +242,7 @@
 <script>
 (function(){
   
-  //Populate data
+  //Populate data -- Philip
   var data = {
     
     populate: function(size){
@@ -223,8 +254,6 @@
         "<td class='text-danger'>FAILED</td>",
       ];
       
-      //var randomStatus = status[Math.floor(Math.random()*status.length)];
-      
       for(x=0;x<size;x++){
         html+="<tr>";
         html+="<th scope='row'>Buy</th>";
@@ -235,7 +264,6 @@
         html+=status[Math.floor(Math.random()*status.length)];
         html+="<td> &nbsp;&nbsp;&nbsp;</td>";
         html+="</tr>";
-        
       }
       
       $('tbody.custom-tbody').append(html);
@@ -243,32 +271,24 @@
   }
   
   
-  data.populate(8);
+  data.populate(2);
   
   //End
   
-  
-  
-  
-  
+  //Kevin
   $(".btn-group-withdraw .btn").on('click', function(){
     $(this).siblings().removeClass('active')
     $(this).addClass('active');
-  });
+  })
   
-  var y = document.getElementById('currency');
-  var span = document.getElementById('amt-currency');
+  var x = document.getElementById('#amt')
+  x.addEventListener("onfocus",function(){alert('hi')});
   
-  $(y).on('change', function(){
-    span.textContent = y.value;
-  });
+  //End
   
-  var x = document.getElementById('amt');
-  x.addEventListener("input",function() {
-    document.getElementById('amt-receive').textContent = x.value;
-  });
+  //Input styles
   
-   
+  
 })()
 </script>
 <?php } ?>

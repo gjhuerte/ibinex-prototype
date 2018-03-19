@@ -1,119 +1,61 @@
-<style type="text/css">
-  .platform-nav-parent {
-    display: grid;
-    grid-template-columns: 1fr 3fr 4fr;
-    grid-template-rows: 60px;
-    grid-gap: 20px;
-    background-color: #01010A;
-  }
-  
-  .platform-nav-logo {
-    grid-column: 1 / span 1;
-    align-self: center;
-    padding-left: 7%;
-  }
-  
-  .platform-nav-right-items {
-    grid-column: 3 / span 3;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-  }
-  
-  .platform-nav-right-items > ul {
-    grid-column: auto;
-    grid-row: auto;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto;
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
-  
-  .platform-nav-right-items > ul > li {
-    grid-column: auto / span auto;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-  }
-  
+<style>
   #estimated-account-balance-in {
-    font-size: 10px;
     color: #76777C;
+    font-size: 10px;
   }
   
   #usd-amount-balance {
-    font-size: 12px;
     color: #978D67;
+    font-size: 12px;
   }
   
-  .platform-nav-right-items > ul > li > a > span {
+  .nav-item > a > span {
     display: block;
-    text-align: justify;
-    font-weight: 900;
   }
   
-  .platform-nav-right-items > ul > li > a, a:hover {
-    text-decoration: none;
-    text-align: center;
+  .navbar-nav > .nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .btn-outline-violet-1 {
+    border: #1B1A33 solid 1px;
+    color: #122A5D;
   }
   
-  .platform-nav-list-item > form > button {
-    border-radius: 5px;
-    font-weight: 500;
-    padding: 0.3em 1.400em;
-  }
-  
-  #account-profile-information {
-    background-color: #21224A;
+  .btn-outline-teal-1 {
     border: none;
-    padding: 2% 25%;
-    color: white;
-    font-size: 10px;
-  }
-  
-  .withdraw-submit {
-    border: 2px solid #2E2C4C;
-    color: #242F58;
-    background-color: transparent;
-  }
-  
-  .deposit-submit {
-    border: 1px solid #2E2C4C;
-    color: #017668;
-    background-color: #00D6BC;
-  }
-  
-  @media(max-width: 900 )
-  {
-    
+    background-color: #00D5BD;
+    color: #107F75;
   }
 </style>
 
-<nav class="platform-nav-parent">
-  <div class="platform-nav-logo" href="#">
-    <img src="<?php __DIR__ ?>/assets/images/ibinex-logo-white.png" alt="Website Logo" height="55%" width="55%">
-  </div>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #01010A;">
+  <a class="navbar-brand" href="#"><img src="<?php __DIR__ ?>/assets/images/ibinex-logo-white.png" alt="Website Logo" height="55%" width="55%"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  <div class="platform-nav-right-items">
-    <ul class="list-unstyled">
-      <li class="platform-nav-list-item">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
         <a class="" href="#"> <span id="estimated-account-balance-in">Estimated Account Balance in USD</span> <span id="usd-amount-balance">$ 20, 456.95</span> </a>
       </li>
-
-      <li class="platform-nav-list-item">
-        <form method="get" action="withdraw.php" class="withdraw-form">
-          <button class="withdraw-submit" type="submit">Withdraw</button>
-        </form>
+      <li class="nav-item">
+          <a href="withdraw.php" class="btn btn-outline-violet-1">Withdraw</a>
       </li>
-      <li class="platform-nav-list-item">
-        <form method="get" action="withdraw.php" class="deposit-form">
-          <button class="deposit-submit" type="submit">Deposit</button>
-        </form>
+      <li class="nav-item">
+          <a href="deposit.php" class="btn btn-outline-teal-1">Deposit</a>
       </li>
-      <li class="platform-nav-list-item">
-        <button id="account-profile-information" href="#"> <span>Estimated Account in</span> <i class="fas fa-caret-down"></i></button>
+      <li class="navbar-item">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
       </li>
     </ul>
   </div>

@@ -22,11 +22,11 @@
       padding: 10px;  
     }
     
-    .btn-group-withdraw{
+    .btn-group-withdraw {
       padding: 10px 0;
     }
     
-    .btn{
+    .btn {
       color: #FFF;
       background-color: #212247;
       border-radius: 10px;

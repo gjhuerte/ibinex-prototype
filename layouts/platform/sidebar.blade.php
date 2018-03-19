@@ -7,7 +7,7 @@
     list-style-type: none;
     padding-top: 10%;
     padding-left: 6%;
-    padding-bottom: 40%;
+    padding-bottom: 37%;
     margin-bottom: 0;
   }
   

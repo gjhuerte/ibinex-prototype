@@ -1,4 +1,6 @@
-<?php $display_sidebar = true; ?>
+<?php $display_sidebar = true; 
+      $current = 'transactions';
+?>
 <?php require '../../template-bootstrap.blade.php'; ?>
 
 <?php function styles_include(){ ?>

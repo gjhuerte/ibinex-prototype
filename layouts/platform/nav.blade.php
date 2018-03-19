@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr 4fr;
     grid-template-rows: 60px;
+    grid-gap: 20px;
     background-color: #01010A;
   }
   
@@ -82,6 +83,11 @@
     border: 1px solid #2E2C4C;
     color: #017668;
     background-color: #00D6BC;
+  }
+  
+  @media(max-width: 900 )
+  {
+    
   }
 </style>
 

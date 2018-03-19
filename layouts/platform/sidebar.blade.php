@@ -8,6 +8,7 @@
     padding-top: 10%;
     padding-left: 6%;
     padding-bottom: 40%;
+    margin-bottom: 0;
   }
   
   .sidebar-nav > li {
@@ -28,6 +29,7 @@
   .sidebar-nav > li > .active {
     color: #2C3D87;
   }
+  
   .sidebar { list-style: none;}
   .sidebar li { padding-left: 1em; text-indent: -.7em;}
   .sidebar li:before {

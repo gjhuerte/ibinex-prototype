@@ -31,14 +31,14 @@
     margin: 0;
     align-items: center;
     color: #D0D4D7;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 16px;
     letter-spacing: 5px;
   }
   
   .company-information {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3.5fr 1fr;
     grid-template-rows: 1fr;
   }
   
@@ -58,8 +58,8 @@
   }
   
   .company-information-list > li:not(.footer-header-color) > a{
-    font-size: 9px;
-    font-weight: 900;
+    font-size: 9.5px;
+    font-weight: 500;
   }
 
   .bg-teal-darker {
@@ -69,7 +69,7 @@
   .footer-header-color {
     color: #767F88;
     margin-bottom: 20px;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .footer-nav > li :not(.footer-header-color) {
@@ -81,7 +81,7 @@
     color: #F3F6F4;
     text-decoration: none;
     font-size: 10px;
-    font-weight: 650;
+    font-weight: 600;
     margin-bottom: 1px;
   }
   
@@ -126,15 +126,15 @@
     grid-row: 1 / span 1;
   }
   
-  .footer-lower-disclosure {
+  div.footer-lower-disclosure {
     grid-column: 1 / span 3;
     grid-row: 2 / span 1;
     font-size: 9px;
-    font-weight: 900;
+    font-weight: 600;
     margin: 0;
   }
   
-  .footer-lower-disclosure > p {
+  div.footer-lower-disclosure > p {
     margin: 0 0 5% 0;
     text-align: justify;
   }
@@ -149,13 +149,13 @@
   
   .footer-lower-offices > .list-unstyled > li > a {
     color: #FEFFFD;
-    font-weight: 700;
+    font-weight: 500;
     margin: 20px 0;
   }
   
   .footer-header-color-light {
     font-size: 11px;
-    font-weight: 900;
+    font-weight: 700;
     color: #45525B;
   }
 
@@ -163,9 +163,10 @@
     color: white;
     background-color: #C81824;
     border: none;
-    border-radius: 0% 6% 6% 0%;
-    padding: 7%;
-    font-size: 60%;
+    border-radius: 0% 5px 5px 0%;
+/*     padding: 7%; */
+    font-size: 75%;
+    text-transform: uppercase;
     grid-column: 2 / span 1;
   }
 
@@ -388,7 +389,7 @@
             <form class="">
               <div class="input-group">
                 <input class="footer-input-submit" type="email" placeholder="Insert your email">
-                <button class="button-red-1" type="button">Submit</button>
+                <button class="button-red-1 uk-button uk-button-danger" type="button">Submit</button>
               </div>
             </form>
           </li>

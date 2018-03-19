@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700i" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
 <style>
 * {
@@ -94,8 +95,8 @@
     border:none;
     outline: none;
     color: white;
-    padding: 12px 8px 12px 8px;
-    font-size: 0.8125rem;
+    padding: 15px 10px 15px 10px;
+    font-size: 0.75rem;
     font-weight: 500;
     margin: 0;
     grid-column: 2 / span 1;
@@ -117,7 +118,7 @@
     line-height: 1.3;
     font-family: 'Montserrat', sans-serif;
 }
-  p {
+  .para {
     font-size: var(--paragraph-17px);
     font-family: 'Montserrat', sans-serif;
   }
@@ -231,8 +232,15 @@
     background: #12d5b7;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-/*     transform: translatex(10px); */
+    transform: translatex(10px);
     border: none;
+    transition: all 0.5s;
+  }
+  
+  #legal-btn:hover {
+    background-color: #1a7182;
+    color: black;
+    cursor: pointer;
   }
   
   #nusku-media {
@@ -353,10 +361,12 @@
   
   .brochure span:nth-child(2) {
     font-weight: 700;
+    transform: translatex(10px);
   }
   
   .brochure span:nth-child(3) {
     font-size: 0.9rem;
+    transform: translatex(10px);
   }
   
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
@@ -517,7 +527,7 @@
   
  
   #legal-btn {
-    webkit-border-radius: 28;
+    -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
 /*     font-family: Arial; */
@@ -641,17 +651,17 @@
          <div id="nusku-header">
     <div class="header-image"></div>
     
-    <div class="header-container red-border">
+    <div class="header-container red-border reveal-left">
     </div>
     
-    <div class="header-container header-text">
+    <div class="header-container header-text reveal-right">
       <h2>Introducing</h2>
       <h1>CryptoBridge<span>TM</span></h1>
-      <p>Our patent-pending proprietary software. CryptoBridge, is the nexus that aggregates premier cryptocurrency exchanges and indexes for your customers, in real-time</p>
-      <p>The CryptoBridge algorithm benefits your customers by showing them a unique combination of the best and most select cryptocurrency exchanges and most attractive live prices-only available via the ibinex trading platform.</p>
+      <p class="para">Our patent-pending proprietary software. CryptoBridge, is the nexus that aggregates premier cryptocurrency exchanges and indexes for your customers, in real-time</p>
+      <p class="para">The CryptoBridge algorithm benefits your customers by showing them a unique combination of the best and most select cryptocurrency exchanges and most attractive live prices-only available via the ibinex trading platform.</p>
     </div>
     
-    <div class="header-input">
+    <div class="header-input reveal-right">
       <input type="text" placeholder="Type your email">
       <button class="uk-button uk-button-danger">REQUEST A DEMO</button>
     </div>
@@ -661,10 +671,10 @@
   </div>
 
                   
-      <div id="nusku-intro" class="uk-grid uk-grid1">
+      <div id="nusku-intro" class="uk-grid uk-grid1 reveal-up">
             <div id="intro-content" class="uk-width-1-2 intro-padding">
                 <h2 id="intro-title">Ibinex - The Gateway to your Own Customized Cryptocurrency Ecosystem</h2>
-                <p>With an in-depth understanding of evolving blockchain technology and cryptocurrency development. Ibinex invite you to engage with a fully-customizeable, private, institutional white label platform. Trail-blazing turnkey solutions to merge with your own web-based platform. Ibinex will show you definitively how to build a cryptocurrency exchange, your way.</p>
+                <p class="para">With an in-depth understanding of evolving blockchain technology and cryptocurrency development. Ibinex invite you to engage with a fully-customizeable, private, institutional white label platform. Trail-blazing turnkey solutions to merge with your own web-based platform. Ibinex will show you definitively how to build a cryptocurrency exchange, your way.</p>
             </div>
             <div id="intro-img" class="uk-width-1-2 intro-padding uk-padding-remove-left">
                 
@@ -672,29 +682,29 @@
       </div>
       
     <div>
-        <h2 id="feature-header" class="uk-text-center padding1">Exchange your Way with Ibinex.</h2>
-        <h2 id="feature-header2" class="uk-text-center uk-text-center1">Your Turn-Key Solution Includes:</h2>
+        <h2 id="feature-header" class="uk-text-center padding1 reveal-up">Exchange your Way with Ibinex.</h2>
+        <h2 id="feature-header2" class="uk-text-center uk-text-center1 reveal-up">Your Turn-Key Solution Includes:</h2>
       
         <div class="uk-section padding padding1 uk-grid-collapse uk-child-width-1-2@s uk-grid-match" uk-grid>
             <div>
                 
-                <div class="uk-padding1 border1 border2 uk-text-left" >
+                <div class="uk-padding1 border1 border2 uk-text-left reveal-left" >
                    <img src="assets/images/picture1.png" class="">
                    <h3 class="coolors uk-margin-remove-top">
                       Tailored Front End content website
                    </h3>
-                  <p>
+                  <p class="para">
                     Ibinex provide you with a tailored front-end website with a fully-integrated web-based trading platform and Content Management System (CMS). Offering you flexible front-end user trading, while preserving the personal touch for your brand. The Ibinex solution showcases enhanced practically and performance driven features.
                   </p>
                 </div>
             </div>
             <div>
-                <div class="uk-padding1 border2">
+                <div class="uk-padding1 border2 reveal-right">
                    <img src="assets/images/picture2.png" class="">
                    <h3 class="coolors uk-margin-remove-top">
                       Full CRM &amp; Back Office Solution
                    </h3>
-                  <p>
+                  <p class="para">
                     The Ibinex ecosystem assimilates a complete Customer Relationship Management (CRM) as a complement to your web based exchange platform. This includes KYC/AML documentation collection and verification, and account &amp; money management. The result is an effortless back office administration workflow and smooth UI/UX for your customers.
                   </p>
                 </div>
@@ -703,23 +713,23 @@
       
         <div class="uk-section padding uk-grid-collapse uk-child-width-expand@s uk-grid-match" uk-grid>
             <div>
-                <div class="uk-padding1 border1 border2">
+                <div class="uk-padding1 border1 border2 reveal-left">
                    <img src="assets/images/picture4.png" class="">
                    <h3 class="coolors uk-margin-remove-top">
                       Aggregated Liquidity Exchange
                    </h3>
-                  <p>
+                  <p class="para">
                     Connect with Ibinex and receive coveted access to an unprecedented first-tier array of "Top of the Book" API bridges from over 60 leading exchanges for hundreds of cryptocurrencies. By monitoring the Ibinex stream, you can become a leading exchange market for the most in-demand cryptocurrencies and never miss the opportunity to benefit from liquidity as trends shift.
                   </p>
                 </div>
             </div>
             <div>
-                <div class="uk-padding1 border2">
+                <div class="uk-padding1 border2 reveal-right">
                     <img src="assets/images/picture3.png" class="">
                     <h3 class="coolors uk-margin-remove-top">
                       Complete Processing solution
                    </h3>
-                  <p>
+                  <p class="para">
                     With our thriving network of exclusive partners, Ibinex is changing the game for cryptocurrency payment processing. We bring you exclusive payment solutions unavailable elsewhere, truly revolutionising the way that crypto is bought and sold and turbocharging the possibilities for your exchange to thrive in maximum liquidity.
                   </p>
                 </div>
@@ -728,23 +738,23 @@
       
         <div class="uk-section padding uk-grid-collapse uk-child-width-expand@s uk-grid-match" uk-grid>
             <div>
-                <div class="uk-padding1 border1">
+                <div class="uk-padding1 border1 reveal-left">
                     <img src="assets/images/picture5.png" class="">
                     <h3 class="coolors uk-margin-remove-top">
                       Compliant Banking Custodian service
                    </h3>
-                  <p>
+                  <p class="para">
                     Ibinex is the first ever cryptocurrency exchange platform the world that has a finance transaction license. We can offer fully-compliant and licensed custodian processing and accounts, or you can choose to operate with your own custodian. Ibinex is licensed to facilitate payments via swipe-and-transmit from FIAT to a base currency. This preferred solution is unavailable to the bigger cryptocurrency exchanges, and is only offered by Ibinex.
                   </p>
                 </div>
             </div>
             <div>
-                <div class="uk-padding1">
+                <div class="uk-padding1 reveal-right">
                     <img src="assets/images/picture6.png" class="">
                     <h3 class="coolors uk-margin-remove-top">
                       Hosted in a secure private cloud environment
                    </h3>
-                  <p>
+                  <p class="para">
                     Security is a 360 degree operation, with the Ibinex platform guarded 24/7 in a private cloud and crypto-based funds held in shielded cold wallets. Cyber security experts maintain and defend the platform, while cold wallets containing funds are impregnable, offline, and safely out of unathorised reach.
                   </p>
                 </div>
@@ -754,20 +764,20 @@
 
     <div id="nusku-video" class="uk-background-muted padding-video">
         <div id="nusku-video-cov">
-            <img src="assets/images/video.png" class="video-img">
+            <img src="assets/images/video.png" class="video-img reveal-right">
         </div>
         <div id="nusku-video-title">
-          <h2 id="nusku-video-p">
+          <h2 id="nusku-video-p" class="reveal-left">
             Our<span> vision.</span>
           </h2>
       </div>
     </div>
 
     <div class="legal-container">
-        <p id="legal-p">Learn more about Ibinex</p>
-        <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
+        <p id="legal-p" class="reveal-up para">Learn more about Ibinex</p>
+        <h2 id="legal-h2" class="uk-margin-remove-top reveal-up">Technical Papers &amp; Legal Circular</h2>
         <div class="uk-text-center media-padding" uk-grid>
-            <div class="uk-width-1-3 uk-padding-remove">
+            <div class="uk-width-1-3 uk-padding-remove fade">
                 <div class="uk-padding-remove brochure">
                     <img src="assets/images/brochure1.png" class="">
                     <span style="color:midnightblue">Business Model</span>
@@ -775,7 +785,7 @@
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
-            <div class="uk-width-1-3 uk-padding-remove">
+            <div class="uk-width-1-3 uk-padding-remove fade">
                 <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure2.png" class="">
                     <span style="color:sienna">One Page Brochure</span>
@@ -783,7 +793,7 @@
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
-            <div class="uk-width-1-3 uk-padding-remove">
+            <div class="uk-width-1-3 uk-padding-remove fade">
                 <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure3.png" class="">
                     <span style="color:brown">Custodian Guidlines</span>
@@ -791,7 +801,7 @@
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
-            <div class="uk-width-1-3 uk-padding-remove">
+            <div class="uk-width-1-3 uk-padding-remove fade">
                 <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure4.png" class="">
                     <span style="color:darkolivegreen">Pricing Model</span>
@@ -799,7 +809,7 @@
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
-            <div class="uk-width-1-3 uk-padding-remove">
+            <div class="uk-width-1-3 uk-padding-remove fade">
                 <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure5.png" class="">
                     <span style="color:darkslateblue">Terms &amp; Conditions</span>
@@ -807,7 +817,7 @@
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
             </div>
-            <div class="uk-width-1-3 uk-padding-remove">
+            <div class="uk-width-1-3 uk-padding-remove fade">
                 <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure6.png" class="">
                     <span style="color:darkslategray">KYC &amp; AML Requirements</span>
@@ -819,8 +829,8 @@
     </div>
 
     <div id="demo" class="carousel-slide mobile-carousel">
-          <p id="legal-p">Learn more about Ibinex</p>
-          <h2 id="legal-h2" class="uk-margin-remove-top">Technical Papers &amp; Legal Circular</h2>
+          <p id="legal-p" class="reveal-up para">Learn more about Ibinex</p>
+          <h2 id="legal-h2" class="uk-margin-remove-top reveal-up">Technical Papers &amp; Legal Circular</h2>
           <!-- The slideshow -->
           <button class="arrow-left"><i class="fas fa-angle-left fa-3x"></i></button>
           <button class="arrow-right"><i class="fas fa-angle-right fa-3x"></i></button>
@@ -878,15 +888,15 @@
 </div>
 
 
-    <div id="nusku-media" class="uk-background-muted">
-        <h2 id="nusku-media-title">Ibinex Media Coverage</h2>      
+    <div id="nusku-media" class="uk-background-muted ">
+        <h2 id="nusku-media-title" class="reveal-up">Ibinex Media Coverage</h2>      
         <div id="nusku-media-cov">
-            <img src="assets/images/media1.png" class="nusku-media-logo">
-            <img src="assets/images/media2.png" class="nusku-media-logo">
-            <img src="assets/images/media3.png" class="nusku-media-logo">
-            <img src="assets/images/media4.png" class="nusku-media-logo">
-            <img src="assets/images/media5.png" class="nusku-media-logo">
-            <img src="assets/images/media6.png" class="nusku-media-logo">
+            <img src="assets/images/media1.png" class="nusku-media-logo reveal-up">
+            <img src="assets/images/media2.png" class="nusku-media-logo reveal-up">
+            <img src="assets/images/media3.png" class="nusku-media-logo reveal-up">
+            <img src="assets/images/media4.png" class="nusku-media-logo reveal-up">
+            <img src="assets/images/media5.png" class="nusku-media-logo reveal-up">
+            <img src="assets/images/media6.png" class="nusku-media-logo reveal-up">
         </div>
     </div>
 
@@ -898,13 +908,20 @@
 
 <script>
   $(document).ready(function(){
-  $('.carousel-inner').slick({
-  infinite: true,
-  speed: 500,
-  cssEase: 'linear',
-  prevArrow :'.arrow-left',
-  nextArrow :'.arrow-right',
-});
-});
+      $('.carousel-inner').slick({
+      infinite: true,
+      speed: 500,
+      cssEase: 'linear',
+      prevArrow :'.arrow-left',
+      nextArrow :'.arrow-right',
+    });   
+  });
+  $(window).on("load",function(){
+      window.sr = ScrollReveal({opacity: 0, duration: 800, delay:300});
+         sr.reveal('.reveal-up');
+         sr.reveal('.reveal-left',{origin: 'left', distance:'200px'});
+         sr.reveal('.reveal-right',{origin: 'right', distance:'200px'});
+         sr.reveal('.fade',{distance:'0'});
+   })
 </script>
 <?php } ?>

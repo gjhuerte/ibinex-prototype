@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php 
 $display_sidebar = true;
 $current = 'transactions';

@@ -718,6 +718,9 @@
 					swipe: false,
 					asNavFor: '.exec-div-slick'
 				});
+
+				$('.board-members').removeClass('reveal-up');
+				$('#board-list').addClass('reveal-up');
 				
 				$('#board-list').slick({
 					slidesToShow: 1,
@@ -730,6 +733,8 @@
 			window_flag = false;
 			try{
 				$('#board-arrow-box').hide();
+				$('#board-list').removeClass('reveal-up');
+				$('.board-members').addClass('reveal-up');
 				$('#exec-images').slick('unslick');
 				$('#board-list').slick('unslick');
 			}catch(err){}

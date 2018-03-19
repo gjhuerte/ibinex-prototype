@@ -18,7 +18,7 @@
   .section1st{
     display: grid;
     padding-top: 3%;
-    grid-template-rows: 0.5fr 0.35fr 0.4fr 0.2fr;
+    grid-template-rows: 0.65fr 0.35fr 0.4fr 0.2fr;
     grid-template-columns: 1fr 1.7fr 1.3fr 0.7fr 0.3fr;
   }
   .section1st-text1{

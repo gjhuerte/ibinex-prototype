@@ -159,6 +159,7 @@ function display_content(){
 <?php function scripts_include(){ ?>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script>
+   $(window).on("load", function(){
     window.sr = ScrollReveal();
     sr.reveal('.header-banner', { opacity: 0, duration: 2000});
     sr.reveal('.header-h6', { opacity: 0, duration: 2000});
@@ -166,5 +167,6 @@ function display_content(){
     sr.reveal('.thirdSection', { opacity: 0, duration: 2000});
     sr.reveal('.secondSection-p-left', {origin: 'left', opacity: 0, duration: 1500,distance: '2000px'});
     sr.reveal('.secondSection-p-right', {origin: 'right', opacity: 0, duration: 1500,distance: '2000px'});
+   });
   </script>
 <?php } ?>

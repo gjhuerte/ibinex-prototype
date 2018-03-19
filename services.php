@@ -181,9 +181,12 @@
        display: none;    
     }
       .imgbttm {
+
+        padding-bottom: 15%;
+      }
+      .imageCont{
         overflow-x: hidden;
         overflow-y: hidden;
-        padding-bottom: 15%;
       }
     .imgtop img {
       display: none;
@@ -204,6 +207,15 @@
     }
     .white2 {
       padding-bottom: 0;
+      }
+    .crmsection2 {
+      margin-top: 0!important; 
+    }
+    .white2 .creditcardsection .cc-content h3{
+       padding-top: 0;
+     }
+      .white1{
+        background-color: #F7F7F7;
       }
   }
   
@@ -524,6 +536,14 @@
       display: block;
       visibility: visible;    
     }
+      .imageCont{
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      .imgbttm {
+
+        padding-bottom: 15%;
+      }
   }
   
   /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
@@ -759,7 +779,7 @@
 </div>
 
 <div class="uk-section uk-section-muted grey1" style="background-color: #F7F7F7; padding-top: 0;">
-    <div class="uk-container">
+    <div class="uk-container imageCont">
         <div class="uk-margin-remove-top uk-grid-match uk-child-width-1-2@m" uk-grid>
             <div class="imgtop">
                 <img class="laptopimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="position: relative; top: 21%; height: 107%; margin-left: -4%; max-width: 200%; width: 162%;" alt="macbook">
@@ -786,7 +806,7 @@
 
 <div class="uk-section uk-section-default white1">
     <div class="uk-container uk-margin crmsection">
-        <div class="uk-grid-match uk-child-width-1-2@m uk-margin-xlarge-top" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-2@m uk-margin-xlarge-top crmsection2" uk-grid>
             <div class="crm-one">
                 <h3 class="crm-title">CRM/Back Office</h3>
                 <p class="crm-content-p">The Ibinex solution unites the front-end and platform with a full black office suit including CRM with:</p>
@@ -872,25 +892,29 @@ $('.cblogo').tilt({
 </script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script>
-window.sr = ScrollReveal({ mobile: true });
-sr.reveal('.pratform-content-p', { duration: 2000 });
-sr.reveal('.platform-li', { duration: 3000}, {container: '.platform-content' }, 300);
-  
-sr.reveal('.crm-title', { origin: 'left' }, { duration: 3000}, 600);
-sr.reveal('.crm-content-p', { origin: 'left'}, {duration: 3000 }, 600);
-sr.reveal('.crm-li', { origin: 'left' }, { duration: 3000}, {container: '.crm-one' }, 600);
-  
-sr.reveal('.cc-title', { origin: 'left' }, { duration: 4000});
-sr.reveal('.cc-first-p', { origin: 'left'}, {duration: 4000 }, 600);
-sr.reveal('.visa', { origin: 'bottom' }, { duration: 9000}, 3000);
-sr.reveal('.mastercard', { origin: 'top' }, { duration: 9000}, 3000);
-sr.reveal('.discover', { origin: 'bottom' }, { duration: 9000}, 3000);
-sr.reveal('.dinnersclub', { origin: 'top' }, { duration: 9000}, 3000);
-sr.reveal('.amexpress', { origin: 'bottom' }, { duration: 9000}, 3000);
-sr.reveal('.paypal', { origin: 'top' }, { duration: 9000}, 3000);
-sr.reveal('.maestro', { origin: 'bottom' }, { duration: 9000}, 3000);
-  
-sr.reveal('.custodian-title', { origin: 'right' }, { duration: 4000});
-sr.reveal('.custodian-p', { duration: 3000}, {container: '.custodian-two' }, 300);
+  $(document).ready(function(){
+$(window).on("load", function() {
+  window.sr = ScrollReveal({ mobile: true });
+  sr.reveal('.pratform-content-p', { duration: 2000 });
+  sr.reveal('.platform-li', { duration: 3000}, {container: '.platform-content' }, 300);
+
+  sr.reveal('.crm-title', { origin: 'left' }, { duration: 3000}, 600);
+  sr.reveal('.crm-content-p', { origin: 'left'}, {duration: 3000 }, 600);
+  sr.reveal('.crm-li', { origin: 'left' }, { duration: 3000}, {container: '.crm-one' }, 600);
+
+  sr.reveal('.cc-title', { origin: 'left' }, { duration: 4000});
+  sr.reveal('.cc-first-p', { origin: 'left'}, {duration: 4000 }, 600);
+  sr.reveal('.visa', { origin: 'bottom' }, { duration: 9000}, 3000);
+  sr.reveal('.mastercard', { origin: 'top' }, { duration: 9000}, 3000);
+  sr.reveal('.discover', { origin: 'bottom' }, { duration: 9000}, 3000);
+  sr.reveal('.dinnersclub', { origin: 'top' }, { duration: 9000}, 3000);
+  sr.reveal('.amexpress', { origin: 'bottom' }, { duration: 9000}, 3000);
+  sr.reveal('.paypal', { origin: 'top' }, { duration: 9000}, 3000);
+  sr.reveal('.maestro', { origin: 'bottom' }, { duration: 9000}, 3000);
+
+  sr.reveal('.custodian-title', { origin: 'right' }, { duration: 4000});
+  sr.reveal('.custodian-p', { duration: 3000}, {container: '.custodian-two' }, 300);
+});
+    });
 </script>
 <?php } ?>

@@ -39,13 +39,15 @@
       font-size: 9px;
       padding:4px;
     }
+    
+   
+    
     #table-bid th, #table-bid td, 
     #table-trades th, #table-trades td, 
     #table-open-orders th,#table-open-orders td{
       padding:5px;
       border:0 !important;
     }
-    
     
     #table-bid .even, #table-trades .even,
     #table-open-orders .even, #table-open-orders .even
@@ -85,6 +87,26 @@
       background-color:#000!important;
       color: #fff;
     }
+    
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #0A0928; 
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #242657; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #232B55; 
+    }
   </style>
 <?php } ?>
 
@@ -92,7 +114,9 @@
 
 <div class="container-fluid pl-0 pr-0">
   <div class="row section-1 mr-0 ml-0">
-    <div class="col panel ml-4 mr-3"  style="max-width:20%">col 1</div>
+    <div class="col panel ml-4 mr-3"  style="max-width:20%">
+    
+    </div>
     <div class="col panel mr-3" style="max-width:20%" id="order-book">
       <p class="text-uppercase mb-1">ORDER BOOK</p>
       
@@ -242,7 +266,22 @@
                   <td>0.00000000</td>
                   <td>1427.34</td>
                 </tr>
-
+                
+<!--                 <tr class='text-red'>
+                  <td>1166.76</td>
+                  <td>0.00000000</td>
+                  <td>1427.34</td>
+                </tr>
+                <tr class='text-mint-green'>
+                  <td>1166.76</td>
+                  <td>0.00000000</td>
+                  <td>1427.34</td>
+                </tr>
+                <tr class='text-mint-green'>
+                  <td>1166.76</td>
+                  <td>0.00000000</td>
+                  <td>1427.34</td>
+                </tr> -->
               </tbody>
             </table>
           </div>
@@ -292,7 +331,6 @@
                         <?php
                       }
                     ?>
-
 
                   </tbody>
                 </table>

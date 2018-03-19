@@ -649,6 +649,7 @@
 (function(){
 	var exec_index 	= 0,
 		exec_cards	= $('.exec-cards'),
+		exec_clone	= $('#exec-images').clone(),
 		exec_len	= exec_cards.length,
 		last_arrow 	= "";
 	
@@ -666,10 +667,19 @@
 		});
 	}
 	
+	function resetExecImages(){
+		if ($(window).width()<768){
+			removeAnimateClass();
+		}else{
+			$('#exec-images').replaceWith(exec_clone.clone());
+			exec_cards	= $('.exec-cards')
+		}
+	}
+	
 	function nextAnimate(){
 		let cards = getCardSiblings(exec_index);
 		
-		removeAnimateClass();
+		resetExecImages();
 		
 		exec_cards.eq(cards.curr).addClass('exec-animate-1-3');
 		exec_cards.eq(cards.next).addClass('exec-animate-2-1');
@@ -681,12 +691,12 @@
 	function prevAnimate(){
 		let cards = getCardSiblings(exec_index);
 		
-		removeAnimateClass();
+		resetExecImages();
 
 		exec_cards.eq(cards.curr).addClass('exec-animate-1-2');
 		exec_cards.eq(cards.next).addClass('exec-animate-2-3');
 		exec_cards.eq(cards.last).addClass('exec-animate-3-1');
-		
+
 		exec_index = exec_index==0 ? exec_len-1 : exec_index-1;	
 	}
 	

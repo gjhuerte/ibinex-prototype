@@ -64,7 +64,7 @@
         <a href="#"> <i class="fas fa-chart-line"></i> <span class="sidebar-text"> Open Orders </span></a>
       </li>
       <li class="sidebar-nav-item <?php if($current == 'transactions') {echo 'active';} ?>">
-        <a href="#"> <i class="fas fa-bitcoin"></i> <span class="sidebar-text"> Transactions </span></a>
+        <a href="<?php __DIR__ ?> /platform/transactions/index.blade.php"> <i class="fas fa-bitcoin"></i> <span class="sidebar-text"> Transactions </span></a>
       </li>
       <li class="sidebar-nav-item <?php if($current == 'security') {echo 'active';} ?>">
         <a href="<?php __DIR__ ?> /platform/security/index.blade.php"> <i class="fas fa-lock"></i> <span class="sidebar-text"> Security </span></a>

@@ -18,9 +18,9 @@
     #ibx-banner {
         font-family: "Montserrat";
         box-sizing: border-box;
-        min-height : 99vh;
         display: flex;
 		background-color: #152B59;
+		max-height: 99vh;
     }
 	#banner-title{
 		font-size: 27px;
@@ -31,12 +31,12 @@
         order: 1;
         width: 55%;
         background-color : #152B59;
-        padding: 20vh 17.5% 20vh 6%;
+        padding: 9% 17% 8% 6%;
     }
 	#banner-inner {
 		margin-top: 30px;
 		font-size: 12px;
-		line-height: 2em;
+		line-height: 1.7em;
 		color: white;
 		font-weight: 450;
 		text-align: justify;
@@ -57,7 +57,7 @@
         text-align: center;
     }
     #media-inner {
-		padding: 8%;
+		padding: 8% 0 2.5% 0;
     }   
     #media-title {
 		font-size: 27px;
@@ -66,7 +66,7 @@
 		text-align: center;
     }
 	#media-cov {
-		width: 70%;
+		width: 65%;
 		margin: auto;
 		padding-top: 6em;
 	}
@@ -75,7 +75,7 @@
         margin: 0 auto;
 		margin-bottom: 3em;
         height: auto;
-        width: 16%;
+        width: 15%;
     }
     
 	/*================ EXEC TEAM =====================*/

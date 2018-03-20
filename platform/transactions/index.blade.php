@@ -39,6 +39,14 @@
       background-color: #0B6FF0;
     }
     
+    #amt{
+      border-right: 0;
+    }
+    
+    #currency{
+      border-left: 0;
+    }
+    
     .btn-withdraw{
       background-color: #FFD03E;  
       color: #000;
@@ -90,7 +98,7 @@
     margin-left: 3%;
   }
   
-    .custom-col-7{
+  .custom-col-7{
       flex: 1 0 58.333333%;
       max-width: 100%;
     }
@@ -164,9 +172,9 @@
           <div class="form-group">
             <label>WITHDRAW CURRENCY</label>
             <div class="input-group mb-3">
-              <div class="input-group-prepend">
+              <div class="input-group-prepend" style="background-color:#20224A; border-top-left-radius: 10px;border-bottom-left-radius: 10px; border: 1px solid rgb(8,9,39); height: 38px;">
                 <!---<span class="input-group-text">$</span>--->
-                <img src="https://i0.wp.com/savageio.com/wp-content/uploads/2016/12/bitcoin-logo-gold.png" style="height: calc(2.25rem + 2px); width: 40px;">
+                <img src="https://i0.wp.com/savageio.com/wp-content/uploads/2016/12/bitcoin-logo-gold.png" style="height: calc(2rem + 2px); width: 40px;">
                 <img src="https://www.ethereum.org/images/logos/ETHEREUM-ICON_Black_small.png" style="height: calc(2.25rem + 2px); width: 40px;" hidden>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Official_Litecoin_Logo.png" style="height: calc(2.25rem + 2px); width: 40px;" hidden>
                 <img src="http://s3.amazonaws.com/lbn-s3/2017/05/29051444/Ripple-anonymous.png" style="height: calc(2.25rem + 2px); width: 40px;" hidden>

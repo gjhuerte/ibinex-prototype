@@ -18,14 +18,14 @@
   .section1st{
     display: grid;
     padding-top: 3%;
-    grid-template-rows: 0.65fr 0.35fr 0.4fr 0.3fr;
-    grid-template-columns: 1fr 1.7fr 1.3fr 0.7fr 0.3fr;
+    grid-template-rows: 0.4fr 0.554fr 0.7fr 0.18fr;
+    grid-template-columns: 0.94fr 1.48fr 1.14fr 0.8fr 0.33fr;
   }
   .section1st-text1{
     display: grid;
     grid-column: 2 / span 2;
     grid-row: 1 / 3;
-    grid-template-columns: 2.2fr 1fr 1.2fr;
+    grid-template-columns: 2.8fr 1.4fr 1.2fr;
     grid-template-rows: 0.1fr auto;
 
   }
@@ -35,29 +35,42 @@
   }
   .subgrid-text{
     grid-row: 2;
-    font-size: var(--paragraph-17px);
+    font-size: 12px;
     font-weight: 500;
     color: #728298;
+    margin-top: 14px;
+    margin-bottom: 34px;
+    line-height: 20px;
+    word-spacing: -1.3px;
   }
 
   .section1st-text2{
     display: grid;
     grid-column: 1 / span 5;
     grid-row: 3 / span 2;
-    grid-template-columns: 1fr 1.7fr 1.3fr 1fr;
   }
 
   .section1st-data{
+    display: grid;
+    padding-top: 16px;
+    grid-template-columns: 1.37fr 1.8fr 0.2fr 2fr 1.5fr;
+    grid-template-rows: 0.9fr 1fr;
+  }
+  .section1st-data h2{
     grid-column: 2;
-    grid-row: 3 / -1;
+    margin-bottom: 0;
   }
   .section1st-data h2,
     .section1st-data p{
       color: white;
     }
   .section1st-data p{
-    font-size: var(--paragraph-17px);
+    font-size: 12px;
     font-weight: 500;
+    grid-column: 2 / span 2;
+    margin-top: 0;
+    line-height: 20px;
+    word-spacing: -0.8px;
     
   }
   
@@ -67,7 +80,7 @@
     grid-row: 2 / span 2;
     grid-column: 3 / span 2;
     align-self: center;
-    transform: translate(0, -25px);
+    transform: translate(0, -39px);
   }
   
   .section2{
@@ -78,8 +91,8 @@
   }
   .title-section2 h2{
     font-weight: 800;
-    font-size: var(--heading-40px);
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 26.5px;
+    margin-bottom: 0;
   }
   .text2{
     padding: 0 20%;
@@ -93,7 +106,8 @@
   .title-section2 p{
     font-weight: 500;
     color: #728298;
-    font-size: var(--paragraph-17px)
+    font-size: 11.5px;
+    margin-top: 14px;
   }
   
   
@@ -104,17 +118,22 @@
   } 
   
   .section2-text .text {
-     padding-top: 10%;
+      padding-top: 6%;
   } 
+  .imgSection2 img{
+    margin-bottom: 0!important;
+  }
   .header-section{
     font-weight: 800;
-    font-size: var(--heading-40px);
+    font-size: 26.9px;
     color: #2c3339;
+    word-spacing: -1px;
+    line-height: 34px;
   }
   
   .header-section,
   .section2-text2{
-    padding-top: 5%;
+      padding-top: 5.15%;
   }
   
   .float-image{
@@ -135,7 +154,7 @@
     } 
   .text p{
       margin: 0;
-      font-size: var(--landing-article-title-20px);
+      font-size: 15.5px;
       font-weight: 500;
       color: #728298;
     }
@@ -193,7 +212,7 @@
       padding-right: 5%;
     }
     .section1st {
-      grid-template-rows: auto 9rem auto;
+      grid-template-rows: auto 8.1rem auto;
       grid-template-columns: 1fr;
       display: grid;
     }
@@ -202,7 +221,7 @@
       display: grid;
       grid-row: 1;
       grid-column: auto;
-      margin: 0 5% 0;
+      margin: 0 4.5% 0;
     }
     .section1st-text2{
     display: grid;
@@ -211,6 +230,23 @@
     grid-template-columns: 1fr;
     padding: 115px 5% 50px;
   }
+    .section1st-text1 .header-section{
+
+    padding-top: 18%;
+    font-size: 39px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: 0px;
+    word-spacing: -1px;
+    } 
+    .subgrid-text{
+      text-align: justify;
+      font-size: 18.5px;
+      margin-top: 9px;
+      letter-spacing: -1px;
+      line-height: 28px;
+      word-spacing: -1.8px;
+    }
     .subgrid-text,
     .section1st-data p{
       text-align: justify;
@@ -219,8 +255,30 @@
     }
 
   .section1st-data{
-    grid-column: 1;
-    grid-row: 1;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+    .section1st-data h2{
+       grid-column: 1;
+       grid-row: 1; 
+      padding-top: 3.5%;
+      font-size: 39px;
+      font-weight: 900;
+      line-height: 48px;
+      letter-spacing: -1px;
+      word-spacing: 0px;
+    }
+    .section1st-data p{
+       grid-column: 1;
+       grid-row: 2; 
+      font-size: 18px;
+      margin-top: 25px;
+      letter-spacing: -0.9px;
+      line-height: 28px;
+      word-spacing: 0.2px;
+      word-break: break-word;
+      overflow: hidden;
+      hyphens: manual;
   }
     .bgcolor{
 /*     background-color: #142c5a; */
@@ -232,7 +290,7 @@
     grid-row: 2;
     grid-column: 1;
     align-self: center;
-    transform: translate(0, 58px);
+    transform: translate(0, 55px);
   }
       .title-section2 {
       display: grid;
@@ -274,11 +332,11 @@
 <div class="main-grid">
   <div class="section1st">
     <div class="display section1st-text1 header1">
-       <h2 class="header-section">We fuse innovation with accessibility as blockchain technology evolves</h2>
+       <h2 class="header-section">We fuse innovation with accessibility as blockchain technology evolves.</h2>
        <p class="subgrid-text">We seek to revolutionise the way that exchange owners create their platforms and raise the standard of marketplace excellence by incorporating our cutting-edge technology, delivered with practicality and a host of unique benefits, only enjoyed by merging with the ibinex ecosystem.</p>
     </div>
     <div class="display bgcolor uk-light section1st-text2">
-      <div class="section1st-data header2"><h2 class="header-section">We are an ecosystem with vision</h2>
+      <div class="section1st-data header2"><h2 class="header-section">We are an ecosystem with vision.</h2>
       <p>As the gateway to your own customisable cryptocurrency ecosystem, our vision is to equip you with the tools to create and operate your cryptocurrency exchange, your way.</p></div>
     </div>
     <div  class="pageImage" ><img src="assets/images/homepage_why.png" alt=""></div>
@@ -291,15 +349,15 @@
     <div class="section2-text mainPadding" style="border-bottom: 1px solid #e5e5e5;">
        <div class="text text-border" style="padding-right: 15%; border-right: 1px solid #e5e5e5;">
            <div class="text-content-left">
-             <div class="uk-animation-toggle">
+             <div class="uk-animation-toggle imgSection2">
                <img src="assets/images/1.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             <p>Commitment to technological innovation, through out patent-pending proprietary software, Cryptobridge<sup>TM</sup></p>
            </div>
         </div>
-        <div class="text text-padding" style="padding-left: 15%;">
+        <div class="text text-padding" style="padding-left: 18.5%;">
              <div class="text-content-right">
-              <div class="uk-animation-toggle">
+              <div class="uk-animation-toggle imgSection2">
                  <img src="assets/images/2.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
               </div>
               <p>Trailblazing of complete and customisable white label platform solutions</p>
@@ -307,15 +365,15 @@
         </div>
         <div class="text text-border" style="padding-right: 15%; border-right: 1px solid #e5e5e5;  padding-bottom: 5%;">
            <div class="text-content-left">
-             <div class="uk-animation-toggle">
+             <div class="uk-animation-toggle imgSection2">
                <img src="assets/images/3.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             <p>Offering unprecedented custodian service with our industry's first finance transaction license</p>
           </div>
         </div>
-        <div class="text text-padding"  style="padding-left: 15%; padding-bottom: 5%;">
+        <div class="text text-padding"  style="padding-left: 18.5%; padding-bottom: 5%;">
            <div class="text-content-right">
-             <div class="uk-animation-toggle">
+             <div class="uk-animation-toggle imgSection2">
                <img src="assets/images/4.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
             <p>Providing a full-spectrum payment processing infrastructure to revolutionise liquidity for your exchange</p>
@@ -334,11 +392,13 @@
 <?php function scripts_include(){ ?>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script>
-    window.sr = ScrollReveal();
-    sr.reveal('.text-content-left', {origin: 'left', distance: '200px', opacity: 0, duration: 2000});
-    sr.reveal('.text-content-right', {origin: 'right', distance: '200px', opacity: 0, duration: 2000});
-    sr.reveal('.header1', {origin: 'left', distance: '200px', opacity: 0, duration: 1500, delay:500});
-    sr.reveal('.header2', {origin: 'left', distance: '200px', opacity: 0, duration: 1500, delay:500});
-    sr.reveal('.text2', {opacity: 0, duration: 1500, delay:500});
+    $(window).on("load", function(){
+      window.sr = ScrollReveal();
+      sr.reveal('.text-content-left', {origin: 'left', distance: '200px', opacity: 0, duration: 2000});
+      sr.reveal('.text-content-right', {origin: 'right', distance: '200px', opacity: 0, duration: 2000});
+      sr.reveal('.header1', {origin: 'left', distance: '200px', opacity: 0, duration: 1500, delay:500});
+      sr.reveal('.header2', {origin: 'left', distance: '200px', opacity: 0, duration: 1500, delay:500});
+      sr.reveal('.text2', {opacity: 0, duration: 1500, delay:500});
+    });
   </script>
 <?php } ?>

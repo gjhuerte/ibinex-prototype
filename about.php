@@ -20,7 +20,6 @@
         box-sizing: border-box;
         display: flex;
 		background-color: #152B59;
-		max-height: 99vh;
     }
 	#banner-title{
 		font-size: 27px;

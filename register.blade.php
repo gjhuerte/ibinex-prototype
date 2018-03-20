@@ -89,8 +89,7 @@
       }
       
       input:focus + label {
-        top: 100%;
-        margin-top: -20%;
+        margin-top: -20px;
         font-size: 70%;
         color: #315288;
       }
@@ -116,7 +115,8 @@
       
       .column-1 {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
       }
       
       .column-1 > .form-group > input {
@@ -206,7 +206,7 @@
         </div>
         <div class="column-1">
           <div class="form-group">
-            <input type="email" class="form-control" id="email" name="email" />
+            <input type="email" class="form-control" id="email" name="email" placeholder=""/>
             <label for="email">EMAIL ADDRESS</label>
           </div>
         </div>

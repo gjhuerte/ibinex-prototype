@@ -8,19 +8,17 @@ function display_title(){
 function styles_include(){
 ?>
 <style>
-  .heading{
-    font-family: ;
-  }
-   p {
+   .border1 p, .border2 p {
         color: #6F8197; 
         word-spacing: 1px;
         font-size: var( --paragraph-17px);
-        font-weight: bold;
+        font-weight: 600;
     }
    h6 {
       font-size: 11.5px;
       word-spacing: 1px;
    }
+
   #title{
     font-weight: 800;
     font-size: var(--heading-40px);
@@ -31,9 +29,10 @@ function styles_include(){
   }
   #banner-width h6{
     font-size: var(--paragraph-17px);
+    font-weight: 600;
   }
   .firstColumn-second h3{
-        margin-bottom: 14%;
+        margin-bottom: 16%;
   }
    .border1{
       border-right: 0px solid #aaa;
@@ -53,6 +52,12 @@ function styles_include(){
          text-align: center;
          margin: 0;
         }
+      #banner-width h6 {
+        font-weight: 500;
+      }
+      .border1 p, .border2 p {
+        font-weight: 500;
+      }
       #title1{
         font-style: normal!important;
       }
@@ -154,12 +159,14 @@ function display_content(){
 <?php function scripts_include(){ ?>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script>
+   $(window).on("load", function(){
     window.sr = ScrollReveal();
-    sr.reveal('.header-banner', {origin: 'right', distance: '2000px', opacity: 0, duration: 2000});
-    sr.reveal('.header-h6', {origin: 'left', distance: '2000px', opacity: 0, duration: 2000});
+    sr.reveal('.header-banner', { opacity: 0, duration: 2000});
+    sr.reveal('.header-h6', { opacity: 0, duration: 2000});
     sr.reveal('.header-SecondSection', { opacity: 0, duration: 2000});
     sr.reveal('.thirdSection', { opacity: 0, duration: 2000});
     sr.reveal('.secondSection-p-left', {origin: 'left', opacity: 0, duration: 1500,distance: '2000px'});
     sr.reveal('.secondSection-p-right', {origin: 'right', opacity: 0, duration: 1500,distance: '2000px'});
+   });
   </script>
 <?php } ?>

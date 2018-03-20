@@ -190,6 +190,14 @@
     .custodiansection .custodian .custodianimg {
        display: none;    
     }
+      .imgbttm {
+
+        padding-bottom: 15%;
+      }
+      .imageCont{
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
     .imgtop img {
       display: none;
       visibility: hidden;   
@@ -210,6 +218,15 @@
     }
     .white2 {
       padding-bottom: 0;
+      }
+    .crmsection2 {
+      margin-top: 0!important; 
+    }
+    .white2 .creditcardsection .cc-content h3{
+       padding-top: 0;
+     }
+      .white1{
+        background-color: #F7F7F7;
       }
   }
   
@@ -530,6 +547,14 @@
       display: block;
       visibility: visible;    
     }
+      .imageCont{
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      .imgbttm {
+
+        padding-bottom: 15%;
+      }
   }
   
   /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
@@ -754,18 +779,28 @@
 <?php function display_content(){ ?>
 <div class="uk-section uk-section-default red" style="background-color: #C11722;">
     <div class="uk-container">
-      <h3 class="animated fadeInDown"><i>Services</i></h3>
+      <h3 class="animated " id="animated1"><i>Services</i></h3>
         <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
             <div class="">
+<<<<<<< HEAD
                 <p class="animated fadeInLeft" style="margin-top: -0.8%; margin-bottom: 28px;">Ibinex services are all characterised by high-level innovation made practical for your personalised<br> exchange integration.</p>
                 <p class="animated fadeInRight" style="margin-top: 0%;">Our ecosystem of services compromises of the following units.</p>  
+=======
+                <p class="animated " id="animated2">Ibinex services are all characterised by high-level innovation made practical for your personalised<br> exchange integration.</p>
+                <p class="animated " id="animated3">Our ecosystem of services compromises of the following units.</p>  
+>>>>>>> 86697e61bb62ec18b46fd62070f4e4dd484e35ca
             </div>
         </div>
     </div>
 </div>
 
+<<<<<<< HEAD
 <div class="uk-section uk-section-muted grey1" style="background-color: #F7F7F7; padding-top: 0; height: 538px;">
     <div class="uk-container">
+=======
+<div class="uk-section uk-section-muted grey1" style="background-color: #F7F7F7; padding-top: 0;">
+    <div class="uk-container imageCont">
+>>>>>>> 86697e61bb62ec18b46fd62070f4e4dd484e35ca
         <div class="uk-margin-remove-top uk-grid-match uk-child-width-1-2@m" uk-grid>
             <div class="imgtop">
                 <img class="laptopimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="position: relative; top: 13.2%; height: 100%; margin-left: 8.5%; max-width: 200%; width: 143.4%;" alt="macbook">
@@ -792,10 +827,17 @@
 
 <div class="uk-section uk-section-default white1">
     <div class="uk-container uk-margin crmsection">
+<<<<<<< HEAD
         <div class="uk-grid-match uk-child-width-1-2@m uk-margin-xlarge-top" uk-grid style="margin-bottom: -64.6%;">
             <div class="crm-one" style="margin-left: 15.8%; margin-top: -4.5%;">
                 <h3 class="crm-title" style="margin-bottom: 2%;">CRM/Back Office</h3>
                 <p class="crm-content-p" style="max-width: 79%; margin-bottom: 2%;">The Ibinex solution unites the front-end and platform with a full black office suit including CRM with:</p>
+=======
+        <div class="uk-grid-match uk-child-width-1-2@m uk-margin-xlarge-top crmsection2" uk-grid>
+            <div class="crm-one">
+                <h3 class="crm-title">CRM/Back Office</h3>
+                <p class="crm-content-p">The Ibinex solution unites the front-end and platform with a full black office suit including CRM with:</p>
+>>>>>>> 86697e61bb62ec18b46fd62070f4e4dd484e35ca
                 <ul class="uk-margin uk-list uk-list-space" id="pl_list">
                   <li class="uk-margin-small-top crm-li"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> KYC/AML documentation collection</li>
                   <li class="crm-li"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Documentation verification</li>
@@ -881,25 +923,32 @@ $('.cblogo').tilt({
 </script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script>
-window.sr = ScrollReveal({ mobile: true });
-sr.reveal('.pratform-content-p', { duration: 2000 });
-sr.reveal('.platform-li', { duration: 3000}, {container: '.platform-content' }, 300);
-  
-sr.reveal('.crm-title', { origin: 'left' }, { duration: 3000}, 600);
-sr.reveal('.crm-content-p', { origin: 'left'}, {duration: 3000 }, 600);
-sr.reveal('.crm-li', { origin: 'left' }, { duration: 3000}, {container: '.crm-one' }, 600);
-  
-sr.reveal('.cc-title', { origin: 'left' }, { duration: 4000});
-sr.reveal('.cc-first-p', { origin: 'left'}, {duration: 4000 }, 600);
-sr.reveal('.visa', { origin: 'bottom' }, { duration: 9000}, 3000);
-sr.reveal('.mastercard', { origin: 'top' }, { duration: 9000}, 3000);
-sr.reveal('.discover', { origin: 'bottom' }, { duration: 9000}, 3000);
-sr.reveal('.dinnersclub', { origin: 'top' }, { duration: 9000}, 3000);
-sr.reveal('.amexpress', { origin: 'bottom' }, { duration: 9000}, 3000);
-sr.reveal('.paypal', { origin: 'top' }, { duration: 9000}, 3000);
-sr.reveal('.maestro', { origin: 'bottom' }, { duration: 9000}, 3000);
-  
-sr.reveal('.custodian-title', { origin: 'right' }, { duration: 4000});
-sr.reveal('.custodian-p', { duration: 3000}, {container: '.custodian-two' }, 300);
+$(document).ready(function(){
+  $(window).on("load", function() {
+    $( "#animated1" ).addClass( "fadeInDown" );
+    $( "#animated2" ).addClass( "fadeInLeft" );
+    $( "#animated3" ).addClass( "fadeInRight" );
+    window.sr = ScrollReveal({ mobile: true });
+    sr.reveal('.pratform-content-p', { duration: 2000 });
+    sr.reveal('.platform-li', { duration: 3000}, {container: '.platform-content' }, 300);
+
+    sr.reveal('.crm-title', { origin: 'left' }, { duration: 3000}, 600);
+    sr.reveal('.crm-content-p', { origin: 'left'}, {duration: 3000 }, 600);
+    sr.reveal('.crm-li', { origin: 'left' }, { duration: 3000}, {container: '.crm-one' }, 600);
+
+    sr.reveal('.cc-title', { origin: 'left' }, { duration: 4000});
+    sr.reveal('.cc-first-p', { origin: 'left'}, {duration: 4000 }, 600);
+    sr.reveal('.visa', { origin: 'bottom' }, { duration: 9000}, 3000);
+    sr.reveal('.mastercard', { origin: 'top' }, { duration: 9000}, 3000);
+    sr.reveal('.discover', { origin: 'bottom' }, { duration: 9000}, 3000);
+    sr.reveal('.dinnersclub', { origin: 'top' }, { duration: 9000}, 3000);
+    sr.reveal('.amexpress', { origin: 'bottom' }, { duration: 9000}, 3000);
+    sr.reveal('.paypal', { origin: 'top' }, { duration: 9000}, 3000);
+    sr.reveal('.maestro', { origin: 'bottom' }, { duration: 9000}, 3000);
+
+    sr.reveal('.custodian-title', { origin: 'right' }, { duration: 4000});
+    sr.reveal('.custodian-p', { duration: 3000}, {container: '.custodian-two' }, 300);
+  });
+});
 </script>
 <?php } ?>

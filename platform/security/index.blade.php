@@ -1,6 +1,10 @@
+<<<<<<< HEAD
+<?php $display_sidebar = true; ?>
+=======
 <?php $display_sidebar = true;
       $current = 'security';
 ?>
+>>>>>>> ed114dcab6e233fa9e6845ea6fae3e02686e37aa
 
 <?php function display_title(){ ?> Example Title  <?php } ?>
 

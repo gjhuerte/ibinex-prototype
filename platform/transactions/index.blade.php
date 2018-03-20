@@ -1,5 +1,8 @@
-<?php $display_sidebar = true; ?>
+<?php $display_sidebar = true; 
+      $current = 'transactions';
+?>
 <?php require '../../template-bootstrap.blade.php'; ?>
+
 
 <?php function styles_include(){ ?>
   <style>
@@ -34,6 +37,14 @@
     
     .btn.active{
       background-color: #0B6FF0;
+    }
+    
+    #amt{
+      border-right: 0;
+    }
+    
+    #currency{
+      border-left: 0;
     }
     
     .btn-withdraw{
@@ -87,7 +98,7 @@
     margin-left: 3%;
   }
   
-    .custom-col-7{
+  .custom-col-7{
       flex: 1 0 58.333333%;
       max-width: 100%;
     }
@@ -107,6 +118,34 @@
     font-size: 1em;
   }
     
+  /* Custom select style*/
+    
+    .custom-select, .custom-select option, .custom-input {
+      background-color: rgb(32,35,76);
+      color:#fff;
+      border: 1px solid rgb(8,9,39);
+      border-radius: 10px;
+    }
+    
+    .custom-select:hover, .custom-select:focus, .custom-input:focus, .custom-input:hover{
+      box-shadow: 0 0 10px 100px rgb(32,35,76) inset;
+      color: #fff;
+    }
+    
+    input.custom-input[type=number]::-webkit-inner-spin-button,
+    input.custom-input[type=number]::-webkit-outer-spin-button{
+      opacity: 0;
+    }
+    
+    .currency-icon{
+      border-radius: 0 10px 10px 1px;
+      border: 1px solid rgb(8,9,39);
+      background-color: rgb(32,35,76);
+      color: rgb(77,79,104);
+    }
+    
+  
+    
 }
   </style>
 <?php } ?>
@@ -119,6 +158,7 @@
 
   <div class="container-fluid">
     <div class="row">
+      <!---Transaction form -->
       <div class="col-4 col-mid" >
         <div class="bordered">
           <div class="text-center btn-group-withdraw">
@@ -130,13 +170,16 @@
         </div>
         <form>
           <div class="form-group">
-            <label for="exampleFormControlSelect1">WITHDRAW CURRENCY</label>
+            <label>WITHDRAW CURRENCY</label>
             <div class="input-group mb-3">
-              <div class="input-group-prepend">
+              <div class="input-group-prepend" style="background-color:#20224A; border-top-left-radius: 10px;border-bottom-left-radius: 10px; border: 1px solid rgb(8,9,39); height: 38px;">
                 <!---<span class="input-group-text">$</span>--->
-                <img src="https://image.freepik.com/free-vector/modern-yellow-bitcoin-design_1017-9631.jpg" style="height: calc(2.25rem + 2px); width: 40px;">
+                <img src="https://i0.wp.com/savageio.com/wp-content/uploads/2016/12/bitcoin-logo-gold.png" style="height: calc(2rem + 2px); width: 40px;">
+                <img src="https://www.ethereum.org/images/logos/ETHEREUM-ICON_Black_small.png" style="height: calc(2.25rem + 2px); width: 40px;" hidden>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Official_Litecoin_Logo.png" style="height: calc(2.25rem + 2px); width: 40px;" hidden>
+                <img src="http://s3.amazonaws.com/lbn-s3/2017/05/29051444/Ripple-anonymous.png" style="height: calc(2.25rem + 2px); width: 40px;" hidden>
               </div>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <select id="currency" class="form-control custom-select">
                 <option>BTC</option>
                 <option>ETH</option>
                 <option>LTC</option>
@@ -145,15 +188,15 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="exampleFormControlInput1">SEND TO ADDRESS</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1">
+            <label>SEND TO ADDRESS</label>
+            <input type="email" class="form-control custom-input" spellcheck="false">
           </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">AMOUNT</label>
+            <label>AMOUNT</label>
             <div class="input-group mb-3">
-              <input type="text" id="amt" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <input type="number" id="amt" class="form-control custom-input"  aria-label="Amount (to the nearest dollar)" spellcheck="false">
               <div class="input-group-append">
-                <span class="input-group-text" style="background-color: #FFF; border:none;">BTC</span>
+                <span id="'amt-currency" class="input-group-text currency-icon">BTC</span>
               </div>
             </div>
           </div>
@@ -167,14 +210,16 @@
             </div>
             <div class="inline">
               <h5>BTC TO RECEIVE</h3>
-              <h5>0.0000</h3>
+              <h5 id="amt-receive">0.0000</h3>
             </div>
           </div>
           <button type="button" class="btn btn-withdraw">Withdraw Cryptos</button>
         </div>
       </div>
+      <!---End Transaction form -->
       
       
+      <!-- Transactions table -->
       <div class="custom-col-7 col-7 col-mid  custom-container">
         <h6 class="custom-h6">
           RECENT WITHDRAWALS
@@ -197,6 +242,8 @@
       </table>
       </div>
       
+      <!-- End Transactions table -->
+      
       
     </div>
   </div>
@@ -207,7 +254,7 @@
 <script>
 (function(){
   
-  //Populate data
+  //Populate data -- Philip
   var data = {
     
     populate: function(size){
@@ -219,8 +266,6 @@
         "<td class='text-danger'>FAILED</td>",
       ];
       
-      //var randomStatus = status[Math.floor(Math.random()*status.length)];
-      
       for(x=0;x<size;x++){
         html+="<tr>";
         html+="<th scope='row'>Buy</th>";
@@ -231,7 +276,6 @@
         html+=status[Math.floor(Math.random()*status.length)];
         html+="<td> &nbsp;&nbsp;&nbsp;</td>";
         html+="</tr>";
-        
       }
       
       $('tbody.custom-tbody').append(html);
@@ -239,23 +283,51 @@
   }
   
   
-  data.populate(8);
+  data.populate(2);
   
   //End
   
+   //Input scripts
+  var element_controller = {
+    
+      data: function(element,event,target){
+            
+            if($(target).length){
+              
+              $(element).on(event, function(){
+                  $(target).text($(element).val());
+              });
+              
+            }
+        
+      }
+    
+  }
+  
+  element_controller.data("select.custom-select","change","span.currency-icon");
   
   
   
-  
+  //Kevin
   $(".btn-group-withdraw .btn").on('click', function(){
     $(this).siblings().removeClass('active')
     $(this).addClass('active');
-  })
+  });
   
-  var x = document.getElementById('#amt')
-  x.addEventListener("onfocus",function(){alert('hi')});
+  var y = document.getElementById('currency');
+  var span = document.getElementById('amt-currency');
   
+  $(y).on('change', function(){
+    span.textContent = y.value;
+  });
   
+  var x = document.getElementById('amt');
+  x.addEventListener("input",function() {
+    document.getElementById('amt-receive').textContent = x.value;
+  });
+  //End
+  
+ 
   
   
 })()

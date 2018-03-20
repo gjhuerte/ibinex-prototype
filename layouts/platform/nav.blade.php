@@ -1,113 +1,93 @@
-<style type="text/css">
-  .platform-nav-parent {
-    display: grid;
-    grid-template-columns: 1fr 3fr 4fr;
-    grid-template-rows: 60px;
-    background-color: #01010A;
-  }
-  
-  .platform-nav-logo {
-    grid-column: 1 / span 1;
-    align-self: center;
-    padding-left: 7%;
-  }
-  
-  .platform-nav-right-items {
-    grid-column: 3 / span 3;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-  }
-  
-  .platform-nav-right-items > ul {
-    grid-column: auto;
-    grid-row: auto;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto;
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
-  
-  .platform-nav-right-items > ul > li {
-    grid-column: auto / span auto;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-  }
-  
+<style>
   #estimated-account-balance-in {
-    font-size: 10px;
-    color: #76777C;
-  }
-  
-  #usd-amount-balance {
-    font-size: 12px;
-    color: #978D67;
-  }
-  
-  .platform-nav-right-items > ul > li > a > span {
-    display: block;
-    text-align: justify;
+    color: #727276;
+    font-size: 9px;
     font-weight: 900;
   }
   
-  .platform-nav-right-items > ul > li > a, a:hover {
-    text-decoration: none;
-    text-align: center;
+  #usd-amount-balance {
+    color: #AD9331;
+    font-size: 11px;
+    font-weight: 900;
   }
   
-  .platform-nav-list-item > form > button {
-    border-radius: 5px;
-    font-weight: 500;
-    padding: 0.3em 1.400em;
+  .nav-item > a > span {
+    display: block;
   }
   
-  #account-profile-information {
-    background-color: #21224A;
+  .navbar-nav > .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .btn-outline-violet-1 {
+    border: #0D49A5 solid 1px;
+    color: #0D49A5;
+  }
+  
+  .btn-outline-teal-1 {
     border: none;
-    padding: 2% 25%;
+    background-color: #00D5BD;
+    color: #002F30;
+  }
+  
+  #profile-dropdown {
+    background-color: #20224A;
     color: white;
-    font-size: 10px;
+    padding: 6px 80px 6px 5px;
+    font-size: 12px;
+    font-weight: 200;
+    border-radius: 5px;
   }
   
-  .withdraw-submit {
-    border: 2px solid #2E2C4C;
-    color: #242F58;
-    background-color: transparent;
+  #nav-withdraw {
+    font-weight: 450;
+    padding: 6px 35px; 
+    font-size: 13px;
   }
   
-  .deposit-submit {
-    border: 1px solid #2E2C4C;
-    color: #017668;
-    background-color: #00D6BC;
+  #nav-deposit {
+    font-weight: 450;
+    padding: 6px 35px; 
+    font-size: 13px;
+  }
+  
+  #profile-dropdown-text {
+    margin-left: 5px;
+  }
+  
+  #innerPlatformContent > .navbar > .nav-item {
+    
   }
 </style>
 
-<nav class="platform-nav-parent">
-  <div class="platform-nav-logo" href="#">
-    <img src="<?php __DIR__ ?>/assets/images/ibinex-logo-white.png" alt="Website Logo" height="55%" width="55%">
-  </div>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #01010A;">
+  <a class="navbar-brand" href="#"><img src="<?php __DIR__ ?>/assets/images/ibinex-logo-white.png" alt="Website Logo" height="55%" width="55%"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#innerPlatformContent" aria-controls="innerPlatformContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  <div class="platform-nav-right-items">
-    <ul class="list-unstyled">
-      <li class="platform-nav-list-item">
+  <div class="collapse navbar-collapse" id="innerPlatformContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
         <a class="" href="#"> <span id="estimated-account-balance-in">Estimated Account Balance in USD</span> <span id="usd-amount-balance">$ 20, 456.95</span> </a>
       </li>
-
-      <li class="platform-nav-list-item">
-        <form method="get" action="withdraw.php" class="withdraw-form">
-          <button class="withdraw-submit" type="submit">Withdraw</button>
-        </form>
+      <li class="nav-item">
+          <a href="withdraw.php" id="nav-withdraw" class="btn btn-outline-violet-1">Withdraw</a>
       </li>
-      <li class="platform-nav-list-item">
-        <form method="get" action="withdraw.php" class="deposit-form">
-          <button class="deposit-submit" type="submit">Deposit</button>
-        </form>
+      <li class="nav-item">
+          <a href="deposit.php" id="nav-deposit" class="btn btn-outline-teal-1">Deposit</a>
       </li>
-      <li class="platform-nav-list-item">
-        <button id="account-profile-information" href="#"> <span>Estimated Account in</span> <i class="fas fa-caret-down"></i></button>
+      <li class="navbar-item dropdown">
+        <a class="nav-link dropdown-toggle" id="profile-dropdown" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <img src="https://api.adorable.io/avatars/285/abott@adorable.png" class="img rounded-circle" height=20px/>
+          <span id="profile-dropdown-text">Dropdown link</span> <span class="badge badge-danger">1</span>
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
       </li>
     </ul>
   </div>

@@ -24,7 +24,7 @@
       padding: 10px 0;
     }
     
-    .btn{
+    .my-btn{
       color: #FFF;
       background-color: #212247;
       border-radius: 10px;
@@ -32,7 +32,7 @@
       font-size: 12px;
     }
     
-    .btn.active{
+    .btn.clicked{
       background-color: #0B6FF0;
     }
     
@@ -122,8 +122,8 @@
       <div class="col-4 col-mid" >
         <div class="bordered">
           <div class="text-center btn-group-withdraw">
-            <button type="button" class="btn active" >Withdraw Cryptos</button>
-            <button type="button" class="btn">Withdraw FIAT Currency</button>
+            <button type="button" class="my-btn active" >Withdraw Cryptos</button>
+            <button type="button" class="my-btn">Withdraw FIAT Currency</button>
           </div>
         <div>
           <p>Available BTC <span style="float:right;">3.00700000 BTC</span></p>
@@ -167,7 +167,7 @@
             </div>
             <div class="inline">
               <h5>BTC TO RECEIVE</h3>
-              <h5>0.0000</h3>
+              <h5 id="amt-receive">0.00</h3>
             </div>
           </div>
           <button type="button" class="btn btn-withdraw">Withdraw Cryptos</button>
@@ -246,14 +246,14 @@
   
   
   $(".btn-group-withdraw .btn").on('click', function(){
-    $(this).siblings().removeClass('active')
-    $(this).addClass('active');
+    $(this).siblings().removeClass('clicked')
+    $(this).addClass('clicked');
   })
   
-  var x = document.getElementById('#amt')
-  x.addEventListener("onfocus",function(){alert('hi')});
-  
-  
+  var x = document.getElementById('amt');
+  x.addEventListener("input",function() {
+    document.getElementById('amt-receive').innerHTML = x.value;
+  });
   
   
 })()

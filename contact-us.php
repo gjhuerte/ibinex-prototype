@@ -14,6 +14,8 @@
   
   .header-text {
     font-size:1.8em;  
+    font-size: var(--heading-40px);
+    font-weight: 900;
   }
   
   .support-header{
@@ -25,13 +27,20 @@
   }
   
   .intro-text-top{
-    color: #173d54;
-    font-size: 0.8em;
+    color: #728298;
+    font-size: var( --paragraph-17px);
+    font-weight: 600;
+  }
+  .intro-text-top li span svg{
+    margin-right: 10px;
   }
   
   .intro-text-bottom{
     color: #173d54;
     font-size: 0.8em;
+    color: #728298;
+    font-size: var( --paragraph-17px);
+    font-weight: 600;
   }
   
   .text-holder{
@@ -68,21 +77,22 @@
   
 
   .label{
-    font-size:0.7em;
+    font-size:0.8em;
   }
 
   
   #contact-us-form .white-form .form-input, #contact-us-form .white-form .form-textarea{
     border-radius: 5px;
--webkit-box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
-box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
   }
   
   .form-button{
     border-radius: 5px;
-    background-color: #12398e;
+    background-color: #142c5a;
     color:whitesmoke;
+    font-weight: 900;
   }
   
   .form-textarea{
@@ -94,14 +104,18 @@ box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
 
   
   
-  .ext{
+  #ext{
+    margin-top:-540px;
     background-color: #b71c1c;
-    height:10vh;
-    border: 1px solid black;
+    height:20vh;
   }
   
   .hidden{
     visibility:hidden;
+  }
+  
+  .mcontact-us-form{
+    display:none;
   }
   
 
@@ -137,6 +151,60 @@ box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
     background-position: top left;
     }
     
+    .bottom-section{
+      display:none;
+    }
+    
+    .mcontact-us-form{
+      display:block;
+      padding:18% 2% 15% 2%;
+    }
+    
+    .msupport-text{
+      font-weight: 500;
+      color: #728298;
+    }
+    
+    .mlabel{
+      font-weight: 500;
+    }
+    
+    #mbottom-text-first{
+      margin-top:15%;
+    }
+    #bottom-text-first{
+      margin-top:15%;
+    }
+    
+   
+    .mform-input, .mform-textarea{
+-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+      width:100%;
+      border-radius: 5px;
+    }
+    
+    .mform-textarea{
+-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+    height:150px;
+    max-height: 200px;
+    }
+    
+    .mform-button{
+    border-radius: 5px;
+    background-color: #142c5a;
+    color:whitesmoke;
+    width:60%;
+    font-weight: 600;
+      height:55px;
+    }
+    .mwhite-form{
+      margin-top: 20%;
+      padding:2%;
+    }
     .text-holder{
     max-width: 100%;
     margin-top:40%;
@@ -144,21 +212,15 @@ box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
     padding-bottom:20px;
     }
     
-    .bottom-text-left{
-    padding-bottom:133px ;
-    max-width:100%;
-    font-weight:500;
-    padding-top: 0px;
-    }
-    
-    .white-form{
-    width:100%;
-    background-color: #FFFFFF !important;
-    }
-    
-    div#contact-us-form{
-      background-color: #FFFFFF !important;
-    }
+    .intro-text-top li span svg{
+    margin-right: 10px;
+  }
+    .intro-text-top{
+    font-weight: 500;
+  }
+    .intro-text-bottom{
+    font-weight: 500;
+  }
     
   }
   
@@ -178,7 +240,7 @@ box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
             <div class="uk-grid-match uk-child-width-1@m" uk-grid>
                 <div id="get-started" class="text-holder">
                   <h1 class="uk-text-bold header-text">Get Started</h1>
-                <p class="uk-text-bold uk-text-justify intro-text-top">
+                <p id="bottom-text-first" class="uk-text-bold uk-text-justify intro-text-top">
                     We invite you to experience the Ibinex demo here, which will help you to conceptualise
                     the possibilities of personalisation for your own exchange.
                     <br><br>
@@ -191,20 +253,20 @@ box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="20" height="20"
                             viewBox="0 0 252 252"
-                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#4caf50"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
-                      </span>&nbsp &nbsp Local Escrow deposit (reserve only, no payment)</li>
+                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#12d4b7"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
+                      </span> Local Escrow deposit(reserve only, no payment)</li>
                     <li><span>
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="20" height="20"
                             viewBox="0 0 252 252"
-                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#4caf50"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
-                      </span>&nbsp &nbsp Letter of Intent</li>
+                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#12d4b7"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
+                      </span> Letter of Intent</li>
                     <li><span>
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="20" height="20"
                             viewBox="0 0 252 252"
-                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#4caf50"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
-                      </span>&nbsp &nbsp Proof of Escrow deposit</li>
+                            style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#12d4b7"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#000000"></path></g></g></g></svg>
+                      </span> Proof of Escrow deposit</li>
                   </ul>
 
                   <p class="uk-list uk-text-bold uk-text-justify intro-text-top">
@@ -245,22 +307,22 @@ box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
             <div class="white-form">
                 <form>
                     <div class="uk-margin">
-                        <label class="uk-text-left uk-text-bold label">Full Name</label>
-                        <input class="uk-input uk-form-width-large form-input form" spellcheck="false" type="text">
+                        <label for="name" class="uk-text-left uk-text-bold label">Full Name</label>
+                        <input id="name" class="uk-input uk-form-width-large form-input form" spellcheck="false" type="text">
                     </div>
                     <div class="uk-margin">
-                        <label class="uk-text-left uk-text-bold label">Email Address</label>
-                        <input class="uk-input uk-form-width-large form-input form" spellcheck="false" type="email">
+                        <label for="email" class="uk-text-left uk-text-bold label">Email Address</label>
+                        <input id="email" class="uk-input uk-form-width-large form-input form" spellcheck="false" type="email">
                     </div>
                   
                     <div class="uk-margin">
-                        <label class="uk-text-left uk-text-bold label">Subject</label>
-                        <input class="uk-input uk-form-width-large  form-input form" type="text">
+                        <label for="subject" class="uk-text-left uk-text-bold label">Subject</label>
+                        <input id="subject" class="uk-input uk-form-width-large  form-input form" type="text">
                     </div>
                     
                     <div class="uk-margin">
-                      <label class="uk-text-left uk-text-bold label">Message</label>
-                      <textarea class="uk-input uk-form-width-large form-textarea form" rows="6" cols="50"></textarea>
+                      <label for="message" class="uk-text-left uk-text-bold label">Message</label>
+                      <textarea id="message" class="uk-input uk-form-width-large form-textarea form" rows="6" cols="50"></textarea>
                     </div>
                     <div class="uk-margin">
                       <button class="uk-button uk-button-primary uk-button-medium form-button form">SEND</button>
@@ -269,7 +331,59 @@ box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
               </form>
              
         </div>
+        <div id="ext">
+          
+        </div>
+      
     </div>
+</div>
+
+<div class="mcontact-us-form">
+          <div class="mbottom-text-left">
+                <h1 class="uk-text-bold uk-text-justify mheader-text msupport-header">Support</h1>
+                <p id="mbottom-text-first" class="uk-text-bold uk-text-justify mintro-text-bottom msupport-text">
+                Contact and feedback are integral to the Ibinex way,
+                enabling us to cater to your needs and requirements
+                effectively and efficiently.
+                </p>
+                <p class="uk-text-bold uk-text-justify mintro-text-bottom msupport-text">
+                For support regarding any aspect of the Ibinex
+                platform, your use of this website or your own
+                exchange integration, please contact us with your
+                enquiry for personalised customer service.
+                </p>
+                <p class="uk-text-bold uk-text-justify mintro-text-bottom msupport-text">
+                We will endeavour to respond to you as promptly as
+                possible.
+                </p>
+            </div>
+         <div class="mwhite-form">
+                <form>
+                    <div class="uk-margin">
+                        <label for="mname" class="uk-text-left uk-text-bold mlabel" style="max-width: 100%;">Full Name</label>
+                        <input id="mname" class="uk-input uk-form-width-large mform-input mform" spellcheck="false" type="text">
+                    </div>
+                    <div class="uk-margin">
+                        <label for="memail" class="uk-text-left uk-text-bold mlabel">Email Address</label>
+                        <input id="memail" class="uk-input uk-form-width-large mform-input mform" spellcheck="false" type="email">
+                    </div>
+                  
+                    <div class="uk-margin">
+                        <label for="msubject" class="uk-text-left uk-text-bold mlabel">Subject</label>
+                        <input id="msubject" class="uk-input uk-form-width-large  mform-input mform" type="text">
+                    </div>
+                    
+                    <div class="uk-margin">
+                      <label for="mmessage" class="uk-text-left uk-text-bold mlabel">Message</label>
+                      <textarea id="mmessage" class="uk-input uk-form-width-large mform-textarea mform" rows="6" cols="50"></textarea>
+                    </div>
+                    <div class="uk-margin">
+                      <button class="uk-button uk-button-primary uk-button-medium mform-button mform">SEND</button>
+                    </div>
+                  
+              </form>
+             
+        </div>
 </div>
 
 
@@ -283,49 +397,64 @@ box-shadow: 0px 1px 2px -2px rgba(0,0,0,0.75);
 <?php function scripts_include(){ ?>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script>
+$(window).on("load", function(){
+  window.sr = ScrollReveal({ mobile: false });
 
-window.sr = ScrollReveal({ mobile: true });
+    sr.reveal('.header-text', { /* Animates the top introduction header */
 
-  sr.reveal('.header-text', { /* Animates the top introduction header */
+    origin: 'left',
+    distance: '200px',
+    opacity: 0
+    });
+
+    sr.reveal('.intro-text-top', { /* Animates the introduction paragraph at the top */
+
+    origin: 'left',
+    opacity: 0,
+    duration: 500,
+    distance: '200px',
+    delay: 250
+    },100);
+
+    sr.reveal('.intro-text-bottom', { /* Animates the introduction paragraph at the bottom */
+    origin: 'bottom',
+    opacity: 0,
+    duration: 500,
+    distance: '200px',
+    delay: 250
+    },100);
   
-  origin: 'left',
-  distance: '200px',
-  opacity: 0
-  });
+  sr.reveal('.mheader-text', { /* Animates the top introduction header */
+
+    origin: 'left',
+    distance: '200px',
+    opacity: 0
+    });
   
-  sr.reveal('.intro-text-top', { /* Animates the introduction paragraph at the top */
-  
-  origin: 'left',
-  opacity: 0,
-  duration: 500,
-  distance: '200px',
-  delay: 250
-  },100);
-  
-  sr.reveal('.intro-text-bottom', { /* Animates the introduction paragraph at the bottom */
-  origin: 'bottom',
-  opacity: 0,
-  duration: 500,
-  distance: '200px',
-  delay: 250
-  },100);
-  
-  sr.reveal('.white-form', { /* Animates the form */
-  origin: 'right',
-  opacity: 0,
-  duration: 500,
-  distance: '500px',
-  delay: 400
-  });
-  
-  sr.reveal('.form', { /* Animates the form */
-  origin: 'bottom',
-  opacity: 0,
-  duration: 500,
-  distance: '100px',
-  delay: 450
-  },50);
-  
+  sr.reveal('.mintro-text-bottom', { /* Animates the introduction paragraph at the bottom */
+    origin: 'bottom',
+    opacity: 0,
+    duration: 500,
+    distance: '200px',
+    delay: 250
+    },100);
+
+    sr.reveal('.white-form', { /* Animates the form */
+    origin: 'right',
+    opacity: 0,
+    duration: 500,
+    distance: '500px',
+    delay: 400
+    });
+
+    sr.reveal('.form', { /* Animates the form */
+    origin: 'bottom',
+    opacity: 0,
+    duration: 500,
+    distance: '100px',
+    delay: 450
+    },50);
+});  
   
   
 

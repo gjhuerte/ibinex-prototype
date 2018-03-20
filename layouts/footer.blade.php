@@ -33,7 +33,7 @@
     align-items: center;
     color: #D0D4D7;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 13px;
     letter-spacing: 5px;
   }
   
@@ -50,9 +50,9 @@
   .company-information-list {
     float: left;
     list-style-type: none;
-    padding-left: 75px;
+    padding-left: 65px;
     padding-right: 0;
-    font-size: 14px;
+    font-size: 10px;
   }
   
   .company-information-list > li:not(.footer-header-color) {
@@ -60,7 +60,7 @@
   }
   
   .company-information-list > li:not(.footer-header-color) > a{
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 500;
   }
 
@@ -130,7 +130,7 @@
   div.footer-lower-disclosure {
     grid-column: 1 / span 3;
     grid-row: 2 / span 1;
-    font-size: 9px;
+    font-size: 7px;
     font-weight: 600;
     margin: 0;
   }
@@ -141,7 +141,7 @@
   }
   
   .footer-lower-offices > .list-unstyled > li {
-    font-size: 10px;
+    font-size: 11px;
   }
   
   .footer-lower-offices > .list-unstyled > li:first-child {
@@ -152,11 +152,11 @@
     color: #FEFFFD;
     font-weight: 500;
     margin: 20px 0;
-    font-size: 12px;
+    font-size: 8px;
   }
   
   .footer-header-color-light {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
     color: #45525B;
   }
@@ -166,7 +166,6 @@
     background-color: #C81824;
     border: none;
     border-radius: 0% 5px 5px 0%;
-/*     padding: 7%; */
     font-size: 75%;
     text-transform: uppercase;
     grid-column: 2 / span 1;
@@ -197,8 +196,8 @@
   }
   
   .footer-contact-logo > img {
-    width: 8%;
-    height: 8%;
+    width: 9%;
+    height: 9%;
   }
 
   @media (min-width: 992px) {
@@ -255,13 +254,7 @@
     }
     
     .footer-website-logo {
-      width: 50%;
-      height: 50%;
-      max-width: 0;
       transform: translatex(45%);
-      align-content: center;
-      align-items: center;
-      align-self: center;
     }
     
     .footer-lower-additional-information {
@@ -356,7 +349,7 @@
   <div class="footer-lower bg-teal-darker">
     <div class="footer-lower-child">
       <div class="footer-lower-image-logo">
-        <img class="footer-website-logo expand" src="assets/images/ibinex-logo-white.png" alt="Website Logo" >
+        <img class="footer-website-logo expand" src="assets/images/ibinex-logo-white.png" alt="Website Logo" height=80% width=80% >
       </div>
       <!--  Ibinex Offices    -->
       <div class="footer-lower-offices-information">

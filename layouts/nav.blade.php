@@ -6,7 +6,7 @@
     background: #E3E3E3;
     display: grid;
     grid-template-columns: 5fr auto 1fr;
-    grid-template-rows: 55px;
+    grid-template-rows: 45px;
     grid-gap: 20px;
     
   }
@@ -29,11 +29,11 @@
     grid-template-rows: 1fr;
     align-items: center;
     margin: 0;
-    grid-gap: 30px;
+    grid-gap: 25px;
   }
   
   .contact-info-navbar-nav > li {
-    font-size: 12px;
+    font-size: 9px;
     font-weight: 600;
     float: left;
   }
@@ -50,9 +50,9 @@
   .button-telegram-blue {
     border-radius: 7px;
     border: 1px solid #4EA6D6; 
-    padding: 5px 15px;
+    padding: 3px 10px;
     color: #4EA6D6;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 600;
     transition: all 0.5s ease;
   }
@@ -60,7 +60,8 @@
   .navigation-navbar {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 93px;
+    grid-template-rows: 60px;
+    padding-bottom: 10px;
   }
   
   .navigation-navbar-child {
@@ -70,7 +71,6 @@
     grid-template-columns: 1fr auto auto auto 1fr;
     grid-template-rows: auto;
     align-items: center;
-    grid-gap: 40px;
   }
   
   .navbar-logo-main {
@@ -82,23 +82,23 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
     grid-template-rows: auto;
-    grid-gap: 35px;
+    grid-gap: 25px;
   }
   
   .navigation-navbar-child-nav > li {
     float: left;
-    font-size: 12px;
+    font-size: 9px;
   }
   
   .navigation-navbar-child-nav > li > a {
     text-decoration: none;
-    font-weight: 600;
-    color: #293E64;
+    font-weight: 750;
+    color: #102B5A;
   }
   
   .navigation-navbar-child-nav > li > a {
     transition: all 0.5s ease;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
     border-bottom: 2px solid transparent;
   }
   
@@ -109,18 +109,17 @@
   .button-live-demo-blue {
     margin-left: 20px;
     border: 1px solid;
-    border-radius: 10px;
-    padding: 13px 40px;
+    border-radius: 8px;
+    padding: 12px 27px;
     background-color: #102B58;
     color: white;  
     transition: all 0.5s ease;
     text-transform: uppercase;
+    font-size: 9px;
   }
 
   .button-live-demo-blue:hover {
     background-color: white;
-/*     font-size: 15px; */
-/*     font-weight: 900; */
     color: #102B58;  
   }
 
@@ -144,7 +143,7 @@
     background: linear-gradient(to right, #102B58, #6C223E , #CE1A27); 
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 50px;
+    grid-template-rows: 40px;
     -webkit-box-shadow: 16px 17px 46px -22px rgba(0,0,0,0.75);
     -moz-box-shadow: 16px 17px 46px -22px rgba(0,0,0,0.75);
     box-shadow: 16px 17px 46px -22px rgba(0,0,0,0.75);
@@ -162,8 +161,8 @@
     float: left;
     font-weight: 600;
     margin-left: 7%;
-    font-size: 8.5px;
-    padding: 15px;
+    font-size: 7px;
+    padding: 0.7% 1% 0.75% 1%;
   }
   
   .btn-invisible {
@@ -363,7 +362,7 @@
   <!--  navigation bar on medium to large devices  -->
   <div class="navigation-navbar-child">
     <div class="navbar-logo-main">
-      <img src="assets/images/ibinex-logo.png" alt="Ibinex Logo" width="90%" height="90%">
+      <img src="assets/images/ibinex-logo.png" alt="Ibinex Logo" width="70%" height="70%">
     </div>
 
     <ul class="navigation-navbar-child-nav">

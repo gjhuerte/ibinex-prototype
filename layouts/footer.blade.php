@@ -50,9 +50,9 @@
   .company-information-list {
     float: left;
     list-style-type: none;
-    padding-left: 6%;
+    padding-left: 5%;
     padding-right: 0;
-    font-size: 10px;
+    font-size: 0.8vw;
   }
   
   .company-information-list > li:not(.footer-header-color) {
@@ -60,8 +60,8 @@
   }
   
   .company-information-list > li:not(.footer-header-color) > a{
-    font-size: 8px;
-    font-weight: 500;
+    font-size: 0.75vw;
+    font-weight: 600;
   }
 
   .bg-teal-darker {
@@ -83,7 +83,7 @@
     color: #F3F6F4;
     text-decoration: none;
     font-weight: 600;
-    margin-bottom: 1px;
+    margin-bottom: 0.1%;
   }
   
   .footer-lower {
@@ -152,7 +152,7 @@
     color: #FEFFFD;
     font-weight: 500;
     margin: 20px 0;
-    font-size: 8px;
+    font-size: 0.75em;
   }
   
   .footer-header-color-light {
@@ -206,19 +206,21 @@
       padding-right: 10%;
     }
   
-    .footer-lower-offices {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
+    .company-information-list {
+      font-size: 0.80vw;
     }
-  
+
+    .company-information-list > li:not(.footer-header-color) > a{
+      font-size: 0.71vw;
+    }
+
     .footer-lower-offices {
       display: grid;
       grid-template-columns: 1fr 1fr ;
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 499px) {
     .give-us-a-call-number {
       display: block;
       
@@ -235,6 +237,11 @@
     ul.company-information-list {
       clear: both;
       grid-column: 1 / span 1;
+      font-size: 3vw;
+    }
+
+    .company-information-list > li:not(.footer-header-color) > a{
+      font-size: 2vw;
     }
     
     .company-information-list {
@@ -254,7 +261,9 @@
     }
     
     .footer-website-logo {
-      transform: translatex(45%);
+      transform: translatex(110%);
+      width: 30%;
+      height: 30%;
     }
     
     .footer-lower-additional-information {
@@ -273,6 +282,106 @@
     .footer-input-submit {
       padding: 4%;
     }
+  }
+  
+  @media (min-width: 500px) and (max-width: 991px){
+    
+    .give-us-a-call > h4 {
+      font-size: 3vh;
+    }
+    
+    .give-us-a-call-number {
+      display: block;
+    }
+    
+    ul.footer-upper {
+      padding-left: 0;
+    }
+    
+    .company-information {
+      display: flex;
+    }
+    
+    ul.company-information-list {
+      clear: both;
+      grid-column: 1 / span 1;
+      font-size: 3vw;
+    }
+
+    .company-information-list > li:not(.footer-header-color) > a{
+      font-size: 2vw;
+    }
+    
+    .company-information-list {
+      padding-left: 20%;
+    }
+    
+    .footer-lower {
+      display: block;
+    }
+    
+    .footer-lower-child {
+      display: block;
+    }
+    
+    .footer-lower-image-logo {
+      padding-top: 20px;
+    }
+    
+    .footer-website-logo {
+      transform: translatex(110%);
+      width: 30%;
+      height: 30%;
+    }
+  
+    .footer-header-color-light {
+      font-size: 2.5vh;
+    }
+
+    .footer-lower-offices > .list-unstyled > li > a {
+      font-size: 2vh;
+    }
+    
+    .footer-lower-disclosure {
+      display: block;
+      padding: 0 5vh 5vh 5vh;
+    }
+
+    .button-red-1 {
+      color: white;
+      background-color: #C81824;
+      border: none;
+      border-radius: 0% 5px 5px 0%;
+      font-size: 75%;
+      text-transform: uppercase;
+      grid-column: 2 / span 1;
+    }
+
+    .footer-input-submit {
+      background-color: white;
+      color: black;
+      border-radius: 5px 0 0 5px;
+      padding: 5%;
+      border: none;
+      font-size: 10px;
+      grid-column: 1 / span 1;
+    }
+
+    .input-group {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      padding: 5% 0 2% 0;
+    }
+
+    .footer-contact-logo {
+      margin-top: 10px;
+    }
+
+    .footer-contact-logo > img {
+      width: 6%;
+      height: 6%;
+    }
+    
   }
 </style>
 

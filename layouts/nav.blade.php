@@ -5,9 +5,8 @@
   .contact-info-navbar {
     background: #E3E3E3;
     display: grid;
-    grid-template-columns: 5fr auto 1fr;
+    grid-template-columns: 5fr auto 0.7fr;
     grid-template-rows: 45px;
-    grid-gap: 20px;
     
   }
   
@@ -29,7 +28,7 @@
     grid-template-rows: 1fr;
     align-items: center;
     margin: 0;
-    grid-gap: 25px;
+    grid-gap: 20px;
   }
   
   .contact-info-navbar-nav > li {
@@ -50,7 +49,7 @@
   .button-telegram-blue {
     border-radius: 7px;
     border: 1px solid #4EA6D6; 
-    padding: 3px 10px;
+    padding: 5px 15px;
     color: #4EA6D6;
     font-size: 9px;
     font-weight: 600;
@@ -242,6 +241,10 @@
     .navbar-currency-child-nav > li > a {
       font-weight: 600;
       font-size: 10px;
+    }
+    
+    .navigation-navbar {
+      padding-bottom: 0;
     }
     
     .navigation-navbar-child {

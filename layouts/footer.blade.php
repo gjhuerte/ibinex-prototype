@@ -13,7 +13,8 @@
   
   .footer-upper {
     list-style-type: none;
-    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-bottom: 1.1%;
     margin-bottom: 0;
     border: none;
   }
@@ -27,12 +28,12 @@
   .give-us-a-call > * {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    padding: 7% 0%;
+    padding: 5% 0% 5% 0%;
     margin: 0;
     align-items: center;
     color: #D0D4D7;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 19px;
     letter-spacing: 5px;
   }
   
@@ -49,8 +50,9 @@
   .company-information-list {
     float: left;
     list-style-type: none;
+    padding-left: 75px;
     padding-right: 0;
-    font-size: 12px;
+    font-size: 14px;
   }
   
   .company-information-list > li:not(.footer-header-color) {
@@ -58,7 +60,7 @@
   }
   
   .company-information-list > li:not(.footer-header-color) > a{
-    font-size: 9.5px;
+    font-size: 10px;
     font-weight: 500;
   }
 
@@ -80,7 +82,6 @@
   .company-information-list > li :not(.footer-header-color) {
     color: #F3F6F4;
     text-decoration: none;
-    font-size: 10px;
     font-weight: 600;
     margin-bottom: 1px;
   }
@@ -97,7 +98,7 @@
     grid-row: 1 / span 1;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
-    padding-top: 3%;
+    padding-top: 1%;
   }
   
   .footer-lower-image-logo {
@@ -108,7 +109,7 @@
   .footer-lower-offices-information {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    padding: 7% 7% 0 7%;
+    padding: 6% 6% 0 6%;
   }
   
   .footer-lower-offices > ul > li{
@@ -151,10 +152,11 @@
     color: #FEFFFD;
     font-weight: 500;
     margin: 20px 0;
+    font-size: 12px;
   }
   
   .footer-header-color-light {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     color: #45525B;
   }
@@ -195,8 +197,8 @@
   }
   
   .footer-contact-logo > img {
-    width: 10%;
-    height: 10%;
+    width: 8%;
+    height: 8%;
   }
 
   @media (min-width: 992px) {
@@ -255,6 +257,7 @@
     .footer-website-logo {
       width: 50%;
       height: 50%;
+      max-width: 0;
       transform: translatex(45%);
       align-content: center;
       align-items: center;
@@ -353,7 +356,7 @@
   <div class="footer-lower bg-teal-darker">
     <div class="footer-lower-child">
       <div class="footer-lower-image-logo">
-        <img class="footer-website-logo" src="assets/images/ibinex-logo-white.png" alt="Website Logo" >
+        <img class="footer-website-logo expand" src="assets/images/ibinex-logo-white.png" alt="Website Logo" >
       </div>
       <!--  Ibinex Offices    -->
       <div class="footer-lower-offices-information">

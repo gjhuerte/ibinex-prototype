@@ -342,7 +342,7 @@
     <ul class="navigation-navbar-sm">
       <li>
         <a class="" href="">
-          <img src="assets/images/ibinex-logo.png">
+          <img src="assets/images/ibinex-logo.png" class="expand">
         </a>
       </li>
 

@@ -50,7 +50,7 @@
   .company-information-list {
     float: left;
     list-style-type: none;
-    padding-left: 65px;
+    padding-left: 6%;
     padding-right: 0;
     font-size: 10px;
   }

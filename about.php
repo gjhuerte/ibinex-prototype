@@ -3,25 +3,42 @@
 <?php function styles_include(){ ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <style>
+	
     .uk-grid {
         margin-left: 0;
     }
 	.slick-slide {
 		outline: none
 	}
-    #banner-title, #banner-content {
-        font-family: Verdana, Geneva, sans-serif;
-    }
-    #media-title, #exec-title-2, #board-title {
-		font-family: Arial, sans-serif;
-		color: #1A1A1A;
-    }
+	
+	/*================ IBX BANNER =====================*/
     
     #ibx-banner {
+        font-family: "Montserrat";
         box-sizing: border-box;
-        min-height : 50vh;
         display: flex;
+		background-color: #152B59;
+    }
+	#banner-title{
+		font-size: 27px;
+		color: white;
+		font-weight: bold;	
+	}	
+    #banner-content{
+        order: 1;
+        width: 55%;
+        background-color : #152B59;
+        padding: 9% 17% 8% 6%;
+    }
+	#banner-inner {
+		margin-top: 30px;
+		font-size: 12px;
+		line-height: 1.7em;
+		color: white;
+		font-weight: 450;
+		text-align: justify;
     }
     #banner-img{
         order: 0;
@@ -31,78 +48,87 @@
         background-position: center;
         background-image: url('./assets/images/about-banner.jpg');
     }
-    #banner-title {
-        color:white;
-        font-weight: bold;
-    }
-    #banner-content{
-        order: 1;
-        width: 55%;
-        background-color : #112B56;
-        color: white;
-        font-weight: 500;
-        text-align: justify;
-        line-height: 150%;
-        padding: 8em 18% 8em 6%;
-    }
     
+	/*================ IBX MEDIA =====================*/
+	
     #ibx-media {
+		font-family: "Montserrat";
         text-align: center;
     }
+    #media-inner {
+		padding: 8% 0 2.5% 0;
+    }   
     #media-title {
-        font-weight: 800;
-		margin: 0;
-        padding-top: 8%;
-    }   
-    #media-cov {
-        padding: 5% 15%;
-    }   
+		font-size: 27px;
+		color: rgb(26,26,26);
+		font-weight: 800;
+		text-align: center;
+    }
+	#media-cov {
+		width: 65%;
+		margin: auto;
+		padding-top: 6em;
+	}
     .media-logo{
         display:inline-block;
         margin: 0 auto;
-        height: 80px;
-        width: 150px;
+		margin-bottom: 3em;
+        height: auto;
+        width: 15%;
     }
     
+	/*================ EXEC TEAM =====================*/
+
+	
     #ibx-team {
-        color: #1A1A1A;
-        background-color : #F6F6F8;
+		font-family: "Montserrat";
+		background-color : #F5F5F7;
     }
     
     .exec-header {
         margin: 0;
     }
     .exec-half {
-        width: 50%;
-        margin-left: 50%;
+        width: 48%;
+        margin-left: 52%;
     }
     #ibx-exec {
         min-height: 50vh;
-        padding: 8% 15%;
+        padding: 10% 18% 5.9% 18%;
     }   
     #exec-title-1 {
-        font-weight: 600;
+		font-size: 15px;
+		line-height: 10px;
+		font-weight: 600;
+		color: rgb(54,54,54);
     }
     #exec-title-2 {
-        width: 50%;
-        font-weight: 900;
-        padding-bottom: 1%;
+		display: block;
+		width: 200px;
+		font-size: 27px;
+		line-height: 1.4em;
+		letter-spacing: -2px;
+		color: rgb(26,26,26);
+		font-weight: 750;
     }
     #exec-desc {
-        color: #687C91;
-		line-height: 1em;
+        color: rgb(107,124,147);
+		line-height: 1.4em;
         text-align: justify;
+		font-weight: 600;
         display: block;
+		margin-top: 0.5em;
     }
     #exec-list {
         position: relative;
         min-height: 100%;
-        margin-top: 3%;
+        margin-top: 2%;
     }
     #exec-slideshow {
-        padding-left: 25%;
 		background: white;
         border-radius: 10px;
+		width: 80%;
+		margin-left: 20%;
     }
     a.exec-arrows {
         position: absolute;
@@ -118,21 +144,25 @@
         right: 1%;
     }
     .exec-item {
-        width: 67%;
-        margin-left: 33%;
+        width: 60%;
+        margin-left: 40%;
     }
     .exec-name, .exec-rank {
-        font-weight: bold;
+		color: rgb(26,26,26);
+        font-weight: 600;
     }
     .exec-data {
         padding: 1% 0;;
         text-overflow: ellipsis;
     }
     .exec-info {
+		color: rgb(107,124,147);
         padding: 2% 0;
-		font-size: 1rem;
+		font-size: 0.9rem;
+		line-height: 1.5rem;
         display: block;
         text-align: justify;
+		font-weight: 600;
         padding-right: 3%;
     }
 	.exec-icons svg{
@@ -140,9 +170,12 @@
 		color: #4861E2;
 	}
 	.exec-links{
+		font-size: 12px;
+		line-height: 1em;
+		color: rgb(59,85,230);
+		font-family: "Font Awesome", serif;
 		font-style: italic;
 		text-decoration: underline;
-		color: #4861E2;
 	}
     #exec-album{
         height: 200%;
@@ -150,6 +183,7 @@
         position: absolute;
         top: -100%;
         left: 0;
+		z-index: 999;
     }
 	#exec-images {
 		position: relative;
@@ -182,23 +216,39 @@
     
     #ibx-divider {
         border: none;
-        height: 2px;
-        width: 30%;
+        height: 1.5px;
+        width: 25%;
         margin: auto;
         color: #99A6EB;
         background-color: #99A6EB;
     }
     
+	/*================ ADVISORY BOARD =====================*/
+
+	
     #ibx-board{
         text-align: center;
         margin: auto;
         min-height: 40vh;
     }
-    #board-title {
+	span.board-mobile-title {
+		display: none;
+	}
+    .board-title {
+		font-size: 28px;
+		letter-spacing: -2px;
+		line-height: 41px;
+		color: rgb(26,26,26);
+		font-family: "Montserrat";
         font-weight: 800;
+		margin-top: 3%;
+		display: block;
     }
-	#board-title i {
-		font-family: "Playfair Display", sans-serif;
+	.board-italic {
+		font-family: "Playfair Display";
+		font-size: 32px;
+		font-style: italic;
+		font-weight: 900;
 	}
     #board-list {
         min-height: 50vh;
@@ -208,22 +258,28 @@
 		position: relative;
 	}
     .board-members{
-        width: 180px;
+        width: 21%;
         margin: 0 1% 2% 0;
         vertical-align: top;
         display: inline-block;
+		font-size: 12px;
+		color: rgb(26,26,26);
     }
+	.board-members span{
+		display: block;
+	}
     .board-img {
         margin: 0 auto;
-        height:230px;
-        width: 180px;
+        height:100%;
+        width: 100%;
         padding-bottom: 10%;
     }
     .board-name {
-        font-weight: bold;
+        font-weight: 800;
     }
-
-	#board-arrow-box {
+	.board-rank {
+		letter-spacing: 0;
+		line-height: 1.1em;
 	}
 	a.board-arrows{
 		position: absolute;
@@ -237,12 +293,90 @@
 	#board-prev {
 		left: 0;
 	}
-    
 	@media only screen and (max-width: 992px) {
 		#exec-title-2 {
 			width: 100%;
 		}
 	}
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="uk-width-"] {
+            width: 100%;
+        }
+        #banner-title {
+            text-align: center;
+        }
+        #banner-content{
+            order: 0;
+            width: 100%;
+            padding:2% 5%;
+        }
+        #banner-img{
+            order: 1;
+            width: 100%;
+            min-height: 20em;
+        }
+		#media-cov {
+			padding-top: 3em;
+			margin: auto;
+		}
+		.media-logo {
+			display: block;
+			width: 130px;
+		}
+        .media-logo:nth-last-child(-n+6) {
+            display: none;
+        }
+		#ibx-exec {
+			box-sizing: border-box;
+			padding: 10% 15% 5.9% 15%;
+		}
+        #ibx-divider {
+            display: none;
+        }
+		.exec-item {
+            width: 100%;
+            margin-left:0;
+        }
+		a.exec-arrows {
+			position: relative;
+		}
+		#arrow-box {
+			width: 100%;
+			text-align: center;
+		}
+		#exec-slideshow {
+			width: 100%;
+			margin: 0;
+			padding-left: 2%;
+        }
+		#exec-album {
+			position: relative;
+			width: 100%;
+			z-index: 0;
+		}
+		.exec-img {
+			position: relative;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		.exec-half {
+            width: 100%;
+            margin-left: 0;
+        }
+		span.board-web-title {
+			display: none;
+		}
+		span.board-mobile-title {
+			display: block;
+			margin-bottom: 1em;
+		}
+		.board-members {
+			margin: 0;
+		}
+    }
 	@media only screen and (max-device-width : 430px) {
 		#ibx-exec {
 			box-sizing: border-box;
@@ -279,66 +413,8 @@
 		.board-img {
 			margin: 0;
 			width: 100%;
-			height: 70vh;
 		}
 	}
-    @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
-        [class*="uk-width-"] {
-            width: 100%;
-        }
-        #banner-title {
-            text-align: center;
-        }
-        #banner-content{
-            order: 0;
-            width: 100%;
-            padding:2% 5%;
-        }
-        #banner-img{
-            order: 1;
-            width: 100%;
-            min-height: 20em;
-        }
-        .media-logo:nth-last-child(-n+6) {
-            display: none;
-        }        
-        #ibx-divider {
-            display: none;
-        }
-		.exec-item {
-            width: 100%;
-            margin-left:0;
-        }
-		a.exec-arrows {
-			position: relative;
-		}
-		#arrow-box {
-			width: 100%;
-			text-align: center;
-		}
-		#exec-slideshow {
-			padding-left: 2%;
-        }
-		#exec-album {
-			position: relative;
-			width: 100%;
-		}
-		.exec-img {
-			position: relative;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-		}
-		.exec-half {
-            width: 100%;
-            margin-left: 0;
-        }
-		.board-members {
-			margin: 0;
-		}
-    }
 	
 	.exec-animate-1-2 {
     	animation: exec-image-1-2 0.3s forwards;
@@ -467,52 +543,56 @@
 <?php function display_content(){ ?>
 <div id="ibx-banner" class="uk-grid">
     <div id="banner-content" class="uk-width-3-5">
-		<div class="uk-scrollspy-inview uk-animation-slide-right-medium">
-        	<h2 id="banner-title">Transparency</h2>
-			<p>
-				Ibinex is a collaboration of pioneers. With decades of combined experience within the finance, 
-				technology, cyber security and SaaS worlds, today we are proud to work with over 60 of the leading
-				exchanges for hundreds of cryptocurrencies.
-			</p>
-			<p>
-				We channel our extensive industry knowledge and vision into the live and developing cryptocurrency 
-				arena, to provide you with premium solutions for you to create tailored exchange platforms with our 
-				seasoned experience as your competitive edge.
-			</p>
-			<p>
-				We are trusted by thousands of customers world-wide daily as their white-label exchange platform, and 
-				pride ourselves on exhibiting the very highest standards of transparency and professionalism.
-			</p>
-			<p>
-				Ibinex is defined by our dedication to unifying trading standards in the cryptocurrency world, increasing 
-				accountability, integrity and excellence in service.
-			</p>
+		<div class="uk-scrollspy-inview">
+        	<span id="banner-title">Transparency</span>
+			<div id="banner-inner">
+				<p>
+					Ibinex is a collaboration of pioneers. With decades of combined experience within the finance, 
+					technology, cyber security and SaaS worlds, today we are proud to work with over 60 of the leading
+					exchanges for hundreds of cryptocurrencies.
+				</p>
+				<p>
+					We channel our extensive industry knowledge and vision into the live and developing cryptocurrency 
+					arena, to provide you with premium solutions for you to create tailored exchange platforms with our 
+					seasoned experience as your competitive edge.
+				</p>
+				<p>
+					We are trusted by thousands of customers world-wide daily as their white-label exchange platform, and 
+					pride ourselves on exhibiting the very highest standards of transparency and professionalism.
+				</p>
+				<p>
+					Ibinex is defined by our dedication to unifying trading standards in the cryptocurrency world, increasing 
+					accountability, integrity and excellence in service.
+				</p>
+			</div>
 		</div>
     </div>
     <div id="banner-img" class="uk-width-2-5"></div>
 </div>
 <div id="ibx-media">
-    <h2 id="media-title">Ibinex media coverage</h2>
-    <div id="media-cov">
-        <img src="./assets/images/media1.png" class="media-logo" />
-        <img src="./assets/images/media2.png" class="media-logo" />
-        <img src="./assets/images/media3.png" class="media-logo" />
-        <img src="./assets/images/media4.png" class="media-logo" />
-        <img src="./assets/images/media5.png" class="media-logo" />
-        <img src="./assets/images/media6.png" class="media-logo" />
-        <img src="./assets/images/media7.png" class="media-logo" />
-        <img src="./assets/images/media8.png" class="media-logo" />
-        <img src="./assets/images/media9.png" class="media-logo" />
-        <img src="./assets/images/media10.png" class="media-logo" />
-        <img src="./assets/images/media11.png" class="media-logo" />
-        <img src="./assets/images/media12.png" class="media-logo" />
-    </div>
+	<div id="media-inner">
+		<span id="media-title" class="reveal-up">Ibinex media coverage</span>
+		<div id="media-cov">
+			<img src="./assets/images/media1.png" class="media-logo reveal-up" />
+			<img src="./assets/images/media2.png" class="media-logo reveal-up" />
+			<img src="./assets/images/media3.png" class="media-logo reveal-up" />
+			<img src="./assets/images/media4.png" class="media-logo reveal-up" />
+			<img src="./assets/images/media5.png" class="media-logo reveal-up" />
+			<img src="./assets/images/media6.png" class="media-logo reveal-up" />
+			<img src="./assets/images/media7.png" class="media-logo reveal-up" />
+			<img src="./assets/images/media8.png" class="media-logo reveal-up" />
+			<img src="./assets/images/media9.png" class="media-logo reveal-up" />
+			<img src="./assets/images/media10.png" class="media-logo reveal-up" />
+			<img src="./assets/images/media11.png" class="media-logo reveal-up" />
+			<img src="./assets/images/media12.png" class="media-logo reveal-up" />
+		</div>
+	</div>
 </div>
 <div id="ibx-team">
     <div id="ibx-exec">
-        <div id="exec-team" class="exec-half">
-            <h4 id="exec-title-1" class="exec-header">Executive team</h4>
-            <h2 id="exec-title-2" class="exec-header">The people behind iBinex.</h2>
+        <div id="exec-team" class="exec-half reveal-right">
+            <span id="exec-title-1" class="exec-header">Executive team</span>
+            <span id="exec-title-2" class="exec-header">The people behind iBinex.</span>
             <span id="exec-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -520,14 +600,14 @@
             </span>
         </div>
 		<div id="exec-list">
-			<div id="exec-album">
+			<div id="exec-album" class="reveal-left">
 				<div id="exec-images">
 					<img class="exec-img exec-cards" src="./assets/images/exec1.png"/>
 					<img class="exec-img exec-cards" src="./assets/images/exec2.png"/>
 					<img class="exec-img exec-cards" src="./assets/images/exec3.png"/>
 				</div>
 			</div>
-            <div id="exec-slideshow">
+            <div id="exec-slideshow" class="reveal-right">
 				<div class="exec-div-slick slick-track">
 					<div>
 						<div class="exec-data exec-item">
@@ -590,47 +670,48 @@
     </div>
     <div id="ibx-board">
         <hr id="ibx-divider"/>
-        <h2 id="board-title">Advisory <i>Board</i></h2>
+		<span class="board-title board-web-title reveal-up">Advisory <span class="board-italic">Board</span></span>
+        <span class="board-title board-mobile-title reveal-up">Ibinex Advisory Board</span>
 		<div id="board-box">
 			<div id="board-list">
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board1.png" class="board-img" />
-					<h5 class="board-name exec-header">Jeremy Corbein</h5>
+					<span class="board-name exec-header">Jeremy Corbein</span>
 					<span class="board-rank">Chief of Operational Officer, Deiteriy</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board2.png" class="board-img" />
-					<h5 class="board-name exec-header">Jimmy Fallon</h5>
+					<span class="board-name exec-header">Jimmy Fallon</span>
 					<span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board3.png" class="board-img" />
-					<h5 class="board-name exec-header">Stephen Colbert</h5>
+					<span class="board-name exec-header">Stephen Colbert</span>
 					<span class="board-rank">Head of Products and Services Development Department XB Software</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board4.png" class="board-img" />
-					<h5 class="board-name exec-header">Artem Kushik</h5>
+					<span class="board-name exec-header">Artem Kushik</span>
 					<span class="board-rank">Business Analyst, Credit Agricole CIB</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board1.png" class="board-img" />
-					<h5 class="board-name exec-header">Jeremy Corbein</h5>
+					<span class="board-name exec-header">Jeremy Corbein</span>
 					<span class="board-rank">Chief of Operational Officer, Deiteriy</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board2.png" class="board-img" />
-					<h5 class="board-name exec-header">Jimmy Fallon</h5>
+					<span class="board-name exec-header">Jimmy Fallon</span>
 					<span class="board-rank">Head of Economics Department, Stockholm School of Economics in Riga</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board3.png" class="board-img" />
-					<h5 class="board-name exec-header">Stephen Colbert</h5>
+					<span class="board-name exec-header">Stephen Colbert</span>
 					<span class="board-rank">Head of Products and Services Development Department XB Software</span>
 				</div>
-				<div class="board-members">
+				<div class="board-members reveal-up">
 					<img src="./assets/images/board4.png" class="board-img" />
-					<h5 class="board-name exec-header">Artem Kushik</h5>
+					<span class="board-name exec-header">Artem Kushik</span>
 					<span class="board-rank">Business Analyst, Credit Agricole CIB</span>
 				</div>
 			</div>
@@ -717,6 +798,9 @@
 					swipe: false,
 					asNavFor: '.exec-div-slick'
 				});
+
+				$('.board-members').removeClass('reveal-up');
+				$('#board-list').addClass('reveal-up');
 				
 				$('#board-list').slick({
 					slidesToShow: 1,
@@ -729,6 +813,8 @@
 			window_flag = false;
 			try{
 				$('#board-arrow-box').hide();
+				$('#board-list').removeClass('reveal-up');
+				$('.board-members').addClass('reveal-up');
 				$('#exec-images').slick('unslick');
 				$('#board-list').slick('unslick');
 			}catch(err){}
@@ -750,6 +836,15 @@
   	});
 	
 	windowHandler();
+	
+	$(window).on("load", function(){
+		$('#banner-content > div').addClass('uk-animation-slide-right-medium')
+		window.sr = ScrollReveal({opacity: 0, duration: 800, delay:300});
+         sr.reveal('.reveal-up');
+         sr.reveal('.reveal-left',{origin: 'left', distance:'200px'});
+         sr.reveal('.reveal-right',{origin: 'right', distance:'200px'});
+         sr.reveal('.fade',{distance:'0'});
+	})
 }())
 </script>
 <?php } ?>

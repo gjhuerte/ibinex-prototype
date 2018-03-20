@@ -6,6 +6,8 @@
 <style>
   .red {
     color: #FEFEFD;
+    width: 100%;
+    height: 10.1925%;
   }
   .red h3{
     color: #FEFEFD;
@@ -14,16 +16,21 @@
   .red p{
     text-align: center;
   }
+  .grey1 p, li {
+    font-weight: 600;
+  }
   .grey2 {
     padding-bottom: -35%;
   }
   .uk-container h3{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 220%;
+    margin-bottom: 46px;
+    margin-right: 2%;
   }
-  .uk-container p, li{
-    font-size: 15px;
+  .red p{
+    font-size: 11.2px;
   }
   
   .uk-container li {
@@ -65,16 +72,19 @@
   .gradient {
     background: #142C5C;
     background: linear-gradient(to right, #142C5C , #134093);
-    margin-bottom: -4.5%;
+    margin-bottom: -5.7%;
+    width: 100%;
   }
   .gradient .gradient-img img {
-    margin-top: -2%;
+    margin-top: -5.5%;
     margin-bottom: -16%;
-    width: 68%;
+    width: 59%;
+    margin-left: 28.5%;
   }
   .gradient .gradient-content p {
     font-weight: 500;
     color: #fff;
+    max-width: 80%;
   }
   .white2 .creditcardsection .cc-content {
     color: #6B7C93;
@@ -747,23 +757,23 @@
       <h3 class="animated fadeInDown"><i>Services</i></h3>
         <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
             <div class="">
-                <p class="animated fadeInLeft">Ibinex services are all characterised by high-level innovation made practical for your personalised<br> exchange integration.</p>
-                <p class="animated fadeInRight">Our ecosystem of services compromises of the following units.</p>  
+                <p class="animated fadeInLeft" style="margin-top: -0.8%; margin-bottom: 28px;">Ibinex services are all characterised by high-level innovation made practical for your personalised<br> exchange integration.</p>
+                <p class="animated fadeInRight" style="margin-top: 0%;">Our ecosystem of services compromises of the following units.</p>  
             </div>
         </div>
     </div>
 </div>
 
-<div class="uk-section uk-section-muted grey1" style="background-color: #F7F7F7; padding-top: 0;">
+<div class="uk-section uk-section-muted grey1" style="background-color: #F7F7F7; padding-top: 0; height: 538px;">
     <div class="uk-container">
         <div class="uk-margin-remove-top uk-grid-match uk-child-width-1-2@m" uk-grid>
             <div class="imgtop">
-                <img class="laptopimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="position: relative; top: 21%; height: 107%; margin-left: -4%; max-width: 200%; width: 162%;" alt="macbook">
+                <img class="laptopimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/5356c1f9ac7989278c2052fb77b370fb/platform-laptop.png" style="position: relative; top: 13.2%; height: 100%; margin-left: 8.5%; max-width: 200%; width: 143.4%;" alt="macbook">
             </div>
-            <div class="uk-margin platformp-content">
-                <h3 class="uk-margin-xlarge-top animated fadeInRight">Platform</h3>
-                <p class="pratform-content-p">Your exchange is your launchpad. Our suite elevates your exchange by equipping you with your own platform consisting of:</p>
-                <ul class="uk-list uk-list-space" id="pl_list">
+            <div class="uk-margin platformp-content" style="padding-top: 6.5%; padding-left: 2%;">
+                <h3 class="animated fadeInRight">Platform</h3>
+                <p class="pratform-content-p" style="margin-top: -3%; margin-left: 1.1%; max-width: 80%;">Your exchange is your launchpad. Our suite elevates your exchange by equipping you with your own platform consisting of:</p>
+                <ul class="uk-list uk-list-space" id="pl_list" style="margin-top: -2%; margin-left: 1%;">
                   <li class="platform-li"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg>  Tailor-made private, institutional while label infrastructure</li>
                   <li class="platform-li"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Fully-customisable front-end website</li>
                   <li class="platform-li"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Completely integrated web-based trading platform</li>
@@ -782,10 +792,10 @@
 
 <div class="uk-section uk-section-default white1">
     <div class="uk-container uk-margin crmsection">
-        <div class="uk-grid-match uk-child-width-1-2@m uk-margin-xlarge-top" uk-grid>
-            <div class="crm-one">
-                <h3 class="crm-title">CRM/Back Office</h3>
-                <p class="crm-content-p">The Ibinex solution unites the front-end and platform with a full black office suit including CRM with:</p>
+        <div class="uk-grid-match uk-child-width-1-2@m uk-margin-xlarge-top" uk-grid style="margin-bottom: -64.6%;">
+            <div class="crm-one" style="margin-left: 15.8%; margin-top: -4.5%;">
+                <h3 class="crm-title" style="margin-bottom: 2%;">CRM/Back Office</h3>
+                <p class="crm-content-p" style="max-width: 79%; margin-bottom: 2%;">The Ibinex solution unites the front-end and platform with a full black office suit including CRM with:</p>
                 <ul class="uk-margin uk-list uk-list-space" id="pl_list">
                   <li class="uk-margin-small-top crm-li"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> KYC/AML documentation collection</li>
                   <li class="crm-li"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Documentation verification</li>
@@ -795,20 +805,20 @@
                 </ul>
             </div>
             <div class="crm">
-                <p><img class="crmimage" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/58b870772ce4f99e05237aa42f18cdbb/crm-back.png" style="position: relative;" alt="windows"></p>
+                <p><img class="crmimage" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/58b870772ce4f99e05237aa42f18cdbb/crm-back.png" style="position: relative; top: -60%; left: 104%; max-width: 117%; height: 74%; margin-left: -3%;" alt="windows"></p>
             </div>
         </div>
     </div>
 </div>
 
 <div class="uk-section uk-section-primary uk-light gradient" style="">
-    <div class="uk-container">
+    <div class="uk-container" style="margin-bottom: 2%;">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
             <div class="uk-inline gradient-img">
                 <p><img src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/04c8654a3ae5429e6e914cbda971a9f8/cryptobridge.png" class="uk-align-center cblogo" alt="CryptoBridge&trade;"></p>
             </div>
-            <div class="uk-margin gradient-content">
-                <h3 class="uk-margin-large-top uk-margin-remove-bottom">CryptoBridge&trade;</h3>
+            <div class="uk-margin gradient-content" style="padding-top: 1.3%; position: relative; left: -1%;">
+                <h3 class="uk-margin-remove-bottom" style="padding-bottom: 2%;">CryptoBridge&trade;</h3>
                 <p class="uk-margin-xlarge-bottom">Aggregate elite exchanges and indexes as the cryptocurrency market moves, with out patent-pending proprietary software suite, CryptoBridge&trade;. Gain access to 60 premier exchanges for maximum liquidity cryptocurrencies, all available only through CryptoBridge&trade; by Ibinex.</p>
             </div>
         </div>
@@ -818,35 +828,38 @@
 <div class="uk-section uk-section-default white2">
     <div class="uk-container creditcardsection">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid style="margin-top: -4%;">
-            <div class="uk-margin cccontent cc-content">
-                <h3 class="uk-margin-large-top cc-title">Credit Card Processing</h3>
-                <p class="uk-margin-small-top cc-first-p">We offer full spectrum payment processing for cryptocurrencies, and a complete selection that is unavailable elsewhere. Exchanging your way with Ibinex means experiencing a whole new world of payment options including: credit cards, debit cards, wire transfers, alternative payments, hosted wallets and cold wallets.</p>
-                <p class style="margin-top: -30%;">
-                  <img class="visa" src="assets/images/visa.svg" alt="cards" data-tilt>
-                  <img class="imageleft mastercard" src="assets/images/master-card.svg" alt="cards" data-tilt>
-                  <img class="imageleft discover" src="assets/images/credit-card.svg" alt="cards" data-tilt>
-                  <img class="imageleft dinnersclub" src="assets/images/dinners-club.svg" alt="cards" data-tilt>
+            <div class="uk-margin cccontent cc-content" style="position: relative; left: 15.5%; margin-top: -8.7%;">
+                <h3 class="uk-margin-large-top cc-title" style="margin-bottom: 0%;">Credit Card Processing</h3>
+                <p class="uk-margin-small-top cc-first-p" style="max-width: 75%; margin-bottom: 28%;">We offer full spectrum payment processing for cryptocurrencies, and a complete selection that is unavailable elsewhere. Exchanging your way with Ibinex means experiencing a whole new world of payment options including: credit cards, debit cards, wire transfers, alternative payments, hosted wallets and cold wallets.</p>
+                <p class style="margin-top: -30%; position: relative; top: 3%;">
+                  <img class="" src="assets/images/visa.svg" alt="cards" data-tilt style="width: 11.5%; height: 34%;">
+                  <img class="imageleft mastercard" src="assets/images/master-card.svg" alt="cards" data-tilt style="width: 11.5%; height: 34%;">
+                  <img class="imageleft discover" src="assets/images/credit-card.svg" alt="cards" data-tilt style="width: 11.5%; height: 34%;">
+                  <img class="imageleft dinnersclub" src="assets/images/dinners-club.svg" alt="cards" data-tilt style="width: 11.5%; height: 34%;">
                   <br>
-                  <img class="amexpress" src="assets/images/american-express.svg" alt="cards" data-tilt>
-                  <img class="imageleft paypal" src="assets/images/paypal.svg" alt="cards" data-tilt>
-                  <img class="imageleft maestro" src="assets/images/maestro.svg" alt="cards" data-tilt>
+                  <img class="amexpress" src="assets/images/american-express.svg" alt="cards" data-tilt style="width: 11.5%; height: 34%;">
+                  <img class="imageleft paypal" src="assets/images/paypal.svg" alt="cards" data-tilt style="width: 11.5%; height: 34%;">
+                  <img class="imageleft maestro" src="assets/images/maestro.svg" alt="cards" data-tilt style="width: 11.5%; height: 34%;">
                 </p>
             </div>
             <div class="uk-margin phone">
-              <p><img class="phoneimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/23e46f532ad13d99fa6810dbef622156/First-Option-Services_Desktop_(1)-min.png" alt="iphonex" style="margin-bottom: -16%; width: 79%; margin-left: 6%; padding-top: 8%;"></p>
+              <p><img class="phoneimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/23e46f532ad13d99fa6810dbef622156/First-Option-Services_Desktop_(1)-min.png" alt="iphonex" style="margin-bottom: -16%; width: 72.5%; margin-left: 14%; padding-top: 8%; height: 118%;"></p>
             </div>
         </div>
     </div>
 </div>
 
 <div class="uk-section uk-section-muted grey2" style="background-color: #FBFBFB; padding-bottom: 0%; padding-top: 0%;">
-    <div class="uk-container custodiansection">
+    <div class="uk-container custodiansection" style="margin-bottom: -0.4%;">
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
             <div class="custodian">
-                <p><img class="custodianimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/870456d77b7a7525d39fe55b27cdd354/custodian-accounts.jpg" alt="Man"></p>
+                <p><img class="custodianimg" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/870456d77b7a7525d39fe55b27cdd354/custodian-accounts.jpg" style="        height: 99%;
+    width: 82%;
+    position: relative;
+    left: 20%;" alt="Man"></p>
             </div>
-            <div class="uk-margin custodian-two" style="color: #6B7C93;">
-                <h3 class="uk-margin-xlarge-top custodian-title" style="color: #2C3135;">Custodian Accounts</h3>
+            <div class="uk-margin custodian-two" style="color: #6B7C93; padding-left: 3.3%; padding-top: 15%;">
+                <h3 class="custodian-title" style="color: #2C3135; padding-top: 1%; margin-bottom: 1%;">Custodian Accounts</h3>
                 <p class="custodian-p">Another first sees Ibinex leading the way as the world's first cryptocurrency exchange with a finance transaction license. We are proud to be the first to offer you:</p>
                 <p class="custodian-p">Fully-compliant and licensed custodian proceeding and accounts</p>  
                 <p class="custodian-p">The choice to instead select a custodian of your choice</p>

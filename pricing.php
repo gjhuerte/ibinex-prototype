@@ -6,8 +6,14 @@
 <style>
   div.main-pricing {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 1.15fr 1.95fr 2fr 1fr;
+    grid-template-rows: 20vh auto 19vh;
+  }
+  
+  div.main-pricing.heading2 {
+    grid-template-columns: 1.225fr 1.9fr 2fr 1fr;
+    grid-template-rows: 21.5vh auto 22.5vh;
+    align-content: start;
   }
   
   div.main-pricing.heading1 {
@@ -23,7 +29,7 @@
   }
   
   div.main-text .heading {
-    font-family: 'Verdana',sans-serif;
+  font-family: 'Montserrat', sans-serif;
   }
   
   .main-image {
@@ -31,7 +37,7 @@
     grid-row: 1 / -1;
     background-image: url('assets/images/First-option-Pricing.jpg');
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left top;
     background-size: cover;
 /*     filter: drop-shadow(60px 50px 50px rgba(0,0,0,0.5)); */
     height: 100%;
@@ -44,39 +50,75 @@
   .main-text.text1 {
     grid-column: span 1 / -2;
     grid-row: 2 / span 1;
+    padding-right: 20px;
   }
   
   .main-text.text2 {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    padding-right: 50px;
+    padding-right: 70px;
   }
   
   .main-text.text3 {
     grid-column: span 1 / -2;
     grid-row: 2 / span 1;
+    padding-right: 50px;
+  }
+  
+  .main-text.text1 p,
+  .main-text.text1 li,
+  .main-text.text3 p,
+  .main-text.text2 p{
+    text-align: justify;
   }
   
   .main-text .heading {
 /*     font-size: 1.9rem; */
-    font-size: var(--heading-40px);
-    font-weight: 700;
+    margin-top: 0;
+    font-size: 2.2rem;
+    font-weight: 800;
     margin-bottom: 20px;
+/*     padding-left: 10px; */
   }
+  
   
   .main-text p,
   .main-text ul {
 /*     font-size: 0.8rem; */
-    font-size: var(--paragraph-17px);
-    font-weight: 700;
+    font-size: 0.96rem;
+    font-weight: 600;
+    color: darkgrey;
+/*     text-align: justify; */
   }
   
   .main-text p {
     margin: 0 0 15px 0;
+    padding-top: 16px;
+/*     padding-left: 10px; */
+    margin-bottom: 2px;
+    line-height: 1.65;
+  }
+  
+  .main-text.text2 p,
+  .main-text.text3 p {
+    margin-bottom: 0.45rem;
   }
   
   .main-text ul li {
     padding-bottom: 20px;
+    font-size: .96rem;
+    line-height: 1.7;
+  }
+  
+  .main-text .additional-margin {
+    margin-top: 1.25rem;
+  }
+  .fa-ul {
+    margin-left: 2em;
+  }
+  
+  .fa-li {
+    top: 0.3em !important;
   }
   
   @media only screen and (min-width : 768px) and (max-width : 1024px) {
@@ -136,10 +178,10 @@ Pricing
     <h1 class="heading">Pricing</h1>
     <p>Integration of the Ibinex turnkey cryptocurrency platform to exchange your way reguires:</p>
     <ul class="fa-ul">
-      <li><span class="fa-li fa-layers fa-fw"><i class="fas fa-circle" style="color:turquoise"></i><i class="fas fa-check" data-fa-transform="shrink-6 down-1" style="color:black"></i></span>$150,000 "reserve only, no payment" deposited in a local Escrow account of your choice for 180 days.</li>
-      <li><span class="fa-li fa-layers fa-fw"><i class="fas fa-circle" style="color:turquoise"></i><i class="fas fa-check" data-fa-transform="shrink-6 down-1" style="color:black"></i></span>Your first 90 days of Ibinex are gratis while you build your book.</li>
+      <li><span class="fa-li fa-layers fa-fw"><i class="fas fa-circle fa-lg" style="color:turquoise"></i><i class="fas fa-check" data-fa-transform="shrink-6 down-1 left-1" style="color:black"></i></span>$150,000 "reserve only, no payment" deposited in a local Escrow account of your choice for 180 days.</li>
+      <li><span class="fa-li fa-layers fa-fw"><i class="fas fa-circle fa-lg" style="color:turquoise"></i><i class="fas fa-check" data-fa-transform="shrink-6 down-1 left-1" style="color:black"></i></span>Your first 90 days of Ibinex are gratis while you build your book.</li>
     </ul>
-    <h1 class="heading">Our Fees</h1>
+    <h1 class="heading additional-margin">Our Fees</h1>
     <p>0.1% flat-rate fee based on exchange volume with a minimum fee of $20,000 per month.</p>
     <p>Fees begin only at day 91.</p>
   </div>

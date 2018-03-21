@@ -99,8 +99,8 @@
 
   
   #contact-us-form .white-form .form-input, #contact-us-form .white-form .form-textarea{
-    border-radius: 5px;
-    width:100%;
+border-radius: 5px;
+width:100%;
 -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
@@ -118,7 +118,6 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
   .form-textarea{
     height:233px;
     max-height: 300px;
-    
   }
   
 
@@ -203,7 +202,7 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     div#contact-us-form{
       position:relative;
       background-color: white !important;
-      height:90vh;
+      height:120vh;
     }
     
     div#contact-us-form .white-form{
@@ -236,7 +235,7 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     color:whitesmoke;
     width:50%;
     font-weight: 600;
-      height:55px;
+    height:55px;
     }
     
     .text-holder{
@@ -263,10 +262,7 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     
   }
   
-  @media only screen and (max-width: 320px){
-    div#contact-us-form{
-      height:130vh;
-    }
+    
   }
   
   

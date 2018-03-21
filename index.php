@@ -51,7 +51,7 @@
     grid-column: 2 / span 2;
     grid-row: 2 / span 1;
     z-index: 2;
-    padding: 10% 0 10% 15%;
+    padding: 10% 0 11% 15%;
   }
   .header-container.header-text p, 
   .header-container.header-text h1, 
@@ -78,6 +78,7 @@
     font-size: 5.75rem;
     font-style: italic;
     padding-left: .4%;
+    transform: translateY(-5%);
   }
 
   .header-container.header-text > h1 > span {
@@ -94,7 +95,7 @@
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: 1fr auto;
-    padding: 0% 0% 7% 8%;
+    padding: 0% 0% 6% 7%;
     margin-bottom: 3.5%;
   }
   
@@ -139,12 +140,16 @@
      hyphens: manual;
   }
   
+  .para1 {
+    transform: translatey(2%);
+  }
+  
   #nusku-video {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr;
     padding-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 13%;
   }
   
   #nusku-video-title {
@@ -237,7 +242,7 @@
     text-align: center;
     padding-top: 4%;
     color: #a7a7a7;
-    margin-bottom: 0%;
+    margin-bottom: .5%;
     padding-left: 2%;
     padding-right: 1%;
   }
@@ -247,7 +252,7 @@
     text-align: center;
     padding-bottom: 3%;
     font-weight: 800;
-    font-size: 33px;
+    font-size: 28px;
   }
   
   #legal-btn {
@@ -277,17 +282,15 @@
   }
   
   #nusku-media-title {
-    color: #1A1A1A;
-    font-weight: bold;
+    font-size: 24px;
+    color: rgb(26,26,26);
+    font-weight: 800;
     text-align: center;
-    padding: 5% 10%;
-    padding-bottom: 0;
-    font-size: var(--heading-30px);
-    font-weight: 700;
+    padding: 2.5em 0em 0em 0em;
   }
   
   #nusku-media-cov {
-    padding: 5% 5%;
+    padding: 3em 0em 9em 0em;
     text-align: center;
   }
   
@@ -390,14 +393,17 @@
   
   .brochure span:nth-child(2) {
     font-weight: 700;
-    padding-top: 10%;
-    font-size: 18px;
+    padding-top: 3%;
+    font-size: 13px;
     transform: translatex(10px);
   }
   
   .brochure span:nth-child(3) {
-    font-size: 0.9rem;
-    transform: translatex(10px);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #878787;
+    transform: translate(10px, -5px);
+    padding-bottom: 4%;
   }
   
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
@@ -476,14 +482,15 @@
   .header-container.header-text p {
     font-size: 1rem;
     font-weight: 500;
-    padding-left: 2%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 6.8%;
     text-align: justify;
+    hyphens: manual;
   }
   
    #intro-img { 
-    margin-top: 20px;
-    background-size: contain;
+    margin-top: -6%;
+    margin-bottom: -2%;
   }
   
   .coolors {
@@ -499,10 +506,6 @@
     text-align: justify;
     transform: translateY(0%);
     hyphens: manual;
-  }
-  
-  .para1 {
-    font-weight: 500;
   }
   
   #nusku-video-p {
@@ -707,8 +710,8 @@
     <div class="header-container header-text reveal-right">
       <h2>Introducing</h2>
       <h1>CryptoBridge<span>TM</span></h1>
-      <p class="para">Our patent-pending proprietary software. CryptoBridge, is the nexus that aggregates premier cryptocurrency exchanges and in&shy;dexes for your customers, in real&shy;-time</p>
-      <p class="para">The CryptoBridge algorithm benefits your customers by showing them a unique combination of the best and most select cryptocurrency exchanges and most attractive live prices-only available via the ibinex trading platform.</p>
+      <p class="para para1">Our patent-pending proprietary software. CryptoBridge, is the nexus that aggregates premier cryptocurrency exchanges and in&shy;dexes for your customers, in real&shy;-time</p>
+      <p class="para">The CryptoBridge algorithm benefits your customers by showing them a unique combination of the best and most select crypto&shy;currency exchanges and most at&shy;tractive live prices &#8211;&#8211; only available via the ibinex trading platform.</p>
     </div>
     
     <div class="header-input reveal-right">
@@ -724,7 +727,7 @@
       <div id="nusku-intro" class="uk-grid uk-grid1 reveal-up">
             <div id="intro-content" class="uk-width-1-2 intro-padding">
                 <h2 id="intro-title">Ibinex - The Gateway to your Own Customized Cryptocurrency Ecosystem</h2>
-                <p class="para para1">With an in-depth understanding of evolving blockchain technology and cryptocurrency development. Ibinex invite you to engage with a fully-customizeable, private, institutional white label platform. Trail-blazing turnkey solutions to merge with your own web-based platform. Ibinex will show you definitively how to build a cryptocurrency exchange, your way.</p>
+                <p class="para para2">With an in-depth understanding of evolving blockchain technology and cryptocurrency development. Ibinex invite you to engage with a fully-customizeable, private, institutional white label platform. Trail-blazing turnkey solutions to merge with your own web-based platform. Ibinex will show you definitively how to build a cryptocurrency exchange, your way.</p>
             </div>
             <div id="intro-img" class="uk-width-1-2 intro-padding uk-padding-remove-left">
                 
@@ -830,7 +833,7 @@
             <div class="uk-width-1-3 uk-padding-remove fade">
                 <div class="uk-padding-remove brochure">
                     <img src="assets/images/brochure1.png" class="">
-                    <span style="color:midnightblue">Business Model</span>
+                    <span style="color:#2f3f5d">Business Model</span>
                     <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
@@ -838,7 +841,7 @@
             <div class="uk-width-1-3 uk-padding-remove fade">
                 <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure2.png" class="">
-                    <span style="color:sienna">One Page Brochure</span>
+                    <span style="color:#a97862">One Page Brochure</span>
                     <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
@@ -846,7 +849,7 @@
             <div class="uk-width-1-3 uk-padding-remove fade">
                 <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure3.png" class="">
-                    <span style="color:brown">Custodian Guidlines</span>
+                    <span style="color:#a55e5a">Custodian Guidelines</span>
                     <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
@@ -854,7 +857,7 @@
             <div class="uk-width-1-3 uk-padding-remove fade">
                 <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure4.png" class="">
-                    <span style="color:darkolivegreen">Pricing Model</span>
+                    <span style="color:#718159">Pricing Model</span>
                     <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
@@ -862,7 +865,7 @@
             <div class="uk-width-1-3 uk-padding-remove fade">
                 <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure5.png" class="">
-                    <span style="color:darkslateblue">Terms &amp; Conditions</span>
+                    <span style="color:#8255a7">Terms &amp; Conditions</span>
                     <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
@@ -870,7 +873,7 @@
             <div class="uk-width-1-3 uk-padding-remove fade">
                 <div class="brochure uk-padding-remove">
                     <img src="assets/images/brochure6.png" class="">
-                    <span style="color:darkslategray">KYC &amp; AML Requirements</span>
+                    <span style="color:#4c5e84">KYC &amp; AML Requirements</span>
                     <span>PDF - 1.3 MB</span>
                     <button id="legal-btn">DOWNLOAD</button>
                 </div>
@@ -939,7 +942,7 @@
 
 
     <div id="nusku-media" class="uk-background-muted ">
-        <h2 id="nusku-media-title" class="reveal-up">Ibinex Media Coverage</h2>      
+        <h2 id="nusku-media-title" class="reveal-up"><span>Ibinex media coverage</span></h2>      
         <div id="nusku-media-cov">
             <img src="assets/images/media1.png" class="nusku-media-logo reveal-up">
             <img src="assets/images/media2.png" class="nusku-media-logo reveal-up">

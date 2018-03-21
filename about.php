@@ -30,7 +30,7 @@
         order: 1;
         width: 55%;
         background-color : #152B59;
-        padding: 9% 17% 8% 6%;
+        padding: 10.2em 17% 9em 6%;
     }
 	#banner-inner {
 		margin-top: 30px;
@@ -93,7 +93,6 @@
         margin-left: 52%;
     }
     #ibx-exec {
-        min-height: 50vh;
         padding: 10% 18% 5.9% 18%;
     }   
     #exec-title-1 {
@@ -109,7 +108,7 @@
 		line-height: 1.4em;
 		letter-spacing: -2px;
 		color: rgb(26,26,26);
-		font-weight: 750;
+		font-weight: 800;
     }
     #exec-desc {
         color: rgb(107,124,147);
@@ -229,7 +228,6 @@
     #ibx-board{
         text-align: center;
         margin: auto;
-        min-height: 40vh;
     }
 	span.board-mobile-title {
 		display: none;
@@ -241,7 +239,7 @@
 		color: rgb(26,26,26);
 		font-family: "Montserrat";
         font-weight: 800;
-		margin-top: 3%;
+		margin: 2% 0 1% 0;
 		display: block;
     }
 	.board-italic {
@@ -251,8 +249,7 @@
 		font-weight: 900;
 	}
     #board-list {
-        min-height: 50vh;
-        padding: 2% 15% 5% 15%;;
+        padding: 1.5% 15% 8% 15%;;
     }
 	#board-box {
 		position: relative;

@@ -11,7 +11,7 @@
 	<link rel="shortcut icon" href="assets/images/icons/favicon.ico"/>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700,700i,800,800i" rel="stylesheet">
     
-	<title><?php display_title(); ?></title>
+	<title>Ibinex | <?php display_title(); ?></title>
 	<!-- import UIKIT cdn css-->
 <!-- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css" /> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />

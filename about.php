@@ -841,7 +841,7 @@
 			removeAnimateClass();
 		}else{
 			$('#exec-images').replaceWith(exec_clone.clone());
-			exec_cards	= $('.exec-cards')
+			exec_cards	= $('.exec-cards');
 		}
 	}
 	
@@ -909,9 +909,6 @@
 		}
 	}
 	
-	$('#exec-next').click(nextAnimate);
-	$('#exec-prev').click(prevAnimate);
-	
 	$('.exec-div-slick').slick({
 		prevArrow: $('#exec-prev'),
 		nextArrow: $('#exec-next'),
@@ -919,12 +916,15 @@
 		swipe: false
 	});
 	
-	$(window).resize(function(){
-		windowHandler();
-  	});
+	$('.exec-div-slick').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		if(nextSlide - currentSlide == 1 || nextSlide - currentSlide < -1){
+			nextAnimate();
+		}else if(nextSlide - currentSlide == -1 || nextSlide - currentSlide > 1){
+			prevAnimate();
+		}
+	});
 	
-	windowHandler();
-	
+	$(window).resize(windowHandler);
 	$(window).on("load", function(){
 		window.sr = ScrollReveal({opacity: 0, duration: 800, delay:300});
 		
@@ -939,7 +939,9 @@
 			sr.reveal('.reveal-right',{origin: 'right', distance:'200px'});
 		}
 		
-	})
+	});
+	
+	windowHandler();
 }())
 </script>
 <?php } ?>

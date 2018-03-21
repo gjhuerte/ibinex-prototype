@@ -177,6 +177,9 @@
 		font-style: italic;
 		text-decoration: underline;
 	}
+	.exec-cv {
+		margin-left: 3%;
+	}
     #exec-album{
         height: 200%;
         width: 50%;
@@ -625,7 +628,7 @@
 <?php } ?>
 
 <?php function display_title(){ ?>
-  Ibinex | About Us
+  About Us
 <?php } ?>
 
 <?php function display_content(){ ?>
@@ -708,10 +711,14 @@
 								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
 								cupidatat non proident, sunt in
 							</span>
-							<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
-							<a class="exec-links" href="">Linkedin Profile</a>
-							<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
-							<a class="exec-links" href="">Download CV</a>
+							<span class="exec-in">
+								<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
+								<a class="exec-links" href="">Linkedin Profile</a>
+							</span>
+							<span class="exec-cv">
+								<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
+								<a class="exec-links" href="">Download CV</a>
+							</span>
 						</div>
 					</div>
 					<div>
@@ -725,10 +732,14 @@
 								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
 								cupidatat non proident, sunt in
 							</span>
-							<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
-							<a class="exec-links" href="">Linkedin Profile</a>
-							<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
-							<a class="exec-links" href="">Download CV</a>
+							<span class="exec-in">
+								<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
+								<a class="exec-links" href="">Linkedin Profile</a>
+							</span>
+							<span class="exec-cv">
+								<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
+								<a class="exec-links" href="">Download CV</a>
+							</span>
 						</div>
 					</div>
 					<div>
@@ -742,10 +753,14 @@
 								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
 								cupidatat non proident, sunt in
 							</span>
-							<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
-							<a class="exec-links" href="">Linkedin Profile</a>
-							<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
-							<a class="exec-links" href="">Download CV</a>
+							<span class="exec-in">
+								<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
+								<a class="exec-links" href="">Linkedin Profile</a>
+							</span>
+							<span class="exec-cv">
+								<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
+								<a class="exec-links" href="">Download CV</a>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -841,7 +856,7 @@
 			removeAnimateClass();
 		}else{
 			$('#exec-images').replaceWith(exec_clone.clone());
-			exec_cards	= $('.exec-cards')
+			exec_cards	= $('.exec-cards');
 		}
 	}
 	
@@ -909,9 +924,6 @@
 		}
 	}
 	
-	$('#exec-next').click(nextAnimate);
-	$('#exec-prev').click(prevAnimate);
-	
 	$('.exec-div-slick').slick({
 		prevArrow: $('#exec-prev'),
 		nextArrow: $('#exec-next'),
@@ -919,12 +931,15 @@
 		swipe: false
 	});
 	
-	$(window).resize(function(){
-		windowHandler();
-  	});
+	$('.exec-div-slick').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		if(nextSlide - currentSlide == 1 || nextSlide - currentSlide < -1){
+			nextAnimate();
+		}else if(nextSlide - currentSlide == -1 || nextSlide - currentSlide > 1){
+			prevAnimate();
+		}
+	});
 	
-	windowHandler();
-	
+	$(window).resize(windowHandler);
 	$(window).on("load", function(){
 		window.sr = ScrollReveal({opacity: 0, duration: 800, delay:300});
 		
@@ -939,7 +954,9 @@
 			sr.reveal('.reveal-right',{origin: 'right', distance:'200px'});
 		}
 		
-	})
+	});
+	
+	windowHandler();
 }())
 </script>
 <?php } ?>

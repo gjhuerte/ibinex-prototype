@@ -130,6 +130,7 @@
 		margin-left: 20%;
     }
     a.exec-arrows {
+		color: rgb(59,85,230);
         position: absolute;
         font-size: 200%;
         vertical-align: middle;

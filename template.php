@@ -8,7 +8,7 @@
 	<!-- Use for Internet Exploer -->
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		
-	<link rel="shortcut icon" href="assets/images/ibinex_icon.ico"/>
+	<link rel="shortcut icon" href="assets/images/icons/favicon.ico"/>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700,700i,800,800i" rel="stylesheet">
     
 	<title><?php display_title(); ?></title>

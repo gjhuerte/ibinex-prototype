@@ -45,7 +45,7 @@
   
   .text-holder{
     margin-left:16%;
-    max-width: 38%;
+    max-width: 39%;
   }
   
   .right{
@@ -58,7 +58,7 @@
     width:42%;
     background-color: whitesmoke;
     margin-left:12%;
-    margin-top:-23%;
+    margin-top:-20%;
     margin-bottom: 15%;
     padding:5%;
   }
@@ -105,44 +105,43 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
   
   
   #ext{
-    margin-top:-540px;
+    margin-top:-40px;
     background-color: #b71c1c;
     height:20vh;
+    display:none;
   }
   
   .hidden{
     visibility:hidden;
   }
   
-  .mcontact-us-form{
-    display:none;
-  }
-  
+   @media only screen and (max-width: 1106px){
 
-  
-  @media only screen and (max-width: 1024px){
-    .text-holder{
-    margin-left:0%;
-    max-width: 47%;
-    margin-top:27%;
-    }
-  }
-  
-  @media only screen and (max-width: 768px){
-    .text-holder{
-    max-width: 54%;
-    margin-top:27%;
-    }
-    
-    #contact-us-form .white-form{
-    width:65%;
-    background-color: whitesmoke;
-    margin-top:-23%;
-    margin-bottom: 15%;
-    padding:5%;
-    }
-  }
+     .contact-us-background{
+       padding-top:30%;
+     }
+     
+     .text-holder{
+       margin-left:11%;
+     }
+
  
+  }
+  
+  @media only screen and (max-width: 856px){
+
+     
+     
+     .text-holder{
+       margin-left:0%;
+       max-width:55%;
+     }
+     
+    .white-form{
+      width: 55%;
+    }
+ 
+  }
   
   @media only screen and (max-width: 639px){
     .contact-us-background{
@@ -151,33 +150,45 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     background-position: top left;
     }
     
-    .bottom-section{
+    
+    .bottom-text-left{
+      max-width: 100%;
+      float: none;
+    }
+    
+    .text-holder{
+      margin-left:0;
+    }
+    
+    .support-text{
+      padding-right: 0;
+    }
+    
+    .support-header{
+      padding-bottom:3%;
+    }
+    
+    div.bottom-section-container{
+      padding:0 3% 0 3%;
+    }
+    
+    div#ext{
       display:none;
     }
     
-    .mcontact-us-form{
-      display:block;
-      padding:18% 2% 15% 2%;
+    div#contact-us-form{
+      position:relative;
+      background-color: whitesmoke;
     }
     
-    .msupport-text{
-      font-weight: 500;
-      color: #728298;
+    div#contact-us-form .white-form{
+      margin-top:0;
+      margin-bottom:0;
+      margin-left:0;
+      width:90%;
     }
-    
-    .mlabel{
-      font-weight: 500;
-    }
-    
-    #mbottom-text-first{
-      margin-top:15%;
-    }
-    #bottom-text-first{
-      margin-top:15%;
-    }
-    
    
-    .mform-input, .mform-textarea{
+    .form-input, .form-textarea{
 -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
@@ -185,7 +196,7 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
       border-radius: 5px;
     }
     
-    .mform-textarea{
+    .form-textarea{
 -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
@@ -193,18 +204,15 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     max-height: 200px;
     }
     
-    .mform-button{
+    .form-button{
     border-radius: 5px;
     background-color: #142c5a;
     color:whitesmoke;
-    width:60%;
+    width:50%;
     font-weight: 600;
       height:55px;
     }
-    .mwhite-form{
-      margin-top: 20%;
-      padding:2%;
-    }
+    
     .text-holder{
     max-width: 100%;
     margin-top:40%;
@@ -221,6 +229,10 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     .intro-text-bottom{
     font-weight: 500;
   }
+    
+    .label{
+      font-weight:500;
+    }
     
   }
   
@@ -282,7 +294,7 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 
 <div class="uk-grid-collapse uk-child-width-expand@s bottom-section" uk-grid uk-grid>
     <div>
-        <div class="uk-background-default uk-padding">
+        <div class="uk-background-default uk-padding bottom-section-container">
             <div class="bottom-text-left">
                 <h1 class="uk-text-bold uk-text-justify header-text support-header">Support</h1>
                 <p class="uk-text-bold uk-text-justify intro-text-bottom support-text">
@@ -304,6 +316,8 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
         </div>
     </div>
     <div id="contact-us-form">
+            <div id="ext">
+             </div>
             <div class="white-form">
                 <form>
                     <div class="uk-margin">
@@ -331,60 +345,12 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
               </form>
              
         </div>
-        <div id="ext">
-          
-        </div>
+        
       
     </div>
 </div>
 
-<div class="mcontact-us-form">
-          <div class="mbottom-text-left">
-                <h1 class="uk-text-bold uk-text-justify mheader-text msupport-header">Support</h1>
-                <p id="mbottom-text-first" class="uk-text-bold uk-text-justify mintro-text-bottom msupport-text">
-                Contact and feedback are integral to the Ibinex way,
-                enabling us to cater to your needs and requirements
-                effectively and efficiently.
-                </p>
-                <p class="uk-text-bold uk-text-justify mintro-text-bottom msupport-text">
-                For support regarding any aspect of the Ibinex
-                platform, your use of this website or your own
-                exchange integration, please contact us with your
-                enquiry for personalised customer service.
-                </p>
-                <p class="uk-text-bold uk-text-justify mintro-text-bottom msupport-text">
-                We will endeavour to respond to you as promptly as
-                possible.
-                </p>
-            </div>
-         <div class="mwhite-form">
-                <form>
-                    <div class="uk-margin">
-                        <label for="mname" class="uk-text-left uk-text-bold mlabel" style="max-width: 100%;">Full Name</label>
-                        <input id="mname" class="uk-input uk-form-width-large mform-input mform" spellcheck="false" type="text">
-                    </div>
-                    <div class="uk-margin">
-                        <label for="memail" class="uk-text-left uk-text-bold mlabel">Email Address</label>
-                        <input id="memail" class="uk-input uk-form-width-large mform-input mform" spellcheck="false" type="email">
-                    </div>
-                  
-                    <div class="uk-margin">
-                        <label for="msubject" class="uk-text-left uk-text-bold mlabel">Subject</label>
-                        <input id="msubject" class="uk-input uk-form-width-large  mform-input mform" type="text">
-                    </div>
-                    
-                    <div class="uk-margin">
-                      <label for="mmessage" class="uk-text-left uk-text-bold mlabel">Message</label>
-                      <textarea id="mmessage" class="uk-input uk-form-width-large mform-textarea mform" rows="6" cols="50"></textarea>
-                    </div>
-                    <div class="uk-margin">
-                      <button class="uk-button uk-button-primary uk-button-medium mform-button mform">SEND</button>
-                    </div>
-                  
-              </form>
-             
-        </div>
-</div>
+
 
 
 

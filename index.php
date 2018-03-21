@@ -144,6 +144,11 @@
     transform: translatey(2%);
   }
   
+  .para2 {
+    font-weight: 500;
+    color: #8896a8;
+  }
+  
   #nusku-video {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -283,7 +288,7 @@
   
   #nusku-media-title {
     font-size: 24px;
-    color: rgb(26,26,26);
+    color: #1f1f1f;
     font-weight: 800;
     text-align: center;
     padding: 2.5em 0em 0em 0em;
@@ -482,19 +487,21 @@
   .header-container.header-text p {
     font-size: 1rem;
     font-weight: 500;
-    padding-left: 3%;
-    padding-right: 6.8%;
+    padding-left: 2%;
+    padding-right: 5.8%;
     text-align: justify;
     hyphens: manual;
   }
   
    #intro-img { 
-    margin-top: -6%;
-    margin-bottom: -2%;
+    margin-top: -5%;
+    margin-bottom: -5%;
+    background-size: 100%;
   }
   
   .coolors {
     font-size: 150%;
+    padding-top: 5%;
   }
   
   .para {
@@ -506,6 +513,13 @@
     text-align: justify;
     transform: translateY(0%);
     hyphens: manual;
+  }
+  
+  .para3 {
+    padding-left: 0%;
+    padding-right: 0%;
+    color: #697D93;
+    font-weight: 500;
   }
   
   #nusku-video-p {
@@ -546,7 +560,7 @@
   #nusku-video-cov {
     text-align: center;
     padding: 70px 0;
-    transform: translateX(0);
+    transform: scale(1.3, 1.2);
     z-index: 99;
   }
   
@@ -562,11 +576,16 @@
   }
   
   #nusku-media-title {
-    color: #1A1A1A;
-    font-weight: bold;
+    color: #333333;
+    font-size: 27px;
+    font-weight: 900;
     text-align: center;
-    padding: 14% 10%;
-    padding-bottom: 0;
+    padding: 14% 10% 0% 10%;
+  }
+  
+  #nusku-media-cov {
+    padding: 1.5em 0em 1.5em 0em;
+    text-align: center;
   }
   
   .media-padding {
@@ -579,19 +598,44 @@
     display: none;
   }
   
+  .brochure {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr auto 1fr 0.5fr;
+    justify-items: center;
+    grid-gap: 5px;
+  }
+  
+  .brochure span:nth-child(2) {
+    font-weight: 700;
+    padding-top: 12%;
+    font-size: 18px;
+    transform: translatex(5px);
+  }
+  
+  .brochure span:nth-child(3) {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #606060;
+    transform: translate(5px, -5px);
+    padding-bottom: 0%;
+  }
+  
+  .brochure img {
+    width: 82%;
+  }
+  
  
   #legal-btn {
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
-/*     font-family: Arial; */
-    color: #1a7182;
-    font-size: 13px;
-    font-weight: bold;
+    color: #242961;
+    font-size: 15px;
+    font-weight: 500;
     background: #12d5b7;
     padding: 15px 20px 15px 20px;
+    transform: translatex(5px);
     text-decoration: none;
-/*     transform: translatex(10px); */
     border: none;
     display: flex;
     margin: 0 auto;
@@ -601,15 +645,15 @@
   
   #legal-p {
 /*     font-size: 13px; */
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     padding-top: 15%;
-    font-size: 140%;
+    font-size: 137%;
   }
   
   #feature-header {
     font-weight: bold;
-    padding: 15% 0% 0% 0%;
+    padding: 13% 0% 0% 0%;
     font-weight: 900;
     font-family: 'Arial';
   }
@@ -623,11 +667,10 @@
   
   
   #legal-h2 {
-/*     font-weight: bold; */
-    font-size: 180%;
+    font-weight: 800;
+    font-size: 173%;
     text-align: center;
-/*     font-family: 'Arial'; */
-    padding: 0% 5% 5% 5%;
+    padding: 0% 10% 5% 10%;
     
   }
   
@@ -639,6 +682,12 @@
     margin-bottom: 15px;
     height: auto;
   }
+  
+  .span-cov,
+  .span-med {
+    text-transform: uppercase;  
+  }
+  
         .padding,
         .padding-video {
             padding-left: 0%;
@@ -684,6 +733,7 @@
           border: 0;
           background-color: transparent;
           z-index: 10;
+          transform: translateY(-60%);
         }
   
         .arrow-right {
@@ -746,7 +796,7 @@
                    <h3 class="coolors uk-margin-remove-top">
                       Tailored Front End content website
                    </h3>
-                  <p class="para">
+                  <p class="para para3">
                     Ibinex provide you with a tailored front-end website with a fully-integrated web-based trading platform and Content Management System (CMS). Offering you flexible front-end user trading, while preserving the personal touch for your brand. The Ibinex solution showcases enhanced practically and performance driven features.
                   </p>
                 </div>
@@ -757,7 +807,7 @@
                    <h3 class="coolors uk-margin-remove-top">
                       Full CRM &amp; Back Office Solution
                    </h3>
-                  <p class="para">
+                  <p class="para para3">
                     The Ibinex ecosystem assimilates a complete Customer Relationship Management (CRM) as a complement to your web based exchange platform. This includes KYC/AML documentation collection and verification, and account &amp; money management. The result is an effortless back office administration workflow and smooth UI/UX for your customers.
                   </p>
                 </div>
@@ -771,7 +821,7 @@
                    <h3 class="coolors uk-margin-remove-top">
                       Aggregated Liquidity Exchange
                    </h3>
-                  <p class="para">
+                  <p class="para para3">
                     Connect with Ibinex and receive coveted access to an unprecedented first-tier array of "Top of the Book" API bridges from over 60 leading exchanges for hundreds of cryptocurrencies. By monitoring the Ibinex stream, you can become a leading exchange market for the most in-demand cryptocurrencies and never miss the opportunity to benefit from liquidity as trends shift.
                   </p>
                 </div>
@@ -782,7 +832,7 @@
                     <h3 class="coolors uk-margin-remove-top">
                       Complete Processing solution
                    </h3>
-                  <p class="para">
+                  <p class="para para3">
                     With our thriving network of exclusive partners, Ibinex is changing the game for cryptocurrency payment processing. We bring you exclusive payment solutions unavailable elsewhere, truly revolutionising the way that crypto is bought and sold and turbocharging the possibilities for your exchange to thrive in maximum liquidity.
                   </p>
                 </div>
@@ -796,7 +846,7 @@
                     <h3 class="coolors uk-margin-remove-top">
                       Compliant Banking Custodian service
                    </h3>
-                  <p class="para">
+                  <p class="para para3">
                     Ibinex is the first ever cryptocurrency exchange platform the world that has a finance transaction license. We can offer fully-compliant and licensed custodian processing and accounts, or you can choose to operate with your own custodian. Ibinex is licensed to facilitate payments via swipe-and-transmit from FIAT to a base currency. This preferred solution is unavailable to the bigger cryptocurrency exchanges, and is only offered by Ibinex.
                   </p>
                 </div>
@@ -807,7 +857,7 @@
                     <h3 class="coolors uk-margin-remove-top">
                       Hosted in a secure private cloud environment
                    </h3>
-                  <p class="para">
+                  <p class="para para3">
                     Security is a 360 degree operation, with the Ibinex platform guarded 24/7 in a private cloud and crypto-based funds held in shielded cold wallets. Cyber security experts maintain and defend the platform, while cold wallets containing funds are impregnable, offline, and safely out of unathorised reach.
                   </p>
                 </div>
@@ -889,7 +939,7 @@
           <button class="arrow-right"><i class="fas fa-angle-right fa-3x"></i></button>
           <div class="carousel-inner">
             <div class="">
-                <div class="brochure">
+                <div class="brochure brochure1">
                     <img src="assets/images/brochure1.png" class="">
                     <span style="color:midnightblue">Business Model</span>
                     <span>PDF - 1.3 MB</span>
@@ -897,7 +947,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="brochure">
+                <div class="brochure brochure1">
                     <img src="assets/images/brochure2.png" class="">
                     <span style="color:sienna">One Page Brochure</span>
                     <span>PDF - 1.3 MB</span>
@@ -905,7 +955,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="brochure">
+                <div class="brochure brochure1">
                     <img src="assets/images/brochure3.png" class="">
                     <span style="color:brown">Custodian Guidlines</span>
                     <span>PDF - 1.3 MB</span>
@@ -913,7 +963,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="brochure">
+                <div class="brochure brochure1">
                     <img src="assets/images/brochure4.png" class="">
                     <span style="color:darkolivegreen">Pricing Model</span>
                     <span>PDF - 1.3 MB</span>
@@ -921,7 +971,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="brochure">
+                <div class="brochure brochure1">
                     <img src="assets/images/brochure5.png" class="">
                     <span style="color:darkslateblue">Terms &amp; Conditions</span>
                     <span>PDF - 1.3 MB</span>
@@ -929,7 +979,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="brochure">
+                <div class="brochure brochure1">
                     <img src="assets/images/brochure6.png" class="">
                     <span style="color:darkslategray">KYC &amp; AML Requirements</span>
                     <span>PDF - 1.3 MB</span>
@@ -942,7 +992,7 @@
 
 
     <div id="nusku-media" class="uk-background-muted ">
-        <h2 id="nusku-media-title" class="reveal-up"><span>Ibinex media coverage</span></h2>      
+        <h2 id="nusku-media-title" class="reveal-up"><span>Ibinex</span> <span class="span-med">m</span>edia <span class="span-cov">c</span>overage</h2>      
         <div id="nusku-media-cov">
             <img src="assets/images/media1.png" class="nusku-media-logo reveal-up">
             <img src="assets/images/media2.png" class="nusku-media-logo reveal-up">

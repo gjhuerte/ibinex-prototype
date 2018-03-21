@@ -625,7 +625,7 @@
 <?php } ?>
 
 <?php function display_title(){ ?>
-  Ibinex | About Us
+  About Us
 <?php } ?>
 
 <?php function display_content(){ ?>

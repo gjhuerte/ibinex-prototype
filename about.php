@@ -359,7 +359,8 @@
         }
 		#exec-album {
 			position: relative;
-			width: 100%;
+			width: 80%;
+			margin: auto;
 			z-index: 0;
 		}
 		.exec-img {
@@ -368,7 +369,6 @@
 			bottom: 0;
 			left: 0;
 			right: 0;
-			height: 30em;
 		}
 		.exec-half {
             width: 100%;
@@ -383,6 +383,9 @@
 		}
 		.board-members {
 			margin: 0;
+		}
+		.board-img {
+			width: 60%;
 		}
 		.board-name{
 			font-size: 20px;
@@ -440,6 +443,10 @@
 		}
 		#exec-list {
 			margin-bottom: 25em;
+		}
+		#exec-album {
+			width: 100%;
+			margin: 0;
 		}
 		#exec-slideshow {
 			position: absolute;
@@ -864,7 +871,7 @@
 	function windowHandler(){
 		var window_flag = false;
 		
-		if ($(window).width()<768) {
+		if ($(window).width()<=768) {
 			if(window_flag) return;
 			window_flag = true;
 			try{

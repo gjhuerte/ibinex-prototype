@@ -379,7 +379,7 @@
     <!--  navigation bar on medium to large devices  -->
     <div class="navigation-navbar-child">
       <div class="navbar-logo-main">
-        <img src="assets/images/ibinex-logo.png" alt="Ibinex Logo" width="70%" height="70%">
+        <a href="<?php echo $_SERVER['REQUEST_URI'] ?>"><img src="assets/images/ibinex-logo.png" alt="Ibinex Logo" width="70%" height="70%"></a>
       </div>
 
       <ul class="navigation-navbar-child-nav">

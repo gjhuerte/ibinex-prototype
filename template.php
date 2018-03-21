@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width", initial-scale="1.0", maximum-scale="1.0">
 	<!-- Use for Internet Exploer -->
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		
 	<link rel="shortcut icon" href="assets/images/ibinex_icon.ico"/>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700,700i,800,800i" rel="stylesheet">
     

@@ -175,6 +175,7 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     
     
     .bottom-text-left{
+      padding-top:70px;
       max-width: 100%;
       float: none;
     }
@@ -201,7 +202,7 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     
     div#contact-us-form{
       position:relative;
-      background-color: whitesmoke !important;
+      background-color: white !important;
       height:90vh;
     }
     
@@ -210,7 +211,7 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
       margin-bottom:0;
       margin-left:0;
       width:90%;
-      
+      background-color: white !important;
     }
    
     .form-input, .form-textarea{
@@ -249,6 +250,7 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     margin-right: 10px;
   }
     .intro-text-top{
+    font-size:12.5pt;
     font-weight: 500;
   }
     .intro-text-bottom{
@@ -261,9 +263,12 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     
   }
   
-  @media only screen and (max-width: 639px){
-    
+  @media only screen and (max-width: 320px){
+    div#contact-us-form{
+      height:130vh;
+    }
   }
+  
   
 </style>
 <?php } ?>

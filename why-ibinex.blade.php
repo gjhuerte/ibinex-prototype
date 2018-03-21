@@ -160,10 +160,59 @@
       font-weight: 500;
       color: #728298;
     }
-  @media only screen and (min-width : 1780px) and (max-width : 1925px){
+  @media only screen and (min-width : 1780px) and (max-width : 1930px){
       .pageImage{
-        transform: translate(0, -35px);
+        transform: translate(0, -46px);
       }
+    .section1st{
+      grid-template-rows: 0.4fr 0.59fr 0.7fr 0.208fr;
+    }
+    .section1st-text1 h2{
+      font-weight: 800;
+      font-size: 40px;
+      word-spacing: 0px;
+      line-height: 46px;
+      letter-spacing: 0.6px;
+      padding-top: 47px;
+    }
+    .subgrid-text {
+      font-size: 17px;
+      font-weight: 500;
+      margin-top: 34px;
+      margin-bottom: 34px;
+      line-height: 28px;
+      word-spacing: -1.3px;
+      letter-spacing: 0px;
+    }
+    .section1st-data h2{
+      font-weight: 800;
+      font-size: 40px;
+      word-spacing: 0px;
+      line-height: 49px;
+      letter-spacing: 0.6px;
+      padding-top: 30px;
+    }
+    .section1st-data p {
+      font-size: 17px;
+      font-weight: 500;
+      margin-top: 4px;
+      line-height: 28px;
+      word-spacing: -1px;
+      hyphens: none;
+    }
+    .title-section2 h2 {
+      font-weight: 800;
+      font-size: 40px;
+      margin-bottom: 7px;
+      margin-top: -5px;
+      word-spacing: 2px;
+    }
+    .title-section2 p {
+      font-weight: 500;
+      font-size: 17px;
+      margin-top: 14px;
+      word-spacing: -2px;
+    }
   }
    @media only screen and (min-width : 1421px) and (max-width : 1779px){
       .section1st{

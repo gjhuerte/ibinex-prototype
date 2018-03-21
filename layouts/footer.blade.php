@@ -236,6 +236,10 @@
   * small devices only
   **/
   @media (max-width: 499px) {
+    .give-us-a-call > * {
+      font-size: 1em;
+      
+    }
     .give-us-a-call-number {
       display: block;
       
@@ -252,11 +256,11 @@
     ul.company-information-list {
       clear: both;
       grid-column: 1 / span 1;
-      font-size: 3vw;
+      font-size: 4vw;
     }
 
     .company-information-list > li:not(.footer-header-color) > a{
-      font-size: 2.5vw;
+      font-size: 3vw;
     }
     
     .company-information-list {
@@ -305,7 +309,7 @@
   @media (min-width: 500px) and (max-width: 991px){
     
     .give-us-a-call > h4 {
-      font-size: 2.75vw;
+      font-size: 4vw;
     }
     
     .give-us-a-call-number {
@@ -323,11 +327,11 @@
     ul.company-information-list {
       clear: both;
       grid-column: 1 / span 1;
-      font-size: 2.9vw;
+      font-size: 4vw;
     }
 
     .company-information-list > li:not(.footer-header-color) > a{
-      font-size: 1.9vw;
+      font-size: 3vw;
     }
     
     .company-information-list {

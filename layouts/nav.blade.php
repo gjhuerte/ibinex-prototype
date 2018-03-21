@@ -147,9 +147,7 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 40px;
-    -webkit-box-shadow: 16px 17px 46px -22px rgba(0,0,0,0.75);
-    -moz-box-shadow: 16px 17px 46px -22px rgba(0,0,0,0.75);
-    box-shadow: 16px 17px 46px -22px rgba(0,0,0,0.75);
+    padding: 0.3% 0 0.3% 0
   }
   
   .navbar-currency-child {
@@ -165,7 +163,7 @@
     font-weight: 600;
     margin-left: 7%;
     font-size: 7px;
-    padding: 0.7% 1% 0.75% 0.5vw;
+    padding: 0.7% 0.75% 0.75% 0.5vw;
   }
   
   .btn-invisible {
@@ -187,7 +185,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     list-style-type: none;
-    padding: 0;
+    padding: 0 0 2% 0;
     margin: 0;
   }
   
@@ -232,6 +230,12 @@
     .media-larger-devices {
       display: none
     }
+    .navbar-currency {
+      padding: 0.4% 0 0.3% 0;
+      -webkit-box-shadow: inset 0px 49px 43px -40px rgba(87,87,87,1);
+      -moz-box-shadow: inset 0px 49px 43px -40px rgba(87,87,87,1);
+      box-shadow: inset 0px 49px 43px -40px rgba(87,87,87,1);
+    }
     
     .navbar-currency-child-nav {
       padding: 0;
@@ -244,12 +248,12 @@
       align-items: center;
       float: right;
       text-align: center;
-      padding: 3% 1% 0.75% 1%;
+      padding: 5% 1% 0.75% 1%;
     }
     
     .navbar-currency-child-nav > li > a {
       font-weight: 600;
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
     
     .navigation-navbar {
@@ -281,7 +285,6 @@
       display: block;
       margin: 0;
       padding: 0;
-/*       padding-bottom: 5%; */
     }
     
     .navigation-navbar-child-nav > li {

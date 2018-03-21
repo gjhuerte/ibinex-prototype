@@ -694,7 +694,7 @@
 <?php } ?>
 
 <?php function display_title(){ ?>
-  Ibinex
+  Home
 <?php } ?>
 
 <?php function display_content(){ ?>

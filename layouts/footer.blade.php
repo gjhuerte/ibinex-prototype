@@ -1,7 +1,7 @@
 <style>
   
-  .footer {
-    transition: left 2s;
+  .footer > * {
+    transition: left 0.5s;
   }
   
   .teal-dark {

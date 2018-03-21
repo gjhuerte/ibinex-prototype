@@ -56,7 +56,7 @@
   .main-text.text2 {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    padding-right: 70px;
+    padding-right: 85px;
   }
   
   .main-text.text3 {
@@ -119,13 +119,69 @@
   }
   
   .fa-li {
-    top: 0.5em !important;
+    top: 0.3em !important;
   }
   
-  @media only screen and (min-width : 768px) and (max-width : 1024px) {
+  @media only screen and (min-width : 1780px) {
+     :root {
+      font-size: 17px;
+    }
+    
+    div.main-pricing {
+      grid-template-columns: 1.15fr 1.95fr 1.95fr 1.05fr;
+      grid-template-rows: 17vh auto 16.5vh;
+    }
+
+    div.main-pricing.heading2 {
+      grid-template-columns: 1.225fr 1.9fr 1.95fr 1.05fr;
+      grid-template-rows: 18vh auto 19vh;
+      align-content: start;
+    }
+    
+     .main-text p,
+    .main-text ul li {
+      line-height: 1.78;
+    }
+    
+    .main-text ul {
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .main-text ul li {
+      padding-bottom: 26px;
+    }
+    
+    .main-text.text1 p,
+    .main-text.text2 p,
+    .main-text.text3 p {
+      margin-bottom: 0.55rem;
+    }
+    
+    .text1 h1:nth-of-type(1) {
+      margin-bottom: 1.95rem;
+    }
+    
+    .text1 h1:nth-of-type(2) {
+      margin-bottom: 1.7rem;
+    }
+    
+    .main-text.text2 h1 {
+      margin-bottom: 2.2rem;
+      
+    }
+    
+    .main-text.text3 h1 {
+      margin-bottom: 2.2rem;
+    }
+    
+    
+  }
+  
+  @media only screen and (min-width : 768px) and (max-width : 1150px) {
       div.main-pricing,
       div.main-pricing.heading2 {
-        grid-template-columns: 1fr 3fr 3fr 1fr;
+        grid-template-columns: 1fr 4fr 4fr 1fr;
         grid-template-rows: 10vh auto 9vh;
     }
     .main-image {
@@ -138,6 +194,9 @@
   }
   
   @media only screen and (max-width : 767px){
+    :root {
+      font-size: 16px;
+    }
     .main-image{
       display: none;
     }
@@ -216,6 +275,9 @@
     .main-text.text3 h1 {
       margin-bottom: 1.5rem;
       margin-top: 1.95rem;
+    }
+     .fa-li {
+      top: 0.5em !important;
     }
       
   }

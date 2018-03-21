@@ -137,7 +137,7 @@
         top: 10%;
     }
     #exec-prev {
-        right: 5%;
+        right: 1.5em;
     }
     #exec-next {
         right: 1%;
@@ -306,12 +306,12 @@
         #banner-content{
             order: 0;
             width: 100%;
-            padding:2% 5%;
+            padding:8% 5%;
         }
         #banner-img{
             order: 1;
             width: 100%;
-            min-height: 20em;
+            min-height: 19em;
         }
 		#media-cov {
 			padding-top: 3em;
@@ -337,10 +337,20 @@
         }
 		a.exec-arrows {
 			position: relative;
+			font-size: 3.7em;
 		}
 		#arrow-box {
 			width: 100%;
 			text-align: center;
+		}
+		#exec-prev, #exec-next {
+			right:0;
+		}
+		#exec-prev{
+			margin-right: 2px;
+		}
+		#exec-next {
+			margin-left: 2px;
 		}
 		#exec-slideshow {
 			width: 100%;
@@ -358,6 +368,7 @@
 			bottom: 0;
 			left: 0;
 			right: 0;
+			height: 30em;
 		}
 		.exec-half {
             width: 100%;
@@ -373,8 +384,46 @@
 		.board-members {
 			margin: 0;
 		}
+		.board-name{
+			font-size: 20px;
+    		font-weight: 600;
+		}
     }
-	@media only screen and (max-device-width : 430px) {
+	@media only screen and (max-width : 460px) {
+		#banner-title{
+			font-size: 38px;
+		}	
+		#banner-content{
+			padding-top: 3.7em;
+		}
+		#banner-inner {
+			font-size: 15.5px;
+			line-height: 1.8em;
+		}
+		#banner-img {
+			-moz-transform: scaleX(-1);
+			-o-transform: scaleX(-1);
+			-webkit-transform: scaleX(-1);
+			transform: scaleX(-1);
+			filter: FlipH;
+			-ms-filter: "FlipH";
+		}
+		
+		#ibx-media {
+			padding-top: 5em;
+			padding-bottom: 3em;
+		}
+		#media-cov {
+			padding-top: 2em;
+		}
+		.media-logo {
+			width: 90%;
+			margin-bottom: 1em;
+		}
+		
+		#ibx-team {
+			padding-top: 1.5em;
+		}
 		#ibx-exec {
 			box-sizing: border-box;
 			padding: 0;
@@ -383,14 +432,35 @@
 			width: 90%;
 			padding: 0 5%;
 		}
+		#exec-title-1{
+			font-size: 20px;
+		}
+		#exec-title-2{
+			padding: 0.5em 0;
+		}
 		#exec-list {
 			margin-bottom: 25em;
 		}
 		#exec-slideshow {
 			position: absolute;
-			top: 90%;
+			top: 75%;
 			width: 90%;
 			margin: 0 5%;
+		}
+		#arrow-box {
+			z-index: -99;
+			margin-top: -1em;
+			padding-bottom: 0.5em;
+			display: inline-block;
+			line-height: 3em;
+			overflow: hidden;
+		}
+		.exec-item {
+			width: 84%;
+    		margin: 5% 8% 4% 8%;
+		}
+		.exec-rank {
+			font-size: 1em;
 		}
 		.exec-img {
 			height: 20em;
@@ -401,8 +471,17 @@
 		.exec-links {
 			font-size: 80%;
 		}
+		span.board-mobile-title {
+			margin: 0;
+			width: 90%; 
+			text-align: left;
+			padding-left: 12px;
+		}
+		#board-box {
+			padding-top: 3em;
+		}
 		#board-list {
-			padding: 0 0 10% 0;
+			padding: 0 0 4.5em 0;
 		}
 		.board-members {
 			margin: 0;
@@ -410,6 +489,10 @@
 		.board-img {
 			margin: 0;
 			width: 100%;
+		}
+		.board-name{
+			font-size: 16px;
+    		font-weight: 600;
 		}
 	}
 	
@@ -534,7 +617,7 @@
 <?php } ?>
 
 <?php function display_title(){ ?>
-  About Us | IBINEX
+  Ibinex | About Us
 <?php } ?>
 
 <?php function display_content(){ ?>
@@ -659,8 +742,8 @@
 					</div>
 				</div>
 				<div id="arrow-box">
-					<a id="exec-prev" class="exec-arrows" href="#" data-uk-slideshow-item="previous">🠔</a>
-					<a id="exec-next" class="exec-arrows" href="#" data-uk-slideshow-item="next">🠖</a>
+					<a id="exec-prev" class="exec-arrows" href="#" data-uk-slideshow-item="previous">&#x2190;</a>
+					<a id="exec-next" class="exec-arrows" href="#" data-uk-slideshow-item="next">&#x2192;</a>
 				</div>
 			</div>
 		</div>

@@ -9,13 +9,14 @@
     background-size: cover;
     background-position: 50% 50%;
     background-color: #edeef2;
-    padding-top:20%;
+    padding-top:17.8%;
   }
   
   .header-text {
     font-size:1.8em;  
     font-size: var(--heading-40px);
     font-weight: 900;
+    letter-spacing: 1.3px;
   }
   
   .support-header{
@@ -28,11 +29,21 @@
   
   .intro-text-top{
     color: #728298;
-    font-size: var( --paragraph-17px);
-    font-weight: 600;
+    font-size: 9.5pt;
+    font-weight: 550;
+    line-height:1.76;
   }
   .intro-text-top li span svg{
     margin-right: 10px;
+  }
+  
+  .intro-text-top li{
+    margin-top: -27px;
+    line-height:2.8;
+  }
+  
+  #last{
+    margin-top:-7px;
   }
   
   .intro-text-bottom{
@@ -44,8 +55,8 @@
   }
   
   .text-holder{
-    margin-left:16%;
-    max-width: 39%;
+    margin-left:12%;
+    max-width: 40.8%;
   }
   
   .right{
@@ -57,22 +68,28 @@
   .white-form{
     width:42%;
     background-color: whitesmoke;
-    margin-left:12%;
-    margin-top:-20%;
+    margin-left:8%;
+    margin-top:-19%;
     margin-bottom: 15%;
-    padding:5%;
+    padding:5.5% 5% 6% 5%;
+    position:absolute;
+    z-index:2;
   }
   
   div#contact-us-form{
     background-color:#b71c1c !important;
+    position:relative;
   }
   
   .bottom-text-left{
-    padding-bottom:50px;
-    max-width:368px;
+    padding-bottom:26.75%;
+    max-width:387px;
     float:right;
-    padding-top:77px;
-    font-weight:500;
+    padding-top:104px;
+    font-weight:550;
+    font-size: 9.5pt;
+    line-height: 1.76;
+    padding-right: 3.6%;
   }
   
 
@@ -83,6 +100,7 @@
   
   #contact-us-form .white-form .form-input, #contact-us-form .white-form .form-textarea{
     border-radius: 5px;
+    width:100%;
 -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
@@ -93,11 +111,13 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     background-color: #142c5a;
     color:whitesmoke;
     font-weight: 900;
+    width:47%;
+    margin-top:3%;
   }
   
   .form-textarea{
-    height:150px;
-    max-height: 200px;
+    height:233px;
+    max-height: 300px;
     
   }
   
@@ -105,10 +125,13 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
   
   
   #ext{
-    margin-top:-40px;
     background-color: #b71c1c;
-    height:20vh;
-    display:none;
+    height:15%;
+    width:100%;
+    top:0;
+    margin-top: -38px;
+    position:absolute;
+    z-index:1;
   }
   
   .hidden{
@@ -178,7 +201,8 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     
     div#contact-us-form{
       position:relative;
-      background-color: whitesmoke;
+      background-color: whitesmoke !important;
+      height:90vh;
     }
     
     div#contact-us-form .white-form{
@@ -186,6 +210,7 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
       margin-bottom:0;
       margin-left:0;
       width:90%;
+      
     }
    
     .form-input, .form-textarea{
@@ -236,6 +261,10 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
     
   }
   
+  @media only screen and (max-width: 639px){
+    
+  }
+  
 </style>
 <?php } ?>
 
@@ -260,7 +289,7 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
                     learn about in more detail on the Pricing page, but essentially consists of 3 steps:
                   </p>
 
-                  <ul class="uk-list uk-text-bold uk-text-justify intro-text-top">
+                  <ul class="uk-list uk-text-bold uk-text-justify intro-text-top ">
                     <li><span>
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="20" height="20"
@@ -281,7 +310,7 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
                       </span> Proof of Escrow deposit</li>
                   </ul>
 
-                  <p class="uk-list uk-text-bold uk-text-justify intro-text-top">
+                  <p id="last" class="uk-list uk-text-bold uk-text-justify intro-text-top">
                     Please note that due to high demand, the current on-boarding timeframe is 4 months.
                   </p>
                 </div>
@@ -316,9 +345,9 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
         </div>
     </div>
     <div id="contact-us-form">
-            <div id="ext">
-             </div>
+            
             <div class="white-form">
+              
                 <form>
                     <div class="uk-margin">
                         <label for="name" class="uk-text-left uk-text-bold label">Full Name</label>
@@ -345,7 +374,9 @@ box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
               </form>
              
         </div>
-        
+        <div id="ext">
+          
+        </div>
       
     </div>
 </div>

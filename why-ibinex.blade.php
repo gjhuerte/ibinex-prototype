@@ -31,7 +31,7 @@
   }
   .section1st-text1 .header-section{
     grid-column: 1 / -2;
-    grid-row: 1;
+    grid-row: 1; 
   }
   .subgrid-text{
     grid-row: 2;
@@ -93,7 +93,7 @@
     font-weight: 800;
     font-size: 28.5px;
     margin-bottom: 0;
-    margin-top: -3px;
+    margin-top: -6px;
   }
   .text2{
     padding: 0 20%;
@@ -128,14 +128,15 @@
     font-weight: 800;
     font-size: 27px;
     color: #2c3339;
-    word-spacing: 0px;
+    word-spacing: -2px;
     line-height: 34px;
-    letter-spacing: 1.2px;
+    letter-spacing: 0px;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .header-section,
   .section2-text2{
-      padding-top: 5.15%;
+    padding-top: 5.5%;
   }
   
   .float-image{
@@ -170,9 +171,9 @@
     .section1st-text1 h2{
       font-weight: 800;
       font-size: 40px;
-      word-spacing: 0px;
+      word-spacing: 2px;
       line-height: 46px;
-      letter-spacing: 0.6px;
+      letter-spacing: -1.4px;
       padding-top: 47px;
     }
     .subgrid-text {
@@ -187,9 +188,9 @@
     .section1st-data h2{
       font-weight: 800;
       font-size: 40px;
-      word-spacing: 0px;
-      line-height: 49px;
-      letter-spacing: 0.6px;
+      word-spacing: 2px;
+      line-height: 50px;
+      letter-spacing: -2px;
       padding-top: 30px;
     }
     .section1st-data p {
@@ -203,14 +204,15 @@
     .title-section2 h2 {
       font-weight: 800;
       font-size: 40px;
-      margin-bottom: 7px;
-      margin-top: -5px;
       word-spacing: 2px;
+      line-height: 49px;
+      letter-spacing: 0px;
+      padding-top: 2px;
     }
     .title-section2 p {
       font-weight: 500;
       font-size: 17px;
-      margin-top: 14px;
+      margin-top: 19px;
       word-spacing: -2px;
     }
   }
@@ -279,16 +281,15 @@
     grid-column: 1;
     grid-row: 3;
     grid-template-columns: 1fr;
-    padding: 115px 5% 62px;;
+    padding: 115px 5% 61px;
   }
     .section1st-text1 .header-section{
-
-    padding-top: 18%;
-    font-size: 39px;
-    font-weight: 900;
-    line-height: 48px;
-    letter-spacing: 1.8px;
-    word-spacing: -1px;
+     padding-top: 19%;
+     font-size: 40px;
+     font-weight: 900;
+     line-height: 48px;
+     letter-spacing: -1px;
+     word-spacing: -1px;
     } 
     .subgrid-text{
       text-align: justify;
@@ -312,12 +313,12 @@
     .section1st-data h2{
        grid-column: 1;
        grid-row: 1; 
-      padding-top: 3.5%;
-      font-size: 39px;
+      padding-top: 3.3%;
+      font-size: 40px;
       font-weight: 900;
       line-height: 48px;
-      letter-spacing: 1px;
-      word-spacing: 0px;
+      letter-spacing: -1px;
+      word-spacing: -1px;
     }
     .section1st-data p{
        grid-column: 1;
@@ -353,12 +354,12 @@
       letter-spacing: -0.1px;
     }
     .title-section2 h2{
-      padding-top: 6%;
-      font-size: 39px;
+      padding-top: 7.5%;
+      font-size: 40px;
       font-weight: 900;
       line-height: 48px;
-      letter-spacing: 1.4px;
-      word-spacing: 0px;
+      letter-spacing: 1px;
+      word-spacing: -2px;;
     }
       .section2-text{
       grid-template-rows: auto;

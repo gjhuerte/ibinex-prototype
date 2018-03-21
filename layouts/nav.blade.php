@@ -165,7 +165,7 @@
     font-weight: 600;
     margin-left: 7%;
     font-size: 7px;
-    padding: 0.7% 1% 0.75% 1%;
+    padding: 0.7% 1% 0.75% 0.5vw;
   }
   
   .btn-invisible {
@@ -244,6 +244,7 @@
       align-items: center;
       float: right;
       text-align: center;
+      padding: 3% 1% 0.75% 1%;
     }
     
     .navbar-currency-child-nav > li > a {
@@ -257,6 +258,10 @@
     
     .navigation-navbar-child {
       display: block
+    }
+  
+    .navbar-currency {
+      grid-template-rows: 7vh;
     }
     
     .navbar-currency-child-nav > li:not(.show-on-smaller-devices) {
@@ -286,7 +291,7 @@
       border-bottom: 1% solid #fcf9ff;
     }
     
-    .navigation-navbar-child-nav > li  > a{
+    .navigation-navbar-child-nav > li  > a {
       color: #1d1428;
       text-decoration: none;
       padding: 0 0 0.2em 0;

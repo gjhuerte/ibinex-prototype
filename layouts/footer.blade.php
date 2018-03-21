@@ -205,6 +205,9 @@
     height: 9%;
   }
 
+  /**
+  * large devices
+  **/
   @media (min-width: 992px) {
     .padding-medium {
       padding-left: 15%;
@@ -229,6 +232,9 @@
     }
   }
 
+  /**
+  * small devices only
+  **/
   @media (max-width: 499px) {
     .give-us-a-call-number {
       display: block;
@@ -292,11 +298,14 @@
       padding: 4%;
     }
   }
-  
+
+  /**
+  * medium devices
+  **/
   @media (min-width: 500px) and (max-width: 991px){
     
     .give-us-a-call > h4 {
-      font-size: 3vh;
+      font-size: 2.75vw;
     }
     
     .give-us-a-call-number {
@@ -314,11 +323,11 @@
     ul.company-information-list {
       clear: both;
       grid-column: 1 / span 1;
-      font-size: 3vw;
+      font-size: 2.9vw;
     }
 
     .company-information-list > li:not(.footer-header-color) > a{
-      font-size: 2vw;
+      font-size: 1.9vw;
     }
     
     .company-information-list {
@@ -344,11 +353,11 @@
     }
   
     .footer-header-color-light {
-      font-size: 3vw;
+      font-size: 2.9vw;
     }
 
     .footer-lower-offices > .list-unstyled > li > a {
-      font-size: 2vw;
+      font-size: 1.9vw;
     }
     
     .footer-lower-disclosure {

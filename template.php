@@ -27,7 +27,6 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<!-- For CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/mfglabs_iconset.css">
     
    <?php styles_include() ?>
 	</head>

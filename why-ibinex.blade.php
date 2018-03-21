@@ -156,12 +156,13 @@
     color: #728298;
     } 
   .text p{
-      margin: 0;
-      font-size: 15.5px;
-      font-weight: 500;
-      color: #728298;
-    }
-  @media only screen and (min-width : 1780px) and (max-width : 1930px){
+    margin: 0;
+    font-size: 15.5px;
+    font-weight: 500;
+    color: #728298;
+    hyphens: none;
+  }
+  @media only screen and (min-width : 1780px){
       .pageImage{
         transform: translate(0, -46px);
       }
@@ -227,10 +228,41 @@
   
   @media only screen and (min-width : 482px) and (max-width : 872px){
       .section1st{
-        grid-template-rows: 1fr 0.35fr 0.4fr 0.5fr;
+        grid-template-rows: auto 8.1rem auto;
+        grid-template-columns: 0.5fr 1fr 3fr 1fr 0.5fr;
+        text-align: center;
       }
+    .section1st-text1 {
+      grid-row: 1;
+      grid-column: 2 / -2;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
+    .section1st-text2 {
+      grid-row: 3;
+      grid-column: 1 / -1;
+      padding-top: 16px;
+      
+    }
+    .section1st-data {
+      grid-template-columns: 0.37fr 1.8fr 0.2fr 2fr 0.37fr;
+      grid-template-rows: 0.9fr 1fr;
+      display:grid;
+    }
+    .section1st-data h2{
+      margin-top: 12%;
+      padding-top: 0;
+    }
+    .section1st-data p{
+      margin-top: 5%;
+    }
+    .section1st-data h2, .section1st-data p{
+      grid-column: 2 / -2;
+    }
       .pageImage{
-      transform: translate(0, -16px);
+      transform: translate(0, 35px);
+      grid-row: 2;
+      grid-column: 3;
     }
   }
   @media only screen and (min-width : 873px) and (max-width : 944px){
@@ -340,7 +372,7 @@
     grid-row: 2;
     grid-column: 1;
     align-self: center;
-    transform: translate(0, 55px);
+    transform: translate(0, 54px);
   }
       .title-section2 {
       display: grid;
@@ -381,8 +413,17 @@
        padding: 0 0;
     } 
     .text2 p{
-      text-align: left;
+      text-align: justify;
     } 
+    .text p {
+      margin-top: 15px;
+      font-size: 22px;
+      font-weight: 500;
+      text-align: left;
+      word-spacing: -3px;
+      line-height: 32px;
+      hyphens: manual;
+    }
     
   
   }
@@ -417,7 +458,7 @@
              <div class="uk-animation-toggle imgSection2">
                <img src="assets/images/1.png" alt="" width="60" height="60" style="margin-bottom: 15px;" class="uk-animation-shake"/>
             </div>
-            <p>Commitment to technological innovation, through out patent-pending proprietary software, Cryptobridge<sup>TM</sup></p>
+            <p>Commitment to techno&shy;logical innovation, through out patent-pend&shy;ing proprietary software, Cryptobridge<sup>TM</sup></p>
            </div>
         </div>
         <div class="text text-padding" style="padding-left: 18.5%;">

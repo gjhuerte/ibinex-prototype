@@ -676,7 +676,7 @@
 	</div>
 </div>
 <div id="ibx-team">
-    <div id="ibx-exec">
+    <div id="ibx-exec" class="reveal-up">
         <div id="exec-team" class="exec-half reveal-right">
             <span id="exec-title-1" class="exec-header">Executive team</span>
             <span id="exec-title-2" class="exec-header">The people behind iBinex.</span>
@@ -925,12 +925,19 @@
 	windowHandler();
 	
 	$(window).on("load", function(){
-		$('#banner-content > div').addClass('uk-animation-slide-right-medium')
 		window.sr = ScrollReveal({opacity: 0, duration: 800, delay:300});
-         sr.reveal('.reveal-up');
-         sr.reveal('.reveal-left',{origin: 'left', distance:'200px'});
-         sr.reveal('.reveal-right',{origin: 'right', distance:'200px'});
-         sr.reveal('.fade',{distance:'0'});
+		
+		sr.reveal('.reveal-up');
+		
+		if ($(window).width()<=450){
+			$('#banner-content > div').addClass('uk-animation-slide-top-medium');
+			sr.reveal('.fade',{distance:'0'});
+		}else{
+			$('#banner-content > div').addClass('uk-animation-slide-right-medium');
+			sr.reveal('.reveal-left',{origin: 'left', distance:'200px'});
+			sr.reveal('.reveal-right',{origin: 'right', distance:'200px'});
+		}
+		
 	})
 }())
 </script>

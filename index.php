@@ -136,6 +136,7 @@
     padding-right: 8%;
     text-align: justify;
     transform: translateY(-10%);
+     hyphens: manual;
   }
   
   #nusku-video {
@@ -149,9 +150,9 @@
   #nusku-video-title {
     color: #1A1A1A;
     font-weight: bold;
-    padding-top: 7%;
+    padding-top: 6%;
     background: white;
-    transform: translateX(-50px);
+    transform: translateX(-40px);
   }
   
   #nusku-video-p {
@@ -159,7 +160,7 @@
     vertical-align: middle;
     text-align: center;
     font-weight: 900;
-    font-size: var(--landing-heading-70px);
+    font-size: 45px;
   }
   
   #nusku-video-p span {
@@ -184,6 +185,7 @@
   
   .video-img {
     box-shadow: 0 15px 69px -14px black;
+    max-width: 82%;
   }
   
   #nusku-intro {
@@ -230,18 +232,22 @@
   
   
   #legal-p {
-/*     font-size: 13px; */
+    font-size: 13px;
     font-weight: bold;
     text-align: center;
-    padding-top: 5%;
-    color: #9c9c9c;
+    padding-top: 4%;
+    color: #a7a7a7;
+    margin-bottom: 0%;
+    padding-left: 2%;
+    padding-right: 1%;
   }
   
   #legal-h2 {
     font-weight: bold;
     text-align: center;
-    padding-bottom: 6%;
+    padding-bottom: 3%;
     font-weight: 800;
+    font-size: 33px;
   }
   
   #legal-btn {
@@ -363,7 +369,7 @@
   }
   
   .brochure img {
-    width: 70%;
+    width: 82%;
   }
   
   .brochure {
@@ -427,9 +433,10 @@
   .header-container.header-text {
     grid-column: 1 / -1;
     grid-row: 1 / span 1;
-    padding: 20px;
-    padding-top: 5rem;
+    padding-top: 4rem;
+    padding: 10% 0 10% 4%;
   }
+  
   .header-input {
     grid-column: 1 / -1; 
     grid-row: 2 / span 1;
@@ -453,20 +460,24 @@
   }
   
   .header-container.header-text h1 {
-    font-size: 2.5rem;
+    font-size: 2.35rem;
+    padding-left: 1.4%;
   }
   
   .header-container.header-text > h1 > span {
     font-size: 1rem;
   }
   
-    .header-container.header-text h2 {
-    font-size: 1.9rem;
+   .header-container.header-text h2 {
+      font-size: 1.9rem;
+      padding-left: 2.6%;
   }
   
   .header-container.header-text p {
     font-size: 1rem;
     font-weight: 500;
+    padding-left: 2%;
+    padding-right: 5%;
     text-align: justify;
   }
   
@@ -477,6 +488,21 @@
   
   .coolors {
     font-size: 150%;
+  }
+  
+  .para {
+    font-size: var(--paragraph-17px);
+    font-family: 'Montserrat', sans-serif;
+    color: #697d95;
+    padding-left: 2%;
+    padding-right: 8%;
+    text-align: justify;
+    transform: translateY(0%);
+    hyphens: manual;
+  }
+  
+  .para1 {
+    font-weight: 500;
   }
   
   #nusku-video-p {
@@ -605,9 +631,6 @@
   .header-image {
     background-position: 80% 0%;
   }
-  p {
-    text-align: justify;
-  }
   
   .nusku-media-logo {
     margin-bottom: 15px;
@@ -684,7 +707,7 @@
     <div class="header-container header-text reveal-right">
       <h2>Introducing</h2>
       <h1>CryptoBridge<span>TM</span></h1>
-      <p class="para">Our patent-pending proprietary software. CryptoBridge, is the nexus that aggregates premier cryptocurrency exchanges and indexes for your customers, in real-time</p>
+      <p class="para">Our patent-pending proprietary software. CryptoBridge, is the nexus that aggregates premier cryptocurrency exchanges and in&shy;dexes for your customers, in real&shy;-time</p>
       <p class="para">The CryptoBridge algorithm benefits your customers by showing them a unique combination of the best and most select cryptocurrency exchanges and most attractive live prices-only available via the ibinex trading platform.</p>
     </div>
     
@@ -701,7 +724,7 @@
       <div id="nusku-intro" class="uk-grid uk-grid1 reveal-up">
             <div id="intro-content" class="uk-width-1-2 intro-padding">
                 <h2 id="intro-title">Ibinex - The Gateway to your Own Customized Cryptocurrency Ecosystem</h2>
-                <p class="para">With an in-depth understanding of evolving blockchain technology and cryptocurrency development. Ibinex invite you to engage with a fully-customizeable, private, institutional white label platform. Trail-blazing turnkey solutions to merge with your own web-based platform. Ibinex will show you definitively how to build a cryptocurrency exchange, your way.</p>
+                <p class="para para1">With an in-depth understanding of evolving blockchain technology and cryptocurrency development. Ibinex invite you to engage with a fully-customizeable, private, institutional white label platform. Trail-blazing turnkey solutions to merge with your own web-based platform. Ibinex will show you definitively how to build a cryptocurrency exchange, your way.</p>
             </div>
             <div id="intro-img" class="uk-width-1-2 intro-padding uk-padding-remove-left">
                 

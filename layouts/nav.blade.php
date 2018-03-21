@@ -191,7 +191,7 @@
     float: left;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    padding: 15% 10%;
+    padding: 15% 10% 14% 10%;
   }
   
   .navigation-navbar-sm > li:nth-child(2) {
@@ -240,7 +240,7 @@
     
     .navbar-currency-child-nav > li > a {
       font-weight: 600;
-      font-size: 10px;
+      font-size: 1.5em;
     }
     
     .navigation-navbar {
@@ -275,7 +275,7 @@
       float: none;
       background-color: #ffffff;
       padding: 4%;
-      border-bottom: 0.1px solid #fcf9ff;
+      border-bottom: 1% solid #fcf9ff;
     }
     
     .navigation-navbar-child-nav > li  > a{
@@ -297,7 +297,7 @@
 
     .button-live-demo-blue:hover {
       background-color: #102B58;
-/*       font-size: 15px; */
+      font-size: 1.2em;
       color: white;  
     }
   }

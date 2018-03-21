@@ -87,7 +87,7 @@
 /*     font-size: 0.8rem; */
     font-size: 0.96rem;
     font-weight: 600;
-    color: darkgrey;
+    color: rgb(107,124,147);
 /*     text-align: justify; */
   }
   
@@ -97,6 +97,7 @@
 /*     padding-left: 10px; */
     margin-bottom: 2px;
     line-height: 1.65;
+    hyphens: none;
   }
   
   .main-text.text2 p,
@@ -118,15 +119,18 @@
   }
   
   .fa-li {
-    top: 0.3em !important;
+    top: 0.5em !important;
   }
   
   @media only screen and (min-width : 768px) and (max-width : 1024px) {
-      div.main-pricing {
+      div.main-pricing,
+      div.main-pricing.heading2 {
         grid-template-columns: 1fr 3fr 3fr 1fr;
+        grid-template-rows: 10vh auto 9vh;
     }
     .main-image {
       background-image: url('assets/images/laptop-transparent2.png');
+      background-position: left center;
       background-size: 40%;
       filter: drop-shadow(35px 35px 30px rgba(0,0,0,0.5));
   
@@ -137,17 +141,18 @@
     .main-image{
       display: none;
     }
-    div.main-pricing {
+    div.main-pricing,
+    div.main-pricing.heading2 {
       grid-template-columns : 1fr;
-      grid-template-rows: 50px auto auto 50px;
-      grid-gap: 20px;
+      grid-template-rows: 65px auto auto 70px;
+      grid-gap: 0;
     }
     div.main-text.text1, 
     div.main-text.text2, 
     div.main-text.text3 {
       grid-column: 1 / -1;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 11px;
+      padding-right: 14px;
     }
     
     div.main-text.text2 {
@@ -160,6 +165,33 @@
       grid-row: 3 /span 1;
     }
     
+    .main-text p,
+    .main-text h1{
+      margin-left: 3px;
+    }
+    .main-text ul {
+      margin-top: 1rem;
+    }
+    .main-text p,
+    .main-text ul li {
+      hyphens: manual;
+      line-height: 1.78;
+    }
+    
+    .main-text ul li {
+      padding-bottom: 26px;
+    }
+      
+    .fa-li {
+      left: -2.3em !important;
+    }
+    
+    .main-text.text1 p,
+    .main-text.text2 p,
+    .main-text.text3 p {
+      margin-bottom: 0.55rem;
+    }
+      
   }
   
   
@@ -176,10 +208,10 @@ Pricing
   </div>
   <div class="main-text text1 reveal-right">
     <h1 class="heading">Pricing</h1>
-    <p>Integration of the Ibinex turnkey cryptocurrency platform to exchange your way reguires:</p>
+    <p>Integration of the Ibinex turnkey cryptocurrency platform to ex&shy;change your way reguires:</p>
     <ul class="fa-ul">
-      <li><span class="fa-li fa-layers fa-fw"><i class="fas fa-circle fa-lg" style="color:turquoise"></i><i class="fas fa-check" data-fa-transform="shrink-6 down-1 left-1" style="color:black"></i></span>$150,000 "reserve only, no payment" deposited in a local Escrow account of your choice for 180 days.</li>
-      <li><span class="fa-li fa-layers fa-fw"><i class="fas fa-circle fa-lg" style="color:turquoise"></i><i class="fas fa-check" data-fa-transform="shrink-6 down-1 left-1" style="color:black"></i></span>Your first 90 days of Ibinex are gratis while you build your book.</li>
+      <li><span class="fa-li fa-layers fa-fw"><i class="fas fa-circle fa-lg" style="color:turquoise"></i><i class="fas fa-check" data-fa-transform="shrink-6 down-1 " style="color:black"></i></span>$150,000 "reserve only, no pay&shy;ment" deposited in a local Escrow account of your choice for 180 days.</li>
+      <li><span class="fa-li fa-layers fa-fw"><i class="fas fa-circle fa-lg" style="color:turquoise"></i><i class="fas fa-check" data-fa-transform="shrink-6 down-1 " style="color:black"></i></span>Your first 90 days of Ibinex are gratis while you build your book.</li>
     </ul>
     <h1 class="heading additional-margin">Our Fees</h1>
     <p>0.1% flat-rate fee based on exchange volume with a minimum fee of $20,000 per month.</p>

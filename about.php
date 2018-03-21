@@ -177,6 +177,9 @@
 		font-style: italic;
 		text-decoration: underline;
 	}
+	.exec-cv {
+		margin-left: 3%;
+	}
     #exec-album{
         height: 200%;
         width: 50%;
@@ -708,10 +711,14 @@
 								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
 								cupidatat non proident, sunt in
 							</span>
-							<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
-							<a class="exec-links" href="">Linkedin Profile</a>
-							<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
-							<a class="exec-links" href="">Download CV</a>
+							<span class="exec-in">
+								<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
+								<a class="exec-links" href="">Linkedin Profile</a>
+							</span>
+							<span class="exec-cv">
+								<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
+								<a class="exec-links" href="">Download CV</a>
+							</span>
 						</div>
 					</div>
 					<div>
@@ -725,10 +732,14 @@
 								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
 								cupidatat non proident, sunt in
 							</span>
-							<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
-							<a class="exec-links" href="">Linkedin Profile</a>
-							<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
-							<a class="exec-links" href="">Download CV</a>
+							<span class="exec-in">
+								<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
+								<a class="exec-links" href="">Linkedin Profile</a>
+							</span>
+							<span class="exec-cv">
+								<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
+								<a class="exec-links" href="">Download CV</a>
+							</span>
 						</div>
 					</div>
 					<div>
@@ -742,10 +753,14 @@
 								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
 								cupidatat non proident, sunt in
 							</span>
-							<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
-							<a class="exec-links" href="">Linkedin Profile</a>
-							<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
-							<a class="exec-links" href="">Download CV</a>
+							<span class="exec-in">
+								<span class="exec-icons" uk-icon="icon: linkedin; ratio: 0.8"></span>
+								<a class="exec-links" href="">Linkedin Profile</a>
+							</span>
+							<span class="exec-cv">
+								<span class="exec-icons" uk-icon="icon: copy; ratio: 0.8"></span>
+								<a class="exec-links" href="">Download CV</a>
+							</span>
 						</div>
 					</div>
 				</div>

@@ -160,7 +160,7 @@ function display_content(){
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script>
    $(window).on("load", function(){
-    window.sr = ScrollReveal();
+    window.sr = ScrollReveal({ mobile: false });
     sr.reveal('.header-banner', { opacity: 0, duration: 2000});
     sr.reveal('.header-h6', { opacity: 0, duration: 2000});
     sr.reveal('.header-SecondSection', { opacity: 0, duration: 2000});

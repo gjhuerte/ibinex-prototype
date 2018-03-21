@@ -261,7 +261,7 @@
     }
   
     .navbar-currency {
-      grid-template-rows: 7vh;
+      grid-template-rows: 8vh;
     }
     
     .navbar-currency-child-nav > li:not(.show-on-smaller-devices) {
@@ -281,6 +281,7 @@
       display: block;
       margin: 0;
       padding: 0;
+/*       padding-bottom: 5%; */
     }
     
     .navigation-navbar-child-nav > li {

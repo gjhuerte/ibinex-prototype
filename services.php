@@ -56,6 +56,9 @@
   .grey1 .platform-content li {
     font-weight: 600;
   }
+  .grey1 p, li {
+    color: #6B7C93;
+  }
   #pl_list {
     list-style: none;
   }
@@ -64,6 +67,7 @@
   }
   .white1 .crmsection .crm-one p {
     font-weight: 600;
+     color: #6B7C93;
   }
   .white1 .crmsection .crm-one li {
     font-weight: 600;
@@ -84,6 +88,7 @@
     font-weight: 600;
     color: #fff;
     max-width: 80%;
+    text-align: justify;
   }
   .white2 .creditcardsection .cc-content {
     color: #6B7C93;
@@ -96,6 +101,7 @@
   .white2 .creditcardsection .cc-content .cc-first-p {
     margin-bottom: 32%;
     font-weight: 600;
+    text-align: justify;
   }
   .white2 .creditcardsection .cc-content img {
     width: 18%;
@@ -104,9 +110,8 @@
     font-weight: 600;
   }
   
-  
   /* Desktops and laptops ----------- */
-  @media only screen and (min-width: 1224px) {
+  @media only screen and (min-width: 960px) {
     .imgbttm {
       display: none;
       visibility: hidden;
@@ -121,10 +126,13 @@
       max-width: 80%;
     }
     .white1 .crmsection1 {
-      margin-bottom: -64.6%;
+      margin-bottom: 0%;
     }
     .white1 .crm-content-p {
       max-width: 79%;
+    }
+    .white1 .crm-content-p {
+      color: #6B7C93;
     }
     .gradientcrypto .gc-cotainer{
       margin-bottom: 2%;
@@ -145,6 +153,13 @@
     .grey2 .custodiansection .custodian-two .custodian-p-1 {
      max-width: 85%;
     }
+    .custodianimg {
+      display: inline;
+      visibility: visible;
+    }
+    .white1 {
+      margin-bottom: 0%;
+    }
   }
 
   /* Large screens ----------- */
@@ -163,7 +178,7 @@
       max-width: 80%;
     }
     .white1 .crmsection1 {
-      margin-bottom: -64.6%;
+      margin-bottom: 0%;
     }
     .white1 .crm-content-p {
       max-width: 79%;
@@ -186,6 +201,9 @@
     }
     .grey2 .custodiansection .custodian-two .custodian-p-1 {
      max-width: 85%;
+    }
+    .white1 {
+      margin-bottom: 0%;
     }
   }
   
@@ -336,9 +354,6 @@
     }
     .custodiansection .custodian .custodianimg {
        display: none;    
-    }
-    .laptopimg {
-       display: block;
     }
     .imgtop img {
       display: none;
@@ -700,7 +715,7 @@
     }
   }
   
-  /* ----------- Nexus 9 ----------- */
+   /* ----------- Nexus 9 ----------- */
 
   /* Portrait and Landscape */
   @media screen 
@@ -725,7 +740,7 @@
       display: block;
       visibility: visible;    
     }
-  }
+  } 
   
   /* ----------- Kindle Fire HD 7" ----------- */
 
@@ -753,31 +768,7 @@
     }
   }
   
-  /* ----------- Kindle Fire HD 8.9" ----------- */
-
-  /* Portrait and Landscape */
-  @media only screen 
-    and (min-device-width: 1200px) 
-    and (max-device-width: 1600px) 
-    and (-webkit-min-device-pixel-ratio: 1.5) {
-    .crmsection .crm .crmimage  {
-       display: none;
-    }
-    .creditcardsection .phone .phoneimg {
-       display: none;    
-    }
-    .custodiansection .custodian .custodianimg {
-       display: none;    
-    }
-    .imgtop img {
-      display: none;
-      visibility: hidden;   
-    }
-    .imgbttm img {
-      display: block;
-      visibility: visible;    
-    }
-  }
+  
   
   /* ----------- iPhone 4 and 4S ----------- */
 
@@ -894,7 +885,7 @@
         padding-bottom: 10%;
       }
       .white2 .cc-content .cc-first-p{
-        max-width: 90%;
+        max-width: 98%;
         word-spacing: 0px;
         text-align: justify;
       }
@@ -971,6 +962,7 @@
       margin-top: 0%;    
     }
   }
+  
 
 </style>
 
@@ -1003,7 +995,7 @@
             </div>
             <div class="uk-margin platformp-content" style="padding-top: 6.5%; padding-left: 2%;">
                 <h3 class="animated fadeInRight grey1h3">Platform</h3>
-                <p class="pratform-content-p" style="">Your exchange is your launchpad. Our suite elevates your exchange by equipping you with your own platform consisting of:</p>
+                <p class="pratform-content-p" style="color: #6B7C93;">Your exchange is your launchpad. Our suite elevates your exchange by equipping you with your own platform consisting of:</p>
                 <ul class="uk-list uk-list-space" id="pl_list" style="margin-top: -2%; margin-left: 1%;">
                   <li class="platform-li"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Tailor-made private, institutional while label infrastructure</li>
                   <li class="platform-li"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 252 252" style="fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="Layer_1"><g id="surface1_4_"><path d="M231,126c0,57.98625 -47.01375,105 -105,105c-57.98625,0 -105,-47.01375 -105,-105c0,-57.98625 47.01375,-105 105,-105c57.98625,0 105,47.01375 105,105z" fill="#11d5b9"></path><path d="M181.6605,76.6605l-71.4105,71.38425l-29.4105,-29.3895l-14.68425,14.68425l44.09475,44.11575l86.0895,-86.1105z" fill="#0b112f"></path></g></g></g></svg> Fully-customisable front-end website</li>
@@ -1023,7 +1015,7 @@
 
 <div class="uk-section uk-section-default white1">
     <div class="uk-container uk-margin crmsection">
-        <div class="uk-grid-match uk-child-width-1-2@m uk-margin-xlarge-top crmsection1"  uk-grid>
+        <div class="uk-grid-match uk-child-width-1-2@m uk-margin-xlarge-top crmsection1"   uk-grid>
             <div class="crm-one" style="margin-left: 15.8%; margin-top: -4.5%;">
                 <h3 class="crm-title">CRM/Back Office</h3>
                 <p class="crm-content-p">The Ibinex solution unites the front-end and platform with a full back office suit including CRM with:</p>
@@ -1036,7 +1028,7 @@
                 </ul>
             </div>
             <div class="crm">
-                <p><img class="crmimage" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/58b870772ce4f99e05237aa42f18cdbb/crm-back.png" style="position: relative; top: -60%; left: 104%; max-width: 117%; height: 74%; margin-left: -3%;" alt="windows"></p>
+                <p style="margin-bottom: -134%;"><img class="crmimage" src="https://trello-attachments.s3.amazonaws.com/5aa235b5bb90fe7896adf2cb/5aa544a347846c77df15d9f4/58b870772ce4f99e05237aa42f18cdbb/crm-back.png" style="position: relative; top: -60%; left: 104%; max-width: 117%; height: 74%; margin-left: -3%;" alt="windows"></p>
             </div>
         </div>
     </div>

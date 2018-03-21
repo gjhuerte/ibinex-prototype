@@ -137,16 +137,20 @@
     }
   }
   
-  @media only screen and (max-width : 480px) and (orientation : portrait), screen and (max-width : 768px) and (orientation : landscape){
+  @media only screen and (max-width : 768px){
     .main-image{
       display: none;
     }
-    div.main-pricing,
-    div.main-pricing.heading2 {
+    div.main-pricing {
       grid-template-columns : 1fr;
-      grid-template-rows: 65px auto auto 70px;
+      grid-template-rows: 65px auto auto 110px;
       grid-gap: 0;
     }
+    
+    div.main-pricing.heading2 {
+     grid-template-rows: 48px auto auto 54px; 
+    }
+    
     div.main-text.text1, 
     div.main-text.text2, 
     div.main-text.text3 {
@@ -164,6 +168,9 @@
       grid-column: 1 / -1;
       grid-row: 3 /span 1;
     }
+     .main-text .heading {
+     font-size: 2.3rem;
+    }
     
     .main-text p,
     .main-text h1{
@@ -171,6 +178,7 @@
     }
     .main-text ul {
       margin-top: 1rem;
+      margin-bottom: 1rem;
     }
     .main-text p,
     .main-text ul li {
@@ -190,6 +198,24 @@
     .main-text.text2 p,
     .main-text.text3 p {
       margin-bottom: 0.55rem;
+    }
+    
+    .text1 h1:nth-of-type(1) {
+      margin-bottom: -0.15rem;
+    }
+    
+    .text1 h1:nth-of-type(2) {
+      margin-bottom: 1.7rem;
+    }
+    
+    .main-text.text2 h1 {
+      margin-bottom: 1.85rem;
+      
+    }
+    
+    .main-text.text3 h1 {
+      margin-bottom: 1.5rem;
+      margin-top: 1.95rem;
     }
       
   }

@@ -111,7 +111,7 @@
   }
   
   /* Desktops and laptops ----------- */
-  @media only screen and (min-width: 960px) {
+  @media only screen and (min-width: 959px) {
     .imgbttm {
       display: none;
       visibility: hidden;
@@ -205,6 +205,11 @@
     .white1 {
       margin-bottom: 0%;
     }
+  }
+  
+  /* Small screens ----------- */
+  @media only screen and (min-width: 481px) and (max-width: 959px) {
+    
   }
   
   /* ----------- Nokia Lumia 520 ----------- */
@@ -556,7 +561,7 @@
   /* Portrait and Landscape */
   @media only screen 
     and (min-device-width: 768px) 
-    and (max-device-width: 1024px) 
+    and (max-device-width: 959px) 
     and (-webkit-min-device-pixel-ratio: 1) {
     .crmsection .crm .crmimage  {
        display: none;
@@ -590,7 +595,7 @@
   /* Portrait and Landscape */
   @media only screen 
     and (min-device-width: 768px) 
-    and (max-device-width: 1024px) 
+    and (max-device-width: 959px) 
     and (-webkit-min-device-pixel-ratio: 2) {
     .crmsection .crm .crmimage  {
        display: none;
@@ -616,7 +621,7 @@
   /* Portrait and Landscape */
   @media only screen 
     and (min-device-width: 834px) 
-    and (max-device-width: 1112px)
+    and (max-device-width: 959px)
     and (-webkit-min-device-pixel-ratio: 2) {
     .crmsection .crm .crmimage  {
        display: none;
@@ -642,7 +647,7 @@
   /* Portrait and Landscape */
   @media 
     (min-device-width: 800px) 
-    and (max-device-width: 1280px) {
+    and (max-device-width: 959px) {
     .crmsection .crm .crmimage  {
        display: none;
     }
@@ -667,7 +672,7 @@
   /* Portrait and Landscape */
   @media 
     (min-device-width: 800px) 
-    and (max-device-width: 1280px)
+    and (max-device-width: 959px)
     and (-webkit-min-device-pixel-ratio: 2) {
     .crmsection .crm .crmimage  {
        display: none;
@@ -747,7 +752,7 @@
   /* Portrait and Landscape */
   @media only screen 
     and (min-device-width: 800px) 
-    and (max-device-width: 1280px) 
+    and (max-device-width: 959px) 
     and (-webkit-min-device-pixel-ratio: 1.5) {
     .crmsection .crm .crmimage  {
        display: none;
